@@ -7,7 +7,10 @@
 body{margin:0;padding-block:28px 64px;padding-inline:16px;background:var(--bg);color:var(--fg);font:16px/1.5 var(--sans)}
 .wrap{max-width:900px;margin-inline:auto;min-width:0}
 h1,h2,h3{font-family:var(--serif);text-wrap:balance;line-height:1.2}
-h1{font-size:2rem;margin:0}.masthead{display:flex;align-items:center;gap:14px;margin-bottom:6px}.masthead .logo{width:56px;height:56px;border-radius:50%;flex:none}h2{font-size:1.35rem;margin:36px 0 12px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+h1{font-size:2rem;margin:0}.masthead{display:flex;align-items:center;gap:14px;margin-bottom:6px}.masthead .logo{width:56px;height:56px;border-radius:50%;flex:none;display:block}
+.logo-btn{border:0;padding:0;background:none;cursor:pointer;border-radius:50%;flex:none;transition:transform .15s}.logo-btn:hover{transform:scale(1.06)}
+.lightbox{position:fixed;inset:0;z-index:50;display:flex;align-items:center;justify-content:center;background:rgba(10,10,12,.82);padding:24px;cursor:zoom-out}
+.lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%;box-shadow:0 20px 60px rgba(0,0,0,.5)}h2{font-size:1.35rem;margin:36px 0 12px;padding-bottom:6px;border-bottom:1px solid var(--line)}
 .sub{color:var(--muted);margin-bottom:8px}.nav{display:flex;flex-wrap:wrap;gap:8px 18px;color:var(--muted);font-size:.92rem;margin-bottom:24px}
 a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:hover{text-decoration-color:var(--hi)}
 :focus-visible{outline:2px solid var(--focus);outline-offset:2px}

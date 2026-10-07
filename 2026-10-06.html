@@ -7,7 +7,10 @@
 body{margin:0;padding-block:28px 64px;padding-inline:16px;background:var(--bg);color:var(--fg);font:16px/1.5 var(--sans)}
 .wrap{max-width:900px;margin-inline:auto;min-width:0}
 h1,h2,h3{font-family:var(--serif);text-wrap:balance;line-height:1.2}
-h1{font-size:2rem;margin:0}.masthead{display:flex;align-items:center;gap:14px;margin-bottom:6px}.masthead .logo{width:56px;height:56px;border-radius:50%;flex:none}h2{font-size:1.35rem;margin:36px 0 12px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+h1{font-size:2rem;margin:0}.masthead{display:flex;align-items:center;gap:14px;margin-bottom:6px}.masthead .logo{width:56px;height:56px;border-radius:50%;flex:none;display:block}
+.logo-btn{border:0;padding:0;background:none;cursor:pointer;border-radius:50%;flex:none;transition:transform .15s}.logo-btn:hover{transform:scale(1.06)}
+.lightbox{position:fixed;inset:0;z-index:50;display:flex;align-items:center;justify-content:center;background:rgba(10,10,12,.82);padding:24px;cursor:zoom-out}
+.lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%;box-shadow:0 20px 60px rgba(0,0,0,.5)}h2{font-size:1.35rem;margin:36px 0 12px;padding-bottom:6px;border-bottom:1px solid var(--line)}
 .sub{color:var(--muted);margin-bottom:8px}.nav{display:flex;flex-wrap:wrap;gap:8px 18px;color:var(--muted);font-size:.92rem;margin-bottom:24px}
 a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:hover{text-decoration-color:var(--hi)}
 :focus-visible{outline:2px solid var(--focus);outline-offset:2px}
@@ -77,7 +80,7 @@ details summary{list-style:none}details summary::-webkit-details-marker{display:
 .days{columns:2 220px;column-gap:32px;list-style:none;padding:0;margin:0}.days li{break-inside:avoid;padding:4px 0;border-bottom:1px dotted var(--line)}
 .days .n{color:var(--muted);font-variant-numeric:tabular-nums;float:right}
 .empty{color:var(--muted);font-style:italic}
-</style></head><body><div class="wrap"><div class="masthead"><img class="logo" src="icon-192.png" alt="" width="56" height="56"><h1>Tuesday 6 October 2026</h1></div><div class="sub">10 papers submitted · 1 assessed in full</div><div class="nav"><a href="index.html">Overview</a> · <a href="assessed.html">Assessments</a> · <a href="2026-10-05.html">← 2026-10-05</a></div>
+</style></head><body><div class="wrap"><div class="masthead"><button type="button" class="logo-btn" aria-label="Show the site icon larger" onclick="document.getElementById('lb').hidden=false"><img class="logo" src="icon-192.png" alt="" width="56" height="56"></button><div class="lightbox" id="lb" hidden onclick="this.hidden=true" role="dialog" aria-label="Site icon"><img src="icon-512.png" alt="Paper Watch icon: a researcher riding the Solar Dynamics Observatory past the Sun"></div><h1>Tuesday 6 October 2026</h1></div><div class="sub">10 papers submitted · 1 assessed in full</div><div class="nav"><a href="index.html">Overview</a> · <a href="assessed.html">Assessments</a> · <a href="2026-10-05.html">← 2026-10-05</a></div>
 <div class="filters">
   <input type="search" id="q" placeholder="Search title, authors, abstract…" aria-label="Search papers">
   <label>Abstract score ≥ <select id="min"><option value="0">0</option><option value="2">2</option><option value="3">3</option><option value="5">5</option><option value="6">6</option><option value="8">8</option></select></label>
@@ -214,7 +217,7 @@ details summary{list-style:none}details summary::-webkit-details-marker{display:
     var r=e.target.closest('.row.clickable');
     if(r&&!e.target.closest('a,button,.abs,.pop'))location.href=r.dataset.href;
   });
-  document.addEventListener('keydown',function(e){if(e.key==='Escape')closeAll();
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'){closeAll();var lb=document.getElementById('lb');if(lb)lb.hidden=true;}
     if(e.key==='Enter'&&e.target.classList.contains('clickable'))location.href=e.target.dataset.href;});
 })();
 </script></div></body></html>
