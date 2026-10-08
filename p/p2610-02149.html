@@ -23,8 +23,11 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .back{display:inline-block;font-weight:600;color:var(--acc);text-decoration:none;margin-bottom:12px}
 .meta{color:var(--muted);font-size:.9rem}.meta div{margin-top:1px}
 .links{display:inline-flex;flex-wrap:wrap;gap:4px 14px}
-.score{display:inline-flex;flex-direction:column;align-items:center;min-width:3.4em;padding:2px 7px 3px;font-weight:600;font-size:.9rem;line-height:1.2;border:1px solid transparent;vertical-align:middle}
-.score .v small{font-size:.72em;font-weight:400;opacity:.8}.score .l{font-size:.62rem;font-weight:400;letter-spacing:.01em;opacity:.85;margin-top:1px}
+.score{display:inline-flex;flex-direction:column;align-items:center;min-width:3.6em;padding:3px 7px 3px;font-weight:600;font-size:.95rem;line-height:1.15;border:1px solid transparent;vertical-align:middle;gap:2px}
+.score .l{font-size:.62rem;font-weight:400;letter-spacing:.01em;opacity:.85}
+.segs{display:inline-flex;gap:2px}.segs i{display:block;width:9px;height:5px;background:color-mix(in srgb,currentColor 20%,transparent)}.segs.n10 i{width:4px}
+.segs i.on{background:currentColor}.segs i[style]{background:linear-gradient(to right,currentColor calc(var(--f)*100%),color-mix(in srgb,currentColor 22%,transparent) 0)}
+.s-hi .segs i.on{opacity:.85}
 .s-hi{background:var(--acc-fill);color:var(--acc-fg)}.s-mid{background:var(--acc-soft);color:var(--fg)}.s-lo{color:var(--muted);border-color:var(--line)}
 .rel{color:var(--muted);font-style:italic}
 .empty{color:var(--muted);font-style:italic}
@@ -134,7 +137,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
 </style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub">Abstract screen <strong>7 out of 10</strong>, full-text relevance <strong>R = 1.9 out of 5</strong>, context relation.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a><a href="p2609-02151.html">Previous (higher ranked)</a><a href="p2609-37909.html">Next (lower ranked)</a></div>
 <article class="card standalone" id="p2610-02149">
-  <h1><span class="hpills"><span class="score s-hi" title="abstract screen, 0-10"><span class="v">7<small>/10</small></span><span class="l">abstract</span></span><span class="score s-lo" title="full-text relevance R, out of 5"><span class="v">1.9<small>/5</small></span><span class="l">full text</span></span></span> <a href="https://arxiv.org/abs/2610.02149">A New Framework for Modeling Solar Flares from MHD to Kinetic Processes</a></h1>
+  <h1><span class="hpills"><span class="score s-lo" title="full-text relevance 1.9 of 5"><span class="v">1.9</span><span class="segs n5" aria-hidden="true"><i class="on"></i><i style="--f:0.95"></i><i></i><i></i><i></i></span><span class="l">full text</span></span></span> <a href="https://arxiv.org/abs/2610.02149">A New Framework for Modeling Solar Flares from MHD to Kinetic Processes</a></h1>
   <div class="meta">Joel C. Allred, Graham S. Kerr, Silvina E. Guidoni, Joel T. Dahlin et al.<div>Submitted 1 Oct 2026, astro-ph.SR</div><span class="rel">context relation</span>
     <div>21 pages, 12 figures, accepted for publication by Astrophysical Journal</div><span class="links"><a href="https://arxiv.org/abs/2610.02149">arXiv</a><a href="https://arxiv.org/pdf/2610.02149">PDF</a><a href="https://ui.adsabs.harvard.edu/abs/arXiv:2610.02149">ADS</a></span></div>
   <p class="lead">Chains the 2.5D ARMS MHD eruption model, the kglobal reconnection-acceleration model and RADYN+FP to inject self-consistent electron and proton distributions into a single newly reconnected flare loop, then follows transport, return currents, mirroring, chromospheric evaporation and condensation, white-light emission and HXR source height.</p>
