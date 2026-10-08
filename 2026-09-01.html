@@ -9,7 +9,7 @@
 :root[data-theme="dark"]{--bg:#0f1216;--fg:#e6e8ec;--muted:#9aa1ab;--panel:#161a20;--line:#2a2f38;--line2:#1f242c;
       --acc:#e0a63a;--acc-fill:#f2b83c;--acc-fg:#0f1216;--acc-soft:#3a2d12;--focus:#7fa8e8;color-scheme:dark}
 *{box-sizing:border-box}
-body{margin:0;padding-block:24px 72px;padding-inline:16px;background:var(--bg);color:var(--fg);font:16px/1.6 var(--font);font-variant-numeric:tabular-nums}
+html{overflow-x:clip}body{margin:0;padding-block:24px 72px;padding-inline:16px;background:var(--bg);color:var(--fg);font:16px/1.6 var(--font);font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
 .wrap{max-width:820px;margin-inline:auto;min-width:0}
 h1,h2,h3{font-weight:600;line-height:1.2;text-wrap:balance;margin:0}
 h1{font-size:1.9rem;font-variation-settings:"opsz" 72}h2{font-size:1.25rem;margin:40px 0 10px}
@@ -28,9 +28,11 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .rel{color:var(--muted);font-style:italic}
 .empty{color:var(--muted);font-style:italic}
 /* lightcurve hero */
-.lc{margin:4px 0 8px}.lc svg{display:block;width:100%;height:auto;overflow:visible}
+.lc{margin:4px 0 8px;touch-action:pan-y;user-select:none;-webkit-user-select:none}.lc svg{display:block;width:100%;height:auto;overflow:visible;cursor:pointer}
 .lc .bar{fill:var(--line)}.lc .spike{fill:var(--acc-fill);stroke:var(--acc);stroke-width:.6}
-.lc .hit{fill:transparent;cursor:pointer}.lc .hit:hover + .bar,.lc .hit:hover ~ .spike{opacity:.7}
+.lc .cursor{fill:var(--acc);opacity:0;pointer-events:none}.lc .cursor.on{opacity:.18}
+.lc .hit{fill:transparent;pointer-events:none}
+.lc-read{min-height:1.5em;font-size:.95rem;margin:0 0 2px;color:var(--muted)}.lc-read strong{color:var(--fg);font-weight:600}
 .lc text{fill:var(--muted);font-family:var(--font);font-size:7.5px}.lc .axis{stroke:var(--line);stroke-width:.6}.lc .tick{stroke:var(--line)}
 .lc-cap{display:flex;flex-wrap:wrap;gap:4px 18px;color:var(--muted);font-size:.88rem;margin-top:6px}
 .lc-cap i{display:inline-block;width:10px;height:10px;margin-right:6px;vertical-align:-1px}.lc-cap .i1{background:var(--acc-fill);border:1px solid var(--acc)}.lc-cap .i2{background:var(--line)}
@@ -55,6 +57,7 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .abs{margin:8px 0 0;font-size:.93rem;line-height:1.55;max-width:68ch}.row .abs[hidden]{display:none}
 .row .act a[aria-expanded=true]{color:var(--fg)}
 @media(max-width:520px){.row{grid-template-columns:1fr auto}.pills{flex-direction:row;grid-column:1/-1}.row .chev{grid-row:2;align-self:start}.row>div:nth-child(2){grid-column:1}}
+.row>div{min-width:0}
 /* assessment card (standalone page) */
 .card{min-width:0}.card.standalone h1{font-size:1.45rem;margin:0 0 6px}.card.standalone h1 a{text-decoration:none}
 .hpills{display:inline-flex;gap:4px;vertical-align:middle;margin-right:2px}.hpills .score{font-size:.85rem}
