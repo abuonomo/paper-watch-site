@@ -48,8 +48,15 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .chev{align-self:center;color:var(--acc);font-size:1.5rem;line-height:1;display:flex;align-items:center;gap:6px}
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
-.nav .pos{color:var(--muted)}.swipe-hint{margin-top:28px;text-align:center}
-body.leaving{opacity:.5;transition:opacity .12s}@media(prefers-reduced-motion:reduce){body.leaving{transition:none}}
+.swipe-hint{margin-top:28px;text-align:center}
+.swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+.progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
+.progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
+.progress .step.off{color:var(--line);border-color:var(--line2);background:none}
+.ptrack{display:flex;flex-direction:column;align-items:center;gap:6px;min-width:0}
+.plabel{font-size:.9rem;color:var(--muted);white-space:nowrap}
+.pticks{display:flex;gap:3px;width:100%;max-width:360px}.pticks i{flex:1;height:5px;background:var(--line2)}.pticks i.done{background:var(--acc-fill);opacity:.55}.pticks i.cur{background:var(--acc)}
+@media(prefers-reduced-motion:reduce){.swipe-root{transition:none}}
 .pills{display:flex;align-items:center;gap:12px}
 .row h3{font-size:1.02rem;font-weight:600;line-height:1.35}
 .row .verdict{margin:5px 0 0;font-size:.93rem;line-height:1.5}.row .verdict.read{font-weight:400}
@@ -129,7 +136,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 2 of 10"><span class="v">2</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div>
+</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 2 of 10"><span class="v">2</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="swipe-root">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.06863">The Effect of X-Ray and Accretion Variability on Mid-Infrared Lines in the Young Disk-Bearing Binary DQ Tau</a></h1>
   <div class="meta">Bayron Portilla-Revelo, Konstantin V. Getman, Ágnes Kóspál, Dmitry Semenov, Vitaly Akimkin, Lis Zwicky, Jan Forbrich, Sierk van Terwisga<div>Submitted 6 Sep 2026, astro-ph.EP</div>
@@ -137,18 +144,31 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">A star&#x27;s radiation field is the main energy source of a planet-forming disk. Stellar photons---from X-rays to optical---are reprocessed in the inner protoplanetary disk enabling mid-IR diagnostics of the disk&#x27;s physical conditions. Most pre-main-sequence stars accrete at moderate rates and emit X-rays efficiently. Such activity is expected to drive stochastic variability in the stellar spectrum. It is not clear to what extent such variability affects the thermochemical structure of protoplanetary disks. We aim to examine the effect of routine accretion variability and X-ray flares on the thermochemical structure and mid-IR line emission spectra of protoplanetary disks. We combine multiepoch, contemporaneous X-ray and NUV/optical observations of the DQ Tau binary with JWST/MIRI spectra of its circumbinary disk. We interpret the data and assess the effect of a varying stellar spectrum on the disk using a thermochemical model illustrative of the system. Synthetic fluxes of CO, CO2, HCN, and H2O are systematically stronger at periastron than at apastron due to an enhanced accretion luminosity. Variations in the integrated fluxes lie within a factor of two between epochs, in agreement with the JWST/MIRI spectra of DQ Tau. Routine stellar variability induces only modest changes in the disk&#x27;s structure, yet it can still shift the snowline outwards by 17 percent relative to its apastron position. Because the JWST observations did not coincide with X-ray flares, our flare results rely on simulations: moderate-intensity flares leave most mid-IR molecular emission unchanged; in contrast, X-ray flares strongly enhance the abundances and mid-IR luminosities of H I, Ar II, and Ne II in the disk surface. Our results imply that the Spitzer/JWST line variability observed in non-outbursting systems is consistent with moderately variable stellar spectra driven by accretion and magnetospheric activity.</p>
   <h2>Screening</h2><p><strong>2 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">The paper deals with how X-ray flares and accretion variability on a pre-main-sequence binary affect the thermochemistry and mid-IR lines of its protoplanetary disk. It does not examine flare timing, particle acceleration, QPPs, or STIX/EUI-style analysis, so the only link is the loose stellar-flare context.</p>
   <p class="meta">arXiv:2609.06863</p>
-</article>
+</article></div>
 <script>
 (function(){
-  // Remember this paper as seen (per browser; nothing leaves the device).
   try{var k='pw-seen',seen=JSON.parse(localStorage.getItem(k)||'{}');seen['2609.06863']=Date.now();localStorage.setItem(k,JSON.stringify(seen));}catch(e){}
-  var prev='',next='';
-  function go(h){if(!h)return;document.body.classList.add('leaving');setTimeout(function(){location.href=h},120);}
-  document.addEventListener('keydown',function(e){if(e.key==='ArrowRight')go(next);if(e.key==='ArrowLeft')go(prev);});
-  var sx=0,sy=0,t0=0;
-  document.addEventListener('touchstart',function(e){var t=e.touches[0];sx=t.clientX;sy=t.clientY;t0=Date.now();},{passive:true});
-  document.addEventListener('touchend',function(e){var t=e.changedTouches[0],dx=t.clientX-sx,dy=t.clientY-sy;
-    if(Date.now()-t0<600&&Math.abs(dx)>70&&Math.abs(dy)<60){if(dx<0)go(next);else go(prev);}},{passive:true});
+  var prev='',next='',root=document.querySelector('.swipe-root');
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  // Slide in from the side we came from.
+  try{var dir=sessionStorage.getItem('pw-dir');sessionStorage.removeItem('pw-dir');
+    if(dir&&root&&!reduce){root.style.transition='none';root.style.transform='translateX('+(dir==='next'?'60px':'-60px')+')';root.style.opacity='0';
+      requestAnimationFrame(function(){requestAnimationFrame(function(){root.style.transition='';root.style.transform='';root.style.opacity='';});});}}catch(e){}
+  function go(h,d){if(!h)return;try{sessionStorage.setItem('pw-dir',d)}catch(e){}
+    if(root&&!reduce){root.style.transition='transform .22s ease-in, opacity .22s';root.style.transform='translateX('+(d==='next'?'-110%':'110%')+') rotate('+(d==='next'?'-4deg':'4deg')+')';root.style.opacity='0';
+      setTimeout(function(){location.href=h},200);}else location.href=h;}
+  document.addEventListener('keydown',function(e){if(e.key==='ArrowRight')go(next,'next');if(e.key==='ArrowLeft')go(prev,'prev');});
+  if(!root)return;
+  var sx=0,sy=0,dx=0,dragging=false,horiz=null;
+  document.addEventListener('touchstart',function(e){var t=e.touches[0];sx=t.clientX;sy=t.clientY;dx=0;dragging=true;horiz=null;root.style.transition='none';},{passive:true});
+  document.addEventListener('touchmove',function(e){if(!dragging)return;var t=e.touches[0];dx=t.clientX-sx;var dy=t.clientY-sy;
+    if(horiz===null&&(Math.abs(dx)>8||Math.abs(dy)>8))horiz=Math.abs(dx)>Math.abs(dy);
+    if(!horiz)return;
+    var lim=(dx<0&&!next)||(dx>0&&!prev)?0.25:1;   // resist at the ends of the stack
+    root.style.transform='translateX('+(dx*lim)+'px) rotate('+(dx*lim/40)+'deg)';root.style.opacity=String(Math.max(.4,1-Math.abs(dx)/600));},{passive:true});
+  document.addEventListener('touchend',function(){if(!dragging)return;dragging=false;
+    if(horiz&&Math.abs(dx)>90&&((dx<0&&next)||(dx>0&&prev))){go(dx<0?next:prev,dx<0?'next':'prev');return;}
+    root.style.transition='transform .25s cubic-bezier(.2,.8,.3,1.2), opacity .25s';root.style.transform='';root.style.opacity='';},{passive:true});
 })();
 </script>
 <script data-goatcounter="https://paperwatch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
