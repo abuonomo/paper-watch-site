@@ -1,0 +1,202 @@
+{
+ "arxiv_id": "2609.34999",
+ "title": "First results from PADRE/MeDDEA: X-rays from a flare and its CME",
+ "authors": [
+  "Muriel Zoë Stiefel",
+  "Säm Krucker",
+  "Olivier Limousin",
+  "Niharika Godbole",
+  "Gwendoline Marc",
+  "Amir Caspi",
+  "Kyle Gregory",
+  "Ace Stratton",
+  "Diana Renaud",
+  "Aline Meuris",
+  "Laura A. Hayes",
+  "André Csillaghy",
+  "Pascal Saint-Hilaire",
+  "Juan Camilo Buitrago Casas",
+  "Christopher Smith",
+  "Savannah Sky Perez-Piel",
+  "Anton Tremsin",
+  "Elizabeth Warren",
+  "Bradley Pafchek",
+  "Eliad Peretz",
+  "Carlos Urdiales",
+  "Reynaldo Gonzalez",
+  "Chris M. Moeckel",
+  "Juan Carlos Martinez Oliveros",
+  "Steven Christe"
+ ],
+ "submitted": "2026-09-28",
+ "links": {
+  "arxiv": "https://arxiv.org/abs/2609.34999",
+  "pdf": "https://arxiv.org/pdf/2609.34999",
+  "ads": "https://ui.adsabs.harvard.edu/abs/arXiv:2609.34999"
+ },
+ "abstract_screen": {
+  "score": 8.0,
+  "rationale": "Uses STIX flight-spare detectors on MeDDEA and joint STIX/Fermi GBM/ASO-S HXI/AIA spectral and imaging analysis of a flare and its CME. It bears directly on flare HXR spectroscopy, nonthermal electrons and energetics, and cross-calibration of STIX-like data, though timing/QPPs are not the focus."
+ },
+ "relevance_score": 2.85,
+ "relevance_scale": "0-5",
+ "relevance_formula": "R = sum(w_i * R_i) / sum(w_i)",
+ "weights": {
+  "problem": 0.3,
+  "method": 0.25,
+  "data": 0.15,
+  "phenomenon": 0.2,
+  "future": 0.1
+ },
+ "relevance_components": {
+  "problem": {
+   "score": 2,
+   "explanation": "The paper is about flare electron energetics and HXR emission from flare versus CME. It touches electron acceleration and transport but not rapid variability, QPPs or energy-dependent timing."
+  },
+  "method": {
+   "score": 3,
+   "explanation": "It uses STIX spectral fitting (thermal + thick target), STIX CLEAN/MEM imaging, light-travel-time correction and inter-instrument light-curve comparison, with Python sunkit-spex fitting. These methods transfer directly, though no time-series or periodicity methods are used."
+  },
+  "data": {
+   "score": 4,
+   "explanation": "STIX is central: occulted spectra, images and light curves, plus AIA, HXI and GBM. It introduces MeDDEA, which carries STIX-identical detectors, gives 0.5 s cadence and offers an open Python pipeline."
+  },
+  "phenomenon": {
+   "score": 3,
+   "explanation": "The subject is nonthermal electrons and thermal plasma in a large flare, the Neupert-like heating of the high coronal source and decay timescales set by trapping and conduction. The focus on CME-associated emission is somewhat off-centre."
+  },
+  "future": {
+   "score": 3,
+   "explanation": "MeDDEA gives an Earth-view STIX-like spectrometer for stereoscopic timing and spectral comparison of flares, especially occulted ones. Its high-cadence event lists could support timing or QPP work, and the occulted-flare approach can be applied across the STIX catalogue."
+  }
+ },
+ "relation": "complementary_data",
+ "one_line": "First science paper from the PADRE/MeDDEA CubeSat spectrometer, which carries STIX flight-spare CdTe detectors: it cross-calibrates MeDDEA against ASO-S/HXI and Fermi/GBM to within ~10% (18–30 keV) for the M6 flare SOL2025-11-28T22, and uses STIX's 15°-occulted view to show that CME-associated nonthermal HXR flux is ~1% of the flare flux while its thermal energy is comparable.",
+ "summary": "The authors analyse the first large flare seen by MeDDEA (GOES M6, 28 Nov 2025). From Earth the flare was on the limb but visible; for Solar Orbiter/STIX it was occulted by 15° (occultation height 24.5 Mm). Spectral fitting with sunkit-spex (MeDDEA) and OSPEX (STIX, HXI, GBM) gives thermal-plus-thick-target fits. MeDDEA photon fluxes agree with HXI and GBM to 1.01±0.10 in 18–30 keV, after an ad hoc 5.0 s clock correction. The occulted STIX source has a nonthermal flux 0.95%±0.15% of the flare flux, the same spectral index (δ≈5.2), a cooler temperature (~13 MK vs ~29 MK) and comparable thermal energy (~4–6×10^29 vs 2.4×10^29 erg, filling factor 1). STIX CLEAN images (sub-collimators 7–10) show the source moving at ~450 km/s with the AIA 131 Å erupting flux rope. The occulted light curve is less impulsive and decays more slowly, and its thermal emission rises during the nonthermal burst in a Neupert-like way. For the researcher, the value lies in the STIX spectral/imaging workflow, the multi-instrument timing comparison, and a new STIX-cross-calibrated, high-cadence, Earth-view HXR data source with Python tooling. QPPs and fine timing are not addressed.",
+ "offers": [
+  "A worked example of a STIX occulted-flare spectral analysis with the newest STIX calibration (Massa et al. 2026, sswidl v0.6.2) and light-travel-time correction (+48.3 s) (Sect. 2.1, 3.1).",
+  "MeDDEA photon event lists with Python tools: data on the SDAC umbra server and the padre_meddea GitHub repo; spectra fitted with sunkit-spex via its custom-spectrum tutorial (Sect. 2.2).",
+  "A cross-calibration benchmark: MeDDEA/HXI 1.02±0.07 and MeDDEA/GBM 0.94±0.11 in 18–30 keV (Fig. 4).",
+  "A multi-instrument HXR spectrogram and light-curve comparison including Konus and Aditya-L1/HEL1OS, with notes on GBM pileup (detector N0) and HXI entrance-window effects on apparent timing (Figs. 1–2).",
+  "Table 1: flare versus high-corona T, EM, volume, thermal energy, density and δ, useful as a reference for energetics."
+ ],
+ "findings": [
+  {
+   "evidence": "The MeDDEA 28–70 keV light curve at 0.5 s cadence has ~9% errors at peak. A 5.0 s clock shift was required to align MeDDEA with HXI and GBM nonthermal peaks (Sect. 3.1, Fig. 2).",
+   "inference": "MeDDEA can supply sub-second nonthermal light curves for M-class flares. Its absolute timing is not yet reliable, so any cross-instrument timing analysis (e.g. STIX–MeDDEA lags) would need independent clock verification.",
+   "recommendation": "If MeDDEA is used for timing comparisons with STIX, align it on a reference instrument (GBM/HXI) and check the status of the MeDDEA clock correction before interpreting second-level delays.",
+   "confidence": "high"
+  },
+  {
+   "evidence": "The HXI 10–20 keV curve peaks and decays before MeDDEA's because HXI's thicker entrance window shifts its mean photon energy higher. The thermal HXR curves peak before GOES/XRS (Sect. 3.1).",
+   "inference": "Apparent timing differences between instruments in nominally identical energy bands can come from instrument response rather than physics. This matters for energy-dependent timing studies that combine STIX with other instruments.",
+   "recommendation": "Compare in photon space or forward-model through each instrument's response when doing multi-instrument energy-dependent timing.",
+   "confidence": "high"
+  },
+  {
+   "evidence": "The occulted STIX 12–25 keV profile has a similar onset but is less impulsive and decays more slowly than the flare. The occulted 4–12 keV emission rises during the nonthermal burst, Neupert-like. This is interpreted as trapping, with conductive losses weaker in the high corona (Sect. 3.1, Fig. 2).",
+   "inference": "Comparing occulted and unocculted temporal profiles can separate coronal-source variability from footpoint variability. That is relevant to locating where flare variability (including any QPPs) originates.",
+   "recommendation": "Consider occulted STIX events with Earth-view HXR coverage as a way to isolate coronal-source temporal behaviour from ribbon emission.",
+   "confidence": "medium"
+  },
+  {
+   "evidence": "The occulted nonthermal flux is ~1% of the flare flux, with identical δ≈5.2 in the thick-target fit. The thick- versus thin-target choice is argued from a density estimate (~2×10^9 cm^-3) and is left unresolved (Sect. 3.3, 4).",
+   "inference": "This is a quantitative constraint on how the electron population is partitioned between flare and eruption. The interpretation is model-dependent, especially for thin-target or coronal sources.",
+   "recommendation": "Treat the 1% fraction as thick-target-specific. When fitting coronal STIX sources, test both thick- and thin-target models.",
+   "confidence": "medium"
+  },
+  {
+   "evidence": "EUI was at 6-minute cadence and missed the impulsive phase, so it was excluded (Sect. 3.4).",
+   "inference": "EUI cadence during non-campaign periods can limit joint STIX/EUI timing studies. Event selection needs to check EUI cadence, for example by favouring Major Flare Campaign periods.",
+   "recommendation": "Screen candidate events for EUI high-cadence modes before building STIX–EUI timing case studies.",
+   "confidence": "high"
+  }
+ ],
+ "people": [
+  {
+   "name": "Muriel Zoë Stiefel",
+   "affiliation": "FHNW / ETH Zürich",
+   "why": "Lead author. Active in STIX spectral analysis, sunkit-spex validation and STIX calibration (Massa et al. 2026)."
+  },
+  {
+   "name": "Säm Krucker",
+   "affiliation": "FHNW / UC Berkeley SSL",
+   "why": "STIX PI. Leads the occulted-flare and coronal HXR source work (Krucker & Masuda 2026)."
+  },
+  {
+   "name": "Laura A. Hayes",
+   "affiliation": "Dublin Institute for Advanced Studies",
+   "why": "Expert in STIX flare analysis and QPPs; author of Hayes et al. 2024 on occulted STIX imaging."
+  },
+  {
+   "name": "Steven Christe",
+   "affiliation": "NASA GSFC",
+   "why": "MeDDEA instrument lead (Christe et al. sub.); the contact for MeDDEA data products and timing."
+  },
+  {
+   "name": "Amir Caspi",
+   "affiliation": "SwRI Boulder",
+   "why": "Works on flare thermal energetics and HXR spectroscopy."
+  }
+ ],
+ "reading": [
+  {
+   "reference": "Krucker & Masuda 2026, A&A 710, A107",
+   "priority": "read first",
+   "why": "Defines the occulted STIX plus Earth-view HXR method, the occultation-height formula and the comparison event."
+  },
+  {
+   "reference": "Massa et al. 2026, Solar Physics 301 (STIX calibration)",
+   "priority": "read first",
+   "why": "The newest STIX calibration, essential for any STIX spectral work."
+  },
+  {
+   "reference": "Hayes et al. 2024, A&A 691, A190",
+   "priority": "read",
+   "why": "STIX imaging of occulted flare coronal sources using coarse sub-collimators."
+  },
+  {
+   "reference": "Christe et al. sub. to A&A 2026 (MeDDEA instrument)",
+   "priority": "read",
+   "why": "Needed to judge MeDDEA modes, decimation, livetime and timing before using its data."
+  },
+  {
+   "reference": "Lastufka et al. 2019, ApJ 886, 9",
+   "priority": "optional",
+   "why": "Catalogue and temporal properties of occulted flares."
+  },
+  {
+   "reference": "Stiefel, Bajnoková & Krucker 2026, A&A 706, A192",
+   "priority": "optional",
+   "why": "Validates sunkit-spex against OSPEX, which supports a Python-based spectral workflow."
+  }
+ ],
+ "caveats": [
+  "Single-event study: no QPP, periodicity or energy-dependent timing analysis is performed.",
+  "The MeDDEA clock needed an ad hoc 5 s correction, and cross-calibration is only validated in 18–30 keV.",
+  "Thermal energies assume a filling factor of 1 and ignore systematic volume uncertainties. The volume estimates for the CME source differ by a factor of 2.",
+  "The 1% electron fraction rests on the thick-target assumption.",
+  "EUI data were not used, so there is no direct STIX–EUI connection.",
+  "The CME focus is partly outside the researcher's core flare-variability interests."
+ ],
+ "instruments_and_data": [
+  "PADRE/MeDDEA",
+  "Solar Orbiter/STIX",
+  "ASO-S/HXI",
+  "Fermi/GBM (detector N0)",
+  "WIND/Konus",
+  "Aditya-L1/HEL1OS",
+  "GOES/XRS",
+  "SDO/AIA 131 Å",
+  "SDO/HMI",
+  "SOHO/LASCO C2",
+  "OSPEX",
+  "sunkit-spex",
+  "SunPy"
+ ],
+ "events": [
+  "SOL2025-11-28T22:20 M6 (limb flare, 15° occulted from Solar Orbiter, narrow ~700 km/s CME)"
+ ],
+ "assessed_at": "2026-10-07T15:56:14+00:00",
+ "model": "claude-opus-5-5"
+}

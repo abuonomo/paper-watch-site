@@ -1,0 +1,212 @@
+{
+ "arxiv_id": "2610.08124",
+ "title": "Exploring an X1.8 flare and associated quasi-periodic pulsations using SDO and Aditya-L1 observations, alongside NFFF extrapolation",
+ "authors": [
+  "Pawan Kumar",
+  "Sanjay Kumar",
+  "Sadashiv",
+  "Sachin Rajkapoor Kanaujiya",
+  "Yogesh Kumar Maurya"
+ ],
+ "submitted": "2026-10-06",
+ "links": {
+  "arxiv": "https://arxiv.org/abs/2610.08124",
+  "pdf": "https://arxiv.org/pdf/2610.08124",
+  "ads": "https://ui.adsabs.harvard.edu/abs/arXiv:2610.08124"
+ },
+ "abstract_screen": {
+  "score": 8.0,
+  "rationale": "Directly addresses QPPs (about 4 min period) in the hard X-ray lightcurve of an X1.8 flare, with EUV ribbon and brightening morphology and a magnetic-reconnection interpretation. It uses SDO and Aditya-L1 rather than STIX/EUI, but the QPP detection methods and physics transfer."
+ },
+ "relevance_score": 3.2,
+ "relevance_scale": "0-5",
+ "relevance_formula": "R = sum(w_i * R_i) / sum(w_i)",
+ "weights": {
+  "problem": 0.3,
+  "method": 0.25,
+  "data": 0.15,
+  "phenomenon": 0.2,
+  "future": 0.1
+ },
+ "relevance_components": {
+  "problem": {
+   "score": 3,
+   "explanation": "The paper detects hard X-ray QPPs and links them to a specific ribbon and to electron acceleration by reconnection, which is the QPP–acceleration–ribbon problem. However, it does no time-resolved spectroscopy, no energy-dependent timing and no statistics."
+  },
+  "method": {
+   "score": 3,
+   "explanation": "It uses standard, transferable tools: Savitzky–Golay detrending, Torrence & Compo wavelet, FFT, AR(1) significance, and STIX imaging with stixpy, MEM_GE and SunPy reprojection. These are used in a basic way and with some methodological weaknesses. The NFFF extrapolation half of the paper is outside the researcher's core methods."
+  },
+  "data": {
+   "score": 3,
+   "explanation": "STIX is used, but only for one 30-s 20–50 keV image. The QPP timing comes from Aditya-L1/HEL1OS, and EUV/UV context comes from SDO/AIA rather than EUI."
+  },
+  "phenomenon": {
+   "score": 4,
+   "explanation": "The phenomena are impulsive-phase non-thermal HXR pulsations in an X-class eruptive flare, ribbon-resolved UV/EUV lightcurves, and the localisation of the pulsating source. These are the same physical phenomena the researcher targets."
+  },
+  "future": {
+   "score": 3,
+   "explanation": "The event is a ready-made case for reanalysis with STIX's own lightcurves, energy-resolved timing and spectral fitting, and possibly EUI. The paper is also a useful cautionary template for QPP-detection pitfalls. It does not provide new tools or data products, and data are available only on request."
+  }
+ },
+ "relation": "direct",
+ "one_line": "Multi-instrument case study of the SOL2024-10-09 X1.8 flare that reports a ~4-min QPP in Aditya-L1/HEL1OS 20–50 keV hard X-rays, places the pulsating HXR source on one ribbon (R1) using a single STIX MEM_GE image plus AIA ribbon lightcurves, and interprets it with an NFFF extrapolation (flux rope, 3D null, QSLs) as recurrent reconnection.",
+ "summary": "The authors use the GOES-18 1–8 Å curve to time the X1.8 flare in AR 13848 (01:25–01:56–02:43 UT). AIA 94/131 Å images show a pre-flare sigmoid, and AIA 304/1600 Å images show four ribbons or brightenings (R1–R4) (Figs. 1–4). They detrend a 2-s-binned HEL1OS 20–50 keV lightcurve with a 251-s Savitzky–Golay filter. Morlet wavelet and FFT analysis against an AR(1) red-noise model then give a period of ~4 ± 0.6–0.7 min during roughly 01:35–01:50 UT (Fig. 5). AIA 171 Å and 1600 Å ribbon lightcurves are compared by eye with the HXR curve, and only R1's peaks line up (Fig. 6a). A 30-s STIX 20–50 keV MEM_GE image, made with stixpy, is reprojected to Earth view with SunPy and manually co-aligned to 1600 Å; it places the HXR source on R1 (Fig. 6b). An NFFF extrapolation of the HMI SHARP magnetogram at 01:24 UT shows a flux rope (twist >1), a 3D null, a sheared arcade and four QSLs (Figs. 7–9). The authors propose, without demonstrating it, that recurrent reconnection at the null and arcade drives the QPPs. For STIX/EUI flare-timing work, the paper is mainly a worked example of QPP detection plus STIX source localisation. It is also a candidate event to revisit with native STIX lightcurves and spectra.",
+ "offers": [
+  "A named X-class QPP event with timings: SOL2024-10-09, AR 13848; GOES onset/peak/end 01:25/01:56/02:43 UT; QPP interval ~01:35–01:50 UT; STIX image window 01:42:00–01:42:30 UT (Sects. 2.1–2.2, Figs. 1, 5, 6).",
+  "A reported period (~4 min: FFT 4.14 min, global wavelet 3.94 min, Fig. 5d) to compare against an independent STIX lightcurve analysis of the same flare.",
+  "A recipe for STIX source localisation in Python: stixpy with MEM_GE, background interval selection, SunPy reprojection to Earth view, and manual co-alignment to AIA 1600 Å (Sect. 2.2, Fig. 6b).",
+  "A ribbon-by-ribbon comparison of UV/EUV and HXR timing (AIA 171 Å chosen because the other EUV channels saturate; AIA 1600 Å for ribbons; Fig. 6a), following Clarke et al. (2021).",
+  "Magnetic topology context from the NFFF extrapolation: flux rope, 3D null near R1, QSL1–QSL4 mapped to the individual ribbons (Figs. 7–9). Useful if the researcher wants to link ribbon-resolved timing to topology."
+ ],
+ "findings": [
+  {
+   "evidence": "The 20–50 keV HEL1OS curve (2-s bins) was detrended with a Savitzky–Golay filter of 251-s window. Wavelet and FFT both peak at ~4 min, above an AR(1) 95% level (Sect. 2.2, Fig. 5b–d).",
+   "inference": "The detrending window (~4.2 min) is essentially equal to the reported period. Smoothing-based detrending is known to imprint or enhance power near the window scale, so the 4-min period may be partly filter-driven. Fig. 5b also shows only about 2–4 strong pulses, with two dominant spikes near 01:43 and 01:47 UT, so the periodicity evidence is thin.",
+   "recommendation": "Do not adopt the 4-min period as established. If the event is analysed, test robustness on the non-detrended signal, for example with a Fourier power-law-plus-noise model fit in the style of Inglis & Hayes (2024), and by varying the detrending window.",
+   "confidence": "high"
+  },
+  {
+   "evidence": "A single 30-s STIX 20–50 keV MEM_GE reconstruction (01:42:00–01:42:30 UT) was reprojected to Earth view and manually co-aligned to AIA 1600 Å brightenings. The 60% contour sits on ribbon R1 (Sect. 2.2, Fig. 6b).",
+   "inference": "Manual co-alignment to bright 1600 Å features is partly circular when the conclusion is that HXR is co-spatial with a 1600 Å ribbon. A single time bin also cannot show whether the source location or footpoint balance changes from pulse to pulse.",
+   "recommendation": "For this or similar events, produce STIX images per pulse and in inter-pulse intervals, and document the co-alignment procedure, for example via a thermal source or an aspect solution. Follow the approaches in Collier et al. (2024) and Lörinčík et al. (2026), which the paper cites.",
+   "confidence": "medium"
+  },
+  {
+   "evidence": "STIX is used only for imaging. The QPP timing relies on HEL1OS 20–50 keV in one energy band, and no spectral fitting or energy-dependent timing is shown (Sect. 2.2).",
+   "inference": "The event's non-thermal timing evolution is unexplored at STIX cadence and energy resolution. This includes multi-band lags, spectral-index evolution per pulse, and possible shorter-period structure on top of the 4-min modulation. Collier et al. (2023) found such fast variations common in STIX profiles.",
+   "recommendation": "Check STIX data quality and coverage for SOL2024-10-09 (attenuator state, viewing geometry). If suitable, use it as a test case for energy-resolved timing and time-resolved spectroscopy of individual pulses.",
+   "confidence": "medium"
+  },
+  {
+   "evidence": "Of the four ribbons, only R1's AIA 171 Å and 1600 Å lightcurves show peaks 'nearly coincident' with the HXR peaks (Fig. 6a, vertical dashed lines). No cross-correlation, lag values or significance are given.",
+   "inference": "The ribbon attribution is qualitative. A quantitative cross-correlation or lag analysis, ideally with higher-cadence EUV such as EUI HRIEUV, would be needed to confirm where the variability originates.",
+   "recommendation": "Treat Fig. 6a as a design template for ribbon-resolved lightcurve extraction. Add quantitative lag or coherence measures when applying it to EUI/STIX data.",
+   "confidence": "medium"
+  },
+  {
+   "evidence": "The NFFF extrapolation at 01:24 UT shows a flux rope (|Tw|>1) whose leg lies under a 3D-null dome near R1, high |J|/|B| beneath the rope, and four QSLs (Figs. 7–8). The authors propose that recurrent reconnection at the null and arcade causes the QPPs (Sect. 4, Sect. 5), and state that the period cannot be derived from the extrapolation.",
+   "inference": "The QPP mechanism is speculative. A static pre-flare extrapolation cannot test periodic or load/unload reconnection, and the paper itself defers this to future MHD simulations. The topology–ribbon mapping is still plausible context for why HXR concentrates at R1.",
+   "recommendation": "Cite this only as a topological interpretation, not as evidence for a QPP mechanism. Use the null/QSL mapping as context if the event is reanalysed.",
+   "confidence": "high"
+  },
+  {
+   "evidence": "Most AIA EUV channels except 171 Å saturate during this X-class flare (Sect. 2.2).",
+   "inference": "This is a practical limitation for ribbon-resolved EUV timing in large flares. EUI's different exposure and cadence handling may help or may suffer similarly, depending on the observing mode.",
+   "recommendation": "When selecting Major Flare Campaign events, check the EUI and AIA saturation status in advance, and plan to use 1600/1700 Å or Lyman-alpha (EUI HRILya) for ribbon timing.",
+   "confidence": "medium"
+  }
+ ],
+ "people": [
+  {
+   "name": "Sanjay Kumar",
+   "affiliation": "Department of Physics, Patna University",
+   "why": "Corresponding author. Leads NFFF extrapolation and data-constrained MHD of flares, and is planning MHD follow-up of QPP energetics for this event."
+  },
+  {
+   "name": "Pawan Kumar",
+   "affiliation": "Department of Physics, Patna University",
+   "why": "First author; did the observational QPP and STIX analysis."
+  },
+  {
+   "name": "Sachin Rajkapoor Kanaujiya",
+   "affiliation": "National Institute of Technology Calicut",
+   "why": "Works on multimode EUV QPPs in X-class flares (Kanaujiya, Maurya & Nakariakov 2026)."
+  },
+  {
+   "name": "Yogesh Kumar Maurya",
+   "affiliation": "Indian Institute of Astrophysics, Bangalore",
+   "why": "Specialist in 3D null detection and topology; relevant if linking ribbon timing to null-point reconnection."
+  },
+  {
+   "name": "Hannah Collier",
+   "affiliation": "",
+   "why": "Lead author of the cited STIX fast-time-variation and QPP-localisation studies (Collier et al. 2023, 2024). Core STIX timing expertise."
+  },
+  {
+   "name": "Laura A. Hayes",
+   "affiliation": "",
+   "why": "Co-author on most cited flare QPP and STIX timing work (Clarke 2021; Collier 2023, 2024; Inglis & Hayes 2024; Lörinčík 2026)."
+  },
+  {
+   "name": "Andrew R. Inglis",
+   "affiliation": "",
+   "why": "Cited for rigorous QPP detection methodology and for the community QPP white paper."
+  },
+  {
+   "name": "Dong Li",
+   "affiliation": "",
+   "why": "Cited for localising QPPs across HXR, microwave and Lyα (2024), and for a reconnection-driven QPP interpretation (2025, 2026)."
+  }
+ ],
+ "reading": [
+  {
+   "reference": "Collier et al. 2023, A&A 671, A79 — Characterising fast-time variations in HXR time profiles with STIX",
+   "priority": "read first",
+   "why": "The STIX-specific methodology for flare HXR variability. Directly applicable to the researcher's timing analyses."
+  },
+  {
+   "reference": "Collier et al. 2024, A&A 684, A215 — Localising pulsations in HXR and microwave emission of an X-class flare",
+   "priority": "read first",
+   "why": "A stronger template than this paper for pulse-resolved STIX imaging and localisation of QPP sources."
+  },
+  {
+   "reference": "Lörinčík et al. 2026, ApJ 1003, 95 — QPPs and 3D reconnection in the 2022 March 31 flare (IRIS and STIX)",
+   "priority": "read first",
+   "why": "STIX QPP study tied to ribbon dynamics and 3D reconnection. Cited for the co-alignment approach."
+  },
+  {
+   "reference": "Inglis & Hayes 2024, ApJ 971, 29 — Searching for rapid pulsations in solar flare X-ray data",
+   "priority": "read",
+   "why": "A detection framework that avoids detrending artefacts, which are a concern for this paper's 251-s filter."
+  },
+  {
+   "reference": "Clarke et al. 2021, ApJ 910, 123 — Quasi-periodic particle acceleration in a solar flare",
+   "priority": "read",
+   "why": "Linking QPPs to particle acceleration, with a ribbon-versus-HXR comparison that this paper imitates."
+  },
+  {
+   "reference": "Ashfield et al. 2026, Nature Astronomy 10, 54 — Spectroscopic observations of flare pulsations driven by oscillatory reconnection",
+   "priority": "read",
+   "why": "Recent observational evidence for a QPP mechanism, with ribbon spectroscopy."
+  },
+  {
+   "reference": "Li et al. 2024, ApJ 970, 77 — Localizing QPPs in HXR, microwave and Lyα of an X6.4 flare",
+   "priority": "read",
+   "why": "Multi-wavelength QPP localisation including Lyα, relevant to combining with EUI HRILya."
+  },
+  {
+   "reference": "Zimovets et al. 2021, Space Sci. Rev. 217, 66 — QPP mechanisms review",
+   "priority": "optional",
+   "why": "Reference for mechanisms and predicted observational signatures."
+  },
+  {
+   "reference": "Massa et al. 2020, ApJ 894, 46 — MEM_GE",
+   "priority": "optional",
+   "why": "The STIX image reconstruction algorithm used here."
+  }
+ ],
+ "caveats": [
+  "The Savitzky–Golay window (251 s) is nearly equal to the detected period (~240 s). Testing a smoothed-detrended series against AR(1) red noise can produce spurious significance.",
+  "Few cycles are present: the impulsive phase spans ~15 min, giving at most ~4 cycles of a 4-min period. The spectrum is computed over the whole flare interval.",
+  "STIX contributes only one 30-s image, which is manually co-aligned to the 1600 Å ribbon it is then claimed to match. There are no STIX lightcurves, spectra or energy-dependent timing.",
+  "Ribbon–HXR timing coincidence is judged visually (Fig. 6a), with no correlation coefficients or lags.",
+  "The QPP mechanism (recurrent reconnection at the null and arcade) is inferred from a single static pre-flare extrapolation and is not tested. The authors acknowledge this (Sect. 5).",
+  "No EUI or radio data are used. Solar Orbiter's viewing geometry for the event is not discussed.",
+  "Data are available only on request."
+ ],
+ "instruments_and_data": [
+  "Aditya-L1/HEL1OS 20–50 keV lightcurve, 2-s bins",
+  "Solar Orbiter/STIX 20–50 keV imaging (stixpy, MEM_GE, SunPy reprojection)",
+  "SDO/AIA 94, 131, 171, 304, 1600 Å",
+  "SDO/HMI hmi.sharp_cea_720s vector magnetogram (01:24 UT)",
+  "GOES-18 XRS 1–8 Å, 1-s cadence",
+  "NFFF extrapolation (Hu et al. 2008, 2010); trilinear null finder; squashing factor Q code of Liu et al. (2016); VAPOR"
+ ],
+ "events": [
+  "SOL2024-10-09T01:25 X1.8 (NOAA AR 13848); GOES onset 01:25, peak 01:56, end 02:43 UT; HXR QPP interval ~01:35–01:50 UT; STIX image 01:42:00–01:42:30 UT"
+ ],
+ "assessed_at": "2026-10-07T15:56:43+00:00",
+ "model": "claude-opus-5-5"
+}

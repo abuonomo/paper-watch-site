@@ -1,0 +1,194 @@
+{
+ "arxiv_id": "2609.16862",
+ "title": "Triple coronal hard X-ray source observed by STIX during a failed filament eruption",
+ "authors": [
+  "Tomasz Mrozek",
+  "Marek Stęślicki",
+  "Sylwester Kołomański",
+  "Krzysztof Barczynski"
+ ],
+ "submitted": "2026-09-15",
+ "links": {
+  "arxiv": "https://arxiv.org/abs/2609.16862",
+  "pdf": "https://arxiv.org/pdf/2609.16862",
+  "ads": "https://ui.adsabs.harvard.edu/abs/arXiv:2609.16862"
+ },
+ "abstract_screen": {
+  "score": 8.0,
+  "rationale": "Directly uses STIX and EUI to study coronal hard X-ray sources in a failed filament eruption, including non-thermal emission, chromospheric evaporation, direct heating and STIX imaging with AIA DEM comparison. It bears on flare particle acceleration and energetics with Solar Orbiter, though it does not address QPPs or timing diagnostics."
+ },
+ "relevance_score": 3.3,
+ "relevance_scale": "0-5",
+ "relevance_formula": "R = sum(w_i * R_i) / sum(w_i)",
+ "weights": {
+  "problem": 0.3,
+  "method": 0.25,
+  "data": 0.15,
+  "phenomenon": 0.2,
+  "future": 0.1
+ },
+ "relevance_components": {
+  "problem": {
+   "score": 3,
+   "explanation": "It addresses where and when electrons are accelerated and plasma heated in a flare, using STIX timing of non-thermal hardening against eruption kinematics. Its focus is a failed-eruption coronal-source morphology rather than rapid variability or QPPs."
+  },
+  "method": {
+   "score": 3,
+   "explanation": "Time-resolved OSPEX thermal + thin-target fits, STIX count-based imaging with algorithm cross-checks, and AIA DEM-to-X-ray forward modelling are directly transferable. No high-cadence timing, cross-correlation or periodicity analysis is done."
+  },
+  "data": {
+   "score": 5,
+   "explanation": "Uses exactly STIX pixel data and EUI 174 Å images, with AIA and GOES support, from a 2022 Solar Orbiter event."
+  },
+  "phenomenon": {
+   "score": 3,
+   "explanation": "Covers coronal non-thermal emission, spectral hardening and thermal evolution in an M-class flare. The setting is an occulted, coronal-only failed eruption, not footpoint/ribbon-driven variability."
+  },
+  "future": {
+   "score": 3,
+   "explanation": "Useful as a reference for STIX imaging of weak coronal sources in occulted events, for low-count reconstruction limits, and as a possible case-study event. It is less central to a QPP or timing-focused thesis."
+  }
+ },
+ "relation": "direct",
+ "one_line": "Case study of the occulted M1.3 flare SOL2022-02-15T1815 in which STIX (MARLIN-reconstructed), EUI and AIA reveal a transient triple non-thermal (20–28 keV) coronal source during the braking of a failed filament eruption and three long-lived thermal coronal sources, two attributed to direct heating by eruption–overlying-field reconnection.",
+ "summary": "The authors combine STIX pixel data (20 s cadence, 4–28 keV), EUI 174 Å and AIA EUV images of a flare 8–10° behind the limb as seen from Solar Orbiter, so footpoints are occulted and weak coronal HXR sources can be imaged. Spatially integrated OSPEX fits (thermal + thin-target) show the non-thermal index dropping below 6 at ~18:03:30 UT, coincident with peak velocity and onset of deceleration of the eruption fronts (up to 500 km/s), with hardening persisting until ~18:16:30 UT (Fig. 6). A 20–28 keV triple source appears in only one 140 s interval (18:02:10–18:04:30), co-spatial with expanding parts of the eruption and a break in the eruption front seen in EUI difference images (Fig. 7). In 6–10 keV, three thermal sources are imaged at 40 s cadence; MARLIN images are cross-checked against EM, MEM_GE and VIS_FWDFIT_PSO (Fig. 4) and against AIA-DEM-predicted 11 keV maps (Fig. 8). The higher sources (60–70 and 90–100 Mm) cool over ~8000–10,000 s, and a GOES diagnostic diagram suggests weak prolonged heating in the decay phase (Fig. 10). For the researcher, it is a worked example of linking STIX spectral-index evolution with EUV kinematics and of STIX imaging of weak coronal sources, but it contains no QPP, energy-dependent timing or ribbon analysis.",
+ "offers": [
+  "A documented STIX event (SOL2022-02-15, M1.3, occulted from SO by 8–10°) with 20 s STIX data, 40 s imaging cadence, and EUI/AIA context (Sects. 2–3).",
+  "Time series of STIX-derived T, EM and thin-target delta (Fig. 6D–F) aligned with AIA 171 Å eruption-front velocities (Fig. 6B), a template for kinematics–spectral timing comparisons.",
+  "Comparison of four STIX imaging algorithms (MARLIN, EM, VIS_FWDFIT_PSO, MEM_GE) on the same interval (Fig. 4), using collimators 3–10.",
+  "A method to forward-model thermal X-ray maps from AIA DEMs (Plowman & Caspi 2020 + Culhane & Acton 1970 continuum) to test the reality of faint STIX sources (Sect. 3.3, Fig. 8).",
+  "A demonstration that STIX imaging gives qualitatively sensible results from ~1733 counts (~18 counts per stripe) (Sect. 3.3).",
+  "A practical recipe for comparing EUI and AIA at ~17° separation without reprojection, with ~10 arcsec agreement and ~10 arcsec STIX pointing accuracy after the aspect solution (Sect. 2.4, Fig. 5).",
+  "A GOES T–EM diagnostic diagram (QSS vs OFF branches) as a decay-phase heating diagnostic (Fig. 10)."
+ ],
+ "findings": [
+  {
+   "evidence": "The thin-target delta drops below 6 at ~18:03:30 UT, reaching a minimum of 5.3, coincident with peak eruption-front speed and onset of deceleration; hardening persists until 18:16:30 UT (Sect. 3.2, Sect. 4, Fig. 6B,F).",
+   "inference": "Spectral-index evolution from spatially integrated STIX spectra can be timed against EUV kinematics at ~20–40 s resolution, linking acceleration episodes to dynamic restructuring. This is a direct analogue of the spectral-evolution diagnostics the researcher plans, though here only in coronal (occulted) emission.",
+   "recommendation": "Adopt the side-by-side kinematics/spectral-index format for case studies, but use finer time bins and formal cross-correlation where count rates allow.",
+   "confidence": "high"
+  },
+  {
+   "evidence": "Thin-target fits gave the lowest χ² and most random residuals versus thick-target, broken power-law and double-thermal models for the occulted event (Sect. 2.3.1, Sect. 3.2, Fig. 3: T = 21 MK, δ = 5.6, Ec = 15 keV).",
+   "inference": "For occulted or coronal-dominated events, model choice for the non-thermal component materially affects inferred electron parameters. The thermal/non-thermal separation above ~20 keV here rests on residual randomness rather than a clear χ² margin.",
+   "recommendation": "When fitting STIX spectra of limb or occulted flares, test thin- against thick-target and double-thermal models explicitly, and report residual behaviour (e.g. with sunkit-spex in Python).",
+   "confidence": "medium"
+  },
+  {
+   "evidence": "Four reconstruction algorithms give morphologically similar three-source images at 6–10 keV (Fig. 4). Sources below 10% of peak are flagged as unreliable, and source 3 is described as 'not well supported' before 18:20 UT, when it sits at ~20:1 relative to source 1 (Sect. 3.3).",
+   "inference": "STIX dynamic range (~10:1–20:1) limits detection of secondary sources. This matters when trying to localise where variability originates if a bright source dominates.",
+   "recommendation": "Use multiple algorithms and an independent forward model (e.g. AIA DEM-predicted X-ray maps) before interpreting faint STIX sources, and treat sub-10% features as tentative.",
+   "confidence": "high"
+  },
+  {
+   "evidence": "The non-thermal triple source appears in a single 140 s interval only. The authors state that the event was too weak for imaging spectroscopy and that projection effects make interpretation 'challenging, if not impossible' (Sect. 4).",
+   "inference": "The headline triple non-thermal source is a single-snapshot detection. The physical scenario (erosion of the flux rope by reconnection with the overlying field) is speculative rather than established.",
+   "recommendation": "Cite the scenario as a possibility, not a result. If the event is used, re-examine the 20–28 keV images with the now-calibrated finer collimators and current STIX software.",
+   "confidence": "high"
+  },
+  {
+   "evidence": "Source 1, identified as the flare loop-top source, shows two brightness maxima (~18:07 and 18:15 UT). A rising blob in DEM-derived X-ray maps is interpreted as evaporation linked to energy release 3–5 min earlier (Sect. 4, Fig. 6C, Movie4).",
+   "inference": "The double-peaked STIX/GOES light curve (Fig. 1) is attributed to distinct energy-release episodes in a single coronal source. This is a minutes-scale variability example rather than QPP, with only a qualitative mechanism.",
+   "recommendation": "If the event enters a statistical sample, note that its lightcurve morphology is governed by occultation and eruption dynamics. Footpoint-based timing diagnostics are unavailable for it.",
+   "confidence": "medium"
+  }
+ ],
+ "people": [
+  {
+   "name": "Tomasz Mrozek",
+   "affiliation": "Space Research Centre, Polish Academy of Sciences",
+   "why": "STIX team member working on coronal HXR sources, failed eruptions and MARLIN imaging; also an author on STIX–ASO-S/HXI triangulation (Mrozek et al. 2024)."
+  },
+  {
+   "name": "Marek Stęślicki",
+   "affiliation": "Space Research Centre, Polish Academy of Sciences",
+   "why": "Co-author on STIX imaging analysis within the Polish STIX group."
+  },
+  {
+   "name": "Krzysztof Barczynski",
+   "affiliation": "ETH Zürich / PMOD/WRC",
+   "why": "Works with EUI data and Solar Orbiter coordinated analysis."
+  },
+  {
+   "name": "Michał Siarkowski",
+   "affiliation": "",
+   "why": "Lead author of the MARLIN count-based STIX imaging algorithm (Siarkowski et al. 2020)."
+  },
+  {
+   "name": "Paolo Massa",
+   "affiliation": "",
+   "why": "Developer of STIX EM and MEM_GE imaging, and co-author on Solar Orbiter–Earth stereoscopic HXR analysis (Ryan et al. 2024)."
+  }
+ ],
+ "reading": [
+  {
+   "reference": "Ryan, D. F., Massa, P., Battaglia, A. F., et al. 2024, Sol. Phys., 299, 114",
+   "priority": "read first",
+   "why": "Stereoscopic STIX vs Earth-based HXR comparison at ~18° separation; relevant to combining Solar Orbiter with other vantage points."
+  },
+  {
+   "reference": "Mrozek, T., Li, Z., Karlický, M., et al. 2024, Sol. Phys., 299, 81",
+   "priority": "read",
+   "why": "STIX plus ASO-S/HXI triangulation of coronal HXR sources."
+  },
+  {
+   "reference": "Volpara, A., Massa, P., Perracchione, E., et al. 2022, A&A, 668, A145",
+   "priority": "read",
+   "why": "VIS_FWDFIT_PSO STIX forward-fit imaging, used for source-parameter time series."
+  },
+  {
+   "reference": "Massa, P., Piana, M., Massone, A. M., & Benvenuto, F. 2019, A&A, 624, A130",
+   "priority": "read",
+   "why": "Count-based expectation-maximisation imaging used for STIX."
+  },
+  {
+   "reference": "Siarkowski, M., et al. 2020, Open Astronomy, 29, 220",
+   "priority": "optional",
+   "why": "MARLIN algorithm description."
+  },
+  {
+   "reference": "Xiao, H., Maloney, S., Krucker, S., et al. 2023, A&A, 673, A142",
+   "priority": "read",
+   "why": "STIX Data Center paper; the data-access backbone for statistical studies."
+  },
+  {
+   "reference": "Chen, Y., Cheng, X., Chen, J., Dai, Y., & Ding, M. 2023b, ApJ, 959, 67",
+   "priority": "optional",
+   "why": "STIX observations of SOL2022-05-03 failed-eruption interaction."
+  },
+  {
+   "reference": "Krucker, S., Battaglia, M., Cargill, P. J., et al. 2008, A&A Rev., 16, 155",
+   "priority": "optional",
+   "why": "Review of coronal HXR sources and acceleration."
+  },
+  {
+   "reference": "Kašparová, J., Dudík, J., Karlický, M., et al. 2026, A&A, 706, A143",
+   "priority": "optional",
+   "why": "Cited for STIX pointing accuracy with the aspect solution."
+  }
+ ],
+ "caveats": [
+  "No QPP, periodicity, energy-dependent delay or high-cadence (<20 s) timing analysis is performed. Its connection to rapid variability is indirect.",
+  "The event is occulted from Solar Orbiter, so footpoints and ribbons are absent from STIX; results do not inform ribbon-localised variability.",
+  "The non-thermal triple source rests on one 140 s image at 20–28 keV, and source 3 is near the dynamic-range limit; the physical interpretation is explicitly scenario-level.",
+  "Analysis uses IDL/SSW (OSPEX, AIA deconvolution) rather than Python/SunPy tools, so it requires porting.",
+  "Only collimators 3–10 were used. The DEM-based X-ray prediction ignores lines and non-thermal emission and uses filters sensitive to cool plasma, so it is qualitative.",
+  "Cooling-time and decay-phase heating inferences come from a simplified AIA appearance-time analysis and GOES Sun-as-a-star diagnostics, without spatial attribution."
+ ],
+ "instruments_and_data": [
+  "Solar Orbiter/STIX pixel data (4–28 keV, 20 s bins; images at 40–120 s)",
+  "Solar Orbiter/EUI 174 Å (FSI/HRI not specified; differential images)",
+  "SDO/AIA 94, 131, 171, 193, 211, 335, 304 Å",
+  "GOES XRS",
+  "STEREO-A/EUVI (context)",
+  "SOHO/LASCO C2 (CME absence)",
+  "OSPEX, MARLIN, EM, MEM_GE, VIS_FWDFIT_PSO, Plowman & Caspi 2020 DEM, PFSS"
+ ],
+ "events": [
+  "SOL2022-02-15T18:15 M1.3 (failed filament eruption, behind limb from Solar Orbiter; precursor ~17:30 UT)",
+  "SOL2022-05-03T13:26 (cited, Chen et al. 2023b)",
+  "SOL2004-07-14T05:25 (cited, Mrozek 2011)"
+ ],
+ "assessed_at": "2026-10-07T16:22:13+00:00",
+ "model": "claude-opus-5-5"
+}

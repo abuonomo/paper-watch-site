@@ -1,0 +1,481 @@
+{
+ "count": 9,
+ "papers": [
+  {
+   "arxiv_id": "2609.22787",
+   "title": "Hard X-Ray Quasi-Periodic Pulsations in X-Class Solar Flares Observed by Aditya-L1/HEL1OS",
+   "authors": [
+    "Sachin Rajkapoor Kanaujiya",
+    "Ram Ajor Maurya",
+    "Swetha Gopinathan",
+    "Valery M. Nakariakov"
+   ],
+   "submitted": "2026-09-19",
+   "primary_category": "astro-ph.SR",
+   "journal_ref": null,
+   "doi": null,
+   "comment": "17 pages, 5 figures, 2 tables, Accepted for Publication in The Astrophysical Journal (ApJ)",
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2609.22787",
+    "pdf": "https://arxiv.org/pdf/2609.22787",
+    "ads": "https://ui.adsabs.harvard.edu/abs/arXiv:2609.22787"
+   },
+   "abstract_screen": {
+    "score": 9.0,
+    "scale": "0-10",
+    "passed": true,
+    "rationale": "Catalogue and statistical study of hard X-ray QPPs in X-class flares using EEMD and wavelet analysis, with energy-dependent periods, modulation depth and phase coherence. This closely matches the QPP and X-ray timing goals, and the methods transfer directly to STIX lightcurves, though the instrument is Aditya-L1/HEL1OS rather than STIX/EUI.",
+    "model": "claude-sonnet-5-5"
+   },
+   "full_text": {
+    "relevance": 3.7,
+    "scale": "0-5",
+    "relation": "direct",
+    "one_line": "A uniform EEMD-plus-wavelet survey of 34 X-class flares (Jul 2024–Mar 2026) in Aditya-L1/HEL1OS 8–20 keV light curves finds QPPs in 25 events (~74%), with periods clustered at 1.3–1.7 min that do not change with energy and modulation depth that grows with photon energy.",
+    "components": {
+     "problem": 4,
+     "method": 4,
+     "data": 2,
+     "phenomenon": 4,
+     "future": 4
+    },
+    "events": [
+     "SOL2024-09-12 X1.3 (QPP)",
+     "SOL2024-09-14 X4.5 (QPP)",
+     "SOL2024-10-01 X7.1 (QPP)",
+     "SOL2024-10-03 X9.0 (QPP)",
+     "SOL2024-10-07 X2.1 (noisy) and X1.0 (no QPP)",
+     "SOL2024-10-09 X1.8 (QPP) and X1.4 (no QPP)",
+     "SOL2024-10-24 X3.3 (QPP)",
+     "SOL2024-10-26 X1.8 (data N/A)",
+     "SOL2024-10-31 X2.0 (QPP)",
+     "SOL2024-11-06 X2.3 (no QPP)",
+     "SOL2024-12-08 X2.2 (data N/A)",
+     "SOL2024-12-29 X1.1 (QPP)",
+     "SOL2024-12-30 X1.5 (QPP) and X1.1 (no QPP)",
+     "SOL2025-01-03 X1.2 and X1.1 (QPP)",
+     "SOL2025-01-04 X1.8 (QPP)",
+     "SOL2025-02-23 X2.0 (no QPP)",
+     "SOL2025-03-28 X1.1 (QPP)",
+     "SOL2025-05-13 X1.2 (QPP)",
+     "SOL2025-05-14 X2.7 (no QPP)",
+     "SOL2025-05-25 X1.1 (QPP)",
+     "SOL2025-06-17 X1.2 (QPP, high modulation depth)",
+     "SOL2025-06-19 X1.9 (data N/A)",
+     "SOL2025-11-04 X1.8 (QPP, Q up to ~19)",
+     "SOL2025-11-04 X1.1 (worked example, Figs. 1–2)",
+     "SOL2025-11-09 X1.7 (QPP)",
+     "SOL2025-11-10 X1.2 (QPP)",
+     "SOL2025-11-11 X5.1 (no QPP)",
+     "SOL2025-11-14 X4.0 (QPP)",
+     "SOL2025-12-01 X1.9 (QPP)",
+     "SOL2025-12-08 X1.1 (no QPP)",
+     "SOL2026-01-18 X2.3 (QPP)",
+     "SOL2026-02-01 X1.0 (data N/A) and X8.1 (no QPP)",
+     "SOL2026-02-02 X1.5 and X2.7 (QPP)",
+     "SOL2026-02-03 X1.5 and SOL2026-02-04 X4.2 (data N/A)"
+    ],
+    "assessment_json": "https://abuonomo.github.io/paper-watch-site/data/assessments/2609.22787.json",
+    "assessment_page": "https://abuonomo.github.io/paper-watch-site/p/p2609-22787.html",
+    "model": "claude-opus-5-5"
+   }
+  },
+  {
+   "arxiv_id": "2609.16862",
+   "title": "Triple coronal hard X-ray source observed by STIX during a failed filament eruption",
+   "authors": [
+    "Tomasz Mrozek",
+    "Marek Stęślicki",
+    "Sylwester Kołomański",
+    "Krzysztof Barczynski"
+   ],
+   "submitted": "2026-09-15",
+   "primary_category": "astro-ph.SR",
+   "journal_ref": null,
+   "doi": null,
+   "comment": "A&A accepted",
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2609.16862",
+    "pdf": "https://arxiv.org/pdf/2609.16862",
+    "ads": "https://ui.adsabs.harvard.edu/abs/arXiv:2609.16862"
+   },
+   "abstract_screen": {
+    "score": 8.0,
+    "scale": "0-10",
+    "passed": true,
+    "rationale": "Directly uses STIX and EUI to study coronal hard X-ray sources in a failed filament eruption, including non-thermal emission, chromospheric evaporation, direct heating and STIX imaging with AIA DEM comparison. It bears on flare particle acceleration and energetics with Solar Orbiter, though it does not address QPPs or timing diagnostics.",
+    "model": "claude-sonnet-5-5"
+   },
+   "full_text": {
+    "relevance": 3.3,
+    "scale": "0-5",
+    "relation": "direct",
+    "one_line": "Case study of the occulted M1.3 flare SOL2022-02-15T1815 in which STIX (MARLIN-reconstructed), EUI and AIA reveal a transient triple non-thermal (20–28 keV) coronal source during the braking of a failed filament eruption and three long-lived thermal coronal sources, two attributed to direct heating by eruption–overlying-field reconnection.",
+    "components": {
+     "problem": 3,
+     "method": 3,
+     "data": 5,
+     "phenomenon": 3,
+     "future": 3
+    },
+    "events": [
+     "SOL2022-02-15T18:15 M1.3 (failed filament eruption, behind limb from Solar Orbiter; precursor ~17:30 UT)",
+     "SOL2022-05-03T13:26 (cited, Chen et al. 2023b)",
+     "SOL2004-07-14T05:25 (cited, Mrozek 2011)"
+    ],
+    "assessment_json": "https://abuonomo.github.io/paper-watch-site/data/assessments/2609.16862.json",
+    "assessment_page": "https://abuonomo.github.io/paper-watch-site/p/p2609-16862.html",
+    "model": "claude-opus-5-5"
+   }
+  },
+  {
+   "arxiv_id": "2610.08124",
+   "title": "Exploring an X1.8 flare and associated quasi-periodic pulsations using SDO and Aditya-L1 observations, alongside NFFF extrapolation",
+   "authors": [
+    "Pawan Kumar",
+    "Sanjay Kumar",
+    "Sadashiv",
+    "Sachin Rajkapoor Kanaujiya",
+    "Yogesh Kumar Maurya"
+   ],
+   "submitted": "2026-10-06",
+   "primary_category": "astro-ph.SR",
+   "journal_ref": null,
+   "doi": null,
+   "comment": "21 pages, 9 figures accepted for publication in Solar Physics",
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.08124",
+    "pdf": "https://arxiv.org/pdf/2610.08124",
+    "ads": "https://ui.adsabs.harvard.edu/abs/arXiv:2610.08124"
+   },
+   "abstract_screen": {
+    "score": 8.0,
+    "scale": "0-10",
+    "passed": true,
+    "rationale": "Directly addresses QPPs (about 4 min period) in the hard X-ray lightcurve of an X1.8 flare, with EUV ribbon and brightening morphology and a magnetic-reconnection interpretation. It uses SDO and Aditya-L1 rather than STIX/EUI, but the QPP detection methods and physics transfer.",
+    "model": "claude-sonnet-5-5"
+   },
+   "full_text": {
+    "relevance": 3.2,
+    "scale": "0-5",
+    "relation": "direct",
+    "one_line": "Multi-instrument case study of the SOL2024-10-09 X1.8 flare that reports a ~4-min QPP in Aditya-L1/HEL1OS 20–50 keV hard X-rays, places the pulsating HXR source on one ribbon (R1) using a single STIX MEM_GE image plus AIA ribbon lightcurves, and interprets it with an NFFF extrapolation (flux rope, 3D null, QSLs) as recurrent reconnection.",
+    "components": {
+     "problem": 3,
+     "method": 3,
+     "data": 3,
+     "phenomenon": 4,
+     "future": 3
+    },
+    "events": [
+     "SOL2024-10-09T01:25 X1.8 (NOAA AR 13848); GOES onset 01:25, peak 01:56, end 02:43 UT; HXR QPP interval ~01:35–01:50 UT; STIX image 01:42:00–01:42:30 UT"
+    ],
+    "assessment_json": "https://abuonomo.github.io/paper-watch-site/data/assessments/2610.08124.json",
+    "assessment_page": "https://abuonomo.github.io/paper-watch-site/p/p2610-08124.html",
+    "model": "claude-opus-5-5"
+   }
+  },
+  {
+   "arxiv_id": "2609.17178",
+   "title": "Count-based spectral component imaging (CCI) of solar flares in X-rays",
+   "authors": [
+    "Alessia Guidetti",
+    "Muriel Zoë Stiefel",
+    "Paolo Massa",
+    "Anna Maria Massone",
+    "Michele Piana",
+    "Säm Krucker"
+   ],
+   "submitted": "2026-09-15",
+   "primary_category": "astro-ph.SR",
+   "journal_ref": null,
+   "doi": null,
+   "comment": null,
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2609.17178",
+    "pdf": "https://arxiv.org/pdf/2609.17178",
+    "ads": "https://ui.adsabs.harvard.edu/abs/arXiv:2609.17178"
+   },
+   "abstract_screen": {
+    "score": 8.0,
+    "scale": "0-10",
+    "passed": true,
+    "rationale": "Introduces a STIX imaging-spectroscopy method that separates thermal, superhot and non-thermal electron components in flares, applied to a Solar Orbiter flare. It bears directly on STIX spectral analysis and electron acceleration, though it does not address timing or QPPs.",
+    "model": "claude-sonnet-5-5"
+   },
+   "full_text": {
+    "relevance": 3.0,
+    "scale": "0-5",
+    "relation": "methodological",
+    "one_line": "Introduces Count-based spectral Component Imaging (CCI), which uses Richardson-Lucy inversion of STIX pixel counts to jointly reconstruct hot and superhot emission-measure maps and a non-thermal electron-flux map. It is demonstrated on two 40 s intervals of the X7.1 flare SOL2024-10-01T22 and agrees with the earlier SCI method and with spatially integrated spectral fits.",
+    "components": {
+     "problem": 2,
+     "method": 3,
+     "data": 5,
+     "phenomenon": 3,
+     "future": 3
+    },
+    "events": [
+     "SOL2024-10-01T22 X7.1 (time range 1: 22:08:02–22:08:42 UT; time range 2: 22:12:02–22:12:42 UT, Solar Orbiter arrival time)"
+    ],
+    "assessment_json": "https://abuonomo.github.io/paper-watch-site/data/assessments/2609.17178.json",
+    "assessment_page": "https://abuonomo.github.io/paper-watch-site/p/p2609-17178.html",
+    "model": "claude-opus-5-5"
+   }
+  },
+  {
+   "arxiv_id": "2609.34999",
+   "title": "First results from PADRE/MeDDEA: X-rays from a flare and its CME",
+   "authors": [
+    "Muriel Zoë Stiefel",
+    "Säm Krucker",
+    "Olivier Limousin",
+    "Niharika Godbole",
+    "Gwendoline Marc",
+    "Amir Caspi",
+    "Kyle Gregory",
+    "Ace Stratton",
+    "Diana Renaud",
+    "Aline Meuris",
+    "Laura A. Hayes",
+    "André Csillaghy",
+    "Pascal Saint-Hilaire",
+    "Juan Camilo Buitrago Casas",
+    "Christopher Smith",
+    "Savannah Sky Perez-Piel",
+    "Anton Tremsin",
+    "Elizabeth Warren",
+    "Bradley Pafchek",
+    "Eliad Peretz",
+    "Carlos Urdiales",
+    "Reynaldo Gonzalez",
+    "Chris M. Moeckel",
+    "Juan Carlos Martinez Oliveros",
+    "Steven Christe"
+   ],
+   "submitted": "2026-09-28",
+   "primary_category": "astro-ph.SR",
+   "journal_ref": null,
+   "doi": null,
+   "comment": "accepted in Astronomy & Astrophysics, 9 pages, 6 figures, 1 table",
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2609.34999",
+    "pdf": "https://arxiv.org/pdf/2609.34999",
+    "ads": "https://ui.adsabs.harvard.edu/abs/arXiv:2609.34999"
+   },
+   "abstract_screen": {
+    "score": 8.0,
+    "scale": "0-10",
+    "passed": true,
+    "rationale": "Uses STIX flight-spare detectors on MeDDEA and joint STIX/Fermi GBM/ASO-S HXI/AIA spectral and imaging analysis of a flare and its CME. It bears directly on flare HXR spectroscopy, nonthermal electrons and energetics, and cross-calibration of STIX-like data, though timing/QPPs are not the focus.",
+    "model": "claude-sonnet-5-5"
+   },
+   "full_text": {
+    "relevance": 2.85,
+    "scale": "0-5",
+    "relation": "complementary_data",
+    "one_line": "First science paper from the PADRE/MeDDEA CubeSat spectrometer, which carries STIX flight-spare CdTe detectors: it cross-calibrates MeDDEA against ASO-S/HXI and Fermi/GBM to within ~10% (18–30 keV) for the M6 flare SOL2025-11-28T22, and uses STIX's 15°-occulted view to show that CME-associated nonthermal HXR flux is ~1% of the flare flux while its thermal energy is comparable.",
+    "components": {
+     "problem": 2,
+     "method": 3,
+     "data": 4,
+     "phenomenon": 3,
+     "future": 3
+    },
+    "events": [
+     "SOL2025-11-28T22:20 M6 (limb flare, 15° occulted from Solar Orbiter, narrow ~700 km/s CME)"
+    ],
+    "assessment_json": "https://abuonomo.github.io/paper-watch-site/data/assessments/2609.34999.json",
+    "assessment_page": "https://abuonomo.github.io/paper-watch-site/p/p2609-34999.html",
+    "model": "claude-opus-5-5"
+   }
+  },
+  {
+   "arxiv_id": "2609.12215",
+   "title": "Plasma Heating and Energization in Hot-Onset Flare Precursor Events",
+   "authors": [
+    "H. Da",
+    "J. F. Drake",
+    "M. Swisdak"
+   ],
+   "submitted": "2026-09-10",
+   "primary_category": "astro-ph.SR",
+   "journal_ref": "H. Da et al 2026 ApJL 1009 L20",
+   "doi": "10.3847/2041-8213/aea4ad",
+   "comment": null,
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2609.12215",
+    "pdf": "https://arxiv.org/pdf/2609.12215",
+    "ads": "https://ui.adsabs.harvard.edu/abs/arXiv:2609.12215"
+   },
+   "abstract_screen": {
+    "score": 8.0,
+    "scale": "0-10",
+    "passed": true,
+    "rationale": "Directly addresses flare temporal evolution and electron acceleration, explaining why thermal hot-onset heating precedes nonthermal emission via guide-field evolution in reconnection. This bears on interpreting STIX early-phase lightcurves and spectra, though it is theory/simulation rather than a data-analysis method.",
+    "model": "claude-sonnet-5-5"
+   },
+   "full_text": {
+    "relevance": 2.25,
+    "scale": "0-5",
+    "relation": "physical_context",
+    "one_line": "2D kglobal (MHD + guiding-centre macroparticle) reconnection simulations with a spatially varying guide field (0.75 near the sheet dropping to 0.2 outside) show an early phase of thermal heating to roughly 12.5 MK with a steadily rising emission measure and few nonthermal particles, followed by rapid nonthermal electron/proton production once the weak-guide-field flux reaches the X-line. The authors offer this as an explanation for the observed flare 'hot onset'.",
+    "components": {
+     "problem": 3,
+     "method": 1,
+     "data": 0,
+     "phenomenon": 4,
+     "future": 3
+    },
+    "events": [
+     "M6.9 two-ribbon flare analysed by Qiu et al. 2023 (cited only; date not given in this paper)"
+    ],
+    "assessment_json": "https://abuonomo.github.io/paper-watch-site/data/assessments/2609.12215.json",
+    "assessment_page": "https://abuonomo.github.io/paper-watch-site/p/p2609-12215.html",
+    "model": "claude-opus-5-5"
+   }
+  },
+  {
+   "arxiv_id": "2609.02151",
+   "title": "Electron acceleration by turbulent reconnection in solar flares",
+   "authors": [
+    "Zining Ren",
+    "Xin Cheng",
+    "Yulei Wang",
+    "Mingde Ding"
+   ],
+   "submitted": "2026-09-02",
+   "primary_category": "astro-ph.SR",
+   "journal_ref": null,
+   "doi": null,
+   "comment": "13 pages, 9 figures; Accepted for publication in ApJ",
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2609.02151",
+    "pdf": "https://arxiv.org/pdf/2609.02151",
+    "ads": "https://ui.adsabs.harvard.edu/abs/arXiv:2609.02151"
+   },
+   "abstract_screen": {
+    "score": 7.0,
+    "scale": "0-10",
+    "passed": true,
+    "rationale": "Directly addresses electron acceleration in solar flares (loop top vs current sheet, power-law spectra comparable to observed X-ray spectral indices), which gives physical context for STIX spectral and timing interpretation. It is a simulation study with no STIX/EUI data or QPP analysis, so it falls short of the top tier.",
+    "model": "claude-sonnet-5-5"
+   },
+   "full_text": {
+    "relevance": 2.25,
+    "scale": "0-5",
+    "relation": "physical_context",
+    "one_line": "The paper solves Parker's transport equation for test-particle electrons in a high-resolution 3D MHD simulation of turbulent flare reconnection and finds that turbulence-driven fragmented compression structures and shocks, not a coherent termination shock, accelerate electrons to about 90 keV with power-law spectra (δ≈5–6) in both the current sheet and the loop top.",
+    "components": {
+     "problem": 3,
+     "method": 1,
+     "data": 0,
+     "phenomenon": 4,
+     "future": 3
+    },
+    "events": [],
+    "assessment_json": "https://abuonomo.github.io/paper-watch-site/data/assessments/2609.02151.json",
+    "assessment_page": "https://abuonomo.github.io/paper-watch-site/p/p2609-02151.html",
+    "model": "claude-opus-5-5"
+   }
+  },
+  {
+   "arxiv_id": "2610.02149",
+   "title": "A New Framework for Modeling Solar Flares from MHD to Kinetic Processes",
+   "authors": [
+    "Joel C. Allred",
+    "Graham S. Kerr",
+    "Silvina E. Guidoni",
+    "Joel T. Dahlin",
+    "Marc Swisdak",
+    "Judith T. Karpen",
+    "Valeriy Tenishev"
+   ],
+   "submitted": "2026-10-01",
+   "primary_category": "astro-ph.SR",
+   "journal_ref": null,
+   "doi": null,
+   "comment": "21 pages, 12 figures, accepted for publication by Astrophysical Journal",
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2610.02149",
+    "pdf": "https://arxiv.org/pdf/2610.02149",
+    "ads": "https://ui.adsabs.harvard.edu/abs/arXiv:2610.02149"
+   },
+   "abstract_screen": {
+    "score": 7.0,
+    "scale": "0-10",
+    "passed": true,
+    "rationale": "It presents an MHD-to-kinetic flare modeling chain (ARMS, kglobal, RADYN+FP) covering electron and proton acceleration, transport and lower-atmosphere heating. That gives the physical context for interpreting STIX/EUI flare timing and particle acceleration, but it is a modeling paper rather than an observational or timing/QPP analysis.",
+    "model": "claude-sonnet-5-5"
+   },
+   "full_text": {
+    "relevance": 1.95,
+    "scale": "0-5",
+    "relation": "physical_context",
+    "one_line": "Chains the 2.5D ARMS MHD eruption model, the kglobal reconnection-acceleration model and RADYN+FP to inject self-consistent electron and proton distributions into a single newly reconnected flare loop, then follows transport, return currents, mirroring, chromospheric evaporation and condensation, white-light emission and HXR source height.",
+    "components": {
+     "problem": 2,
+     "method": 1,
+     "data": 0,
+     "phenomenon": 4,
+     "future": 3
+    },
+    "events": [],
+    "assessment_json": "https://abuonomo.github.io/paper-watch-site/data/assessments/2610.02149.json",
+    "assessment_page": "https://abuonomo.github.io/paper-watch-site/p/p2610-02149.html",
+    "model": "claude-opus-5-5"
+   }
+  },
+  {
+   "arxiv_id": "2609.37909",
+   "title": "Detection of fine-structured radio bursts during a superflare on EQ Peg",
+   "authors": [
+    "Zhanhao Zhao",
+    "Xin Cheng",
+    "Yuankun Kou",
+    "Guoyin Chen",
+    "Hao Ning",
+    "Yao Chen",
+    "Baolin Tan",
+    "Keping Qiu",
+    "Mingde Ding"
+   ],
+   "submitted": "2026-09-29",
+   "primary_category": "astro-ph.SR",
+   "journal_ref": null,
+   "doi": null,
+   "comment": null,
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2609.37909",
+    "pdf": "https://arxiv.org/pdf/2609.37909",
+    "ads": "https://ui.adsabs.harvard.edu/abs/arXiv:2609.37909"
+   },
+   "abstract_screen": {
+    "score": 5.0,
+    "scale": "0-10",
+    "passed": false,
+    "rationale": "Stellar superflare with radio spikes from coherent emission (electron cyclotron maser) tied to flare timing near the optical peak. It relates to radio bursts from flare electrons and stellar flares, but it uses no STIX/EUI X-ray or EUV timing or QPP methods, so the transfer is only tangential.",
+    "model": "claude-sonnet-5-5"
+   },
+   "full_text": {
+    "relevance": 1.3,
+    "scale": "0-5",
+    "relation": "weak",
+    "one_line": "Using FAST L-band (1.05–1.45 GHz) dynamic spectra and TESS 20-s photometry, the authors detect ~100 s of highly circularly polarized (~0.84), sub-second (~0.16 s FWHM) decimetric spike bursts near the peak of a ~10^33 erg white-light superflare on the M-dwarf binary EQ Peg (2022-09-08), interpret them as electron cyclotron maser emission, and locate candidate sources in a ZDI-based dipole field.",
+    "components": {
+     "problem": 1,
+     "method": 2,
+     "data": 0,
+     "phenomenon": 2,
+     "future": 1
+    },
+    "events": [
+     "EQ Peg white-light superflare, 2022-09-08 ~16:15–20:09 UTC (E_bol ~1–4×10^33 erg), with decimetric spike bursts near ~16:19 UTC peak observed by FAST/TESS"
+    ],
+    "assessment_json": "https://abuonomo.github.io/paper-watch-site/data/assessments/2609.37909.json",
+    "assessment_page": "https://abuonomo.github.io/paper-watch-site/p/p2609-37909.html",
+    "model": "claude-opus-5-5"
+   }
+  }
+ ]
+}

@@ -1,0 +1,221 @@
+{
+ "arxiv_id": "2609.22787",
+ "title": "Hard X-Ray Quasi-Periodic Pulsations in X-Class Solar Flares Observed by Aditya-L1/HEL1OS",
+ "authors": [
+  "Sachin Rajkapoor Kanaujiya",
+  "Ram Ajor Maurya",
+  "Swetha Gopinathan",
+  "Valery M. Nakariakov"
+ ],
+ "submitted": "2026-09-19",
+ "links": {
+  "arxiv": "https://arxiv.org/abs/2609.22787",
+  "pdf": "https://arxiv.org/pdf/2609.22787",
+  "ads": "https://ui.adsabs.harvard.edu/abs/arXiv:2609.22787"
+ },
+ "abstract_screen": {
+  "score": 9.0,
+  "rationale": "Catalogue and statistical study of hard X-ray QPPs in X-class flares using EEMD and wavelet analysis, with energy-dependent periods, modulation depth and phase coherence. This closely matches the QPP and X-ray timing goals, and the methods transfer directly to STIX lightcurves, though the instrument is Aditya-L1/HEL1OS rather than STIX/EUI."
+ },
+ "relevance_score": 3.7,
+ "relevance_scale": "0-5",
+ "relevance_formula": "R = sum(w_i * R_i) / sum(w_i)",
+ "weights": {
+  "problem": 0.3,
+  "method": 0.25,
+  "data": 0.15,
+  "phenomenon": 0.2,
+  "future": 0.1
+ },
+ "relevance_components": {
+  "problem": {
+   "score": 4,
+   "explanation": "It addresses QPPs in flare X-ray emission, their energy dependence, and inter-band timing as clues to how electrons are modulated, which is the core of the QPP and energy-dependent-timing theme. It stops at disk-integrated light curves, with no spatial origin and no spectral evolution."
+  },
+  "method": {
+   "score": 4,
+   "explanation": "The pipeline (EEMD, Morlet wavelet with AR(1) significance, a significance-masked modulation depth, cross-correlation and Hilbert phase) is Python-based (PyEMD) and could be applied directly to STIX quicklook or science light curves. Some choices are methodologically weak (see caveats), so it is a template to improve on rather than adopt as is."
+  },
+  "data": {
+   "score": 2,
+   "explanation": "The primary data are HEL1OS, not STIX or EUI; GOES/XRS is the only shared context instrument. The events, however, fall in 2024–2026, when STIX was operating, so many are likely to have STIX coverage."
+  },
+  "phenomenon": {
+   "score": 4,
+   "explanation": "Same phenomenon: quasi-periodic modulation of flare HXR emission and its link to electron acceleration and reconnection. The physics is weakened because 8–20 keV in X-class flares is largely thermal, so the 'non-thermal' interpretation is not established."
+  },
+  "future": {
+   "score": 4,
+   "explanation": "Table 2 gives dates, times, periods, modulation depths and lags for 34 X-class flares that can be cross-matched with STIX and EUI. Its energy-dependence and phase-lag claims are testable hypotheses that STIX's wider energy range (above 25 keV) and imaging could confirm or refute."
+  }
+ },
+ "relation": "direct",
+ "one_line": "A uniform EEMD-plus-wavelet survey of 34 X-class flares (Jul 2024–Mar 2026) in Aditya-L1/HEL1OS 8–20 keV light curves finds QPPs in 25 events (~74%), with periods clustered at 1.3–1.7 min that do not change with energy and modulation depth that grows with photon energy.",
+ "summary": "The authors split HEL1OS light curves in four bands (8–11, 11–14, 14–17, 17–20 keV) into components with Ensemble Empirical Mode Decomposition (PyEMD; 10,000 trials, noise width 0.2). They test the selected intrinsic mode function (IMF) against an AR(1) red-noise model using a Morlet wavelet at 95% confidence. Period, duration, quality factor and modulation depth are then measured only inside the wavelet-significant interval. GOES/XRS is analysed the same way for a thermal comparison. Mean periods are about 1.6–1.7 min in every band (Table 1, Fig. 4a). Mean modulation depth rises from 1.3% to 3.8% between 8–11 and 17–20 keV, which the authors fit with a power-law index of about 1.5; GOES depths are only about 0.4–0.5%. Channels are strongly cross-correlated (CCmax 0.53–0.72), and a Hilbert-transform phase lag grows with energy separation, with low energies leading. The full event-by-event catalogue (Table 2) covers flares that overlap the Solar Orbiter era, which makes it a ready-made comparison set for STIX. However, the analysed band is mostly thermal for X-class flares, there is no imaging and no spectral fitting, and the paper's claims about non-thermal electrons rest on interpretation rather than demonstration.",
+ "offers": [
+  "Table 2: per-event catalogue of 41 X-class flares (34 analysed, 25 with QPPs), giving period, RMS modulation depth and Q in four bands, plus CCmax, lag and phase difference for all channel pairs; usable as a cross-instrument comparison sample for STIX.",
+  "Table 1 / Fig. 4: ensemble mean periods (~1.6–1.7 min, energy-independent) and modulation depths (1.3% to 3.8% over 8–20 keV) to benchmark STIX-derived QPP statistics.",
+  "Section 4 and Eq. (1): a full recipe for detecting and characterising QPPs (EEMD settings, wavelet significance mask, depth and Q restricted to the significant interval) that can be reimplemented in Python/SunPy.",
+  "Section 5.6 / Fig. 5b: Hilbert-transform phase-lag measurement across energy bands (low energies lead by up to ~37°), a concrete energy-dependent timing result to test.",
+  "Section 5.1 / Figs. 1–2: worked example (SOL2025-11-04 X1.1) showing the Neupert-effect comparison and HXR (1.38 min) vs SXR (2.08 min) periods."
+ ],
+ "findings": [
+  {
+   "evidence": "The QPP period is essentially the same in all four bands: mean 1.67, 1.64, 1.71 and 1.59 min for 8–11 to 17–20 keV (Table 1, Fig. 4a). Distributions peak at 1.4–1.6 min (Fig. 3a), and 80% of periods lie between 1 and 3 min (Section 6).",
+   "inference": "If real, an energy-independent ~90 s period points to a common driver acting on the whole emitting population. However, the tabulated periods are quantised on a discrete grid (1.09, 1.16, 1.23, 1.30, 1.38, 1.46, 1.55, 1.64, 1.74, 1.84 ...), so wavelet scale resolution limits precision. The selection of a single 'clearest' IMF (often IMF2 for every band) could also impose a common timescale through EMD's dyadic filter-bank behaviour.",
+   "recommendation": "When replicating with STIX, measure periods with methods that are not tied to one IMF index, such as Fourier/Bayesian fitting of the full power spectrum or EMD-specific significance tests. Check whether the 1.3–1.7 min clustering survives a change of cadence, since the IMF timescale scales with sampling.",
+   "confidence": "medium"
+  },
+  {
+   "evidence": "Modulation depth increases with energy, from 1.29% to 3.82% (Table 1, Fig. 4c). Correlations are Pearson r=0.48 and Spearman ρ=0.54, and a power law with α≈1.4–1.6 is fitted to the four channel means (R²=0.991; Section 6). GOES depths are 0.36–0.48% (Section 5.7).",
+   "inference": "The trend matches an increasing non-thermal fraction with energy in a mostly thermal 8–20 keV spectrum. The paper does not do the spectral fitting needed to tell whether the electron population itself is modulated or whether a constant non-thermal modulation is simply diluted less by thermal emission at higher energy. The R² comes from four averaged points and overstates the strength of the result.",
+   "recommendation": "Repeat the depth–energy analysis with STIX out to 25–80 keV and pair it with time-resolved spectral fits (thermal plus thick-target), so modulation can be attributed to thermal or non-thermal components. Compare the depth of fitted non-thermal parameters, not just count-rate depth.",
+   "confidence": "high"
+  },
+  {
+   "evidence": "Phase difference between bands grows with energy separation: 6° for (8–11,11–14), 23° for (8–11,14–17) and 37° for (8–11,17–20) keV, with low energies leading. Scatter is large, and individual distributions overlap zero (Section 5.6, Fig. 5b). Time lags are mostly 0 within a stated 10 s resolution.",
+   "inference": "At a ~90 s period, 37° is about 9 s, which is at the stated time-resolution limit; the sign (low energy first) is opposite to simple time-of-flight expectations. It may reflect thermal/non-thermal mixing or cooling, not electron transport. This is the energy-dependent timing signature the STIX-based work could resolve with sub-second to few-second cadence.",
+   "recommendation": "Treat the phase-lag result as a hypothesis. Test it on the overlapping events with STIX at its native cadence, extended above 25 keV, and check whether the lag sign flips once the thermal component dominates or is removed.",
+   "confidence": "medium"
+  },
+  {
+   "evidence": "QPP detection rate is 25/34 (~74%) and shows no trend with GOES class. Strong flares such as SOL2024-10-03 X9.0 and SOL2024-10-01 X7.1 show QPPs, while SOL2025-11-11 X5.1 and SOL2026-02-01 X8.1 do not (Section 5.2, Table 2). The authors note that Hayes et al. (2020) found 46% and attribute the difference to their method.",
+   "inference": "Detection rate depends on the method. Testing narrowband IMFs against an AR(1) red-noise model tends to favour detection, so the 74% may be an upper estimate rather than a physical occurrence rate.",
+   "recommendation": "If building a STIX QPP statistic, report results from at least two detection methods. Cite Broomhall et al. (2019) and Hayes et al. (2020) for method-dependence, and use this paper's no-QPP events as test cases.",
+   "confidence": "medium"
+  },
+  {
+   "evidence": "The flares span 2024-09-12 to 2026-02-04 with exact GOES times (Table 2). They include large events such as SOL2024-10-03 X9.0, SOL2024-09-14 X4.5, SOL2025-11-14 X4.0 and SOL2026-02-01 X8.1.",
+   "inference": "Any of these visible from Solar Orbiter would allow an independent STIX (and possibly EUI) check of HEL1OS QPP periods, plus a spatial study of where the modulation arises in ribbons and loops. Solar Orbiter visibility for each event is not established by the paper.",
+   "recommendation": "Cross-match Table 2 with the STIX flare list and the EUI/Major Flare Campaign windows. Prioritise high-Q events (e.g. SOL2025-11-04 X1.8, Q up to ~19) and high-depth events (SOL2025-06-17 X1.2, SOL2025-03-28 X1.1) for joint case studies.",
+   "confidence": "high"
+  }
+ ],
+ "people": [
+  {
+   "name": "Valery M. Nakariakov",
+   "affiliation": "University of Warwick, UK; Kyung Hee University; Universidad Bernardo O'Higgins",
+   "why": "Leading QPP and MHD-seismology theorist; co-author here and on many cited QPP mechanism and review papers."
+  },
+  {
+   "name": "Sachin Rajkapoor Kanaujiya",
+   "affiliation": "National Institute of Technology Calicut, India",
+   "why": "Lead author building HEL1OS QPP catalogues; a likely collaborator for joint HEL1OS–STIX comparisons (see also Kanaujiya et al. 2026, ApJ 1003, 78)."
+  },
+  {
+   "name": "Ram Ajor Maurya",
+   "affiliation": "National Institute of Technology Calicut, India",
+   "why": "Senior author with access to and expertise in Aditya-L1/HEL1OS data."
+  },
+  {
+   "name": "Laura A. Hayes",
+   "affiliation": "",
+   "why": "Cited for the Fermi/GBM and GOES X-class QPP statistics (46% occurrence) and HXR QPP case studies; relevant benchmark work and STIX-community link."
+  },
+  {
+   "name": "Andrew R. Inglis",
+   "affiliation": "",
+   "why": "Cited for multi-period HXR QPPs and QPP detection methodology; key reference for robust period estimation."
+  },
+  {
+   "name": "Dmitrii Y. Kolotkov",
+   "affiliation": "",
+   "why": "Cited for EMD-based QPP analysis and multi-period QPPs in the X9.3 flare of 2017-09-06."
+  }
+ ],
+ "reading": [
+  {
+   "reference": "Hayes, L. A., Inglis, A. R., Christe, S., Dennis, B., & Gallagher, P. T. 2020, ApJ 895, 50",
+   "priority": "read first",
+   "why": "Statistical QPP study of X-class flares in GOES/XRS; the 46% occurrence benchmark this paper contrasts with, and a model for a STIX statistical analysis."
+  },
+  {
+   "reference": "Broomhall, A.-M., et al. 2019, ApJS 244, 44",
+   "priority": "read first",
+   "why": "Hare-and-hounds comparison of QPP detection methods (including EMD and wavelets); essential to judge the reliability of this paper's detection rate and periods."
+  },
+  {
+   "reference": "McLaughlin, J. A., et al. 2018, SSRv 214, 45",
+   "priority": "read",
+   "why": "Review of QPP mechanisms and the 278-event period histogram (10–60 s peak) this paper compares against."
+  },
+  {
+   "reference": "Inglis, A. R. & Nakariakov, V. M. 2009, A&A 493, 259",
+   "priority": "read",
+   "why": "Multi-period HXR QPPs in an X-class flare with RHESSI; directly analogous to STIX energy-resolved analysis."
+  },
+  {
+   "reference": "Simões, P. J. A., Hudson, H. S., & Fletcher, L. 2015, SoPh 290, 3625",
+   "priority": "read",
+   "why": "QPP ubiquity in X-class flares (~80%); multiwavelength coherent pulsations."
+  },
+  {
+   "reference": "Anfinogentov, S. A., et al. 2022, SSRv 218, 9",
+   "priority": "read",
+   "why": "Overview of novel time-series methods for non-stationary oscillatory signals; guidance on alternatives to wavelet-only detection."
+  },
+  {
+   "reference": "Kolotkov, D. Y., et al. 2015, A&A 574, A53",
+   "priority": "optional",
+   "why": "Early EMD application to multi-period flare QPPs."
+  },
+  {
+   "reference": "Nandi, A., et al. 2025, SoPh 300, 140",
+   "priority": "optional",
+   "why": "HEL1OS instrument paper; needed for response, thermal/non-thermal sensitivity and cadence when comparing with STIX."
+  }
+ ],
+ "caveats": [
+  "The 8–20 keV range in X-class flares is usually dominated by thermal emission, yet the paper calls the 17–20 keV channel 'non-thermal' without spectral fitting. Conclusions about modulation of accelerated electrons are therefore interpretive.",
+  "Several internal inconsistencies exist. The abstract says X1.1–X7.1 while the table includes X9.0 and X8.1. Dates appear as both July 2024–March 2026 and September 2024–February 2026. Cadence is stated as 1 s in Section 2 but 10 s in Section 5.6. Fig. 4 panel descriptions do not match the text, and Eq. (1) is written as a sum rather than an RMS average.",
+  "IMF selection ('clearest and most coherent') is subjective. Testing an already narrowband IMF against an AR(1) red-noise background likely inflates significance, so detection rate and preferential period may be partly methodological.",
+  "The power-law depth–energy fit (R²=0.991) uses only four channel means with large standard deviations; event-level correlations are moderate (r≈0.5).",
+  "Phase lags (~37° ≈ 9 s at ~90 s period) are at the stated temporal resolution and show large scatter, so the energy-ordered lag is tentative.",
+  "The data are disk-integrated with no imaging, so the paper cannot say where in ribbons or loops the modulation arises.",
+  "This is an arXiv draft, likely not yet peer-reviewed; reference duplications (Hayes 2020a/b, Simões 2015a/b, Nakariakov & Melnikov 2009a/b are the same papers) suggest it has not been fully proofread."
+ ],
+ "instruments_and_data": [
+  "Aditya-L1/HEL1OS (CdTe 8–70 keV, CZT 20–150 keV; four bands 8–11, 11–14, 14–17, 17–20 keV analysed)",
+  "GOES/XRS 1–8 Å and 0.5–4 Å",
+  "PyEMD (Laszuk 2017) Python EEMD implementation",
+  "Torrence & Compo (1998) wavelet methodology"
+ ],
+ "events": [
+  "SOL2024-09-12 X1.3 (QPP)",
+  "SOL2024-09-14 X4.5 (QPP)",
+  "SOL2024-10-01 X7.1 (QPP)",
+  "SOL2024-10-03 X9.0 (QPP)",
+  "SOL2024-10-07 X2.1 (noisy) and X1.0 (no QPP)",
+  "SOL2024-10-09 X1.8 (QPP) and X1.4 (no QPP)",
+  "SOL2024-10-24 X3.3 (QPP)",
+  "SOL2024-10-26 X1.8 (data N/A)",
+  "SOL2024-10-31 X2.0 (QPP)",
+  "SOL2024-11-06 X2.3 (no QPP)",
+  "SOL2024-12-08 X2.2 (data N/A)",
+  "SOL2024-12-29 X1.1 (QPP)",
+  "SOL2024-12-30 X1.5 (QPP) and X1.1 (no QPP)",
+  "SOL2025-01-03 X1.2 and X1.1 (QPP)",
+  "SOL2025-01-04 X1.8 (QPP)",
+  "SOL2025-02-23 X2.0 (no QPP)",
+  "SOL2025-03-28 X1.1 (QPP)",
+  "SOL2025-05-13 X1.2 (QPP)",
+  "SOL2025-05-14 X2.7 (no QPP)",
+  "SOL2025-05-25 X1.1 (QPP)",
+  "SOL2025-06-17 X1.2 (QPP, high modulation depth)",
+  "SOL2025-06-19 X1.9 (data N/A)",
+  "SOL2025-11-04 X1.8 (QPP, Q up to ~19)",
+  "SOL2025-11-04 X1.1 (worked example, Figs. 1–2)",
+  "SOL2025-11-09 X1.7 (QPP)",
+  "SOL2025-11-10 X1.2 (QPP)",
+  "SOL2025-11-11 X5.1 (no QPP)",
+  "SOL2025-11-14 X4.0 (QPP)",
+  "SOL2025-12-01 X1.9 (QPP)",
+  "SOL2025-12-08 X1.1 (no QPP)",
+  "SOL2026-01-18 X2.3 (QPP)",
+  "SOL2026-02-01 X1.0 (data N/A) and X8.1 (no QPP)",
+  "SOL2026-02-02 X1.5 and X2.7 (QPP)",
+  "SOL2026-02-03 X1.5 and SOL2026-02-04 X4.2 (data N/A)"
+ ],
+ "assessed_at": "2026-10-07T16:22:48+00:00",
+ "model": "claude-opus-5-5"
+}

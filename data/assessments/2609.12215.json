@@ -1,0 +1,178 @@
+{
+ "arxiv_id": "2609.12215",
+ "title": "Plasma Heating and Energization in Hot-Onset Flare Precursor Events",
+ "authors": [
+  "H. Da",
+  "J. F. Drake",
+  "M. Swisdak"
+ ],
+ "submitted": "2026-09-10",
+ "links": {
+  "arxiv": "https://arxiv.org/abs/2609.12215",
+  "pdf": "https://arxiv.org/pdf/2609.12215",
+  "ads": "https://ui.adsabs.harvard.edu/abs/arXiv:2609.12215"
+ },
+ "abstract_screen": {
+  "score": 8.0,
+  "rationale": "Directly addresses flare temporal evolution and electron acceleration, explaining why thermal hot-onset heating precedes nonthermal emission via guide-field evolution in reconnection. This bears on interpreting STIX early-phase lightcurves and spectra, though it is theory/simulation rather than a data-analysis method."
+ },
+ "relevance_score": 2.25,
+ "relevance_scale": "0-5",
+ "relevance_formula": "R = sum(w_i * R_i) / sum(w_i)",
+ "weights": {
+  "problem": 0.3,
+  "method": 0.25,
+  "data": 0.15,
+  "phenomenon": 0.2,
+  "future": 0.1
+ },
+ "relevance_components": {
+  "problem": {
+   "score": 3,
+   "explanation": "It addresses flare temporal evolution and the timing of electron acceleration relative to thermal heating, a STIX-observed phenomenon. It does not treat short-timescale variability, energy-dependent timing or QPPs."
+  },
+  "method": {
+   "score": 1,
+   "explanation": "The method is kinetic-MHD simulation (kglobal). There is no lightcurve, spectral-fitting or imaging analysis that would transfer to the researcher's observational Python workflow."
+  },
+  "data": {
+   "score": 0,
+   "explanation": "No observational data are used. STIX/GOES/RHESSI results are cited only as motivation."
+  },
+  "phenomenon": {
+   "score": 4,
+   "explanation": "The phenomena overlap closely: hot-onset thermal emission, emission-measure growth, and the onset of nonthermal electron acceleration in flares, all observable with STIX and EUI."
+  },
+  "future": {
+   "score": 3,
+   "explanation": "The paper gives a concrete, falsifiable prediction for STIX+EUI case studies. Thermal-to-nonthermal onset delay should coincide with the PRFL tilt changing from sheared to potential-like. The model's temperature (12.5 MK) and EM behaviour also serve as a comparison benchmark."
+  }
+ },
+ "relation": "physical_context",
+ "one_line": "2D kglobal (MHD + guiding-centre macroparticle) reconnection simulations with a spatially varying guide field (0.75 near the sheet dropping to 0.2 outside) show an early phase of thermal heating to roughly 12.5 MK with a steadily rising emission measure and few nonthermal particles, followed by rapid nonthermal electron/proton production once the weak-guide-field flux reaches the X-line. The authors offer this as an explanation for the observed flare 'hot onset'.",
+ "summary": "The paper targets the 'hot onset': the interval before the impulsive phase in which plasma is above 10 MK and emission measure rises steadily with no detectable hard X-rays (Hudson et al. 2020; Battaglia et al. 2023 with STIX). Using kglobal on a 4096×2048 periodic domain, the authors build the guide field so that a strong-to-weak transition over time is reproduced spatially. Strong guide field suppresses Fermi reflection at island ends, giving spatially extended heating (Te roughly doubles; Fig. 4a) and a monotonically rising EM (Fig. 4c), with a low 'hot particle fraction' (Fig. 4b). After t/τA≈14.5 the curvature-drift (Fermi) heating term jumps (Fig. 3), the energetic-particle fraction rises sharply, and electron spectra extend to about 90 keV (Fig. 5a). Electrons gain less than protons because a self-generated parallel electric field traps them and opposes their heating (Fig. 3a), whereas it adds to proton heating. This is pure simulation with no observational analysis. Its value to the researcher is as a physical framework and a testable prediction: the delay between thermal (low-energy STIX) and nonthermal (higher-energy STIX) onset should track a guide-field/shear transition visible in EUV loop tilt.",
+ "offers": [
+  "A physical interpretation for STIX hot-onset intervals: strong guide field gives heating without nonthermal tails; weakening guide field gives impulsive-phase acceleration (Sections 1, 3; Fig. 4).",
+  "A predicted temperature of about 12.5 MK and a steadily rising EM during hot onset, from Eq. 1 normalisation with B=60 G and n=1e10 cm^-3 (Fig. 4a,c), to compare against STIX thermal fits.",
+  "Heating-term decomposition showing curvature-drift (Fermi) dominance and the parallel electric field acting against electrons, which bears on electron escape/trapping interpretations (Eq. 3, Fig. 3).",
+  "Domain-integrated electron spectra showing tail hardening and cutoff growth to about 90 keV after the guide-field transition (Fig. 5a), a qualitative analogue for time-resolved STIX nonthermal fits.",
+  "An observational proxy pointer: post-reconnection flare-loop tilt as a guide-field diagnostic (Qiu et al. 2023), applicable to EUI/AIA imaging."
+ ],
+ "findings": [
+  {
+   "evidence": "Fig. 4b and Section 3: the energetic-particle fraction stays low from t/τA≈4.5 to 14.5 and then rises rapidly once the low-guide-field flux reaches the X-line. Electron temperature rises only modestly over the same interval.",
+   "inference": "The model predicts that the start of nonthermal HXR emission is set by the macroscopic shear evolution rather than by a separate trigger. The thermal-to-nonthermal delay in STIX lightcurves would then be a proxy for how long the guide field takes to decay.",
+   "recommendation": "In STIX case studies and statistics, measure the hot-onset duration (thermal rise to first nonthermal emission). Compare it with EUI/AIA-derived PRFL tilt or ribbon shear evolution to test the prediction.",
+   "confidence": "medium"
+  },
+  {
+   "evidence": "Section 1 cites Qiu et al. 2023: in an M6.9 two-ribbon flare, PRFL tilt showed the guide field weakening before the impulsive phase. Dahlin et al. 2022 3D MHD shows the same strong-to-weak transition.",
+   "inference": "EUV imaging of loop orientation gives an observable that could link EUI morphology to the timing of electron acceleration seen in STIX.",
+   "recommendation": "Read Qiu et al. 2023 and consider applying its shear-angle method to EUI/FSI or HRIEUV observations of Major Flare Campaign events with clear hot onsets.",
+   "confidence": "medium"
+  },
+  {
+   "evidence": "Fig. 4a/Section 3: the equilibrated temperature is about 0.06 m_iC_A^2 (about 12.5 MK) and roughly stationary during hot onset. Fig. 4c: EM rises steadily as island volume grows.",
+   "inference": "These values are directly comparable with STIX thermal fits (T, EM) in pre-impulsive intervals. However, the absolute value depends on the assumed B and n through Eq. 1 (B^2/n), so agreement is partly by parameter choice.",
+   "recommendation": "Use the predicted signatures only qualitatively: roughly flat T with rising EM, then T increase alongside nonthermal onset. Do not treat 12.5 MK as a firm prediction.",
+   "confidence": "medium"
+  },
+  {
+   "evidence": "Fig. 3a and Section 3: E∥ opposes Fermi heating for electrons, because the exhaust potential traps electrons (Egedal et al. 2009). Protons gain from the same E∥.",
+   "inference": "This bears on interpreting electron trapping and escape toward the footpoints, which affects HXR footpoint versus coronal source timing. The authors defer a full treatment to a future paper.",
+   "recommendation": "Track the promised follow-up on electron escape in flares; it may be more directly relevant to energy-dependent timing.",
+   "confidence": "low"
+  },
+  {
+   "evidence": "Section 4: the simulations are 2D, have no collisional e–p equilibration, and start from an elevated initial temperature (heating factor only about 2, below what is observed). Electron spectra are cut off by finite time and domain size.",
+   "inference": "Quantitative spectral indices and timescales from this model should not be compared directly with STIX fits. Only the ordering of thermal-then-nonthermal phases is robust.",
+   "recommendation": "Treat the paper as a qualitative framework when discussing hot-onset events in the thesis.",
+   "confidence": "high"
+  }
+ ],
+ "people": [
+  {
+   "name": "J. F. Drake",
+   "affiliation": "University of Maryland (IPST/JSI)",
+   "why": "Lead theorist for kglobal and Fermi-reflection electron acceleration. A source of model predictions for flare nonthermal electron spectra."
+  },
+  {
+   "name": "H. Da",
+   "affiliation": "IREAP, University of Maryland",
+   "why": "First author working on hot-onset modelling. Collaborating on observation–simulation comparison with STIX hot-onset events could be fruitful."
+  },
+  {
+   "name": "M. Swisdak",
+   "affiliation": "IREAP, University of Maryland",
+   "why": "Co-developer of kglobal simulations of flare particle energization."
+  },
+  {
+   "name": "A. F. Battaglia",
+   "affiliation": "",
+   "why": "Led the STIX/GOES/RHESSI hot-onset observational study; directly within the STIX community."
+  },
+  {
+   "name": "H. S. Hudson",
+   "affiliation": "",
+   "why": "Originated the hot-onset concept and contributed extensive discussions to this paper."
+  },
+  {
+   "name": "J. Qiu",
+   "affiliation": "",
+   "why": "Developed the observational guide-field/shear diagnostic from flare loops and ribbons."
+  }
+ ],
+ "reading": [
+  {
+   "reference": "Battaglia, A. F., Hudson, H., Warmuth, A., et al. 2023, A&A 679, A139",
+   "priority": "read first",
+   "why": "The STIX-based observational characterisation of hot onsets: the data-analysis counterpart to this model and a template for the researcher's own analysis."
+  },
+  {
+   "reference": "Hudson, H. S., Simões, P. J. A., Fletcher, L., Hayes, L. A., & Hannah, I. G. 2020, MNRAS 501, 1273",
+   "priority": "read first",
+   "why": "Defines the hot-onset phenomenon using GOES statistics."
+  },
+  {
+   "reference": "Qiu, J., Alaoui, M., Antiochos, S. K., et al. 2023, ApJ 955",
+   "priority": "read",
+   "why": "Observational method for tracking guide-field/shear evolution from flare-loop tilt with AIA and RHESSI; transferable to EUI."
+  },
+  {
+   "reference": "Dahlin, J. T., Antiochos, S. K., Qiu, J., & DeVore, C. R. 2022, ApJ 932, 94",
+   "priority": "read",
+   "why": "3D MHD of guide-field evolution in two-ribbon flares that motivates the setup here."
+  },
+  {
+   "reference": "Arnold, H., Drake, J. F., Swisdak, M., et al. 2021, PRL 126, 135101",
+   "priority": "read",
+   "why": "kglobal result on nonthermal electron power laws versus guide field. Useful for interpreting STIX nonthermal spectral indices."
+  },
+  {
+   "reference": "Yin, Z., Drake, J. F., & Swisdak, M. 2024b, ApJ 974, 74; 2025, ApJ 995, 159",
+   "priority": "optional",
+   "why": "Further kglobal studies of electron/proton energization dependence on guide field."
+  },
+  {
+   "reference": "Warmuth, A., & Mann, G. 2016, A&A 588, A116",
+   "priority": "optional",
+   "why": "Observational partition of thermal and nonthermal flare energy."
+  }
+ ],
+ "caveats": [
+  "Purely numerical 2D study with no observational data analysis. The time evolution of the guide field is imposed through a prescribed spatial profile rather than arising self-consistently.",
+  "The temperature in physical units (12.5 MK) and the 90 keV electron cutoff depend on the assumed B and n (Eq. 1); agreement with observations is partly a consequence of parameter choice.",
+  "No collisional equilibration is included; the 'equilibrium' curve is a post hoc average. The heating increment (about ×2) is below the observed value.",
+  "The 'hot particle fraction' (energy > 3× late-time thermal energy) is only a rough nonthermal proxy. No synthetic HXR or EUV emission is produced, so direct STIX/EUI comparison is not possible.",
+  "Nothing is said about QPPs, sub-second variability or energy-dependent timing; island merging is shown but not linked to periodic modulations."
+ ],
+ "instruments_and_data": [
+  "kglobal kinetic-MHD simulations (NERSC)",
+  "Cited only: Solar Orbiter/STIX, GOES/XRS, RHESSI, SDO/AIA"
+ ],
+ "events": [
+  "M6.9 two-ribbon flare analysed by Qiu et al. 2023 (cited only; date not given in this paper)"
+ ],
+ "assessed_at": "2026-10-07T16:22:46+00:00",
+ "model": "claude-opus-5-5"
+}

@@ -1,0 +1,48 @@
+{
+ "name": "Paper Watch",
+ "description": "Daily screen of new arXiv papers against one solar-physics research programme. Every paper gets an abstract score (0-10); those at or above the threshold are read in full and given a weighted relevance R (0-5) with evidence-separated findings.",
+ "updated": "2026-10-08T11:40:03+00:00",
+ "categories": [
+  "astro-ph.SR",
+  "physics.space-ph"
+ ],
+ "abstract_threshold": 6,
+ "relevance_weights": {
+  "problem": 0.3,
+  "method": 0.25,
+  "data": 0.15,
+  "phenomenon": 0.2,
+  "future": 0.1
+ },
+ "totals": {
+  "screened": 642,
+  "assessed": 9
+ },
+ "files": {
+  "recent": "https://abuonomo.github.io/paper-watch-site/data/recent.json",
+  "assessed": "https://abuonomo.github.io/paper-watch-site/data/assessed.json",
+  "assessment": "https://abuonomo.github.io/paper-watch-site/data/assessments/<arxiv_id>.json",
+  "months": {
+   "2026-08": "https://abuonomo.github.io/paper-watch-site/data/months/2026-08.json",
+   "2026-09": "https://abuonomo.github.io/paper-watch-site/data/months/2026-09.json",
+   "2026-10": "https://abuonomo.github.io/paper-watch-site/data/months/2026-10.json"
+  }
+ },
+ "months": [
+  {
+   "month": "2026-08",
+   "screened": 21,
+   "assessed": 0
+  },
+  {
+   "month": "2026-09",
+   "screened": 529,
+   "assessed": 7
+  },
+  {
+   "month": "2026-10",
+   "screened": 92,
+   "assessed": 2
+  }
+ ]
+}

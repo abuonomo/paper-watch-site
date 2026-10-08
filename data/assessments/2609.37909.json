@@ -1,0 +1,154 @@
+{
+ "arxiv_id": "2609.37909",
+ "title": "Detection of fine-structured radio bursts during a superflare on EQ Peg",
+ "authors": [
+  "Zhanhao Zhao",
+  "Xin Cheng",
+  "Yuankun Kou",
+  "Guoyin Chen",
+  "Hao Ning",
+  "Yao Chen",
+  "Baolin Tan",
+  "Keping Qiu",
+  "Mingde Ding"
+ ],
+ "submitted": "2026-09-29",
+ "links": {
+  "arxiv": "https://arxiv.org/abs/2609.37909",
+  "pdf": "https://arxiv.org/pdf/2609.37909",
+  "ads": "https://ui.adsabs.harvard.edu/abs/arXiv:2609.37909"
+ },
+ "abstract_screen": {
+  "score": 5.0,
+  "rationale": "Stellar superflare with radio spikes from coherent emission (electron cyclotron maser) tied to flare timing near the optical peak. It relates to radio bursts from flare electrons and stellar flares, but it uses no STIX/EUI X-ray or EUV timing or QPP methods, so the transfer is only tangential."
+ },
+ "relevance_score": 1.3,
+ "relevance_scale": "0-5",
+ "relevance_formula": "R = sum(w_i * R_i) / sum(w_i)",
+ "weights": {
+  "problem": 0.3,
+  "method": 0.25,
+  "data": 0.15,
+  "phenomenon": 0.2,
+  "future": 0.1
+ },
+ "relevance_components": {
+  "problem": {
+   "score": 1,
+   "explanation": "The topic is accelerated-electron signatures in a flare, but on a distant M dwarf with no spatial or X-ray information. It is not about solar flare temporal evolution, X-ray spectral timing or QPPs."
+  },
+  "method": {
+   "score": 2,
+   "explanation": "Spike detection uses a smoothed dynamic spectrum, a 7×7 local-maximum search above 5σ, multi-Gaussian fitting of light curves and noise-threshold characterisation with non-Gaussian noise (App. B.2, Figs. 8–9). These steps are generic time-series techniques that could transfer to radio data accompanying STIX events. Nothing here is X-ray or EUV methodology."
+  },
+  "data": {
+   "score": 0,
+   "explanation": "The data are FAST and TESS only. No STIX, EUI, RHESSI, AIA or any solar data are used."
+  },
+  "phenomenon": {
+   "score": 2,
+   "explanation": "Decimetric spike bursts from flare-accelerated electrons, timed near the flare peak and produced by loss-cone or horseshoe ECM, are a known solar phenomenon tied to HXR timing. The paper explicitly discusses the solar analogy (Benz, Battaglia & Benz 2009)."
+  },
+  "future": {
+   "score": 1,
+   "explanation": "Useful mainly as a citation for solar-stellar flare comparisons, or if the researcher adds radio spike data to STIX case studies. Direct reuse is unlikely."
+  }
+ },
+ "relation": "weak",
+ "one_line": "Using FAST L-band (1.05–1.45 GHz) dynamic spectra and TESS 20-s photometry, the authors detect ~100 s of highly circularly polarized (~0.84), sub-second (~0.16 s FWHM) decimetric spike bursts near the peak of a ~10^33 erg white-light superflare on the M-dwarf binary EQ Peg (2022-09-08), interpret them as electron cyclotron maser emission, and locate candidate sources in a ZDI-based dipole field.",
+ "summary": "The paper pairs a 2.5 h FAST tracking observation with TESS Sector 56 photometry and catches a 3.9 h white-light superflare on EQ Peg. From the most intense ~100 s burst near the optical peak, 87 spikes above 5σ are identified with a local-maximum search plus multi-Gaussian fitting. Their statistics (Fig. 3, Eq. 1) are: duration ~0.16 s, frequency ~1398 MHz, polarization ~0.84, lower-limit brightness temperature ≳10^13 K. On that basis the authors argue for ECM emission. Assuming a dipole field and loss-cone or horseshoe electron distributions, they restrict the possible source heights and latitudes (Figs. 4, 10–13). No drift is seen, which gives an upper limit of ~497 MHz/s and electron energies of ≲4–7 keV if the drift is interpreted as radial motion. For the researcher this is a stellar analogue of solar decimetric spikes coinciding with flare peaks. It carries no X-ray or EUV data, does no spectral fitting, and does not analyse QPPs. Its value lies in the radio-spike detection and characterisation procedure and in the solar-stellar flare context.",
+ "offers": [
+  "Statistical spike parameters (Eq. 1, Fig. 3) — duration ~0.16 s, Π_c ~0.84, bandwidth ≲50 MHz — as a stellar comparison point for solar decimetric spikes.",
+  "A spike-identification procedure (App. B.2, Figs. 2, 8, 9): Gaussian smoothing, local-maximum detection with an explicit false-alarm fraction under non-Gaussian noise, and multi-Gaussian deconvolution of overlapping peaks.",
+  "A background-removal recipe for single-dish dynamic spectra (Fig. 7): a per-channel quintic fit plus subtraction of a quiet reference band, with an estimate of how much signal is lost.",
+  "A drift-rate detectability limit converted to an upper bound on electron energy (Sect. 3), which illustrates how resolution constrains timing diagnostics."
+ ],
+ "findings": [
+  {
+   "evidence": "The most intense radio spike group (~100 s) coincides with the TESS white-light peak, and only weak bursts appear elsewhere during the 3.9 h flare (Fig. 1b, Fig. 5, App. A.3).",
+   "inference": "This matches solar results in which decimetric spikes cluster around the impulsive-phase HXR peak. However, the association rests only on timing with optical emission; there is no HXR proxy. It is an analogy for the researcher's STIX timing work, not a test of it.",
+   "recommendation": "Cite this only as stellar context when discussing radio spikes coincident with STIX nonthermal peaks. For solar spike–HXR timing, use Benz et al. 2002 and Battaglia & Benz 2009 instead.",
+   "confidence": "medium"
+  },
+  {
+   "evidence": "Spikes are found as local maxima above 5σ in 7×7-pixel windows of a Gaussian-smoothed dynamic spectrum. Durations come from multi-Gaussian fits to single-channel light curves above 3σ, and the non-Gaussian noise is characterised empirically (App. B.2, Figs. 8–9).",
+   "inference": "The same workflow could be applied to high-cadence STIX light curves, or to radio spectrograms co-temporal with STIX flares, to catalogue sub-second bursts. It is simple and not novel, though.",
+   "recommendation": "If building a burst or spike detector for STIX or radio data, consider this empirical false-alarm thresholding. Prefer established solar burst and QPP-detection literature for rigour.",
+   "confidence": "medium"
+  },
+  {
+   "evidence": "No frequency drift is resolved. The upper limit is ~497 MHz/s, which converts to ≲7.3 keV (EQ Peg A) or ≲4.1 keV (EQ Peg B) electrons if the drift is taken as radial motion (Sect. 3).",
+   "inference": "This shows how instrumental resolution limits energy-dependent timing inferences, a point that carries over to STIX energy-dependent delay measurements. The physical constraint itself is weak and depends on the model.",
+   "recommendation": "No action needed beyond noting it as an example of resolution-limited timing constraints.",
+   "confidence": "low"
+  },
+  {
+   "evidence": "Source localisation (Sect. 2.3, Fig. 4) assumes a pure dipole from ZDI, fundamental ECM emission and a loop length from the Namekata et al. 2017 scaling (Eq. 7). The authors acknowledge that ZDI underestimates field complexity (App. A.2).",
+   "inference": "The source locations are speculative and model-driven. They are not comparable to directly imaged solar flare sources from EUI or STIX.",
+   "recommendation": "Do not rely on the stellar source geometry. If the Namekata et al. 2017 loop-length scaling is useful for solar-stellar comparisons, consult it directly.",
+   "confidence": "high"
+  }
+ ],
+ "people": [
+  {
+   "name": "Xin Cheng",
+   "affiliation": "School of Astronomy and Space Science, Nanjing University",
+   "why": "Corresponding author. Active in solar flare reconnection and multi-wavelength flare studies, and links solar and stellar flare work."
+  },
+  {
+   "name": "Hao Ning",
+   "affiliation": "Shandong University",
+   "why": "Works on ECM and horseshoe electron distributions in solar flare loops (Ning et al. 2021). Relevant if radio spikes are added to STIX case studies."
+  },
+  {
+   "name": "Yao Chen",
+   "affiliation": "Shandong University",
+   "why": "Solar radio burst and coherent emission theory. A contact for interpreting radio signatures of flare electrons."
+  }
+ ],
+ "reading": [
+  {
+   "reference": "Battaglia, M. & Benz, A. O. 2009, A&A 499, L33",
+   "priority": "read",
+   "why": "A solar study showing that decimetric spikes are not always co-spatial with X-ray flare sources. Directly relevant to combining radio spikes with STIX imaging."
+  },
+  {
+   "reference": "Benz, A. O., Saint-Hilaire, P. & Vilmer, N. 2002, A&A 383, 678",
+   "priority": "read",
+   "why": "Compares the timing and location of RHESSI X-ray emission with decimetric spikes. A template for STIX–radio coordination."
+  },
+  {
+   "reference": "Ma, S., Kontar, E. P., Clarkson, D. L., Chen, H. & Yan, Y. 2026, Nature Communications 17, 5131",
+   "priority": "read",
+   "why": "Solar imaging spectroscopy showing that spike-like bursts come from compact, localised energy-release sites. Relevant to where flare variability originates."
+  },
+  {
+   "reference": "Kuhar, M., Krucker, S., Martínez Oliveros, J. C. et al. 2016, ApJ 816, 6",
+   "priority": "optional",
+   "why": "Covers the relation between white-light and hard X-ray flare emission and nonthermal electron energetics, from the STIX team lineage."
+  },
+  {
+   "reference": "Namekata, K. et al. 2017, ApJ 851, 91",
+   "priority": "optional",
+   "why": "Solar–stellar white-light flare scaling laws (loop length versus decay time and energy). Useful for statistical solar-stellar comparisons."
+  }
+ ],
+ "caveats": [
+  "There are no X-ray, EUV or solar data. The connection to STIX/EUI work is by analogy only.",
+  "Neither instrument resolves the binary, so the flaring component, source area and brightness temperature are uncertain lower or upper bounds.",
+  "The radio–flare association rests on a single event and temporal coincidence. The authors themselves call for long-term monitoring to confirm it (App. A.4).",
+  "The source geometry is speculative, depending on a dipole ZDI field, fundamental-harmonic emission and simplified beaming models.",
+  "The detection SNR is modest (~5.9) and the noise is non-Gaussian, so the effective threshold is closer to 3σ.",
+  "No QPP or periodicity analysis is performed."
+ ],
+ "instruments_and_data": [
+  "FAST 19-beam L-band receiver (1.05–1.45 GHz, full Stokes, 196.6 µs sampling, rebinned to 25.16 ms / 1.95 MHz)",
+  "TESS Sector 56, 20-s cadence Target Pixel Files (via Lightkurve)",
+  "Zeeman-Doppler Imaging magnetic maps of EQ Peg (Morin et al. 2008; Shulyak et al. 2017)"
+ ],
+ "events": [
+  "EQ Peg white-light superflare, 2022-09-08 ~16:15–20:09 UTC (E_bol ~1–4×10^33 erg), with decimetric spike bursts near ~16:19 UTC peak observed by FAST/TESS"
+ ],
+ "assessed_at": "2026-10-07T15:56:12+00:00",
+ "model": "claude-opus-5-5"
+}

@@ -1,0 +1,21 @@
+# Paper Watch
+
+> Daily screen of new arXiv papers (astro-ph.SR, physics.space-ph) against one solar-physics
+> research programme (flare timing, particle acceleration, Solar Orbiter STIX/EUI). Each paper has an
+> abstract score 0-10; papers scoring >= 6 are read in full and given a weighted relevance
+> R 0-5 with findings separated into evidence, inference, recommendation and confidence.
+
+Start with the index, then fetch only the shard you need. Files are plain JSON, no auth, updated daily.
+
+- https://abuonomo.github.io/paper-watch-site/data/index.json: months available, totals, thresholds, file locations
+- https://abuonomo.github.io/paper-watch-site/data/recent.json: all papers screened in the last 30 days (scores and rationale, no abstracts)
+- https://abuonomo.github.io/paper-watch-site/data/assessed.json: only the papers read in full, with R and a one-line finding
+- https://abuonomo.github.io/paper-watch-site/data/months/YYYY-MM.json: all papers submitted in a month, including abstracts
+- https://abuonomo.github.io/paper-watch-site/data/assessments/<arxiv_id>.json: the full assessment of one paper (components, findings,
+  people, reading list, caveats, events)
+
+Score fields: `abstract_screen.score` (0-10, `passed` is true at or above the threshold) and
+`full_text.relevance` (R, 0-5, only for papers read in full). `full_text.components` holds the five
+0-5 component scores: problem, method, data, phenomenon, future.
+
+Human-readable site: https://abuonomo.github.io/paper-watch-site/

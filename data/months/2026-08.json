@@ -1,0 +1,695 @@
+{
+ "month": "2026-08",
+ "count": 21,
+ "papers": [
+  {
+   "arxiv_id": "2609.00318",
+   "title": "Direct Measurement of Polar Coronal Hole-like Solar Wind in its Acceleration Phase",
+   "authors": [
+    "Samuel T. Badman",
+    "Yeimy J. Rivera",
+    "Michael L. Stevens",
+    "Mari Paz Miralles",
+    "Steven R. Cranmer",
+    "Andrea Verdini",
+    "Lynn B. Wilson",
+    "Xiangyu Wu",
+    "Georgios Nicolaou",
+    "Jean-Baptiste Dakeyo",
+    "Kai Jaffarove",
+    "Tamar Ervin",
+    "Dominic S. Payne",
+    "Michael Terres",
+    "Kristopher G. Klein",
+    "Jasper S. Halekas",
+    "Sujan Prasad Gautam",
+    "William H. Matthaeus",
+    "Riddhi Bandyopadhyay",
+    "Srijan Bharati Das",
+    "Tatiana Niembro",
+    "Christopher J. Owen",
+    "Rungployphan Kieokaew",
+    "Ali Rahmati",
+    "Orlando M. Romeo",
+    "Federico Fraschetti",
+    "Marco Velli",
+    "Lorenzo Matteini",
+    "Kristoff W. Paulson",
+    "Lidiya Ahmed",
+    "Stuart D. Bale",
+    "Phyllis Whittlesey",
+    "Marc Pulupa",
+    "Nour E. Raouafi",
+    "Timothy S. Horbury",
+    "Jean Morris",
+    "Helen O'Brien",
+    "Roberto Livi",
+    "Davin E. Larson",
+    "Adam J. Finley",
+    "Philippe Louarn"
+   ],
+   "submitted": "2026-08-31",
+   "primary_category": "astro-ph.SR",
+   "journal_ref": null,
+   "doi": null,
+   "comment": "21 pages, 4 figures, Under Review in ApJL, Comments Welcome",
+   "abstract": "The early evolution of fast polar coronal hole (PCH) solar wind remains largely unconstrained by in situ measurements. In March 2025, Parker Solar Probe (Parker) at its closest approach of 9.86 Solar Radii ($R_\\odot$) measured outflow from a large equatorial coronal hole (ECH) which was also measured at 1\\,au and at intermediate distances by Solar Orbiter (also near its perihelion). At 1\\,au the stream properties are consistent with PCH properties established by Ulysses. The stream was measured by Parker substantially below the Alfvén surface, with proton temperatures in excess of 2\\,MK and a speed at $\\sim$10\\,$R_\\odot$ which was only $\\sim$60\\% of its asymptotic value. The Solar Orbiter data indicates that the acceleration is largely complete by 60~$R_{\\odot}$. Spherically-polarized fluctuations in the stream are observed to develop from near-transverse and small-angle at Parker to full reversal ``switchbacks'' at Solar Orbiter. Comparison of the implied acceleration profile to historical doppler-dimming measurements suggests that the stream's low coronal acceleration is similar to that of PCH flows. Consistent with previous work, this acceleration requires significantly more energy than can be provided by the observed thermal pressure gradients, with a significant contribution likely from the abundant Alfvénic fluctuation energy observed at Parker. These observations provide unique constraints on models of the radial evolution of the fastest solar wind, and indicate that these wind streams experience gradual, steady acceleration over their first few tens of solar radii of evolution.",
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2609.00318",
+    "pdf": "https://arxiv.org/pdf/2609.00318",
+    "ads": "https://ui.adsabs.harvard.edu/abs/arXiv:2609.00318"
+   },
+   "abstract_screen": {
+    "score": 1.0,
+    "scale": "0-10",
+    "passed": false,
+    "rationale": "The paper covers fast solar wind acceleration from a coronal hole, measured by Parker Solar Probe and Solar Orbiter in situ. It has no flare, X-ray, QPP, or flare particle acceleration content, and the only overlap is the Solar Orbiter mission.",
+    "model": "claude-sonnet-5-5"
+   },
+   "full_text": null
+  },
+  {
+   "arxiv_id": "2609.00295",
+   "title": "TESS Observations of Seven Newly Identified High-amplitude $δ$ Scuti Stars",
+   "authors": [
+    "Chenglong Lv",
+    "Ali Esamdin",
+    "Amir Hasanzadeh",
+    "Shuguo Ma",
+    "TaoZhi Yang",
+    "Rivkat Karimov"
+   ],
+   "submitted": "2026-08-31",
+   "primary_category": "astro-ph.SR",
+   "journal_ref": "The Astrophysical Journal, 959, 33 (2023)",
+   "doi": "10.3847/1538-4357/acf999",
+   "comment": "13 pages, 11 figures, 8 tables. Published in The Astrophysical Journal",
+   "abstract": "We report seven newly identified high-amplitude $δ$ Scuti (HADS) stars. Among them, two stars (TIC 30977864 and TIC 387379145) exhibit pure radial pulsation without the excitation of non-radial modes. TIC 30977864 is classified as a double-mode HADS star, while the other four stars potentially show triple-mode HADS behavior. TIC 112682462 and TIC 255603395 closely resemble RR Lyrae stars based on their light curves, position in the period-luminosity diagram, and the period-ratio diagram. However, without spectral observations, it is challenging to ascertain whether these two stars are HADS or RR Lyrae stars. TIC 281695001 exhibits a fundamental frequency amplitude smaller than that of the first overtone, suggesting the presence of intriguing phenomena that necessitate further analysis. We analyzed the relationship between metallicity and period using data provided by Netzel & Smolec. The metallicities of the 176 stars display a broad distribution ranging from -2.0 dex to 0.5 dex, with periods spanning 0.05 to 0.20 days. This random distribution of metallicities may contribute to the dispersion observed in the $P_1/P_0$ ratio. To derive more accurate conclusions, future spectroscopic observations of a larger sample of HADS stars are crucial. These observations will provide precise rotational velocities and more accurate determinations of metallicities.",
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2609.00295",
+    "pdf": "https://arxiv.org/pdf/2609.00295",
+    "ads": "https://ui.adsabs.harvard.edu/abs/arXiv:2609.00295"
+   },
+   "abstract_screen": {
+    "score": 1.0,
+    "scale": "0-10",
+    "passed": false,
+    "rationale": "This paper is about pulsations in high-amplitude delta Scuti stars observed with TESS. It has no connection to flares, particle acceleration, QPPs, or STIX/EUI, and the only overlap is generic time-series frequency analysis.",
+    "model": "claude-sonnet-5-5"
+   },
+   "full_text": null
+  },
+  {
+   "arxiv_id": "2609.00294",
+   "title": "Statistical analysis of asteroseismic indices and stellar parameters of TESS-observed $δ$ Scuti stars",
+   "authors": [
+    "C. Lv",
+    "A. Esamdin",
+    "A. Hasanzadeh",
+    "M. Ghazinejad",
+    "J. Pascual-Granado",
+    "G. M. Mirouh",
+    "R. Karimov"
+   ],
+   "submitted": "2026-08-31",
+   "primary_category": "astro-ph.SR",
+   "journal_ref": "Astronomy & Astrophysics, 686, A174 (2024)",
+   "doi": "10.1051/0004-6361/202346985",
+   "comment": "17 pages, 18 figures, 3 tables. Published in Astronomy & Astrophysics",
+   "abstract": "We analyze the statistical properties and asteroseismic indices of delta Scuti stars observed during TESS Cycle 4. Using 2 minute cadence photometry and Fourier analysis, we identified 765 delta Scuti stars in Sectors 40-55, including 179 objects with low-resolution stellar parameters from LAMOST. We examined the distributions of their pulsation and stellar parameters using values from the TESS Input Catalog and LAMOST. Most targets lie within the classical instability strip, follow the period-luminosity relation, and show periods, amplitudes, temperatures, surface gravities, and luminosities consistent with delta Scuti stars. For the LAMOST subsample, we estimated the large frequency separation ($Δν$), $ν_{\\rm max}$, and $ν({\\rm Amax})$ using an empirical relation and a two-dimensional autocorrelation method. We also derived relations among these asteroseismic indices. This catalog provides a useful sample for future studies of the internal structure and evolution of delta Scuti stars.",
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2609.00294",
+    "pdf": "https://arxiv.org/pdf/2609.00294",
+    "ads": "https://ui.adsabs.harvard.edu/abs/arXiv:2609.00294"
+   },
+   "abstract_screen": {
+    "score": 1.0,
+    "scale": "0-10",
+    "passed": false,
+    "rationale": "Asteroseismic analysis of delta Scuti pulsators in TESS data; it has no connection to flares, particle acceleration, QPPs, or Solar Orbiter. The Fourier methods are generic and give little reason to read it.",
+    "model": "claude-sonnet-5-5"
+   },
+   "full_text": null
+  },
+  {
+   "arxiv_id": "2609.00287",
+   "title": "Discovery and Characterization of Three New High-amplitude delta Scuti Stars from TESS Observations",
+   "authors": [
+    "Chenglong Lv",
+    "Ali Esamdin",
+    "J. Pascual-Granado",
+    "Guojie Feng",
+    "Haozhi Wang",
+    "Rivkat Karimov",
+    "Bolkin Juraev",
+    "Shuhrat A. Ehgamberdiev"
+   ],
+   "submitted": "2026-08-31",
+   "primary_category": "astro-ph.SR",
+   "journal_ref": "The Astrophysical Journal, 1002, 101 (2026)",
+   "doi": "10.3847/1538-4357/ae5dc5",
+   "comment": "20 pages, 10 figures, 6 tables. Published in The Astrophysical Journal",
+   "abstract": "We report the discovery and detailed analysis of three new high-amplitude δ Scuti (HADS) stars, TIC 408074920, TIC 189714989, and TIC 34137913, identified from Transiting Exoplanet Survey Satellite short-cadence observations. Fourier analysis reveals dominant radial modes accompanied by rich harmonic structures in all three stars, confirming their HADS classification. In addition, TIC 189714989 exhibits clear symmetric side peaks around the radial harmonics, indicative of amplitude and/or phase modulation. Broadband spectral energy distribution (SED) fitting constrained by Gaia DR3 parallaxes provides independent estimates of the stellar effective temperatures and radii. These are compared with results from stellar evolutionary and seismic modeling based on MESA and GYRE. For two targets, the SED-derived and seismic radii are mutually consistent, while TIC 408074920 displays a significant discrepancy, plausibly attributable to the different sensitivities of the two methods and additional systematic effects. These findings highlight the diversity of amplitude variability among classical HADS and emphasize the importance of the long-term monitoring that future missions such as PLATO will allow in order to explore the underlying physical mechanisms of this variability.",
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2609.00287",
+    "pdf": "https://arxiv.org/pdf/2609.00287",
+    "ads": "https://ui.adsabs.harvard.edu/abs/arXiv:2609.00287"
+   },
+   "abstract_screen": {
+    "score": 1.0,
+    "scale": "0-10",
+    "passed": false,
+    "rationale": "This paper covers pulsating delta Scuti stars observed with TESS, using Fourier analysis, SED fitting and asteroseismic modeling. It has no flare, particle acceleration or QPP content, and its pulsation analysis does not transfer meaningfully to flare lightcurves.",
+    "model": "claude-sonnet-5-5"
+   },
+   "full_text": null
+  },
+  {
+   "arxiv_id": "2609.00263",
+   "title": "A JWST transiting survey of FGK stellar limb darkening: empirical evidence for quadratic laws and atmospheric model comparisons",
+   "authors": [
+    "David K. Sing",
+    "Joshua D. Lothringer",
+    "Jeff A. Valenti",
+    "Natalie H. Allen",
+    "Katherine A. Bennett",
+    "Carlos Gascón",
+    "Mei Ting Mak",
+    "Patrick McCreery",
+    "Sagnick Mukherjee",
+    "Lakeisha M. Ramos Rosado",
+    "Stephen P. Schmidt",
+    "Kevin B. Stevenson",
+    "Daniel P. Thorngren",
+    "Le-Chris Wang"
+   ],
+   "submitted": "2026-08-31",
+   "primary_category": "astro-ph.EP",
+   "journal_ref": null,
+   "doi": null,
+   "comment": "17 Pages; 12 figures; 4 Tables; Accepted in AJ. Machine-readable tables included with source files",
+   "abstract": "We present a study of stellar limb-darkening using JWST transit observations of seven exoplanets orbiting FGK host stars, spanning 4200-6800 K. The wide wavelength coverage and high S/N of NIRISS/SOSS and NIRSpec/PRISM enable precise constraints on the wavelength-dependent limb-darkening. Using Bayesian model selection, we find that the quadratic limb-darkening law is statistically preferred over higher-order laws for most FGK stars, recovers consistent intensity profiles for $>$95% of the stellar disk area, and introduces a minimal bias in the derived transit depths of only $\\sim$14 ppm (1$σ$) for 6/7 targets. This contrasts with previous studies relying on stellar models. We compare the empirically derived quadratic coefficients to predictions from the PHOENIX, MPS-ATLAS, MURaM, and Stagger stellar atmosphere grids. We introduce a quadratic limb-darkening parameterization in terms of limb intensity ($\\ell$) and curvature at mid-$μ$ ($δ$), finding that empirical FGK limb darkening is generally more linear than models predict ($δ\\lesssim 0.1$). We identify wavelength-independent offsets between data and model quadratic coefficients, minimized by adopting $μ_{\\rm min} = 0.2$ in intensity calculations; we attribute this in part to models overpredicting limb-darkening near the limb where the plane-parallel approximation breaks down. For spherical PHOENIX models, we derive a $μ$ rescaling method using a $τ= 1$ photospheric radius. With these corrections, residual offsets are minimized and all stellar models achieve statistically acceptable fits. We provide recommended limb-darkening offset priors for use in JWST transit analyses, enabling more accurate constraints on exoplanet transmission spectra while accounting for residual stellar model uncertainties.",
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2609.00263",
+    "pdf": "https://arxiv.org/pdf/2609.00263",
+    "ads": "https://ui.adsabs.harvard.edu/abs/arXiv:2609.00263"
+   },
+   "abstract_screen": {
+    "score": 1.0,
+    "scale": "0-10",
+    "passed": false,
+    "rationale": "The paper is about stellar limb darkening in JWST exoplanet transit observations and has no link to flare timing, particle acceleration, QPPs, or STIX/EUI. Only the broad stellar-physics field overlaps.",
+    "model": "claude-sonnet-5-5"
+   },
+   "full_text": null
+  },
+  {
+   "arxiv_id": "2609.00225",
+   "title": "A Probabilistic Framework for Incorporating Helioseismic Far-Side Active Regions into SFT Models",
+   "authors": [
+    "Bibhuti Kumar Jha",
+    "Lisa A. Upton",
+    "K. D. Leka",
+    "Ruizhu Chen",
+    "Junwei Zhao",
+    "Shea Hess Webber",
+    "Ignacio Ugarte-Urra",
+    "Kiran Jain"
+   ],
+   "submitted": "2026-08-31",
+   "primary_category": "astro-ph.SR",
+   "journal_ref": null,
+   "doi": null,
+   "comment": "16 Pages, 8 Figures, Accepted for Publication in ApJS",
+   "abstract": "Surface Flux Transport (SFT) models are routinely used to model the Sun's photospheric magnetic field and provide inner boundary conditions for coronal and heliospheric models, yet they remain fundamentally limited by the lack of direct information about flux emergence on the far side of the Sun. To address this, we develop a framework for incorporating helioseismic images of far-side active regions (HIFAR), into the Advective Flux Transport (AFT) model. Using near-simultaneous magnetic flux maps (HIFARM) inferred from HIFAR, and STEREO/EUVI 304 A observations from 2010 May 13 to 2014 August 18, we develop a logistic regression model to estimate the probability that a helioseismic detection corresponds to an AR based on descriptors of magnetic flux, field strength, and location. The model achieves a precision of 0.93 for active region (AR) detections at a probability threshold of 0.73, selected to reject 90% of \"ghost\" ARs. We also derive an empirical scaling relationship between HIFARM and AFT flux to place HIFARM on the AFT flux scale and demonstrate that the framework reproduces the flux evolution of ARs consistent with near-side observations over multiple solar rotations. At the global scale, we find that conventional near-side-driven AFT simulations underestimate the total unsigned magnetic flux by ~10-20% of the Sun's total magnetic flux budget. The probabilistic AR detection model and the complete framework developed in this work provide a practical pathway for incorporating helioseismic far-side ARs into SFT models, a step toward realistic modeling of full-Sun magnetic field.",
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2609.00225",
+    "pdf": "https://arxiv.org/pdf/2609.00225",
+    "ads": "https://ui.adsabs.harvard.edu/abs/arXiv:2609.00225"
+   },
+   "abstract_screen": {
+    "score": 1.0,
+    "scale": "0-10",
+    "passed": false,
+    "rationale": "The paper covers helioseismic far-side active regions and surface flux transport modelling, with no link to flare timing, particle acceleration, QPPs, or STIX/EUI analysis. It shares only the broad solar physics field.",
+    "model": "claude-sonnet-5-5"
+   },
+   "full_text": null
+  },
+  {
+   "arxiv_id": "2609.00176",
+   "title": "Portraits of the young and old in X-ray: New millisecond pulsar detections and updated characterization of young neutron stars",
+   "authors": [
+    "Wynn C. G. Ho",
+    "Patrick H. Wang",
+    "Sebastien Guillot"
+   ],
+   "submitted": "2026-08-31",
+   "primary_category": "astro-ph.HE",
+   "journal_ref": "Mon. Not. R. Astron. Soc. 552, stag1650 (2026)",
+   "doi": "10.1093/mnras/stag1650",
+   "comment": "7 pages, 7 figures; published in MNRAS; corrected typo in position error quoted from other paper",
+   "abstract": "We present analyses of new and archival Chandra and NuSTAR data on two old millisecond pulsars, a young highly-energetic pulsar, and a young neutron star. PSR J1810-0623 is a recently-discovered 4.55 ms radio pulsar in a binary with a possible carbon-oxygen white dwarf companion. We tentatively detect the pulsar for the first time in X-ray using a new short Chandra HRC-I observation. Its faintness suggests a distance more in accord with the further (~1 kpc) of its dispersion measure-inferred distances. PSR J1933-6211 is a 3.54 ms radio pulsar also with a carbon-oxygen white dwarf companion. Our first-time X-ray detection in an archival HRC-S image indicates its X-ray luminosity is similar to that of the 1.9 Msun pulsar PSR J1614-2230. Next, PSR J1813-1749 is a 1-2 kyr pulsar with one of the highest known spin-down luminosities. We measure its spin period of 44.7 ms using 2025 NuSTAR and 2026 Chandra ACIS-S data and update its spin evolution model. We show for the first time the pulse profile of PSR J1813-1749 at 3-79 keV, and we find that the spectra of the pulsar and pulsar wind nebula at these energies did not change significantly between observations in 2018 and 2025. Finally, for the 5-10 kyr neutron star CXOU J182913.1-125113 in the supernova remnant G18.95-1.1, we combine ACIS-I observations from 2009 and 2024 to better measure the neutron star's spectrum.",
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2609.00176",
+    "pdf": "https://arxiv.org/pdf/2609.00176",
+    "ads": "https://ui.adsabs.harvard.edu/abs/arXiv:2609.00176"
+   },
+   "abstract_screen": {
+    "score": 1.0,
+    "scale": "0-10",
+    "passed": false,
+    "rationale": "The paper covers X-ray detections and spectra of millisecond pulsars and young neutron stars with Chandra and NuSTAR. It has no connection to solar flare timing, QPPs, particle acceleration, or STIX/EUI, and no transferable method.",
+    "model": "claude-sonnet-5-5"
+   },
+   "full_text": null
+  },
+  {
+   "arxiv_id": "2609.00136",
+   "title": "Conspicuous Gas, Cryptic Dust: Spectroscopy and Chromaticity of Complex Periodic Variables",
+   "authors": [
+    "Luke G. Bouma",
+    "Facundo Perez Paolino",
+    "Lynne A. Hillenbrand",
+    "Juliana Garcia-Mejia",
+    "Allyson Bieryla",
+    "Patrick Tamburo",
+    "David Charbonneau",
+    "John H. Livingston",
+    "Keisuke Isogai",
+    "Norio Narita",
+    "Akihiko Fukui",
+    "Enric Palle",
+    "Felipe Murgas",
+    "Adolfo S. Carvalho",
+    "Howard Isaacson",
+    "Jessica J. Spake",
+    "Luisa M. Rebull",
+    "Moira M. Jardine",
+    "David R. Ciardi",
+    "Jeff A. Valenti"
+   ],
+   "submitted": "2026-08-31",
+   "primary_category": "astro-ph.SR",
+   "journal_ref": null,
+   "doi": null,
+   "comment": "Submitted to AAS Journals",
+   "abstract": "Complex periodic variables (CPVs) are young low-mass stars whose light curves show periodic dips indicative of transiting corotating material. The origin and composition of this material are unclear. Here we present new optical and near-infrared spectroscopy and photometry of four CPVs from Magellan, Keck, Hale, MuSCAT1, MuSCAT2, Tierras, KeplerCam, and TESS. The spectra imply that CPVs host magnetically bound circumstellar plasma clumps, on the basis of sinusoidal-in-time Balmer emission out of transit, and Balmer dimming during transit. Yet large night-to-night changes in circumstellar hydrogen emissivity occur without clear changes in light curve morphology, suggesting that the sharp flux dips are caused not by circumstellar plasma but by dust. Optical chromaticities (depth proportional to $λ^{-β}$, with $β$ = 0.79 $\\pm$ 0.16) support this, but the power law breaks in the near-infrared, where a single power law under-predicts the depths observed at 2.1 microns. We therefore favor dips caused by dusty plasma clumps with opaque cores and optically thin halos, though we cannot rule out models in which the dust properties vary per-star or per-epoch. Observations at wavelengths greater than 2 microns and less than 0.4 microns would test this interpretation and clarify the dust's origin.",
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2609.00136",
+    "pdf": "https://arxiv.org/pdf/2609.00136",
+    "ads": "https://ui.adsabs.harvard.edu/abs/arXiv:2609.00136"
+   },
+   "abstract_screen": {
+    "score": 1.0,
+    "scale": "0-10",
+    "passed": false,
+    "rationale": "Paper is about young low-mass star complex periodic variables (circumstellar dust/plasma clumps), with no connection to flare timing, particle acceleration, QPPs, or STIX/EUI; only loose overlap via periodic photometric variability.",
+    "model": "claude-sonnet-5-5"
+   },
+   "full_text": null
+  },
+  {
+   "arxiv_id": "2609.00134",
+   "title": "Modeling Rotation in the Old, Cold Domain: Implications on Gyrochronology and the Stellar Magnetic Wind",
+   "authors": [
+    "Amanda L. Ash",
+    "Yuxi",
+    "Lu",
+    "Marc H. Pinsonneault"
+   ],
+   "submitted": "2026-08-31",
+   "primary_category": "astro-ph.SR",
+   "journal_ref": null,
+   "doi": null,
+   "comment": "21 Pages, 14 figures, submitted to AAS journals",
+   "abstract": "Gyrochronology ties stellar rotation periods to ages. It is well studied in the young, open cluster age domain, but there are few constraints on gyrochronology in the old field star regime. In this work we use gyro-kinematic ages to explore the spin down of stars in this formerly inaccessible domain. Using forward modeling techniques which relax strict Rossby scaled assumptions, we find evidence for a departure from a standard spin down models. This departure can be explained with a mass-dependent term either in the global strength of the stellar wind or in the relationship between angular velocity and wind strength. Models with this additional mass- dependence help explain prior difficulty in fitting open cluster rotation distributions across the full mass range. Additionally, we use rotation models to identify an mass-dependent age domain over which wind driven stellar spin down can be isolated from other physical effects. For lower mass stars, this age domain is most affected by the core-envelope coupling timescale, where as higher mass stars are more subject to inertial effects late in their main sequence lifetimes. Using simple, analytic models of stellar spin down in this domain is unable to determine whether the stellar wind has a mass-dependence or if the stellar wind is strictly Skumanich-like in nature. In future studies of rotational and dynamo evolution we advocate for a forward modeling approach to gyrochronology over purely empirical approaches due to its superior ability to trace physical effects governing stellar spin down.",
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2609.00134",
+    "pdf": "https://arxiv.org/pdf/2609.00134",
+    "ads": "https://ui.adsabs.harvard.edu/abs/arXiv:2609.00134"
+   },
+   "abstract_screen": {
+    "score": 1.0,
+    "scale": "0-10",
+    "passed": false,
+    "rationale": "The paper is about stellar spin-down and gyrochronology in old field stars, with no flare timing, particle acceleration, QPPs, or STIX/EUI content, and no transferable methods.",
+    "model": "claude-sonnet-5-5"
+   },
+   "full_text": null
+  },
+  {
+   "arxiv_id": "2609.00477",
+   "title": "SPIRITS 19q: Dust Production by a Subsolar-metallicity Carbon-rich Wolf-Rayet Star in NGC 2403",
+   "authors": [
+    "Sam Rose",
+    "Ryan M. Lau",
+    "Jacob E. Jencson",
+    "Mansi M. Kasliwal",
+    "Andreas A. C. Sander",
+    "Howard E. Bond",
+    "Michael F. Corcoran",
+    "Izumi Endo",
+    "Matthew J. Hankins",
+    "Olivia C. Jones",
+    "Viraj R. Karambelkar",
+    "Astrid Lamberts",
+    "Thomas Madura",
+    "Anthony F. J. Moffat",
+    "Patrick W. Morris",
+    "Takashi Onaka",
+    "Michael E. Ressler",
+    "Noel D. Richardson",
+    "Christopher M. P. Russell",
+    "Itsuki Sakon",
+    "J. Sanchez-Bermudez",
+    "Gerd Weigelt",
+    "Peredur M. Williams"
+   ],
+   "submitted": "2026-08-31",
+   "primary_category": "astro-ph.SR",
+   "journal_ref": null,
+   "doi": null,
+   "comment": "14 pages, 6 figures, accepted to Publications of the Astronomical Society of the Pacific (PASP)",
+   "abstract": "We present JWST/NIRSpec IFU observations of SPIRITS 19q, the highly dust-producing carbon-rich (WC) binary candidate located in a subsolar-metallicity region of the nearby spiral galaxy NGC 2403. The observations, taken in April of 2024, confirm the association of a dusty outburst observed in 2019 by the Spitzer Space Telescope with an early-type WC star. Using models from the Potsdam Wolf-Rayet (PoWR) LMC model grid we find that the WC star of SPIRITS 19q likely has an especially high mass-loss rate ($\\gtrsim$ 10$^{-4}$ $M_{\\odot}$ yr$^{-1}$). From the flux peak of the IR transient as measured by Spitzer/IRAC as well as constraints on dust composition and size from the JWST spectrum, we estimate a total dust mass formed in the outburst of 6.6 $\\pm$ 0.4 $\\times$ 10$^{-6}$ $M_{\\odot}$. Assuming a minimum orbital period of 12 years, this corresponds to a period-averaged dust production rate of $\\lesssim$ 5.5 $\\times$ 10$^{-7}$ $M_{\\odot}$ yr$^{-1}$. These observations suggest that even a single WC system can contribute to the dust budget at subsolar metallicities, and that such systems are an important source of carbonaceous dust grains in the early universe.",
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2609.00477",
+    "pdf": "https://arxiv.org/pdf/2609.00477",
+    "ads": "https://ui.adsabs.harvard.edu/abs/arXiv:2609.00477"
+   },
+   "abstract_screen": {
+    "score": 0.0,
+    "scale": "0-10",
+    "passed": false,
+    "rationale": "This paper studies JWST observations of dust production by a Wolf-Rayet binary in NGC 2403, with no connection to solar flares, particle acceleration, QPPs, or STIX/EUI methods.",
+    "model": "claude-sonnet-5-5"
+   },
+   "full_text": null
+  },
+  {
+   "arxiv_id": "2609.00459",
+   "title": "Age Discrepancy in Three Galactic Cepheid Binaries",
+   "authors": [
+    "Sashwat Prasadh",
+    "Hilding R. Neilson",
+    "Nancy Remage Evans"
+   ],
+   "submitted": "2026-08-31",
+   "primary_category": "astro-ph.SR",
+   "journal_ref": null,
+   "doi": null,
+   "comment": "13 pages, 8 figures, 2 tables, submitted to AAS Journals",
+   "abstract": "SV Per, RW Cam, and KN Cen are Galactic classical Cepheids found in binary systems along with B-type companions. Each system exhibits an ``apparent age discrepancy\", where the Cepheid appears significantly younger than its companion. We compute stellar evolution tracks using the MESA code and compare them with these stars on the Hertzsprung-Russell diagram to estimate the masses and the corresponding ages. We find that, for two of the systems, the companions appear to be between 1.5 times to double the age of the Cepheids, suggesting that the Cepheids may be rejuvenated merger products of two main-sequence stars that have since evolved. We find that the third system KN Cen is consistent with single star evolution when we reevaluate ultraviolet observations and find that the companion is hotter than previously measured. We test this idea using the MESA code for each system by evolving a single star model and rapidly accreting mass on the main sequence to emulate a merger, and then continuing the evolution until the model is consistent with the parameters of the Cepheids. The results are consistent with the hypothesis that the Cepheids were originally merger products. We conclude with a discussion of potential observational tests of the merger hypothesis.",
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2609.00459",
+    "pdf": "https://arxiv.org/pdf/2609.00459",
+    "ads": "https://ui.adsabs.harvard.edu/abs/arXiv:2609.00459"
+   },
+   "abstract_screen": {
+    "score": 0.0,
+    "scale": "0-10",
+    "passed": false,
+    "rationale": "The paper is about stellar evolution and age discrepancies in Cepheid binaries using MESA, with no connection to flares, particle acceleration, QPPs, or STIX/EUI.",
+    "model": "claude-sonnet-5-5"
+   },
+   "full_text": null
+  },
+  {
+   "arxiv_id": "2609.00426",
+   "title": "The Formation of Very Close Binary Stars",
+   "authors": [
+    "Maxwell Moe"
+   ],
+   "submitted": "2026-08-31",
+   "primary_category": "astro-ph.SR",
+   "journal_ref": null,
+   "doi": null,
+   "comment": "Accepted for publication in ApJ",
+   "abstract": "The majority of very close binaries (orbital periods P < 5 days) are in triples. Previous studies surmised that the tertiary hardened the inner binary via Kozai-Lidov cycles coupled with tidal friction. Alternatively, the trend could be due to a common origin, e.g., more massive molecular cores and protostellar disks are more likely to fragment twice into a triple and harden the inner binary to very short periods via disk migration. Disk migration occurs during the embedded Class I protostellar phase while secular evolution with a tertiary occurs on much longer timescales. To determine the dominant migration mechanism, I accurately measure the very close binary fractions of both late-type and early-type primaries in star-forming environments. After combining five surveys, the late-type Class II/III T Tauri very close binary fraction is F_VCB = 2.1_{-0.5}^{+1.0}%, which is consistent with the measurement for late-type field main-sequence stars (1.7% +/- 0.1%). More than 85% of very close late-type binaries hardened via disk migration during the Class I protostellar phase. I next measure the OGLE-III eclipsing binary (EB) fractions of young massive stars in the LMC. The very close EB fractions of massive young stellar objects (YSOs; F_VCEB = 8.3_{-3.2}^{+4.9}%), OB stars near massive YSOs (4.7% +/- 0.8%), and OB stars in small, young H II regions (6.4% +/- 1.5%) are consistent with each other and the measurement for OB stars in slightly older clusters (4.7% +/- 0.3%). More than 90% of very close massive binaries hardened via disk migration during the embedded protostellar phase.",
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2609.00426",
+    "pdf": "https://arxiv.org/pdf/2609.00426",
+    "ads": "https://ui.adsabs.harvard.edu/abs/arXiv:2609.00426"
+   },
+   "abstract_screen": {
+    "score": 0.0,
+    "scale": "0-10",
+    "passed": false,
+    "rationale": "The paper is about the formation and migration of very close binary stars in star-forming regions. It has no connection to solar flares, particle acceleration, QPPs, or Solar Orbiter STIX/EUI.",
+    "model": "claude-sonnet-5-5"
+   },
+   "full_text": null
+  },
+  {
+   "arxiv_id": "2609.00398",
+   "title": "Where planetary solids survive sublimation around young and hot white dwarfs",
+   "authors": [
+    "Dimitri Veras",
+    "Keiji Ohtsuki",
+    "Rafael Martinez-Brunner",
+    "Takato Nishio",
+    "Ryo Tamon"
+   ],
+   "submitted": "2026-08-31",
+   "primary_category": "astro-ph.EP",
+   "journal_ref": null,
+   "doi": null,
+   "comment": "Accepted for publication in MNRAS",
+   "abstract": "All observed planetary systems orbiting single white dwarfs have lived through the hot stellar transition from an asymptotic giant branch star. In this post-nebular transition period, the initial conditions for planetary system evolution throughout white dwarf cooling are established. The hottest ($\\gtrsim$ 20,000 K) and youngest ($\\lesssim$ 20 Myr-old) white dwarf planetary system host stars differ significantly from their canonical older and colder counterparts by failing to support solid body accumulation in the immediate vicinity (a few $R_{\\odot}$) of the white dwarf. Here, we analyse the likely locations of both solid-body survival and the sublimated gaseous content during this pivotal epoch, and the consequences. We find that (i) reservoirs of iron-rich, rocky and water-rich asteroids of radius $R$ that later observably enrich, or pollute, the white dwarf need to remain parked for the first tens of Myr of white dwarf cooling beyond critical distances of (16 au)$\\times(1 {\\rm km}/R)^{1/2}$ (for iron), (30 au)$\\times(1 {\\rm km}/R)^{1/2}$ (for rock) and (130 au)$\\times(1 {\\rm km}/R)^{1/2}$ (for snow), (ii) sublimation acts much more quickly than radiatively-driven orbital drifts from Poynting-Robertson drag or the Yarkovsky effect, and (iii) although large asteroids ($R \\approx$ 10-1000 km) that are kicked on highly eccentric orbits around newly born white dwarfs could survive sublimation, they may fragment into debris which will sublime before the white dwarf cools. These results support, but do not necessitate, dynamical origin scenarios of polluted white dwarfs that feature delayed gravitational instability subsequent to the host star's asymptotic giant branch phase at Kuiper Belt-like distances, and beyond.",
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2609.00398",
+    "pdf": "https://arxiv.org/pdf/2609.00398",
+    "ads": "https://ui.adsabs.harvard.edu/abs/arXiv:2609.00398"
+   },
+   "abstract_screen": {
+    "score": 0.0,
+    "scale": "0-10",
+    "passed": false,
+    "rationale": "The paper is about sublimation of asteroids around young hot white dwarfs and polluted white dwarf origins, with no connection to solar flares, particle acceleration, QPPs, or STIX/EUI.",
+    "model": "claude-sonnet-5-5"
+   },
+   "full_text": null
+  },
+  {
+   "arxiv_id": "2609.00303",
+   "title": "A Data-Driven Model for $r$-Process Production Patterns",
+   "authors": [
+    "Chen-Qi Li",
+    "Yong-Zhong Qian",
+    "Axel Gross",
+    "Zewei Xiong"
+   ],
+   "submitted": "2026-08-31",
+   "primary_category": "astro-ph.SR",
+   "journal_ref": "Astrophys. J. 1010, 35 (2026)",
+   "doi": "10.3847/1538-4357/aea137",
+   "comment": "48 pages; published in The Astrophysical Journal (ApJ)",
+   "abstract": "Using the elemental abundances in 68 metal-poor (MP) stars, we present a data-driven model for $r$-process production patterns covering Sr to U. We show that essentially all the $r$-process patterns in those and other test stars can be adequately explained as mixtures of Patterns 1 and 2, which provides theoretical insights into the empirical categories of limited-$r$, $r$-I, and $r$-II stars. We carry out an extensive survey of the yield templates produced by parametric $r$-process calculations. We propose that Pattern 2 may be dominated by a single template and points to regularity in $r$-process production by a subset of neutron star mergers (NSMs), while Pattern 1 is the average superposition of multiple templates and reflects production by other NSMs and perhaps also some magneto-rotational supernovae. We raise possible systematic issues with abundance ratios for elements measured in different ionization states, and highlight the need for examining the Os, Ir, and Pt measurements for HD~122563, which is dominated by Pattern 1 with a prominent Pt peak in our model. If this result is confirmed, the meaning of the limited-$r$ category requires drastic revision. Further measurements of a wider range of $r$-process elements in a larger sample of MP stars are critical to test and improve our model.",
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2609.00303",
+    "pdf": "https://arxiv.org/pdf/2609.00303",
+    "ads": "https://ui.adsabs.harvard.edu/abs/arXiv:2609.00303"
+   },
+   "abstract_screen": {
+    "score": 0.0,
+    "scale": "0-10",
+    "passed": false,
+    "rationale": "The paper models r-process nucleosynthesis patterns in metal-poor stars, which has no connection to flare timing, particle acceleration, QPPs, or STIX/EUI.",
+    "model": "claude-sonnet-5-5"
+   },
+   "full_text": null
+  },
+  {
+   "arxiv_id": "2609.00175",
+   "title": "Evidence for a luminosity-class dichotomy in the supergiant donors of persistent high-mass X-ray binaries and supergiant fast X-ray transients",
+   "authors": [
+    "Lara Sidoli",
+    "Vito Sguera"
+   ],
+   "submitted": "2026-08-31",
+   "primary_category": "astro-ph.HE",
+   "journal_ref": null,
+   "doi": null,
+   "comment": "Accepted for publication in Astronomy & Astrophysics (received May 18, 2026; accepted August 11, 2026). The manuscript comprises 11 pages, 5 figures, and 4 tables. The version submitted here also includes all supplementary tables (B.1, C.1, C.2, and D.1), which in the published A&A article are provided exclusively in electronic form via the CDS",
+   "abstract": "We have investigated the properties of the supergiant donors in two types of high-mass X-ray binaries (HMXBs, i.e. the so-called supergiant fast X-ray transients (SFXTs) and the classical X-ray sources), by collecting all available information from the literature. A prevalence of O-type versus B-type supergiant donors in SFXTs was previously suggested in the literature, possibly indicative of faster winds in SFXTs than in classical, persistent sources. Our aim is to investigate whether there is evidence for a dichotomy in the stellar luminosity class, since B-type supergiants are also known to be hosted in SFXTs. Our collection of the relevant literature allowed us to build a robust sample of both types of HMXBs with a secure stellar classification. We have found that the SFXTs showing the most extreme, transient X-ray emission host only O-type or B-type stars with a Ib and Iab luminosity class, whereas classical sources have mostly Ia donors. This is robust evidence that might explain the two different behaviours of HMXBs at X-rays since the stellar luminosity class appears to be linked to the wind properties (the supergiant wind terminal velocity, the mass-loss rate, and the wind strength Q parameter), indicative of faster and less dense winds in SFXTs than in classical sources.",
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2609.00175",
+    "pdf": "https://arxiv.org/pdf/2609.00175",
+    "ads": "https://ui.adsabs.harvard.edu/abs/arXiv:2609.00175"
+   },
+   "abstract_screen": {
+    "score": 0.0,
+    "scale": "0-10",
+    "passed": false,
+    "rationale": "The paper is about supergiant donor stars and wind properties in high-mass X-ray binaries and SFXTs. It has no connection to solar flare timing, particle acceleration, QPPs, or STIX/EUI.",
+    "model": "claude-sonnet-5-5"
+   },
+   "full_text": null
+  },
+  {
+   "arxiv_id": "2609.00149",
+   "title": "Self-induced edge rings in protoplanetary disks",
+   "authors": [
+    "Massimiliano Bolchini",
+    "Haochang Jiang",
+    "Jiaqing Bi"
+   ],
+   "submitted": "2026-08-31",
+   "primary_category": "astro-ph.EP",
+   "journal_ref": null,
+   "doi": "10.1051/0004-6361/202661190",
+   "comment": "12 pages, 12 figures, accepted in A&A",
+   "abstract": "Observations with a high angular resolution by ALMA have revealed that substructures are ubiquitous in protoplanetary disks. Axisymmetric dust rings are the most common morphology. The profiles of some observed disks, including young disks, are smooth overall, with a localized dip or bump near the outer edge of the continuum disk that manifests as an edge ring. While embedded planets might contribute to these structures, their physical origin remains unclear. We investigated the possibility that these edge rings arise purely from radiative transfer effects at the outer edge of a protoplanetary disk. A steep surface density dust gradient at the outer edge of the disk allows stellar irradiation to penetrate more efficiently beyond the disk edge, producing a non-monotonic temperature profile characterized by a dip that is followed by a bump. We tested whether this non-monotonic temperature structure can generate and maintain a localized continuum enhancement. We coupled radiative transfer and dust evolution by iterating between the Monte Carlo radiative transfer code RADMC-3D and the dust evolution code DustPy. This framework self-consistently follows the coupled evolution of temperature, grain growth, and dust dynamics. Thermodynamic feedback at the disk edge can naturally generate and maintain localized dust enhancements resembling the edge rings that are observed in some extremely young disks. Without invoking planets or additional dynamical perturbations, this mechanism offers a plausible explanation for the first-generation ring formation. Our results highlight the importance of coupling thermodynamics and dust evolution when modeling protoplanetary disks, suggesting that thermodynamic feedback probably plays a role in shaping disk substructures.",
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2609.00149",
+    "pdf": "https://arxiv.org/pdf/2609.00149",
+    "ads": "https://ui.adsabs.harvard.edu/abs/arXiv:2609.00149"
+   },
+   "abstract_screen": {
+    "score": 0.0,
+    "scale": "0-10",
+    "passed": false,
+    "rationale": "The paper is about dust ring formation in protoplanetary disks through radiative transfer and dust evolution modeling. It has no connection to solar flares, particle acceleration, QPPs, or STIX/EUI, and its methods do not transfer.",
+    "model": "claude-sonnet-5-5"
+   },
+   "full_text": null
+  },
+  {
+   "arxiv_id": "2609.00130",
+   "title": "Exploring stellar evolution with Luminous Red Novae and Interacting Gap Transients",
+   "authors": [
+    "Nadejda Blagorodnova"
+   ],
+   "submitted": "2026-08-31",
+   "primary_category": "astro-ph.SR",
+   "journal_ref": null,
+   "doi": null,
+   "comment": "Submitted for review as Proceedings of IAU Symposium No. 405 (Editors: Hanin Kuncarayakti, Tuomas Kangas, Melina Bersten)",
+   "abstract": "Interacting gap transients encompass several families of astrophysical phenomena where eruptive mass loss and interaction play an important role in shaping the observational properties and energetics of the events. Composed of Luminous Red Novae (LRNe), Intermediate Luminosity Red Transients (ILRTs), Luminous Blue Variable (LBV) giant eruptions, and pre-supernova precursors, interacting gap transients offer crucial insights into unstable mass transfer, extreme stellar mass loss, and binary evolution. In these proceedings, I review the observational signatures, progenitors, physical origin, and classification challenges of these heterogeneous phenomena. Finally, I highlight how ongoing and future wide-field time-domain missions will revolutionize this field by compiling complete volume-limited samples, tracking faint pre-outburst precursors, and establishing statistical links between gap transient families and their progenitor populations.",
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2609.00130",
+    "pdf": "https://arxiv.org/pdf/2609.00130",
+    "ads": "https://ui.adsabs.harvard.edu/abs/arXiv:2609.00130"
+   },
+   "abstract_screen": {
+    "score": 0.0,
+    "scale": "0-10",
+    "passed": false,
+    "rationale": "Review of luminous red novae and interacting gap transients (stellar mergers, eruptive mass loss), with no connection to solar flares, particle acceleration, QPPs, or STIX/EUI methods.",
+    "model": "claude-sonnet-5-5"
+   },
+   "full_text": null
+  },
+  {
+   "arxiv_id": "2609.00117",
+   "title": "Sinking and spreading of metal pollution in magnetic white dwarfs",
+   "authors": [
+    "Elad Shiftan",
+    "Sivan Ginzburg"
+   ],
+   "submitted": "2026-08-31",
+   "primary_category": "astro-ph.SR",
+   "journal_ref": null,
+   "doi": null,
+   "comment": "submitted to MNRAS, comments welcome",
+   "abstract": "Observations of magnetic polluted white dwarfs indicate that most of them have higher concentrations of metals near the poles compared to lower latitudes. Maintaining such abundance gradients requires gravitational sinking times $t_\\downarrow$ below the convection zone that are shorter than the horizontal spreading time $t_\\leftrightarrow$ across the surface by convective eddies. We show analytically that $t_\\downarrow/t_\\leftrightarrow\\propto T^{8/3}$, where $T$ is the temperature at the base of the convection zone, which rises by more than an order of magnitude as convection penetrates deeper into the atmosphere. Correspondingly, $t_\\downarrow/t_\\leftrightarrow$ jumps by several orders of magnitude, clearly delineating between hot white dwarfs with abundance variations and cold ones with homogenous surfaces. We incorporate magnetic fields self-consistently into the stellar structure and compute for the first time the sinking to spreading time-scale ratio as a function of $B$. Magnetic white dwarfs have shallower convection zones at a given $T_{\\rm eff}$, and the inward penetration of convection shifts to lower $T_{\\rm eff}$. Quantitatively, $B\\sim 10^5\\textrm{ G}$ extends the range for enhanced abundance patches from $T_{\\rm eff}\\gtrsim 30\\,000 \\textrm{ K}$ ($13\\,000\\textrm{ K}$) to $T_{\\rm eff}\\gtrsim 15\\,000 \\textrm{ K}$ ($6000\\textrm{ K}$) for helium (hydrogen) dominated atmospheres, which is insufficient to explain the observed patchy white dwarfs, which are even colder. A possible solution is variability in the accretion rate on a time-scale of a decade, as recently detected in another white dwarf.",
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2609.00117",
+    "pdf": "https://arxiv.org/pdf/2609.00117",
+    "ads": "https://ui.adsabs.harvard.edu/abs/arXiv:2609.00117"
+   },
+   "abstract_screen": {
+    "score": 0.0,
+    "scale": "0-10",
+    "passed": false,
+    "rationale": "The paper is about metal pollution and abundance patches in magnetic white dwarf atmospheres. It has no connection to flare timing, particle acceleration, QPPs, or STIX/EUI.",
+    "model": "claude-sonnet-5-5"
+   },
+   "full_text": null
+  },
+  {
+   "arxiv_id": "2609.00118",
+   "title": "Solar Spin-Dependent Dark Matter-Neutron Cross Section Constraints: The Lost Case",
+   "authors": [
+    "Thong T. Q. Nguyen",
+    "Carlos Blanco",
+    "Tim Linden"
+   ],
+   "submitted": "2026-08-31",
+   "primary_category": "hep-ph",
+   "journal_ref": null,
+   "doi": null,
+   "comment": "13 pages, 6 figures",
+   "abstract": "The Sun has long served as a natural dark matter detector, capturing halo particles that scatter with solar nuclei and electrons and subsequently produce indirect signals from dark matter annihilation that can be probed by either neutrino or $γ$-ray instruments. Previous efforts have computed cross-section constraints for dark matter scattering with electrons, as well as spin-independent and spin-dependent dark matter-proton scattering. However, the spin-dependent dark matter-neutron scattering scenario has been neglected, despite its importance in direct detection. For the first time, we compute the capture and evaporation rates for spin-dependent dark matter-neutron scattering in the Sun, including odd-neutron isotope targets in the current standard solar model. Comparing the predicted annihilation signals against current neutrino and $γ$-ray observations, and projecting the reach of upcoming detectors, we find that solar constraints exceed direct detection limits for several annihilation channels. For models in which the dark matter annihilates into long-lived mediators, these constraints can extend below the neutrino fog.",
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2609.00118",
+    "pdf": "https://arxiv.org/pdf/2609.00118",
+    "ads": "https://ui.adsabs.harvard.edu/abs/arXiv:2609.00118"
+   },
+   "abstract_screen": {
+    "score": 0.0,
+    "scale": "0-10",
+    "passed": false,
+    "rationale": "The paper is about dark matter capture in the Sun and constraints from neutrino and gamma-ray signals. It has no connection to flare timing, particle acceleration, QPPs, or STIX/EUI.",
+    "model": "claude-sonnet-5-5"
+   },
+   "full_text": null
+  },
+  {
+   "arxiv_id": "2608.31110",
+   "title": "Accretion Rates and Thermohaline Convection in Polluted White Dwarfs",
+   "authors": [
+    "J. R. Fuentes",
+    "Matias Castro-Tapia",
+    "Jim Fuller",
+    "Marcus King"
+   ],
+   "submitted": "2026-08-31",
+   "primary_category": "astro-ph.SR",
+   "journal_ref": null,
+   "doi": null,
+   "comment": "Submitted to AAS Journals, updated references and label in Fig. 1, more comments welcome!",
+   "abstract": "Polluted white dwarfs provide a unique window into the composition of exoplanetary material, but interpreting their surface abundances requires a quantitative understanding of the mixing processes in their envelopes. Accretion of metal-rich debris onto hydrogen-rich white dwarfs drives thermohaline (fingering) convection in the underlying radiative zone. Previous studies have modeled this as enhanced diffusive transport, often inferring mass accretion rates, $\\dot{M}_{\\rm acc}$, that exceed constraints from X-ray observations. Here we develop a time-dependent model that treats thermohaline mixing as a propagating front whose evolution is coupled self-consistently to the surface abundance of heavy elements. We perform hydrodynamical simulations which demonstrate that thermohaline mixing drives the composition gradient towards marginal stability. Using this condition, we derive analytic solutions in shallow and deep stratification regimes, finding that the mixed layer depth, $h$, and surface abundance, $X_{\\rm surf}$, both scale as $t^{1/2}$ at early times, transitioning to $h \\propto t^{4/27}$ and $X_{\\rm surf} \\propto t^{10/27}$ at later times. The mixed layer reaches depths of only $\\sim 100$ km over $10^5$ yr and, without gravitational settling, never reaches a steady state. Including settling leads to an equilibrium surface abundance scaling as $X_{\\rm surf, eq} \\propto \\dot{M}_{\\rm acc}^{30/43}$. Applied to G 29--38, the model matches the observed heavy-element abundance for $\\dot{M}_{\\rm acc} \\sim 2\\times 10^9$--$4\\times 10^{9}~\\mathrm{g~s^{-1}}$, in better agreement with X-ray constraints than prior estimates incorporating thermohaline mixing. We also present a general scaling relation for inferring accretion rates directly from observed surface abundances and stellar properties, giving a practical prescription for other polluted white dwarfs.",
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2608.31110",
+    "pdf": "https://arxiv.org/pdf/2608.31110",
+    "ads": "https://ui.adsabs.harvard.edu/abs/arXiv:2608.31110"
+   },
+   "abstract_screen": {
+    "score": 0.0,
+    "scale": "0-10",
+    "passed": false,
+    "rationale": "Paper is about thermohaline convection and accretion in polluted white dwarfs; it has no connection to solar flares, particle acceleration, QPPs, or STIX/EUI, and its methods do not transfer.",
+    "model": "claude-sonnet-5-5"
+   },
+   "full_text": null
+  },
+  {
+   "arxiv_id": "2608.31042",
+   "title": "Feasibility of Capillary-Driven Orbital Liquid Mirror Telescopes",
+   "authors": [
+    "Janoah Dietrich",
+    "Álvaro Romero-Calvo"
+   ],
+   "submitted": "2026-08-31",
+   "primary_category": "astro-ph.IM",
+   "journal_ref": null,
+   "doi": null,
+   "comment": "Corrected typo in metadata, article files remain unchanged",
+   "abstract": "Space-based liquid mirror telescopes (LMTs) have been recently proposed to overcome the scaling limits of traditional rigid mirrors. In these new space architectures, capillary forces would shape a reflective liquid into a spherical optical surface in microgravity. However, the equilibrium, stability, and dynamic behavior of such liquid interfaces under orbital perturbations remain largely uncharacterized. This study investigates the feasibility of space LMTs by combining axisymmetric capillary with thin-film models. Solar radiation pressure and self-gravitation are found to be the dominant perturbations in Sun--Earth L2 orbits, causing equilibrium deformations that exceed the $λ/20$ optical threshold at apertures above 0.86 m for visible ($λ= 380$ nm) and 1.58 m for near-infrared observatories ($λ= 2.5$ $μ$m). Micrometeoroid impacts self-heal within seconds to minutes, settling after filling requires years to decades at large apertures, and propulsive maneuvers breach optical limits within seconds to hours. These results highlight the need for interface control in large-scale systems such as NASA's 50 m Fluidic Telescope (FLUTE). Thermocapillary actuation supports apertures of 2.3/8.0 m (VIS/NIR) at 100 $μ$K and 10.6/37.7 m at 10 $μ$K. Simultaneously, parasitic Marangoni flows impose sub-mK uniformity for NIR and 1--100 $μ$K for visible operation on any capillary LMT. Departing the capillary regime by imposing a surface-normal settling acceleration, ranging from 39 mm s$^{-2}$ (NIR,5 m) to 17 m s$^{-2}$ (VIS,50 m), is the most promising route to tens of meters in aperture. This approach enables a passive implementation effectively suppressing perturbation induced interface distortions and thermal Marangoni flows. Keywords: Liquid mirror telescope, Optics, Space",
+   "links": {
+    "arxiv": "https://arxiv.org/abs/2608.31042",
+    "pdf": "https://arxiv.org/pdf/2608.31042",
+    "ads": "https://ui.adsabs.harvard.edu/abs/arXiv:2608.31042"
+   },
+   "abstract_screen": {
+    "score": 0.0,
+    "scale": "0-10",
+    "passed": false,
+    "rationale": "The paper is about capillary-driven liquid mirror telescopes for space observatories, covering fluid dynamics and optics. It has no connection to flare timing, particle acceleration, QPPs, or STIX/EUI.",
+    "model": "claude-sonnet-5-5"
+   },
+   "full_text": null
+  }
+ ]
+}

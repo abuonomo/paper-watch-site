@@ -1,0 +1,173 @@
+{
+ "arxiv_id": "2609.17178",
+ "title": "Count-based spectral component imaging (CCI) of solar flares in X-rays",
+ "authors": [
+  "Alessia Guidetti",
+  "Muriel Zoë Stiefel",
+  "Paolo Massa",
+  "Anna Maria Massone",
+  "Michele Piana",
+  "Säm Krucker"
+ ],
+ "submitted": "2026-09-15",
+ "links": {
+  "arxiv": "https://arxiv.org/abs/2609.17178",
+  "pdf": "https://arxiv.org/pdf/2609.17178",
+  "ads": "https://ui.adsabs.harvard.edu/abs/arXiv:2609.17178"
+ },
+ "abstract_screen": {
+  "score": 8.0,
+  "rationale": "Introduces a STIX imaging-spectroscopy method that separates thermal, superhot and non-thermal electron components in flares, applied to a Solar Orbiter flare. It bears directly on STIX spectral analysis and electron acceleration, though it does not address timing or QPPs."
+ },
+ "relevance_score": 3.0,
+ "relevance_scale": "0-5",
+ "relevance_formula": "R = sum(w_i * R_i) / sum(w_i)",
+ "weights": {
+  "problem": 0.3,
+  "method": 0.25,
+  "data": 0.15,
+  "phenomenon": 0.2,
+  "future": 0.1
+ },
+ "relevance_components": {
+  "problem": {
+   "score": 2,
+   "explanation": "The paper addresses spatially separating thermal, superhot and non-thermal X-ray components, which bears on locating accelerated electrons. It does not study temporal evolution, energy-dependent timing or QPPs."
+  },
+  "method": {
+   "score": 3,
+   "explanation": "STIX spectral fitting with joint background and imaging detectors, plus count-based RL imaging, are directly usable in STIX flare analysis. The method could be run in a time series to track source-resolved non-thermal flux, but the paper does not do so."
+  },
+  "data": {
+   "score": 5,
+   "explanation": "Uses Solar Orbiter/STIX data for an X7.1 Cycle 25 flare, with the attenuator inserted. This is exactly the instrument and dataset class of interest."
+  },
+  "phenomenon": {
+   "score": 3,
+   "explanation": "The paper treats non-thermal electron flux maps (thick-target) and hot/superhot flare plasma, which are core flare energetics and acceleration phenomena. Dynamics and variability are not addressed."
+  },
+  "future": {
+   "score": 3,
+   "explanation": "Applied over successive time bins, CCI could yield component-resolved lightcurves separating footpoint non-thermal sources from superhot coronal sources. That would help attribute pulsations to specific structures for comparison with EUI. This is an inference, not demonstrated."
+  }
+ },
+ "relation": "methodological",
+ "one_line": "Introduces Count-based spectral Component Imaging (CCI), which uses Richardson-Lucy inversion of STIX pixel counts to jointly reconstruct hot and superhot emission-measure maps and a non-thermal electron-flux map. It is demonstrated on two 40 s intervals of the X7.1 flare SOL2024-10-01T22 and agrees with the earlier SCI method and with spatially integrated spectral fits.",
+ "summary": "The paper models the flare photon spectrum at each pixel as two isothermal components plus thick-target emission. Temperatures, Ec and δ are fixed from a spatially integrated spectral fit. This gives a forward model (Eq. 8) that is linear in the unknown maps EM_H(x), EM_S(x) and F(x). The model is discretised as C = GMK + B (Eq. 9) and solved directly from STIX counts with a Poisson-appropriate Richardson-Lucy iteration (Eq. 10). This removes SCI's intermediate step of solving for per-component visibilities and its need for total EM and flux as inputs. Applied to the non-thermal peak (22:08:02–22:08:42) and the thermal peak (22:12:02–22:12:42) of SOL2024-10-01T22 (Fig. 1), CCI reproduces SCI morphologies for the hot (~26 MK), superhot (~45–47 MK) and non-thermal sources (Fig. 2). Totals from summing pixels above a 5% contour match the spectral fits within ~10%, except for superhot EM in time range 1, which differs by 18% (Table 1). For the researcher, this is a tool for assigning spectral components to spatial structures (footpoints vs loops) within STIX data. It is not a timing or QPP study, and it is shown only for two snapshots of one event.",
+ "offers": [
+  "A linear forward model linking STIX pixel counts to per-component EM and electron-flux maps (Sect. 2.1, Eqs. 5–8) and the RL update rule (Sect. 2.2, Eq. 10)",
+  "Spectral-fit parameters for SOL2024-10-01T22 at the non-thermal peak (TH=26.3 MK, TS=45.0 MK, δ=3.16, Ec=26.8 keV) and the thermal peak (Sect. 3.1)",
+  "A STIX lightcurve of the X7.1 flare using background-detector 5–10 and 10–15 keV channels and imaging 32–76 keV (Fig. 1)",
+  "Component-resolved hot, superhot and non-thermal maps compared with energy-band RL and SCI (Fig. 2)",
+  "A practical calibration: thresholding image totals at ~5–10% of peak, set by STIX dynamic range (~1:20), recovers spectrally fitted totals (Table 1)",
+  "A Monte Carlo approach to propagating spectral-fit parameter uncertainties into imaging results (Sect. 3.2)"
+ ],
+ "findings": [
+  {
+   "evidence": "Fig. 2 shows that the 20–22 keV energy-band image in time range 1 mixes thermal and non-thermal structures. CCI separates these into a single compact hot source, a two-lobed superhot source and two non-thermal footpoint-like sources.",
+   "inference": "When relating STIX timing signatures to EUI ribbons or loops, energy-band images can misattribute emission in the ~15–30 keV range. Component imaging gives a cleaner spatial assignment of the non-thermal electrons.",
+   "recommendation": "For case-study flares where intermediate-energy lightcurves show variability, use CCI or SCI component maps rather than energy-band images to decide whether the variable emission is footpoint (non-thermal) or coronal (superhot).",
+   "confidence": "medium"
+  },
+  {
+   "evidence": "CCI takes TH, TS, Ec and δ from a spatially integrated spectral fit as fixed inputs. Totals are outputs. Sensitivity to the inputs is assessed with 100 Gaussian-perturbed reconstructions (Sect. 2.1, 3.2).",
+   "inference": "The method assumes a single spectral shape per component across the whole source. Spatial variation in δ or temperature between footpoints, or over time during pulsations, is not captured.",
+   "recommendation": "If applying CCI time-resolved, refit spectra for each time bin and be cautious interpreting differences in footpoint flux ratio. Spectral hardness differences between sources would need separate imaging spectroscopy.",
+   "confidence": "high"
+  },
+  {
+   "evidence": "Each CCI reconstruction integrates 40 s, during attenuator insertion, for an X7.1 flare (Sect. 3, Fig. 1). Table 1 totals agree with spectral fits to within ~10% at the 5% threshold.",
+   "inference": "Photon statistics here are extremely high. Whether CCI remains stable at the short integrations needed to resolve QPPs (seconds) or for weaker M-class flares is not shown.",
+   "recommendation": "Before adopting CCI for time-series studies, test it on shorter intervals and fainter events, using the paper's Monte Carlo uncertainty scheme to quantify degradation.",
+   "confidence": "medium"
+  },
+  {
+   "evidence": "Fig. 1 shows a strongly impulsive 32–76 keV peak near 22:08, a secondary bump near 22:09:30 and an earlier precursor near 22:05, while the 5–15 keV emission rises smoothly to a peak near 22:12.",
+   "inference": "SOL2024-10-01T22 has multiple non-thermal bursts and a well-separated thermal peak. Combined with existing STIX spectral fits and MHD modelling (Matsumoto et al.), it is a well-documented candidate case study for timing analysis.",
+   "recommendation": "Consider this event for time-resolved STIX/EUI analysis, reusing its published spectral parameters as a starting point.",
+   "confidence": "medium"
+  }
+ ],
+ "people": [
+  {
+   "name": "Muriel Zoë Stiefel",
+   "affiliation": "FHNW / ETH Zürich",
+   "why": "Developer of SCI, STIX joint background–imaging spectral fitting and the background detector GOES proxy, and works on superhot plasma. Central to STIX spectroscopy tools."
+  },
+  {
+   "name": "Säm Krucker",
+   "affiliation": "University of Applied Sciences and Arts Northwestern Switzerland (FHNW)",
+   "why": "STIX Principal Investigator, and a key contact for STIX data use and Major Flare Campaign events."
+  },
+  {
+   "name": "Paolo Massa",
+   "affiliation": "FHNW",
+   "why": "Lead on STIX imaging concept and count-based imaging algorithms."
+  },
+  {
+   "name": "Alessia Guidetti",
+   "affiliation": "MIDA, Università di Genova",
+   "why": "First author and developer of CCI."
+  },
+  {
+   "name": "Michele Piana / Anna Maria Massone",
+   "affiliation": "MIDA, Università di Genova",
+   "why": "Group behind STIX inverse-problem and imaging methods."
+  }
+ ],
+ "reading": [
+  {
+   "reference": "Stiefel et al. 2025, A&A 704, A316 — Spectral component imaging of solar X-ray flares",
+   "priority": "read first",
+   "why": "Introduces SCI, the reference method here, and contains the STIX spectral fits for SOL2024-10-01T22."
+  },
+  {
+   "reference": "Stiefel, Bajnoková & Krucker 2026, A&A 706, A192 — Superhot flare observations with STIX: joint spectral fitting",
+   "priority": "read first",
+   "why": "Describes the spectral-fitting approach used when the attenuator is in, which is essential for large Cycle 25 flares."
+  },
+  {
+   "reference": "Stiefel et al. 2025, A&A 694, A138 — STIX background detector as a GOES proxy",
+   "priority": "read",
+   "why": "The background-detector lightcurves used in Fig. 1 offer unattenuated thermal timing during big flares."
+  },
+  {
+   "reference": "Massa et al. 2023, Sol. Phys. 298, 114 — The STIX Imaging Concept",
+   "priority": "read",
+   "why": "Core reference for STIX imaging and its limitations, such as dynamic range."
+  },
+  {
+   "reference": "Massa et al. 2019, A&A 624, A130 — Count-based imaging model for STIX",
+   "priority": "optional",
+   "why": "The EM/RL count-based framework that CCI extends."
+  },
+  {
+   "reference": "Matsumoto et al. 2026, ApJL 998, L28 — Stereoscopic X-ray sources and data-constrained MHD",
+   "priority": "optional",
+   "why": "Physical context for the same X7.1 event."
+  },
+  {
+   "reference": "Caspi et al. 2015, ApJL 811, L1 — HXR imaging of individual spectral components",
+   "priority": "optional",
+   "why": "The original RHESSI approach to component imaging."
+  }
+ ],
+ "caveats": [
+  "Proof of concept on a single event and only two 40 s snapshots, with no time series or statistical validation.",
+  "Validation is against SCI and spectral fits that share the same input parameters, so this is consistency rather than independent ground truth.",
+  "The isothermal (delta-function DEM) and spatially uniform δ/Ec assumptions may hide physically interesting spatial spectral variation.",
+  "Albedo is fitted spectrally but neglected in imaging.",
+  "STIX dynamic range (~1:20) limits faint-source recovery, and totals depend on the chosen contour threshold.",
+  "No discussion of timing, QPPs or EUI co-alignment; relevance to those aims is inferred."
+ ],
+ "instruments_and_data": [
+  "Solar Orbiter/STIX imaging detectors (attenuator inserted)",
+  "STIX background (BKG) detector",
+  "Mentioned only: RHESSI, ASO-S/HXI, NuSTAR (focusing optics applicability)"
+ ],
+ "events": [
+  "SOL2024-10-01T22 X7.1 (time range 1: 22:08:02–22:08:42 UT; time range 2: 22:12:02–22:12:42 UT, Solar Orbiter arrival time)"
+ ],
+ "assessed_at": "2026-10-07T16:22:04+00:00",
+ "model": "claude-opus-5-5"
+}
