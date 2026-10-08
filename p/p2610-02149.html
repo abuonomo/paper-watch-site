@@ -156,53 +156,66 @@ For STIX/EUI timing work, it is a physics-context and forward-modelling resource
 <script>
 (function(){
   var root=document.querySelector('.swipe-root'),clip=document.querySelector('.swipe-clip');if(!root||!clip)return;
-  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches,cache={},busy=false;
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches,cache={},busy=false,peek=null,peekDir=null;
   function markSeen(id){try{var k='pw-seen',seen=JSON.parse(localStorage.getItem(k)||'{}');seen[id]=Date.now();localStorage.setItem(k,JSON.stringify(seen));}catch(e){}}
   function prefetch(h){if(!h||cache[h])return cache[h];
     cache[h]=fetch(h,{credentials:'same-origin'}).then(function(r){if(!r.ok)throw 0;return r.text()}).then(function(t){return new DOMParser().parseFromString(t,'text/html')}).catch(function(){delete cache[h];return null;});
     return cache[h];}
-  function ready(){markSeen(root.dataset.id);prefetch(root.dataset.prev);prefetch(root.dataset.next);}
+  var docs={};  // resolved neighbour documents, so the drag can show them synchronously
+  function ready(){markSeen(root.dataset.id);['prev','next'].forEach(function(d){var h=root.dataset[d];if(!h)return;prefetch(h).then(function(doc){if(doc)docs[h]=doc;});});}
   ready();
   function setT(el,x,r,o){el.style.transform='translateX('+x+') rotate('+r+'deg)';el.style.opacity=o;}
-  // Carousel: the new card is already in the DOM before anything moves, then both slide together.
-  function swap(doc,h,d){
-    var nr=doc.querySelector('.swipe-root'),np=doc.querySelector('.progress-slot'),ns=doc.querySelector('.sub');
-    if(!nr){location.href=h;return;}
+  function overlay(el){el.style.position='absolute';el.style.left='16px';el.style.right='16px';el.style.top='0';el.style.pointerEvents='none';}
+  // Put the neighbour card in the DOM beside the current one, off-screen, ready to ride with the finger.
+  function showPeek(d){var h=root.dataset[d],doc=h&&docs[h];if(!doc||peek)return;
+    var nr=doc.querySelector('.swipe-root').cloneNode(true);overlay(nr);nr.style.transition='none';setT(nr,d==='next'?'100%':'-100%',0,'1');
+    clip.appendChild(nr);peek=nr;peekDir=d;}
+  function dropPeek(animate){if(!peek)return;var pk=peek,d=peekDir;peek=null;peekDir=null;
+    if(!animate){pk.remove();return;}
+    pk.style.transition='transform .25s';setT(pk,d==='next'?'100%':'-100%',0,'1');setTimeout(function(){pk.remove()},260);}
+  function finish(doc,h,d){
+    var np=doc.querySelector('.progress-slot'),nr=peek&&peekDir===d?peek:null;
+    if(!nr){nr=doc.querySelector('.swipe-root').cloneNode(true);overlay(nr);nr.style.transition='none';setT(nr,d==='next'?'100%':'-100%',0,'1');clip.appendChild(nr);}
+    peek=null;peekDir=null;
     var old=root;root=nr;
     document.querySelector('.progress-slot').innerHTML=np?np.innerHTML:'';
-    var sub=document.querySelector('.sub');if(sub&&ns)sub.innerHTML=ns.innerHTML;
     document.title=nr.dataset.title||document.title;history.pushState({h:h},'',h);
-    if(reduce){old.replaceWith(nr);window.scrollTo(0,0);busy=false;ready();return;}
-    // old card becomes an overlay at its current spot; new card takes the flow, starting off-screen
-    var top=old.getBoundingClientRect().top+window.scrollY-clip.getBoundingClientRect().top-window.scrollY;
-    old.style.position='absolute';old.style.left='16px';old.style.right='16px';old.style.top=top+'px';old.style.pointerEvents='none';
-    nr.style.transition='none';setT(nr,d==='next'?'100%':'-100%',0,'1');
-    clip.appendChild(nr);window.scrollTo(0,0);
+    var h0=old.offsetHeight;clip.style.minHeight=h0+'px';
+    // old card leaves the flow (absolute, where it was) and the new one slides into place
+    var topOld=old.offsetTop;overlay(old);old.style.top=topOld+'px';
     requestAnimationFrame(function(){requestAnimationFrame(function(){
       old.style.transition='transform .28s ease-in, opacity .28s';setT(old,d==='next'?'-110%':'110%',d==='next'?-4:4,'0');
       nr.style.transition='transform .3s cubic-bezier(.2,.7,.2,1)';setT(nr,'0',0,'1');
-      setTimeout(function(){old.remove();nr.style.transition='';nr.style.transform='';nr.style.opacity='';busy=false;ready();},320);
+      setTimeout(function(){old.remove();nr.removeAttribute('style');clip.style.minHeight='';window.scrollTo(0,0);busy=false;ready();},320);
     });});
   }
   function go(h,d){if(!h||busy)return;busy=true;
-    root.style.transition='transform .2s, opacity .2s';setT(root,d==='next'?'-24px':'24px',d==='next'?-1:1,'.85');  // held, loading
-    prefetch(h).then(function(doc){if(doc)swap(doc,h,d);else location.href=h;});
+    var doc=docs[h];
+    if(doc){finish(doc,h,d);return;}
+    root.style.transition='transform .2s, opacity .2s';setT(root,d==='next'?'-24px':'24px',d==='next'?-1:1,'.85');
+    prefetch(h).then(function(doc){if(doc){docs[h]=doc;finish(doc,h,d);}else location.href=h;});
   }
+  if(reduce){finish=function(doc,h,d){var nr=doc.querySelector('.swipe-root').cloneNode(true);var np=doc.querySelector('.progress-slot');
+    document.querySelector('.progress-slot').innerHTML=np?np.innerHTML:'';root.replaceWith(nr);root=nr;document.title=nr.dataset.title||document.title;history.pushState({h:h},'',h);window.scrollTo(0,0);busy=false;ready();};}
   window.addEventListener('popstate',function(){location.reload();});
   document.addEventListener('click',function(e){var a=e.target.closest('.progress .step[href]');if(!a)return;e.preventDefault();go(a.getAttribute('href'),a.textContent.trim()==='›'?'next':'prev');});
   document.addEventListener('keydown',function(e){if(e.key==='ArrowRight')go(root.dataset.next,'next');if(e.key==='ArrowLeft')go(root.dataset.prev,'prev');});
-  var sx=0,sy=0,dx=0,dragging=false,horiz=null,EDGE=24;
+  var sx=0,sy=0,dx=0,dragging=false,horiz=null,EDGE=24,W=function(){return clip.clientWidth};
   document.addEventListener('touchstart',function(e){if(busy)return;var t=e.touches[0];
     if(t.clientX<EDGE||t.clientX>innerWidth-EDGE){dragging=false;return;}
     sx=t.clientX;sy=t.clientY;dx=0;dragging=true;horiz=null;root.style.transition='none';},{passive:true});
-  document.addEventListener('touchmove',function(e){if(!dragging)return;var t=e.touches[0];dx=t.clientX-sx;var dy=t.clientY-sy;
+  document.addEventListener('touchmove',function(e){if(!dragging||reduce)return;var t=e.touches[0];dx=t.clientX-sx;var dy=t.clientY-sy;
     if(horiz===null&&(Math.abs(dx)>8||Math.abs(dy)>8))horiz=Math.abs(dx)>Math.abs(dy);
     if(!horiz)return;
-    var lim=(dx<0&&!root.dataset.next)||(dx>0&&!root.dataset.prev)?0.25:1;
-    setT(root,(dx*lim)+'px',dx*lim/40,String(Math.max(.5,1-Math.abs(dx)/700)));},{passive:true});
+    var d=dx<0?'next':'prev';
+    if(peek&&peekDir!==d)dropPeek(false);
+    if(root.dataset[d])showPeek(d);
+    var lim=root.dataset[d]?1:0.25;
+    setT(root,(dx*lim)+'px',dx*lim/40,String(Math.max(.5,1-Math.abs(dx)/700)));
+    if(peek){peek.style.transition='none';setT(peek,(d==='next'?W():-W())+dx+'px',0,'1');}},{passive:true});
   document.addEventListener('touchend',function(){if(!dragging)return;dragging=false;
-    if(horiz&&Math.abs(dx)>90&&((dx<0&&root.dataset.next)||(dx>0&&root.dataset.prev))){go(dx<0?root.dataset.next:root.dataset.prev,dx<0?'next':'prev');return;}
-    root.style.transition='transform .25s cubic-bezier(.2,.8,.3,1.2), opacity .25s';root.style.transform='';root.style.opacity='';},{passive:true});
+    if(horiz&&Math.abs(dx)>90&&root.dataset[dx<0?'next':'prev']){go(root.dataset[dx<0?'next':'prev'],dx<0?'next':'prev');return;}
+    root.style.transition='transform .25s cubic-bezier(.2,.8,.3,1.2), opacity .25s';root.style.transform='';root.style.opacity='';dropPeek(true);},{passive:true});
 })();
 </script>
 <script data-goatcounter="https://paperwatch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
