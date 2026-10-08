@@ -50,7 +50,7 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
 .swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px;position:relative}
-.swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+.swipe-root{transition:transform .25s ease-out;will-change:transform}
 body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:4px 0 22px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
@@ -164,18 +164,18 @@ For STIX/EUI timing work, it is a physics-context and forward-modelling resource
   var docs={};  // resolved neighbour documents, so the drag can show them synchronously
   function ready(){markSeen(root.dataset.id);['prev','next'].forEach(function(d){var h=root.dataset[d];if(!h)return;prefetch(h).then(function(doc){if(doc)docs[h]=doc;});});}
   ready();
-  function setT(el,x,r,o){el.style.transform='translateX('+x+') rotate('+r+'deg)';el.style.opacity=o;}
+  function setT(el,x,r,o){el.style.transform='translateX('+x+')';el.style.opacity='1';}
   function overlay(el){el.style.position='absolute';el.style.left='16px';el.style.right='16px';el.style.top='0';el.style.pointerEvents='none';}
   // Put the neighbour card in the DOM beside the current one, off-screen, ready to ride with the finger.
   function showPeek(d){var h=root.dataset[d],doc=h&&docs[h];if(!doc||peek)return;
-    var nr=doc.querySelector('.swipe-root').cloneNode(true);overlay(nr);nr.style.transition='none';setT(nr,d==='next'?'100%':'-100%',0,'1');
+    var nr=doc.querySelector('.swipe-root').cloneNode(true);overlay(nr);nr.style.transition='none';setT(nr,(d==='next'?W()+GAP:-(W()+GAP))+'px',0,'1');
     clip.appendChild(nr);peek=nr;peekDir=d;}
   function dropPeek(animate){if(!peek)return;var pk=peek,d=peekDir;peek=null;peekDir=null;
     if(!animate){pk.remove();return;}
-    pk.style.transition='transform .25s';setT(pk,d==='next'?'100%':'-100%',0,'1');setTimeout(function(){pk.remove()},260);}
+    pk.style.transition='transform .25s';setT(pk,(d==='next'?W()+GAP:-(W()+GAP))+'px',0,'1');setTimeout(function(){pk.remove()},260);}
   function finish(doc,h,d){
     var np=doc.querySelector('.progress-slot'),nr=peek&&peekDir===d?peek:null;
-    if(!nr){nr=doc.querySelector('.swipe-root').cloneNode(true);overlay(nr);nr.style.transition='none';setT(nr,d==='next'?'100%':'-100%',0,'1');clip.appendChild(nr);}
+    if(!nr){nr=doc.querySelector('.swipe-root').cloneNode(true);overlay(nr);nr.style.transition='none';setT(nr,(d==='next'?W()+GAP:-(W()+GAP))+'px',0,'1');clip.appendChild(nr);}
     peek=null;peekDir=null;
     var old=root;root=nr;
     document.querySelector('.progress-slot').innerHTML=np?np.innerHTML:'';
@@ -184,7 +184,7 @@ For STIX/EUI timing work, it is a physics-context and forward-modelling resource
     // old card leaves the flow (absolute, where it was) and the new one slides into place
     var topOld=old.offsetTop;overlay(old);old.style.top=topOld+'px';
     requestAnimationFrame(function(){requestAnimationFrame(function(){
-      old.style.transition='transform .28s ease-in, opacity .28s';setT(old,d==='next'?'-110%':'110%',d==='next'?-4:4,'0');
+      old.style.transition='transform .3s cubic-bezier(.2,.7,.2,1)';setT(old,(d==='next'?-(W()+GAP):W()+GAP)+'px',0,'1');
       nr.style.transition='transform .3s cubic-bezier(.2,.7,.2,1)';setT(nr,'0',0,'1');
       setTimeout(function(){old.remove();nr.removeAttribute('style');clip.style.minHeight='';window.scrollTo(0,0);busy=false;ready();},320);
     });});
@@ -192,7 +192,7 @@ For STIX/EUI timing work, it is a physics-context and forward-modelling resource
   function go(h,d){if(!h||busy)return;busy=true;
     var doc=docs[h];
     if(doc){finish(doc,h,d);return;}
-    root.style.transition='transform .2s, opacity .2s';setT(root,d==='next'?'-24px':'24px',d==='next'?-1:1,'.85');
+    root.style.transition='transform .2s';setT(root,d==='next'?'-24px':'24px',0,'1');
     prefetch(h).then(function(doc){if(doc){docs[h]=doc;finish(doc,h,d);}else location.href=h;});
   }
   if(reduce){finish=function(doc,h,d){var nr=doc.querySelector('.swipe-root').cloneNode(true);var np=doc.querySelector('.progress-slot');
@@ -200,7 +200,7 @@ For STIX/EUI timing work, it is a physics-context and forward-modelling resource
   window.addEventListener('popstate',function(){location.reload();});
   document.addEventListener('click',function(e){var a=e.target.closest('.progress .step[href]');if(!a)return;e.preventDefault();go(a.getAttribute('href'),a.textContent.trim()==='›'?'next':'prev');});
   document.addEventListener('keydown',function(e){if(e.key==='ArrowRight')go(root.dataset.next,'next');if(e.key==='ArrowLeft')go(root.dataset.prev,'prev');});
-  var sx=0,sy=0,dx=0,dragging=false,horiz=null,EDGE=24,W=function(){return clip.clientWidth};
+  var sx=0,sy=0,dx=0,dragging=false,horiz=null,EDGE=24,GAP=24,W=function(){return clip.clientWidth-32};
   document.addEventListener('touchstart',function(e){if(busy)return;var t=e.touches[0];
     if(t.clientX<EDGE||t.clientX>innerWidth-EDGE){dragging=false;return;}
     sx=t.clientX;sy=t.clientY;dx=0;dragging=true;horiz=null;root.style.transition='none';},{passive:true});
@@ -211,11 +211,11 @@ For STIX/EUI timing work, it is a physics-context and forward-modelling resource
     if(peek&&peekDir!==d)dropPeek(false);
     if(root.dataset[d])showPeek(d);
     var lim=root.dataset[d]?1:0.25;
-    setT(root,(dx*lim)+'px',dx*lim/40,String(Math.max(.5,1-Math.abs(dx)/700)));
-    if(peek){peek.style.transition='none';setT(peek,(d==='next'?W():-W())+dx+'px',0,'1');}},{passive:true});
+    setT(root,(dx*lim)+'px',0,'1');
+    if(peek){peek.style.transition='none';setT(peek,(d==='next'?W()+GAP:-(W()+GAP))+dx+'px',0,'1');}},{passive:true});
   document.addEventListener('touchend',function(){if(!dragging)return;dragging=false;
     if(horiz&&Math.abs(dx)>90&&root.dataset[dx<0?'next':'prev']){go(root.dataset[dx<0?'next':'prev'],dx<0?'next':'prev');return;}
-    root.style.transition='transform .25s cubic-bezier(.2,.8,.3,1.2), opacity .25s';root.style.transform='';root.style.opacity='';dropPeek(true);},{passive:true});
+    root.style.transition='transform .25s cubic-bezier(.2,.8,.3,1.2)';root.style.transform='';dropPeek(true);},{passive:true});
 })();
 </script>
 <script data-goatcounter="https://paperwatch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
