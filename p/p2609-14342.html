@@ -1,6 +1,6 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Decoding RR Lyrae light curves with deep learning for accurate absolute magnitude estimation</title><link rel="icon" href="../favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="../icon-32.png"><link rel="icon" type="image/png" sizes="192x192" href="../icon-192.png"><link rel="apple-touch-icon" href="../icon-180.png"><meta name="theme-color" content="#141412"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,500;7..72,600&display=swap"><style>
 /* Palette from the instruments: AIA 171 / EUI 174 gold on a cool slate-white page. One family, Literata.
-   Layout: one reading column; the lightcurve is the hero, everything else stays quiet. */
+   Layout: one reading column; the calendar leads, everything else stays quiet. */
 :root{--bg:#f4f5f7;--fg:#1b1d22;--muted:#5d636e;--panel:#ffffff;--line:#d9dce2;--line2:#eceef2;
       --acc:#c98a12;--acc-fill:#f2b83c;--acc-fg:#1b1d22;--acc-soft:#fbead0;--focus:#2457a8;
       --font:"Literata",Georgia,"Times New Roman",serif;color-scheme:light}
@@ -27,15 +27,6 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .score .v{font-weight:600;font-size:1.25rem}.score .l{font-size:.68rem;color:var(--muted);margin-top:2px;white-space:nowrap}
 .rel{color:var(--muted);font-style:italic}
 .empty{color:var(--muted);font-style:italic}
-/* lightcurve hero */
-.lc{margin:4px 0 8px;padding-top:1.7em;position:relative;touch-action:pan-y;user-select:none;-webkit-user-select:none}.lc svg{display:block;width:100%;height:auto;overflow:visible;cursor:pointer}
-.lc .bar{fill:var(--line)}.lc .spike{fill:var(--acc-fill);stroke:var(--acc);stroke-width:.6}
-.lc .cursor{fill:var(--acc);opacity:0;pointer-events:none}.lc .cursor.on{opacity:.18}
-.lc .hit{fill:transparent;pointer-events:none}
-.lc-read{position:absolute;top:0;left:0;right:0;height:1.5em;line-height:1.5em;margin:0;font-size:.95rem;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.lc-read strong{color:var(--fg);font-weight:600}
-.lc text{fill:var(--muted);font-family:var(--font);font-size:7.5px}.lc .axis{stroke:var(--line);stroke-width:.6}.lc .tick{stroke:var(--line)}
-.lc-cap{display:flex;flex-wrap:wrap;gap:4px 18px;color:var(--muted);font-size:.88rem;margin-top:6px}
-.lc-cap i{display:inline-block;width:10px;height:10px;margin-right:6px;vertical-align:-1px}.lc-cap .i1{background:var(--acc-fill);border:1px solid var(--acc)}.lc-cap .i2{background:var(--line)}
 /* filter bar */
 .filters{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;padding:10px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-size:.92rem}
 .filters label{display:inline-flex;align-items:center;gap:6px}.filters input[type=search]{flex:1 1 200px;min-width:0;padding:6px 10px;border:1px solid var(--line);background:var(--panel);color:var(--fg);font:inherit}
@@ -109,7 +100,7 @@ details summary{list-style:none}details summary::-webkit-details-marker{display:
 .conf-high,.prio-read-first{background:var(--acc-fill);color:var(--acc-fg);border-color:var(--acc)}.conf-medium,.prio-read{background:var(--acc-soft);color:var(--fg);border-color:transparent}
 .card ol{margin:4px 0;padding-left:22px}
 /* calendar */
-.cal-wrap{display:flex;flex-wrap:wrap;gap:20px 32px}
+.cal-wrap{display:flex;flex-wrap:wrap;gap:20px 32px;margin-top:4px}
 .cal{flex:1 1 260px;max-width:400px;min-width:0}.cal-title{font-weight:600;font-size:1.05rem;margin:0 0 8px}
 .cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:3px}
 .dow{text-align:center;font-size:.78rem;color:var(--muted);padding-bottom:2px}
@@ -225,7 +216,6 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
     else if(e.target.closest('.cell[data-day]'))ev('calendar-day');
     else if(e.target.closest('.logo-btn'))ev('icon');
   });
-  document.addEventListener('pointerup',function(e){if(e.target.closest('#lc'))ev('lightcurve');});
   document.addEventListener('toggle',function(e){var t=e.target;if(t.open&&t.classList.contains('acc'))ev('section/'+(t.querySelector('.t')||{}).textContent.trim().split(' ')[0].toLowerCase());},true);
 })();
 </script></div></body></html>
