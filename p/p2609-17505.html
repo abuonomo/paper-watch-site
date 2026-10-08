@@ -9,7 +9,7 @@
 :root[data-theme="dark"]{--bg:#0f1216;--fg:#e6e8ec;--muted:#9aa1ab;--panel:#161a20;--line:#2a2f38;--line2:#1f242c;
       --acc:#e0a63a;--acc-fill:#f2b83c;--acc-fg:#0f1216;--acc-soft:#3a2d12;--focus:#7fa8e8;color-scheme:dark}
 *{box-sizing:border-box}
-html{overflow-x:clip}body{margin:0;padding-block:24px 72px;padding-inline:16px;background:var(--bg);color:var(--fg);font:16px/1.6 var(--font);font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+html{overflow-x:clip;overscroll-behavior-x:none}body{margin:0;padding-block:24px 72px;padding-inline:16px;background:var(--bg);color:var(--fg);font:16px/1.6 var(--font);font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
 .wrap{max-width:820px;margin-inline:auto;min-width:0}
 h1,h2,h3{font-weight:600;line-height:1.2;text-wrap:balance;margin:0}
 h1{font-size:1.9rem;font-variation-settings:"opsz" 72}h2{font-size:1.25rem;margin:40px 0 10px}
@@ -136,7 +136,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="swipe-root">
+</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.17505" data-prev="" data-next="" data-title="Stellar Ages of M Dwarf Hosts of Temperate Sub-Neptunes">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.17505">Stellar Ages of M Dwarf Hosts of Temperate Sub-Neptunes</a></h1>
   <div class="meta">Lalitha Sairam, Nikku Madhusudhan<div>Submitted 15 Sep 2026, astro-ph.EP</div>
@@ -147,27 +147,44 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 </article></div>
 <script>
 (function(){
-  try{var k='pw-seen',seen=JSON.parse(localStorage.getItem(k)||'{}');seen['2609.17505']=Date.now();localStorage.setItem(k,JSON.stringify(seen));}catch(e){}
-  var prev='',next='',root=document.querySelector('.swipe-root');
-  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
-  // Slide in from the side we came from.
-  try{var dir=sessionStorage.getItem('pw-dir');sessionStorage.removeItem('pw-dir');
-    if(dir&&root&&!reduce){root.style.transition='none';root.style.transform='translateX('+(dir==='next'?'60px':'-60px')+')';root.style.opacity='0';
-      requestAnimationFrame(function(){requestAnimationFrame(function(){root.style.transition='';root.style.transform='';root.style.opacity='';});});}}catch(e){}
-  function go(h,d){if(!h)return;try{sessionStorage.setItem('pw-dir',d)}catch(e){}
-    if(root&&!reduce){root.style.transition='transform .22s ease-in, opacity .22s';root.style.transform='translateX('+(d==='next'?'-110%':'110%')+') rotate('+(d==='next'?'-4deg':'4deg')+')';root.style.opacity='0';
-      setTimeout(function(){location.href=h},200);}else location.href=h;}
-  document.addEventListener('keydown',function(e){if(e.key==='ArrowRight')go(next,'next');if(e.key==='ArrowLeft')go(prev,'prev');});
-  if(!root)return;
+  var root=document.querySelector('.swipe-root');if(!root)return;
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches,cache={},busy=false;
+  function markSeen(id){try{var k='pw-seen',seen=JSON.parse(localStorage.getItem(k)||'{}');seen[id]=Date.now();localStorage.setItem(k,JSON.stringify(seen));}catch(e){}}
+  function prefetch(h){if(!h||cache[h])return;cache[h]=fetch(h).then(function(r){return r.text()}).then(function(t){return new DOMParser().parseFromString(t,'text/html')}).catch(function(){delete cache[h];return null;});}
+  function ready(){markSeen(root.dataset.id);prefetch(root.dataset.prev);prefetch(root.dataset.next);}
+  ready();
+  // Swap the card, subtitle and progress line in place; the rest of the page stays put.
+  function swap(doc,h,d){
+    var nr=doc.querySelector('.swipe-root'),np=doc.querySelector('.progress-slot'),ns=doc.querySelector('.sub');
+    if(!nr){location.href=h;return;}
+    document.querySelector('.progress-slot').innerHTML=np?np.innerHTML:'';
+    var sub=document.querySelector('.sub');if(sub&&ns)sub.innerHTML=ns.innerHTML;
+    nr.style.transition='none';nr.style.transform='translateX('+(d==='next'?'70px':'-70px')+')';nr.style.opacity='0';
+    root.replaceWith(nr);root=nr;document.title=nr.dataset.title||document.title;
+    history.pushState({h:h},'',h);window.scrollTo(0,0);
+    requestAnimationFrame(function(){requestAnimationFrame(function(){nr.style.transition='';nr.style.transform='';nr.style.opacity='';busy=false;});});
+    ready();
+  }
+  function go(h,d){if(!h||busy)return;busy=true;
+    var out=function(){return new Promise(function(res){if(reduce)return res();
+      root.style.transition='transform .2s ease-in, opacity .2s';root.style.transform='translateX('+(d==='next'?'-110%':'110%')+') rotate('+(d==='next'?'-4deg':'4deg')+')';root.style.opacity='0';setTimeout(res,190);});};
+    prefetch(h);Promise.all([out(),cache[h]]).then(function(r){var doc=r[1];if(doc)swap(doc,h,d);else location.href=h;});
+  }
+  window.addEventListener('popstate',function(){location.reload();});
+  document.addEventListener('click',function(e){var a=e.target.closest('.progress .step[href]');if(!a)return;e.preventDefault();go(a.getAttribute('href'),a.textContent.trim()==='›'?'next':'prev');});
+  document.addEventListener('keydown',function(e){if(e.key==='ArrowRight')go(root.dataset.next,'next');if(e.key==='ArrowLeft')go(root.dataset.prev,'prev');});
   var sx=0,sy=0,dx=0,dragging=false,horiz=null;
-  document.addEventListener('touchstart',function(e){var t=e.touches[0];sx=t.clientX;sy=t.clientY;dx=0;dragging=true;horiz=null;root.style.transition='none';},{passive:true});
+  var EDGE=24;  // leave the screen edges to the browser's own back/forward gesture
+  document.addEventListener('touchstart',function(e){if(busy)return;var t=e.touches[0];
+    if(t.clientX<EDGE||t.clientX>innerWidth-EDGE){dragging=false;return;}
+    sx=t.clientX;sy=t.clientY;dx=0;dragging=true;horiz=null;root.style.transition='none';},{passive:true});
   document.addEventListener('touchmove',function(e){if(!dragging)return;var t=e.touches[0];dx=t.clientX-sx;var dy=t.clientY-sy;
     if(horiz===null&&(Math.abs(dx)>8||Math.abs(dy)>8))horiz=Math.abs(dx)>Math.abs(dy);
     if(!horiz)return;
-    var lim=(dx<0&&!next)||(dx>0&&!prev)?0.25:1;   // resist at the ends of the stack
+    var lim=(dx<0&&!root.dataset.next)||(dx>0&&!root.dataset.prev)?0.25:1;
     root.style.transform='translateX('+(dx*lim)+'px) rotate('+(dx*lim/40)+'deg)';root.style.opacity=String(Math.max(.4,1-Math.abs(dx)/600));},{passive:true});
   document.addEventListener('touchend',function(){if(!dragging)return;dragging=false;
-    if(horiz&&Math.abs(dx)>90&&((dx<0&&next)||(dx>0&&prev))){go(dx<0?next:prev,dx<0?'next':'prev');return;}
+    if(horiz&&Math.abs(dx)>90&&((dx<0&&root.dataset.next)||(dx>0&&root.dataset.prev))){go(dx<0?root.dataset.next:root.dataset.prev,dx<0?'next':'prev');return;}
     root.style.transition='transform .25s cubic-bezier(.2,.8,.3,1.2), opacity .25s';root.style.transform='';root.style.opacity='';},{passive:true});
 })();
 </script>
