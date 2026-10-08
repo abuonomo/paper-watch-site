@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.09645" data-prev="" data-next="" data-title="High Resolution Spectroscopic Follow-up Observation Results for 13 EMP Candidates Selected by Narrow-band Photometry">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.09645" data-prev="" data-next="" data-title="High Resolution Spectroscopic Follow-up Observation Results for 13 EMP Candidates Selected by Narrow-band Photometry">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.09645">High Resolution Spectroscopic Follow-up Observation Results for 13 EMP Candidates Selected by Narrow-band Photometry</a></h1>
   <div class="meta">Huiling Chen, Yang Huang, Huawei Zhang, Zhen Guo<div>Submitted 9 Sep 2026, astro-ph.GA</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">Extremely metal-poor (EMP; [Fe/H] &lt; -3.0) stars preserve key information about the earliest stages of Galactic chemical evolution. Based on a training set of spectroscopic metallicities, we constructed catalogs of more than 120,000 EMP candidates from large-scale narrow-band photometric surveys. To validate this approach, we obtained high-resolution CFHT/ESPaDOnS spectra for 13 candidates selected from the SkyMapper-based catalog. The follow-up observation confirms that the narrow-band photometric selection is effective in identifying very metal-poor stars and retaining a substantial EMP fraction: four targets are confirmed as EMP stars, and all targets remain very metal-poor with [Fe/H] &lt; -2.4. The photometric metallicities are systematically lower than the spectroscopic values by 0.44 dex, with a relatively small scatter of 0.19 dex, indicating a systematic offset in the photometric metallicity scale that could be reduced through improved calibration. Abundances for more than 20 chemical species are derived, leading to the identification of a new potassium-enhanced r-II star, J2001-1215. By combining chemical abundances with orbital properties, five stars are found to be dynamically consistent with known Galactic substructures, including Gaia--Sausage--Enceladus, Thamnos, and Sequoia. These stars provide high-resolution chemical measurements for the extremely metal-poor regime of these Galactic substructures. These results underscore the role of narrow-band photometry in efficiently selecting EMP candidates for targeted high-resolution spectroscopic follow-up, thereby enabling detailed chemical and dynamical studies of the early Milky Way.</p>
   <h2>Screening</h2><p><strong>0 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">The paper is about extremely metal-poor stars and Galactic chemical evolution, using narrow-band photometry and high-resolution stellar spectroscopy. It has no connection to flares, particle acceleration, QPPs, or STIX/EUI.</p>
   <p class="meta">arXiv:2609.09645</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

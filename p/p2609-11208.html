@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.11208" data-prev="" data-next="" data-title="Non-axisymmetric Transport of Magnetic Flux Tubes: A Mechanism for Joy&#x27;s Law and Poloidal Field Generation via Meridional Flows">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.11208" data-prev="" data-next="" data-title="Non-axisymmetric Transport of Magnetic Flux Tubes: A Mechanism for Joy&#x27;s Law and Poloidal Field Generation via Meridional Flows">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.11208">Non-axisymmetric Transport of Magnetic Flux Tubes: A Mechanism for Joy&#x27;s Law and Poloidal Field Generation via Meridional Flows</a></h1>
   <div class="meta">Andrey G. Tlatov<div>Submitted 10 Sep 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">We present a new scenario for the solar $αω$-dynamo based on the interaction of asymmetric magnetic flux tubes with the near-surface meridional flow. Standard thin flux tube simulations indicate that the radial gradient of differential rotation ($\partialΩ/\partial r &gt; 0$) breaks the spatial symmetry of emerging $Ω$-loops. The leading (western) leg becomes nearly vertical, while the trailing (eastern) leg is heavily stretched and flattens along the longitude. Upon emergence at the photosphere, the horizontal meridional flow toward the poles acts more efficiently on the trailing leg because the efficiency of the hydrodynamic entrainment by the plasma (the ``sail effect&#x27;&#x27;) is directly proportional to the total spatial length of the magnetic flux tube arc elements. This creates a differential torque that drives the trailing sunspot poleward while the leading sunspot remains anchored due to its compact spatial geometry. Our model yields a tilt angle evolution rate of $\approx 0.3^\circ\,\mathrm{day}^{-1}$ at a latitude of $20^\circ$ for a bipolar separation of $15^\circ$, reproducing Joy&#x27;s law without invoking the classical Coriolis-driven twist during the rise phase.</p>
   <h2>Screening</h2><p><strong>1 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">This paper covers solar dynamo theory, Joy&#x27;s law and flux tube transport by meridional flows. It has no connection to flare timing, particle acceleration, QPPs, or STIX/EUI, and no methods that transfer.</p>
   <p class="meta">arXiv:2609.11208</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

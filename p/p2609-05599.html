@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.05599" data-prev="" data-next="" data-title="POSTELLAR: Posterior Stellar Spectrum Sampling - An Alternative to Approximate Stellar Spectra for Exoplanetary Analysis">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.05599" data-prev="" data-next="" data-title="POSTELLAR: Posterior Stellar Spectrum Sampling - An Alternative to Approximate Stellar Spectra for Exoplanetary Analysis">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.05599">POSTELLAR: Posterior Stellar Spectrum Sampling - An Alternative to Approximate Stellar Spectra for Exoplanetary Analysis</a></h1>
   <div class="meta">Dhvani Doshi, Nicolas B. Cowan, Yashar Hezaveh, Gabriel Missael Barco, Étienne Artigau<div>Submitted 4 Sep 2026, astro-ph.EP</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">We present a novel approach to perform posterior sampling of the underlying stellar spectrum in high-resolution spectroscopic observations. Our method, postellar, coherently combines information from empirical observations and physics-based models, enabling more accurate spectral recovery while providing uncertainties that can be propagated into downstream analyses. This is accomplished by treating the intrinsic stellar spectrum as a latent variable and performing posterior sampling under a Gaussian likelihood with an informative prior constructed using a score-based diffusion model trained on PHOENIX stellar models. We validate the framework on synthetic SPIRou radial velocity (RV) observations generated from the empirical spectra of Barnard&#x27;s Star and Proxima Centauri. Spectra inferred with postellar more accurately recover the ground truth than standard empirical templates. For medium signal-to-noise observations, postellar improves RV accuracy by up to a factor of three, while RVs derived from empirical templates tend to be biased. This method performs particularly well in low signal-to-noise and low-cadence regimes. The postellar framework is broadly applicable to other high-resolution spectroscopy science cases including stellar abundance analyses and exoplanet atmospheric characterization.</p>
   <h2>Screening</h2><p><strong>1 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">The paper is about stellar spectrum posterior sampling with diffusion models for exoplanet radial velocity work. It has no link to flare timing, particle acceleration, QPPs, or STIX/EUI, and the method does not transfer to flare lightcurves.</p>
   <p class="meta">arXiv:2609.05599</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

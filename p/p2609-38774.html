@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.38774" data-prev="" data-next="" data-title="Magnetic field diagnostics of a solar active region filament">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.38774" data-prev="" data-next="" data-title="Magnetic field diagnostics of a solar active region filament">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.38774">Magnetic field diagnostics of a solar active region filament</a></h1>
   <div class="meta">Daiki Yamasaki, Yu Wei Huang, Yuki Hashimoto, Satoru UeNo, Kiyoshi Ichimoto<div>Submitted 30 Sep 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">We performed spectropolarimetric observations of an active region filament in He I 10830 angstrom and Si I 10827 angstrom lines to investigate its magnetic field structure. We carried out full-Stokes inversions with the HAZEL code, which takes into account the Zeeman and Hanle effects. As a result, we yielded a mean field strength of 101 $\pm$ 33 G and a horizontal field nearly parallel to the filament axis, such that the distinction between the two classical normal- and reverse-polarity models becomes physically insignificant. In addition, we found Zeeman-like signatures in the linear polarization, characterized by double-peaked symmetric profiles, in some pixels of our observations. Since these profiles could not be well reproduced by modeling that included both the Zeeman and Hanle effects, we performed inversions assuming only the Zeeman effect. The inversion yielded a strong magnetic field of approximately 500 G. However, simultaneous observations of Si I 10827 angstrom indicate a photospheric magnetic field weaker than 100 G. Therefore, the scenario proposed by Diaz Baso et al. (2016), in which the strong field inferred from He I 10830 angstrom originates from contamination by the underlying photosphere, does not apply to our filament. The Zeeman-like profiles are preferentially found in optically thick regions ($τ$ ~ 1.4-2.5), where the simplifying assumptions adopted in HAZEL are expected to become less reliable. Our results suggest that these profiles reveal limitations of the current inversion framework in optically thick regions and motivate future radiative-transfer modeling incorporating self-consistent radiation fields, differential illumination of the multiplet components, and possibly partial frequency redistribution.</p>
   <h2>Screening</h2><p><strong>1 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">This paper is about spectropolarimetric magnetic field inversions of an active region filament (HAZEL, He I 10830). It has no connection to flare timing, QPPs, particle acceleration, or STIX/EUI, and the methods do not transfer.</p>
   <p class="meta">arXiv:2609.38774</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

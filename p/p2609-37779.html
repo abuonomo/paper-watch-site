@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.37779" data-prev="" data-next="" data-title="Near-infrared periodicity in the SPICY catalog. True young stellar objects versus contaminants">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.37779" data-prev="" data-next="" data-title="Near-infrared periodicity in the SPICY catalog. True young stellar objects versus contaminants">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.37779">Near-infrared periodicity in the SPICY catalog. True young stellar objects versus contaminants</a></h1>
   <div class="meta">C. Ordenes-Huanca, A. Bayo, M. Zoccali, V. Guzmán, A. Rojas-Arriagada<div>Submitted 29 Sep 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">Infrared (IR) large-sky surveys allow study of how localized star formation is, enabling searches for young stellar objects (YSOs) not only at the centers of known stellar nurseries but also across the Galactic plane. However, these spatially unbiased searches suffer from contamination, most notably from dusty asymptotic giant branch (AGB) stars characterized by long-period variability. Using time-series analysis, and taking advantage of the different variability timescales of YSOs against long-period variables (LPVs), we assess the level of contamination of one of the most spatially unbiased YSO catalogs (\textit{Spitzer}/IRAC Candidate YSO, SPICY). Distinguishing between these two groups lets us draw more robust conclusions about the frequency of isolated YSOs in our Galaxy and their implications. We cross-match the SPICY and VIRAC2 catalogs (VVV/VVVX Survey), build near-IR light curves for common sources, and compute their periods and amplitudes. Contaminants are identified as sources with periodic flux variations with periods $P\geq 80\,d$ and amplitudes $ΔK_{\rm s}\geq0.35\,\rm{mag}$. From $58\,737$ common sources, we identify $742$ SPICY objects as LPV contaminants based on their long-period variability, and identify $307$ high-confidence periodic YSO candidates exhibiting short-period flux changes consistent with cool spots. Near- and mid-IR amplitudes are correlated only among LPVs, suggesting a common pulsation origin. In addition, the spatial distribution of the identified populations further supports our classification, with LPVs preferentially associated with the bulge and YSOs at the lowest galactic latitudes.</p>
   <h2>Screening</h2><p><strong>1 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">Concerns periodicity in near-IR light curves of young stellar objects versus AGB long-period variables, with no connection to flares, particle acceleration, or QPPs. The period-search methods are generic and would transfer only marginally to flare lightcurves.</p>
   <p class="meta">arXiv:2609.37779</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

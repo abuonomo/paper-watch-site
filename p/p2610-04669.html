@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2610.04669" data-prev="" data-next="" data-title="Measured energy exchange in coronal hole solar wind from its solar origins to the heliosphere">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2610.04669" data-prev="" data-next="" data-title="Measured energy exchange in coronal hole solar wind from its solar origins to the heliosphere">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2610.04669">Measured energy exchange in coronal hole solar wind from its solar origins to the heliosphere</a></h1>
   <div class="meta">Yeimy J. Rivera, Alin R. Paraschiv, Samuel T. Badman, Alberto M. Vasquez, Federico A. Nuevo, Ryan J. French, Momchil Molnar, Roberto Susino, Zihao Yang, Marco Romoli, Richard A. Frazin, Michael L. Stevens et al.<div>Submitted 3 Oct 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">Coordinated ground- and space-based remote observations are used to provide a comprehensive, multi-perspective view of the solar atmosphere that we connect with in situ measurements in the heliosphere centered around the April 8 2024 Total Solar Eclipse observed across North America. These near-contemporaneous, multi-wavelength datasets are used to directly derive the plasma parameters and compute an energy budget of a solar wind stream at its low-coronal birthplace (at an altitude of 1.05Rsun). The energy budget is also independently computed at and beyond the Alfvén surface from the in situ observations of the same stream. The total wave energy flux dominates the low-coronal budget (11 W m-2 Alfvén, 7 to 23 W m-2 in compressive MHD modes), while enthalpy (13 W m-2) and work done against gravity from 1.0Rsun (2.5 W m-2) make up the remainder. The total coronal energy budget is consistent with the total measured in situ by Parker Solar Probe if and only if compressive energy flux is included and attributed to the fast magnetosonic mode. Nearly all this thermal and wave energy is converted to ion heating, acceleration and gravitational potential energy within the Alfvén surface. The stream evolution is well-described as a thermal-pressure driven wind with additional energy deposited by MHD fluctuations. The observed evolution of the Alfvénic component of these fluctuations follows a near-dissipation-free curve below the Alfvén surface while deviating from it more strongly above this critical surface.</p>
   <h2>Screening</h2><p><strong>1 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">The paper is about the energy budget of coronal hole solar wind, linking eclipse remote observations to Parker Solar Probe in situ data. It has no flare timing, QPP, or flare particle acceleration content, and its only overlap is the broad solar physics field.</p>
   <p class="meta">arXiv:2610.04669</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

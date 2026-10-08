@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2610.04367" data-prev="" data-next="" data-title="Fast X-ray Transient EP260321a: Shock Breakout through an Extended Circumstellar Matter">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2610.04367" data-prev="" data-next="" data-title="Fast X-ray Transient EP260321a: Shock Breakout through an Extended Circumstellar Matter">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2610.04367">Fast X-ray Transient EP260321a: Shock Breakout through an Extended Circumstellar Matter</a></h1>
   <div class="meta">Maokai Hu, Yi Yang, Lifan Wang, Xiaofeng Wang<div>Submitted 3 Oct 2026, astro-ph.HE</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">The Einstein Probe (EP) has discovered a fast X-ray transient, EP260321a, whose optical counterpart was subsequently classified as a broad-lined Type Ic supernova. Its observed rise time of about 690 seconds is inconsistent with theoretical predictions for shock breakout (SBO) from a Wolf-Rayet star, which is typically regarded as the progenitor of envelope-stripped supernovae. In this paper, we propose that EP260321a arose from a SBO within extended circumstellar matter (CSM), where breakout photons were initially trapped, then diffused out of the unshocked CSM as the ejecta expanded and the opacity decreased. We modeled this photon diffusion process using both Monte Carlo simulations and an analytical approach to describe the temperature evolution. Through Markov Chain Monte Carlo sampling, we obtain the best-fit CSM parameters of log10(Mcsm/Msun) = -3.3 for the total CSM mass, Rin = 160 Rsun for the inner CSM radius, and Rout = 612 Rsun for the outer CSM radius. The presence of such a dense CSM indicates that the progenitor of EP260321a underwent episodic mass loss just days before the explosion, providing new observational constraints on the late-stage evolution of massive stars.</p>
   <h2>Screening</h2><p><strong>1 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">This paper models shock breakout from circumstellar matter in a fast X-ray transient associated with a supernova. It has no connection to solar flare timing, particle acceleration, QPPs, or STIX/EUI, and its methods do not transfer to flare lightcurve analysis.</p>
   <p class="meta">arXiv:2610.04367</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

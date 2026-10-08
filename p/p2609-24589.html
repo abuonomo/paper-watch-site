@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.24589" data-prev="" data-next="" data-title="LATED: JWST integral field spectroscopy of a galaxy caught in chemical infancy at $z=4.8$ behind Abell 2744">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.24589" data-prev="" data-next="" data-title="LATED: JWST integral field spectroscopy of a galaxy caught in chemical infancy at $z=4.8$ behind Abell 2744">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.24589">LATED: JWST integral field spectroscopy of a galaxy caught in chemical infancy at $z=4.8$ behind Abell 2744</a></h1>
   <div class="meta">Mingyu Li, Roberto Maiolino, Zheng Cai, Hannah Übler, Boyuan Liu, Qiao Duan, Fuyan Bian, Sijia Cai, Francesco D&#x27;Eugenio, Eiichi Egami, Bjorn H. C. Emonts, Xiaohui Fan et al.<div>Submitted 21 Sep 2026, astro-ph.GA</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">When Population III (Pop III) star formation ended remains an open question. LATED-1 is an intrinsically faint ($M_\mathrm{UV}=-16.15$) Ly$α$ emitter at $z=4.80$ revealed by VLT/MUSE behind the lensing cluster Abell 2744 ($z=0.308$). Before any spectroscopic metallicity constraints, it was identified as an extremely metal-poor or metal-free galaxy candidate from JWST imaging by LATED, our novel photometric selection framework. Here we present serendipitous JWST/NIRSpec PRISM integral-field spectroscopy of this target. The spectrum reveals Ly$α$, H$β$, and H$α$ at 7.0, 5.6, and 17.7$σ$, as well as tentative detections of [O III]$λ\lambda4959,5007$ at 2.9$σ$, and yields $R3=\mathrm{[O\,III]\lambda5007/Hβ}=0.59^{+0.27}_{-0.21}$, upholding the earlier LATED photometric prediction of $R3&lt;1.54$ ($2σ$ limit). The canonical JWST-based strong-line calibration, extrapolated to low metallicity, implies $\log (O/H)=6.45^{+0.17}_{-0.19}$, or $Z/Z_\odot=0.58_{-0.20}^{+0.28}\%$, placing LATED-1 among the most metal-poor galaxies known. Its modest magnification ($μ=2.80$) leaves the intrinsic properties insensitive to the lens model. LATED-1 is therefore a dwarf galaxy caught in the earliest state of chemical enrichment, and a compelling target for testing whether Pop III star formation can persist to $z&lt;5$. The result demonstrates that photometric selection, especially through the LATED methodology, can reach below one per cent solar metallicity to identify Pop III galaxy candidates for spectroscopic follow-up.</p>
   <h2>Screening</h2><p><strong>0 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">This paper is about JWST spectroscopy of a metal-poor, Pop III candidate galaxy at z=4.8. It has no connection to solar flares, particle acceleration, QPPs, or Solar Orbiter.</p>
   <p class="meta">arXiv:2609.24589</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

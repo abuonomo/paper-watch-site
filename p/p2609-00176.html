@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.00176" data-prev="" data-next="" data-title="Portraits of the young and old in X-ray: New millisecond pulsar detections and updated characterization of young neutron stars">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.00176" data-prev="" data-next="" data-title="Portraits of the young and old in X-ray: New millisecond pulsar detections and updated characterization of young neutron stars">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.00176">Portraits of the young and old in X-ray: New millisecond pulsar detections and updated characterization of young neutron stars</a></h1>
   <div class="meta">Wynn C. G. Ho, Patrick H. Wang, Sebastien Guillot<div>Submitted 31 Aug 2026, astro-ph.HE</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">We present analyses of new and archival Chandra and NuSTAR data on two old millisecond pulsars, a young highly-energetic pulsar, and a young neutron star. PSR J1810-0623 is a recently-discovered 4.55 ms radio pulsar in a binary with a possible carbon-oxygen white dwarf companion. We tentatively detect the pulsar for the first time in X-ray using a new short Chandra HRC-I observation. Its faintness suggests a distance more in accord with the further (~1 kpc) of its dispersion measure-inferred distances. PSR J1933-6211 is a 3.54 ms radio pulsar also with a carbon-oxygen white dwarf companion. Our first-time X-ray detection in an archival HRC-S image indicates its X-ray luminosity is similar to that of the 1.9 Msun pulsar PSR J1614-2230. Next, PSR J1813-1749 is a 1-2 kyr pulsar with one of the highest known spin-down luminosities. We measure its spin period of 44.7 ms using 2025 NuSTAR and 2026 Chandra ACIS-S data and update its spin evolution model. We show for the first time the pulse profile of PSR J1813-1749 at 3-79 keV, and we find that the spectra of the pulsar and pulsar wind nebula at these energies did not change significantly between observations in 2018 and 2025. Finally, for the 5-10 kyr neutron star CXOU J182913.1-125113 in the supernova remnant G18.95-1.1, we combine ACIS-I observations from 2009 and 2024 to better measure the neutron star&#x27;s spectrum.</p>
   <h2>Screening</h2><p><strong>1 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">The paper covers X-ray detections and spectra of millisecond pulsars and young neutron stars with Chandra and NuSTAR. It has no connection to solar flare timing, QPPs, particle acceleration, or STIX/EUI, and no transferable method.</p>
   <p class="meta">arXiv:2609.00176</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

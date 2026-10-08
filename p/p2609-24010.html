@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.24010" data-prev="" data-next="" data-title="The Common Envelope Evolution Outcome. III. the Improvement of Stellar Binding Energy with the Envelope Residual">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.24010" data-prev="" data-next="" data-title="The Common Envelope Evolution Outcome. III. the Improvement of Stellar Binding Energy with the Envelope Residual">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.24010">The Common Envelope Evolution Outcome. III. the Improvement of Stellar Binding Energy with the Envelope Residual</a></h1>
   <div class="meta">Lifu Zhang, Hongwei Ge, Dylan Hebrail, Ross Church, Mingkuan Yang, Zhenwei Li, Hailiang Chen, Dengkai Jiang, Xuefei Chen, Zhanwen Han<div>Submitted 21 Sep 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">Common-envelope evolution (CEE) is a key process in the evolution of close binary systems. Many important astrophysical objects and evolutionary stages are closely related to CEE, including white dwarf binaries, hot subdwarfs, and gravitational wave mergers. In the standard energy formalism of CEE, the binding energy of the donor envelope plays a crucial role, as it directly affects the final orbital period after CEE and serves as a key physical parameter in binary population synthesis studies. However, the currently adopted binding energy suffers from large uncertainties, mainly because the envelope binding energy of giant-branch stars varies strongly near the helium-core boundary. In addition, the expansion of the star during CEE can also affect the binding energy. To address these issues, we introduce an improved binding energy for the envelope mass residual. Based on adiabatic mass loss models, we recalculate the distribution of the CEE binding-energy parameter lambda for stars with different masses and at different evolutionary stages, and we analyse the effects of envelope mass residual and adiabatic expansion. Due to the envelope mass residual, the lambdas of some donors can increase by one to two orders of magnitude at the late red giant branch and asymptotic giant branch stages. Furthermore, we provide interpolation grids and fitting formulae for these results, which can be readily applied to various binary population synthesis codes.</p>
   <h2>Screening</h2><p><strong>0 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">The paper is about common-envelope evolution and binding energy in binary stellar evolution, with no connection to solar flares, particle acceleration, QPPs, or STIX/EUI.</p>
   <p class="meta">arXiv:2609.24010</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

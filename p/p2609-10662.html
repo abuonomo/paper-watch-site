@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.10662" data-prev="" data-next="" data-title="Implications of Inelastic Dark Matter for Primordial Dark-Star Evolution: Kinematic Thresholds and Nonthermal Capture">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.10662" data-prev="" data-next="" data-title="Implications of Inelastic Dark Matter for Primordial Dark-Star Evolution: Kinematic Thresholds and Nonthermal Capture">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.10662">Implications of Inelastic Dark Matter for Primordial Dark-Star Evolution: Kinematic Thresholds and Nonthermal Capture</a></h1>
   <div class="meta">Qinxun Li, Shengyi Liu<div>Submitted 9 Sep 2026, hep-ph</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">The recent 248-keV nuclear recoil candidate reported by LUX-ZEPLIN has renewed interest in endothermic inelastic dark matter, motivating us to examine its capture in primordial dark stars. Relative to the conventional elastic-capture picture in dark star evolution, endothermic capture adds two qualitative features. First, it opens only after the growing star crosses a compactness threshold, expressed as a kinematic radius $R_{\rm kin}\proptoμ_χM_\star/δ$ set by the stellar mass, the dark-matter--nucleus reduced mass and the mass splitting. The accreting growth carries the star through the threshold, and the capture rate turns on quadratically above it. Second, although newly captured particles generically begin on nonthermal bound orbits, endothermic kinematics can keep this normally transient population spatially extended, turning it into a persistent reservoir rather than an intermediate step toward a thermal core. Following complete chains of state-changing collisions, we find that the reservoir compacts sharply and then stalls, because a ground state particle below a compactness-dependent orbital energy has no allowed up-scatter anywhere in the star. A percent-level radius contraction reopens the relaxation. These kinematic results do not depend on whether the excited state decays promptly or is long-lived. As a result, inelastic capture does not replenish a thermal annihilation core. The captured population forms an evolving orbital distribution that sets up the co-evolutionary dynamics between the star and the dark matter in the core and the reservoir, which we develop in a companion paper.</p>
   <h2>Screening</h2><p><strong>0 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">The paper is about inelastic dark matter capture in primordial dark stars, a hep-ph/cosmology topic with no connection to solar flare timing, QPPs, particle acceleration, or STIX/EUI methods.</p>
   <p class="meta">arXiv:2609.10662</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2610.01953" data-prev="" data-next="" data-title="Wolf-Rayet formation through L/M-dependent superwinds">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2610.01953" data-prev="" data-next="" data-title="Wolf-Rayet formation through L/M-dependent superwinds">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2610.01953">Wolf-Rayet formation through L/M-dependent superwinds</a></h1>
   <div class="meta">Aisling McKeown, Ciarán Furey, Gautham N. Sabhahit, Jorick S. Vink<div>Submitted 1 Oct 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">Mass-loss in red supergiants (RSGs) is poorly understood and stellar evolution models rely on empirical prescriptions. In recent years, new superwind mass-loss ideas, including an $L/M$ dependence have been proposed, unlike traditional RSG wind recipes which are formulated on a $L$ dependence alone. We investigate how contrasting RSG mass-loss prescriptions affect the late-time evolution of massive stars from their RSG phase onwards. We used MESA to create a series of stellar evolution models with masses ranging from $10\,{\rm M}_\odot - 40\,{\rm M}_\odot$, using the RSG \cite{VS23} $L/M$ recipe and traditional mass-loss prescriptions. Independent of the treatment of the stellar envelope, we find for a 25$\,{\rm M}_\odot$ star that the $L/M$ recipe reaches an order of magnitude higher mass-loss rate than traditional recipes due to its inverse mass dependence. As the RSG luminosity is set by the core mass and becomes largely insensitive to the current stellar mass, this creates a positive feedback loop driving runaway envelope stripping. Consequently, stars with an initial mass $M_{\rm init} \sim \,20\,{\rm M}_\odot$ are able to strip their hydrogen envelope and form classical Wolf-Rayet (WR) stars. We draw this conclusion not solely on the basis of their HRD location, but also on their predicted emission-line spectrum that we compute with the PoWR stellar atmosphere code. Stars with $M_{\rm init}&lt;20\,{\rm M}_\odot$ do not fully strip, meaning they expand after core helium burning. In Appendix A we present a generic analytical model showing that the tendency for runaway stripping increases rapidly with the strength of the inverse mass-loss scaling with mass. Our models demonstrate a viable single-star pathway into the yellow supergiant and WR regimes. The amounts of full and partial stripping have a direct effect on supernova (SN) progenitors, including partially stripped type IIb SNe.</p>
   <h2>Screening</h2><p><strong>0 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">The paper is about red supergiant mass loss and Wolf-Rayet formation in massive-star evolution, with no connection to flare timing, particle acceleration, QPPs, or STIX/EUI.</p>
   <p class="meta">arXiv:2610.01953</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

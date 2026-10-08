@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.33198" data-prev="" data-next="" data-title="Probing Solar Chameleons with XENONnT Ionization-Only Data">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.33198" data-prev="" data-next="" data-title="Probing Solar Chameleons with XENONnT Ionization-Only Data">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.33198">Probing Solar Chameleons with XENONnT Ionization-Only Data</a></h1>
   <div class="meta">Guan-Wen Yuan<div>Submitted 27 Sep 2026, hep-ph</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">Screened scalar fields provide a possible connection between dark energy and laboratory-scale new physics while remaining compatible with existing fifth-force constraints. Solar production offers a direct probe of these models, and ionization-only measurements extend the sensitivity of liquid-xenon detectors into the sub-keV regime. We present the first search for solar chameleons using low-energy S2-only data, based on the 7.83 tonne-year XENONnT ionization-only data set. The predicted electronic-recoil spectrum is folded through the run-dependent detector response and tested directly in corrected-S2 (cS2) space. A joint binned likelihood combines the seven cS2 bins of science runs SR0, SR1, and SR2. We sample the five-dimensional parameter space $\{β_e,β_γ,M_e,Λ,n\}$ and derive posterior constraints on the conformal and disformal electron couplings. The data extend the recoil-energy reach to approximately $0.04~{\rm keV}_{ee}$, where the few-electron detector response and instrumental backgrounds must be modeled explicitly. In the disformal-dominated regime, the result is expressed in terms of $β_{\rm eff}\equivβ_γ({\rm eV}/M_e)^4$. We obtain the upper limit $\log_{10}β_{\rm eff}&lt;-3.64$. Although the present analysis reaches a lower energy threshold than our previous XENONnT electronic-recoil analysis, the resulting constraint is weaker, primarily because the disformal absorption rate decreases rapidly toward low recoil energies, where the background rate also becomes larger. This analysis establishes low-energy ionization data as a new experimental channel for testing solar chameleons and screened dark-energy models.</p>
   <h2>Screening</h2><p><strong>1 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">This is a dark-matter detector search for solar chameleon particles in XENONnT data, with no link to flare timing, particle acceleration, QPPs, or STIX/EUI; the only overlap is that the Sun is the source.</p>
   <p class="meta">arXiv:2609.33198</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

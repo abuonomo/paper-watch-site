@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.30230" data-prev="" data-next="" data-title="Disc-mediated angular momentum transport resolves the mass-gain problem in rotating binaries">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.30230" data-prev="" data-next="" data-title="Disc-mediated angular momentum transport resolves the mass-gain problem in rotating binaries">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.30230">Disc-mediated angular momentum transport resolves the mass-gain problem in rotating binaries</a></h1>
   <div class="meta">Sebastian Ljung, Avishai Gilkis, Sandro Tacchella<div>Submitted 24 Sep 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">A large fraction of stars interact with a close companion during their lifetime, in which the transfer of mass and angular momentum shapes their evolution and final fate. Standard rotationally limited accretion models predict that accretors reach critical rotation after gaining only a small fraction of their mass, severely suppressing further accretion. This is in tension with observations of post-interaction systems that require substantial mass gain. We introduce a disc-mediated angular momentum transport prescription for mass-transfer onto stellar companions. This is based on a novel perturbative, analytic star-disc boundary model that allows for continued mass inflow as the accretor approaches critical rotation. Furthermore, the model reproduces previous numerical results in which perturbations to super-critical rotation result in negative torques exerted by the disc, extracting excess angular momentum while allowing continued mass inflow. We implement this mechanism in detailed binary evolution calculations with differential rotation using MESA, and compute grids spanning primary mass, orbital period, and mass ratio. Whereas rotationally limited models predict $β_{\rm eff}\lesssim 0.1$, the disc model yields sustained mass inflow near critical rotation, with effective mass-transfer efficiencies of $β_{\rm eff}\sim 0.4$-$1$ across much of the parameter space. The resulting accretor properties are broadly consistent with observed post-interaction sdOB+Be binaries. Disc-mediated angular momentum transport may therefore represent a key missing ingredient in standard binary evolution models, with important implications for rapidly rotating stars and compact-object progenitors.</p>
   <h2>Screening</h2><p><strong>0 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">The paper covers binary stellar evolution, mass transfer, and disc-mediated angular momentum transport in accreting stars. It has no connection to solar flares, QPPs, particle acceleration, or STIX/EUI, and its methods do not transfer.</p>
   <p class="meta">arXiv:2609.30230</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

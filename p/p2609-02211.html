@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.02211" data-prev="" data-next="" data-title="The relationship between solar and stellar tachoclines, dynamos, and spin-down">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.02211" data-prev="" data-next="" data-title="The relationship between solar and stellar tachoclines, dynamos, and spin-down">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.02211">The relationship between solar and stellar tachoclines, dynamos, and spin-down</a></h1>
   <div class="meta">Loren I. Matilsky, Lydia Korre, Nicholas Brummell<div>Submitted 2 Sep 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">The solar tachocline, a thin shear layer separating the differentially rotating convective zone (CZ) from the underlying rigidly rotating radiative zone (RZ), remains a dynamical mystery. Under the influence of &quot;radiative spreading&quot; (the process by which meridional circulation, baroclinicity, and differential rotation burrow through a stably stratified fluid), the tachocline should have spread significantly by the current age of the Sun. Some unknown torque must therefore rigidify the whole solar interior below the CZ and keep the tachocline confined to a thin layer. At the same time, the spin-down process (through which cool stars shed angular momentum via surface magnetic torques) must extract angular momentum from the solar RZ, presenting a second mystery: solar spin-down must be communicated from the near-surface layers to the deep interior, all the while leaving the tachocline intact. In this work, we explicitly analyze the dynamics of radiative spreading in two 3D, spherical-shell, fully nonlinear fluid simulations of a solar-like CZ--RZ system, one without a magnetic field (hydrodynamic---HD) and one with a small random seed magnetic field (magnetohydrodynamic---MHD). We find that radiative spreading is unmitigated in the HD case (as expected), but in the MHD case, a self-excited dynamo not only confines the tachocline, but \textit{also} extracts angular momentum from the RZ, thereby communicating the spin-down downward. We thus speculate that solar and stellar tachoclines may be intimately linked to both the spin-down process and global dynamo.</p>
   <h2>Screening</h2><p><strong>1 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">The paper is about the solar tachocline, dynamos and stellar spin-down in 3D MHD simulations of the interior. It has no connection to flare timing, particle acceleration, QPPs, or STIX/EUI.</p>
   <p class="meta">arXiv:2609.02211</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

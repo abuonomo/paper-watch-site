@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.25109" data-prev="" data-next="" data-title="Eccentricity and Inclination Excitation of Stellar Orbits around merging Black-Hole Binaries">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.25109" data-prev="" data-next="" data-title="Eccentricity and Inclination Excitation of Stellar Orbits around merging Black-Hole Binaries">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.25109">Eccentricity and Inclination Excitation of Stellar Orbits around merging Black-Hole Binaries</a></h1>
   <div class="meta">Hao Gao, Hanlun Lei<div>Submitted 20 Sep 2026, astro-ph.HE</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">Identifying the formation channels of merging compact-object binaries remains a fundamental challenge in gravitational-wave (GW) astrophysics. Here, we formulate a generalized framework incorporating both third-body perturbations and post-Newtonian effects to investigate the resonance-driven excitation of eccentricity and/or inclination for stellar orbits around merging black-hole binaries (BHBs). We show that at the quadrupole level, inclination excitation is driven by adiabatic capture into a quadrupole-order resonance, with subsequent resonance escape governed by the conservation of phase-space area. Furthermore, in the coplanar octupole regime, an apsidal precession resonance triggers robust eccentricity growth, where the capture probability depends on the initial conditions. For spatial octupole configurations, we reveal a distinct two-stage evolutionary pathway: the quadrupole-order resonance first excites the orbital inclination, followed by subsequent eccentricity growth driven by the inverse von Zeipel-Lidov-Kozai (ZLK) resonance. Our results indicate that these resonance-driven dynamics could imprint observable kinematic signatures on surrounding stellar populations, thereby offering a novel indirect probe for merging BHBs.</p>
   <h2>Screening</h2><p><strong>0 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">Paper is about orbital dynamics of stars around merging black-hole binaries (ZLK resonances, post-Newtonian effects), with no connection to flare timing, particle acceleration, QPPs, or STIX/EUI.</p>
   <p class="meta">arXiv:2609.25109</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

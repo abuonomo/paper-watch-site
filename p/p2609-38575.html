@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.38575" data-prev="" data-next="" data-title="Sunrise III/SUSI reveals extended and spectrally structured Ca II K emission above the solar limb">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.38575" data-prev="" data-next="" data-title="Sunrise III/SUSI reveals extended and spectrally structured Ca II K emission above the solar limb">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.38575">Sunrise III/SUSI reveals extended and spectrally structured Ca II K emission above the solar limb</a></h1>
   <div class="meta">Ivan Milić, Christopher M. J. Osborne, Francisco A. Iglesias, Juan Sebastián Castellanos Durán, Damien F. Przybylski, Lakshmi Pradeep Chitta, Sanghita Chandra, Andreas Lagg, Sami K. Solanki, Tino L. Riethmüller, Achim Gandorfer, Alex Feller et al.<div>Submitted 29 Sep 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">The Sunrise III/SUSI instrument performed a sit-and-stare observation of the off-limb emission in the Ca II K line core, with a combination of excellent temporal and spectral resolution. The emission reaches up to 6 Mm above the solar limb, indicating the existence of off-limb structures akin to spicules. In this letter, we describe the spatio-spectral properties of the observed emission, focusing on the spectral line shape resolved in detail by Sunrise III/SUSI, and compare the observation with simple modeling that relies on a numerical simulation of the solar chromosphere. We find that the simulation contains enough cool and dense material at Mm heights to produce off-limb emission, but that the spectral width of these features is slightly lower than observed, necessitating more detailed modeling.</p>
   <h2>Screening</h2><p><strong>1 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">Off-limb chromospheric spicule-like Ca II K emission from Sunrise III/SUSI has no flare, particle acceleration, QPP, or STIX/EUI connection, and the methods don&#x27;t transfer to flare lightcurve timing.</p>
   <p class="meta">arXiv:2609.38575</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

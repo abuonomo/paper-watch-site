@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.37960" data-prev="" data-next="" data-title="Constraining exoplanet population parameters with Kepler and simulation-based inference">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.37960" data-prev="" data-next="" data-title="Constraining exoplanet population parameters with Kepler and simulation-based inference">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.37960">Constraining exoplanet population parameters with Kepler and simulation-based inference</a></h1>
   <div class="meta">Chloé Padois, Friedrich Anders, Daniel del Ser<div>Submitted 29 Sep 2026, astro-ph.EP</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">In the context of the rapidly growing field of galactic exoplanet population studies, we present an exoplanet simulator capable of generating synthetic populations for millions of stars in a few seconds (Padois et al., 2025). Our framework combines observed exoplanet detections with the latest planetary formation models, incorporating dependencies between host star properties and planet occurrence rates, orbital period distributions, and other key demographic features. However, many model parameters remain uncertain and model-dependent. To constrain some of the most critical ones, we couple our simulator with simulation-based inference (SBI): we define a set of 44 free parameters describing the population of different planet types (occurrence rates, mass-period distribution, mass-radius relation, etc.), run millions of simulations sampling from broad prior distributions, simulate their detectability by Kepler, and train a machine-learning algorithm to learn the relationships between input parameters and the resulting &quot;observed&quot; synthetic populations. The best-fit parameters are then inferred by comparing model outputs to real observations, for which we adopt the Kepler confirmed planet catalogue as our reference dataset, since it provides the largest homogeneous sample from a single facility. We present preliminary results for the planet occurrence rate as a function of stellar mass and metallicity, across different planet types, along with constraints on several key simulation parameters such as the orbital period distribution and the inclination dispersion within planetary systems. These refined parameters enable us to refine our yield predictions for upcoming exoplanet detection missions, including PLATO, Roman, and HAYDN.</p>
   <h2>Screening</h2><p><strong>1 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">Exoplanet population inference with Kepler and simulation-based inference has no connection to flare timing, particle acceleration, QPPs, or STIX/EUI. The SBI method is only a distant methodological link.</p>
   <p class="meta">arXiv:2609.37960</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

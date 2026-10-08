@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.34329" data-prev="" data-next="" data-title="A Study on the Evolution of NGC6822. I. Investigating the Star Formation History through Evolved Stellar Populations">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.34329" data-prev="" data-next="" data-title="A Study on the Evolution of NGC6822. I. Investigating the Star Formation History through Evolved Stellar Populations">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.34329">A Study on the Evolution of NGC6822. I. Investigating the Star Formation History through Evolved Stellar Populations</a></h1>
   <div class="meta">Fatemeh Khatamsaz, Mahdi Abdollahi, Atefeh Javadi, Hamidreza Mahani, Jacco Th. van Loon, Hedieh Abdollahi, Sepideh Ghaziasgar<div>Submitted 28 Sep 2026, astro-ph.GA</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">NGC6822 is an isolated dwarf irregular galaxy in the Local Group at a distance of $\sim$ 490 kpc . In this paper, we derived the star formation history (SFH) of NGC6822 employing a method based on evolved asymptotic giant branch (AGB) stars, known as long-period variable (LPV) stars. We utilized a dataset of 329 LPVs in JHK$_s$ bands to estimate the star formation rate (SFR) over time and reconstructed the SFH of the galaxy. In addition to obtaining the SFH assuming constant metallicity values within the range of 0.0001 $&lt;$ Z $&lt;$ 0.012, we also adopted three distinct age-metallicity relations (AMRs) to account for variations in the chemical content of the galaxy throughout its lifetime. The SFH has been investigated in two regions. The bar region encloses a central area of 189 arcmin$^{2}$, and the outer region encircles a field beyond the bar region, extending to the radial distance of 3 kpc. In the bar region, we identified three episodes of star formation peaking at $t \sim$ 4.7 Gyr (log $t = 9.67$), $t \sim$ 1.6 Gyr (log $t = 9.21$), and $t \sim$ 48 Myr (log $t = 7.63$), where $t$ is the look-back time. In the outer region, we found one episode of star formation occurring at $t \sim$ 4.6 Gyr. The significant peak observed $\sim$ 4-5 Gyr ago further supports the hypothesis suggested by the previous research, indicating that NGC6822 passed through the virial radius of the Milky Way in the past.</p>
   <h2>Screening</h2><p><strong>0 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">The paper reconstructs the star formation history of the dwarf galaxy NGC6822 from long-period variable stars. It has no connection to solar flares, particle acceleration, QPPs, or STIX/EUI, and its methods do not transfer.</p>
   <p class="meta">arXiv:2609.34329</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

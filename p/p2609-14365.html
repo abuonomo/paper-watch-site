@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.14365" data-prev="" data-next="" data-title="Presence of Solar Neutral Atom Corona and Coronal Heating">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.14365" data-prev="" data-next="" data-title="Presence of Solar Neutral Atom Corona and Coronal Heating">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.14365">Presence of Solar Neutral Atom Corona and Coronal Heating</a></h1>
   <div class="meta">Z. Q. Qu, R. Y. Zhou, H. Su, Y. Liang, L. Chang, X. M. Cheng<div>Submitted 13 Sep 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">By analyzing slit scanning spectral data obtained during 2024 total solar eclipse, presence of neutral atom corona is revealed along with a hidden inner F-corona detected within heights below half a solar radius. The inner F-corona is found to be essentially different from the Fraunhofer corona formed by dust scattering beyond about 2.3 solar radius heights. The two new kinds of the solar corona are deduced from the intensity difference between the spectral line intensity distribution and their adjacent continuum one acquired during the totality. Through analysis of the recorded spectra ranging from 516.0nm to 540.7nm, the relative depths of strong Fraunhofer lines are found to be changed among the neighboring lines from one place to another and from the photospheric lines acquired before the eclipse. Thus the resonant scattering is regarded to be responsible for the changes. Furthermore, shown in the reconstructed maps at selected spectral lines, the detected inner F-corona is found spreading globally and the neutral atom scattering acts as its dominant source. Both of their distribution patterns generally depend on specific lines and show considerably asymmetrical diffusions. The outward neutral fluxes are observed to be mainly hindered in regions of coronal magnetic loops with roughly estimated concentration above $10^{-5}$. Thus it can play a key role in global coronal heating via Cowling dissipation in these widely spread coronal loops, like heating in Tokamak by neutral beam injection(NBI). The Cowling dissipation can give a consistent interpretation of heating from the chromosphere to the corona. Thus the neutral atom corona is not only a new gradient of the solar corona but also the missed factor critical for concatenating together these coronal heating mechanisms.</p>
   <h2>Screening</h2><p><strong>1 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">The paper concerns eclipse spectroscopy of a neutral atom corona, an inner F-corona and coronal heating, which the guidance lists as not relevant. It has no connection to flare timing, QPPs, particle acceleration, or STIX/EUI.</p>
   <p class="meta">arXiv:2609.14365</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

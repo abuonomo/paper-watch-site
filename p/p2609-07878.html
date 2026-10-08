@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.07878" data-prev="" data-next="" data-title="Nonradial oscillations of realistic anisotropic neutron stars: Polar modes">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.07878" data-prev="" data-next="" data-title="Nonradial oscillations of realistic anisotropic neutron stars: Polar modes">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.07878">Nonradial oscillations of realistic anisotropic neutron stars: Polar modes</a></h1>
   <div class="meta">L. M. Becerra, José F. Rodríguez-Ruiz, E. A. Becerra-Vergara, F. D. Lora-Clavijo<div>Submitted 7 Sep 2026, gr-qc</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">In this work, we study the polar perturbations of static, spherically symmetric neutron stars with anisotropic pressure in full general relativity, including linear-order perturbations of both the metric and the fluid. We calculate the $f$-mode frequencies and the corresponding damping times using a consistent treatment of the perturbation of the radial vector $k^α$. In particular, its Lagrangian perturbation $Δk^α$ is determined by the metric perturbations and the fluid Lagrangian displacement and is constrained to the $(\tilde{u},\tilde{k})$ plane, where $\tilde{u}^α$ is the normalized fluid four-velocity. This constraint introduces an additional dynamical degree of freedom into the perturbation equations. Considering three equations of state and the Horvat and Bowers-Liang prescriptions for pressure anisotropy, we find that the $f$-mode frequency increases with stellar mass, ranging from $1$ to $3$~kHz, while the damping time decreases, ranging from $0.5$ to $1.25$~s. Increasing anisotropy, in the sense of tangential pressure exceeding radial pressure, generally lowers the oscillation frequency, while its effect on the damping time depends on the anisotropy prescription: the damping time decreases with increasing anisotropy for the Horvat model but increases with increasing anisotropy for the Bowers-Liang model. We further find quasi-universal relations between the real and imaginary parts of the $f$-mode frequency, $Mω_R$ and $Mω_I$, and the stellar compactness $\mathcal{C}=M/R$, which are largely insensitive to the equation of state. Polynomial fits to these relations achieve an accuracy better than $10\%$, providing a simple phenomenological framework for constraining neutron-star pressure anisotropy through future asteroseismology observations.</p>
   <h2>Screening</h2><p><strong>0 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">This paper covers general-relativistic f-mode oscillations of anisotropic neutron stars, which has no connection to solar flare timing, QPPs, particle acceleration, or STIX/EUI data and methods.</p>
   <p class="meta">arXiv:2609.07878</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

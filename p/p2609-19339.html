@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.19339" data-prev="" data-next="" data-title="A Grid of Contribution Functions to Help the Interpretation of Time-resolved Observations of Brown Dwarfs">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.19339" data-prev="" data-next="" data-title="A Grid of Contribution Functions to Help the Interpretation of Time-resolved Observations of Brown Dwarfs">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.19339">A Grid of Contribution Functions to Help the Interpretation of Time-resolved Observations of Brown Dwarfs</a></h1>
   <div class="meta">Myrla Phillippe, Theodora Karalidi, Elena Manjavacas, Natalia Oliveros-Gomez, Daniel Apai, Jonathan Fernandez, Kieran M. Manjrawala<div>Submitted 16 Sep 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">We present a grid of thermal emission contribution functions and their corresponding atmospheric spectra model for cloudy and cloud-free brown dwarfs, spanning effective temperatures $T_{\rm eff} \in [500, 2000]$ K, surface gravities $\log g = [3.5, 5.5]$ [cgs], sedimentation efficiencies $f_{\rm sed} = 1, 2, 3, 4$ and 8, and eddy diffusion coefficients $\log K_{\rm zz} = [6, 11]$. We use temperature-pressure profiles from the Sonora Diamondback models in conjunction with the picaso radiative transfer code and the cloud modeling code virga, to explore how different atmospheric parameters influence the vertical distribution of emitted radiation for atmospheres in chemical equilibrium. We confirm that cloud opacity significantly impacts atmospheric emission depth in prominent molecular features such as CH$_4$, H$_2$O, CO, NH$_3$, CO$_2$, and atomic features Na and K. The atmospheric emission depth varies most notably in the $J$-band, and at mid-resolution spectra in the Na and K doublets. Our analysis highlights pressure-wavelength differences between cloudy and cloud-free atmospheres for characterizing L, L/T transition, and T-type brown dwarfs and demonstrates how contribution functions can guide targeted spectroscopic investigations. To facilitate observational planning, we provide an accessible database and web-based application that enable the community to compare observational data with our model grid of spectra and contribution functions with a wavelength range of 0.5 - 30 $μ$m.</p>
   <h2>Screening</h2><p><strong>0 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">The paper models brown dwarf atmospheric contribution functions and spectra, with no connection to solar flares, particle acceleration, QPPs, or STIX/EUI. Neither the physics nor the methods transfer.</p>
   <p class="meta">arXiv:2609.19339</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

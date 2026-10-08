@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2610.01251" data-prev="" data-next="" data-title="Towards solar many-line inversions">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2610.01251" data-prev="" data-next="" data-title="Towards solar many-line inversions">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2610.01251">Towards solar many-line inversions</a></h1>
   <div class="meta">Johannes Hölken<div>Submitted 1 Oct 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">The Sun&#x27;s atmosphere is significantly influenced by events that often measure only tens of kilometres in the horizontal direction. They happen in both quiet and active regions and are determined by magneto-hydro-dynamic processes. Their origins often lie in the lowest layers of the solar atmosphere. To improve the understanding of chromospheric and coronal heating, the solar dynamo and its activity cycle, or to improve the prediction of space weather events we must therefore enhance our understanding of such small-scale events. In this work I first describe the process of calibrating spectropolarimetric observations with very high spatial resolution and put together the building blocks for the mathematical proof the MOMFBD image reconstruction algorithm. In the second part I describe the FISS-SP prototype which is designed to fully exploit the resolution power of a 1.6m telescope. This instrument is built to provide suitable data for image reconstruction of spectropolarimetric data. The resulting data can resolve small-scale features down to the diffraction limit. The simultaneous interpretation of a few lines is still the norm for spatially highly resolved solar spectra. Theoretical works have shown that the simultaneous interpretation of multiple solar lines can greatly improve the robustness against noise. Using observations from FISS-SP I advance the theoretical idea into a practical technique. With this I can retrieve a coherent model of the local solar atmosphere, resolving structures down to a horizontal size of about 49~km. Finally, I use those new techniques to interpret an observation of a solar pore. In this last part I describe and analyse small-scale structures, which could not be spectropolarimetrically resolved before. Typical pore-boundary features - namely, dark striations with bright grains moving into the pore - are identified as convective features.</p>
   <h2>Screening</h2><p><strong>1 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">A thesis on spectropolarimetric calibration, image reconstruction and multi-line inversions of photospheric/chromospheric small-scale structure and a solar pore. It has no flare timing, particle acceleration, QPP, or STIX/EUI content, and the methods don&#x27;t transfer to flare lightcurve analysis.</p>
   <p class="meta">arXiv:2610.01251</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

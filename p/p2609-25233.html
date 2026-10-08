@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.25233" data-prev="" data-next="" data-title="Early NIR echo and the time variable mass loss history of Type IIn SN 2024kgi">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.25233" data-prev="" data-next="" data-title="Early NIR echo and the time variable mass loss history of Type IIn SN 2024kgi">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.25233">Early NIR echo and the time variable mass loss history of Type IIn SN 2024kgi</a></h1>
   <div class="meta">Naveen Dukiya, Kuntal Misra, Andrea Pastorello, Andrea Reguitti, Anjasha Gangopadhyay, Aravind P. Ravi, Brian Hsu, Noah Franz, David J. Sand, Nathan Smith, Jennifer E. Andrews, Moira Andrews et al.<div>Submitted 21 Sep 2026, astro-ph.HE</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">We present a comprehensive analysis of the long-term photometric and spectroscopic monitoring campaign of the Type IIn Supernova (SN) 2024kgi. The SN reaches at peak an $r$-band absolute magnitude of $-19.81 \pm 0.06$ mag and a bolometric luminosity of $\sim 2 \times 10^{43}$ erg s$^{-1}$. We observe a break in the lightcurve at day $\sim 312$, after which the luminosity decline changes from $t^{-1.0}$ to $t^{-4.5}$, likely due to the shock sweeping the dense CSM. We introduce a semi-analytical lightcurve modeling approach for CSM-interaction in transients that accounts for variable diffusion time. We hence estimate a CSM mass of $2.34^{+11.8}_{-1.6} M_{\odot}$ and with a density profile $ρ_{csm} \propto r^{-2.74}$, indicating progressively increasing mass loss toward the SN explosion. The ejecta signatures emerge as broad H, He, and Ca II triplet lines, at day $\sim 80$, much earlier than expected from a spherically symmetric CSM, suggesting asymmetry in the CSM. After the lightcurve break, the H lines exhibit a wavelength-dependent deficit in the red-wing flux, indicating new dust formation in the ejecta and/or in the post-shock gas. We observe an NIR excess from day $\sim 40$ onwards. We attribute the early NIR excess before the lightcurve break solely to the NIR echo from pre-existing dust, as there are no other indications for new dust formation. The late-time NIR excess likely has contributions from both the preexisting and newly formed dust. The steady increase in mass loss, slow CSM velocity, and asymmetric CSM favor a binary interaction-induced mass loss.</p>
   <h2>Screening</h2><p><strong>0 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">This paper is about a Type IIn supernova (CSM interaction, dust, NIR echo). It has no connection to solar flares, QPPs, particle acceleration, or Solar Orbiter.</p>
   <p class="meta">arXiv:2609.25233</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

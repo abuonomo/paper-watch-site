@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.03088" data-prev="" data-next="" data-title="Direct Four-Spacecraft Measurement of Reconnection Exhaust Thickness in the Solar Wind">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.03088" data-prev="" data-next="" data-title="Direct Four-Spacecraft Measurement of Reconnection Exhaust Thickness in the Solar Wind">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.03088">Direct Four-Spacecraft Measurement of Reconnection Exhaust Thickness in the Solar Wind</a></h1>
   <div class="meta">Mani K Chettri, Rupak Mukherjee, Hemam D. Singh<div>Submitted 2 Sep 2026, physics.space-ph</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">The thickness of a reconnecting solar wind current sheet is normally inferred from a single spacecraft as the product of the boundary-normal speed and the crossing duration. Multipoint measurements have tested this method for generic solar wind current sheets and constrained the geometry of reconnection exhausts, but a direct comparison with single-spacecraft thickness estimates for the same reconnection-associated crossings is still lacking. We analyze four current-sheet crossings observed by Magnetospheric Multiscale in the pristine solar wind on 2017 November 10 the two boundaries of a confirmed reconnection exhaust and two nearby current sheets. The tetrahedron separation was $\approx 16$ km. Cross-correlation of the magnetic-field ramps gives millisecond-level lag uncertainties, boundary normals to $4^\circ-8^\circ$ and speeds to $5\%-8\%$, while single-threshold timing at these separations is noise dominated. The exhaust edges are 29-31 ion inertial lengths ($d_i$) thick. The two edge normals differ by $22^\circ$ (68% interval [$19^\circ,26^\circ$]), resolving a nonparallel exhaust geometry. At the exhaust edges, the measured boundary speeds agree with three standard single-spacecraft estimates to 4%-15% and remain within about one Alfvén speed of the plasma motion. Estimating the normal from one spacecraft is the larger source of error, though the thickness is still recovered to within tens of percent when a degenerate minimum-variance solution is rejected. At the actively reconnecting sheet, the boundary speed exceeds the local plasma speed along the normal by $29\% \pm 10\%$.</p>
   <h2>Screening</h2><p><strong>1 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">This paper uses MMS four-spacecraft timing to measure reconnection exhaust thickness in the solar wind, with no flare, particle acceleration, QPP, or STIX/EUI connection. The cross-correlation timing method is not meaningfully transferable to flare lightcurves.</p>
   <p class="meta">arXiv:2609.03088</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

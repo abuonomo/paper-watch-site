@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.02400" data-prev="" data-next="" data-title="Multiplicity of Cool Stars and their Evolution">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.02400" data-prev="" data-next="" data-title="Multiplicity of Cool Stars and their Evolution">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.02400">Multiplicity of Cool Stars and their Evolution</a></h1>
   <div class="meta">Matthew I. Swayne, Leen Decin, Theo Khouri, Ayush Moharana, Léa Planquart, John Southworth, Nikki J. Miller, José A. Caballero, Orsolo De Marco, Krzysztof G. Hełminiak, Swetlana Hubrig, Valentin D. Ivanov et al.<div>Submitted 2 Sep 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">Making up a sizeable portion of the galactic census, stellar multiples are experiencing a renaissance. Enabling the study of multiple strands of the study of cool stars, stellar multiples have been found and characterised in great numbers by the missions of the last decade, allowing the exploration of stellar parameters and populations, observation of stellar interactions, studies into stellar formation and evolution, and characterisation of circumbinary systems. This exciting explosion of science is only set to continue, with future missions set to offer even further insights into the topic. Within these proceedings we will summarise the presentations and discussions on cool stellar multiplicity within our splinter sessions at the 23rd Cambridge Workshop on Cool Stars, Stellar Systems, and the Sun, as we examine the present state of the field and look to what the future may bring.</p>
   <h2>Screening</h2><p><strong>1 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">Conference proceedings summary on stellar multiplicity and binary evolution; it has no connection to flare timing, particle acceleration, QPPs, or STIX/EUI analysis.</p>
   <p class="meta">arXiv:2609.02400</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

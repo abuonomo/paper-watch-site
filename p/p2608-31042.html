@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2608.31042" data-prev="" data-next="" data-title="Feasibility of Capillary-Driven Orbital Liquid Mirror Telescopes">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2608.31042" data-prev="" data-next="" data-title="Feasibility of Capillary-Driven Orbital Liquid Mirror Telescopes">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2608.31042">Feasibility of Capillary-Driven Orbital Liquid Mirror Telescopes</a></h1>
   <div class="meta">Janoah Dietrich, Álvaro Romero-Calvo<div>Submitted 31 Aug 2026, astro-ph.IM</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">Space-based liquid mirror telescopes (LMTs) have been recently proposed to overcome the scaling limits of traditional rigid mirrors. In these new space architectures, capillary forces would shape a reflective liquid into a spherical optical surface in microgravity. However, the equilibrium, stability, and dynamic behavior of such liquid interfaces under orbital perturbations remain largely uncharacterized. This study investigates the feasibility of space LMTs by combining axisymmetric capillary with thin-film models. Solar radiation pressure and self-gravitation are found to be the dominant perturbations in Sun--Earth L2 orbits, causing equilibrium deformations that exceed the $λ/20$ optical threshold at apertures above 0.86 m for visible ($λ= 380$ nm) and 1.58 m for near-infrared observatories ($λ= 2.5$ $μ$m). Micrometeoroid impacts self-heal within seconds to minutes, settling after filling requires years to decades at large apertures, and propulsive maneuvers breach optical limits within seconds to hours. These results highlight the need for interface control in large-scale systems such as NASA&#x27;s 50 m Fluidic Telescope (FLUTE). Thermocapillary actuation supports apertures of 2.3/8.0 m (VIS/NIR) at 100 $μ$K and 10.6/37.7 m at 10 $μ$K. Simultaneously, parasitic Marangoni flows impose sub-mK uniformity for NIR and 1--100 $μ$K for visible operation on any capillary LMT. Departing the capillary regime by imposing a surface-normal settling acceleration, ranging from 39 mm s$^{-2}$ (NIR,5 m) to 17 m s$^{-2}$ (VIS,50 m), is the most promising route to tens of meters in aperture. This approach enables a passive implementation effectively suppressing perturbation induced interface distortions and thermal Marangoni flows. Keywords: Liquid mirror telescope, Optics, Space</p>
   <h2>Screening</h2><p><strong>0 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">The paper is about capillary-driven liquid mirror telescopes for space observatories, covering fluid dynamics and optics. It has no connection to flare timing, particle acceleration, QPPs, or STIX/EUI.</p>
   <p class="meta">arXiv:2608.31042</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

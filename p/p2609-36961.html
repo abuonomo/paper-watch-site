@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.36961" data-prev="" data-next="" data-title="LISA Double White Dwarfs in Triple Systems">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.36961" data-prev="" data-next="" data-title="LISA Double White Dwarfs in Triple Systems">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.36961">LISA Double White Dwarfs in Triple Systems</a></h1>
   <div class="meta">Zhijun Wang, Guoliang Lü, Chunhua Zhu, Xizhen Lu, Sufen Guo, Helei Liu, Renyu Luo, Tian Huang<div>Submitted 29 Sep 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">Double white dwarfs (DWDs) in the Laser Interferometer Space Antenna (LISA) band are major Galactic gravitational-wave sources, but many tight DWD progenitors may reside in hierarchical triples. Triple evolution can alter both the production rate and parameter distributions of LISA DWDs. Using the Multiple Star Evolution (MSE) code, we study how the adiabatic mass-loss model (Ge model) and the SCATTER formalism for triple common-envelope (TCE) evolution affect triple-channel LISA DWD formation. Our main model evolves 10^5 triples with both ingredients. Three control models, each with 10^4 triples, vary the mass-transfer stability criterion to the original MSE polytropic model, remove SCATTER, or adopt low metallicity (Z=0.001). We also evolve 10^6 isolated binaries with the same framework as a binary-channel reference. Systems that are dynamically unstable under the polytropic model can instead undergo stable Roche-lobe overflow under the Ge model. This sustained mass transfer modifies the donor envelope, reduces its binding energy, and helps the subsequent common-envelope phase form a close DWD rather than a merger. The Ge model increases the triple-channel LISA DWD yield by about 60% relative to the polytropic model, while SCATTER changes the integrated yield by only about 3%. After residence-time weighting, triples contribute about 1.3e7 LISA-band DWDs, including 1.4e4 individually resolvable systems. In the combined triple-plus-binary normalization, the binary channel contributes 3.1e6 LISA-band DWDs and 4.7e3 resolvable systems; these are the binary share of the combined population, not the binary-only Galactic estimate. The main triple model has a flatter, higher-q mass-ratio distribution than the polytropic-model triples, is dominated by He-CO and He-He binaries, and produces rare eccentric systems only when a tertiary star remains bound.</p>
   <h2>Screening</h2><p><strong>0 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">Paper is about double white dwarf population synthesis in triple systems for LISA gravitational waves; it has no connection to solar flare timing, QPPs, particle acceleration, or STIX/EUI.</p>
   <p class="meta">arXiv:2609.36961</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

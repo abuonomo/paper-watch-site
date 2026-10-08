@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.11555" data-prev="" data-next="" data-title="Testing Chemical Tagging with LAMOST: Intrinsic Abundance Dispersion of Subgiant Stars in the Galactic Disk">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.11555" data-prev="" data-next="" data-title="Testing Chemical Tagging with LAMOST: Intrinsic Abundance Dispersion of Subgiant Stars in the Galactic Disk">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.11555">Testing Chemical Tagging with LAMOST: Intrinsic Abundance Dispersion of Subgiant Stars in the Galactic Disk</a></h1>
   <div class="meta">Wu Yaqian, Xiang Maosheng, Zhao Gang, Jiang Ruizheng, Li Zhuohan, Bi Shaolan, Zhang Meng<div>Submitted 10 Sep 2026, astro-ph.GA</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">The scatter in elemental abundances among stars of similar age and metallicity reflects chemical inhomogeneity in their birth environments, making abundance scatter a key observable for chemical-tagging studies of Galactic formation and evolution. Using a large sample of subgiant stars with precise ages and elemental abundances derived from LAMOST low-resolution spectra, we investigate the intrinsic chemical abundance scatter of the low-$α$ thin disk near the solar neighborhood ($7 &lt; R &lt; 10$ kpc). We model the abundance ratio [X/Fe], for each of the 19 elements of concern, as a function of age, [Fe/H], and [Mg/Fe], and deduce the intrinsic dispersions with a forward modelling technique. Our results confirm previous findings that the intrinsic scatters are small, typically $\lesssim0.05$~dex, for light elements (C, Al), $α$-elements (O, Mg, Si, Ca, Ti), and iron-peak elements (Mn, Ni). A dedicated analysis of M67 yields similarly small scatter values for these elements, implying limited discriminatory power from light-element abundances alone. In contrast, neutron-capture elements exhibit substantially larger scatters, typically $\gtrsim$0.1 dex, which are significantly larger than those of M67 member stars ($\sim$0.07~dex). In particular, our analysis suggests that the abundance variations of individual neutron-capture elements cannot be explained by a single tracer such as [Ba/Fe]. These findings clarify the utility of neutron-capture elements for chemical tagging and highlight the potential of low-resolution spectroscopy in such studies.</p>
   <h2>Screening</h2><p><strong>0 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">This is a Galactic chemical-tagging study of LAMOST subgiant abundance scatter, with no connection to solar flares, particle acceleration, QPPs, or STIX/EUI, and no transferable method.</p>
   <p class="meta">arXiv:2609.11555</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

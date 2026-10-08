@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2610.00062" data-prev="" data-next="" data-title="Asteroseismic Detection of a Massive Unseen Companion to the $δ$ Scuti Star TIC 160582982">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2610.00062" data-prev="" data-next="" data-title="Asteroseismic Detection of a Massive Unseen Companion to the $δ$ Scuti Star TIC 160582982">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2610.00062">Asteroseismic Detection of a Massive Unseen Companion to the $δ$ Scuti Star TIC 160582982</a></h1>
   <div class="meta">Chenglong Lv, J. Pascual-Granado, Ali Esamdin, Angela Gardini, Haozhi Wang, Jianwei Yao, Shuguo Ma<div>Submitted 4 Sep 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">We present TIC 160582982, an eccentric $δ$ Scuti binary with a dynamically massive unseen companion. Six coherent high-frequency pressure modes used as pulsation clocks yield a phase-modulation orbit with $P_{\rm orb}=89.29\pm0.19$ d, $e=0.539^{+0.040}_{-0.037}$, and $a_1\sin i/c=145.6^{+3.7}_{-3.4}$ s, corresponding to $K_1=42.2^{+2.2}_{-1.8}$ km s$^{-1}$ and $f(M)=0.416^{+0.032}_{-0.028}\,M_\odot$. An independent frequency-modulation analysis of the two strongest modes gives a consistent orbital solution. Rotating MIST isochrones constrained by the atmospheric parameters and spectral energy distribution (SED) give $M_1=1.93\pm0.19\,M_\odot$ and $R_1=2.65\pm0.23\,R_\odot$. The mass function implies a formal edge-on minimum companion mass of approximately $1.80\,M_\odot$. Assuming a luminous main-sequence companion and including the non-eclipsing geometry gives $M_2=2.19^{+1.24}_{-0.34}\,M_\odot$ and $i=61.5^{+16.6}_{-19.6}$ deg. However, no clear evidence for the presence of a luminous counterpart is found, either photometrically or spectroscopically. This suggests the presence of a massive compact object, such as a neutron star or even a stellar-mass black hole, as the massive unseen binary companion. Future phase-resolved high-resolution spectroscopy will be crucial for obtaining an independent orbital constraint and clarifying the nature of the companion.</p>
   <h2>Screening</h2><p><strong>1 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">This is a delta Scuti asteroseismology paper on a binary orbit from pulsation phase modulation, with no connection to flares, particle acceleration, QPPs, or STIX/EUI. The only loose overlap is time-series analysis of periodic signals, which is too generic to help.</p>
   <p class="meta">arXiv:2610.00062</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

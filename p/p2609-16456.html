@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.16456" data-prev="" data-next="" data-title="The Variation of Circumstellar Parameters through Early Stellar Evolution">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.16456" data-prev="" data-next="" data-title="The Variation of Circumstellar Parameters through Early Stellar Evolution">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.16456">The Variation of Circumstellar Parameters through Early Stellar Evolution</a></h1>
   <div class="meta">Michael Connelley, Christian Flores, Bo Reipurth<div>Submitted 15 Sep 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">We report on the evolution of extinction, mass accretion rate, and spectral index from analysis of SpeX observations and AllWISE spectral energy distributions, compared to stellar parameters (mass, age, and veiling) derived from analysis of previously reported and newly analyzed iSHELL observations of the same young stellar objects (YSOs). By using stellar gravity as an age indicator, we are able to infer age without any assumptions about the circumstellar environment. Our sample consists of 109 Class I, II, and III YSOs. The spectral index broadly decreases with time but with sufficient scatter that Class I-III YSOs can all be found at the same age. There is a wide range of extinction (A_V) from nearly 0 to greater than 30 mag for ages up to 5 Myr, showing no clear trend with age. The mass accretion rate declines from a median of 10^-8 solar masses per year at ~1 Myr to less than 10^-10 solar masses per year at ages greater than 10 Myr, with a scatter of the mass accretion rate of +/- 1 dex. Accretion seems to effectively end by ~ 5 Myr, by which time the median mass gained is 0.05 solar masses. We find a wide range of veiling (rK) from zero to three (limited by our need to detect photospheric lines) for Class I and II YSOs, with the median veiling declining after ~2 Myr. Class I YSOs appear to be physically very similar to Class II YSOs, with similar accretion rates and overlapping age and mass distributions. There are no objects with a high spectral index and low extinction, suggesting that once starved of circumstellar material, the spectral index rapidly declines.</p>
   <h2>Screening</h2><p><strong>0 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">The paper studies circumstellar disks, accretion and extinction in young stellar objects; it has no connection to solar flares, particle acceleration, QPPs, or STIX/EUI.</p>
   <p class="meta">arXiv:2609.16456</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

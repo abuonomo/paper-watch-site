@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 3 of 10"><span class="v">3</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.02555" data-prev="" data-next="" data-title="Solar Soft X-ray Coronal Dimming in a Failed Eruption Associated with Plasma Cooling">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 3 of 10"><span class="v">3</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.02555" data-prev="" data-next="" data-title="Solar Soft X-ray Coronal Dimming in a Failed Eruption Associated with Plasma Cooling">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.02555">Solar Soft X-ray Coronal Dimming in a Failed Eruption Associated with Plasma Cooling</a></h1>
   <div class="meta">Xinyue Wang, Astrid M. Veronig, Hechao Chen, Hui Tian<div>Submitted 2 Sep 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">Coronal dimmings are observed as sudden and localized reductions in the extreme-ultraviolet and X-ray emission of the solar corona. Traditionally, significant dimmings of spectral lines formed at temperatures of 1-2 MK are regarded as indicators of coronal mass ejections (CMEs), reflecting the density depletion caused by plasma escaping into interplanetary space. In this Letter, we report a peculiar deep coronal dimming event predominantly observed in high-temperature spectral lines following an M8.8-class confined solar flare associated with a failed filament eruption. Sun-as-a-star measurements from the Geostationary Operational Environmental Satellite and the Extreme Ultraviolet Variability Experiment reveal intensity reductions exceeding 30% in soft X-ray (SXR) and measurable decreases in Fe XVIII (6.5 MK) and Fe XX (9.3 MK). Spatially resolved observations from the Atmospheric Imaging Assembly demonstrate that the dimming originates from the active region core, while the Solar Terrestrial Relations Observatory-A shows no evidence for CME-driven mass loss. Differential emission measure analysis reveals plasma at temperatures &gt;5 MK cooling into lower temperatures, supporting plasma cooling as the dominant contributor to the hot-band dimming rather than CME-associated plasma escape. This event demonstrates that deep hot SXR dimmings can occur without substantial CME-driven mass loss, suggesting that alternative physical mechanisms may also account for unresolved stellar dimmings in addition to the commonly inferred CME signatures.</p>
   <h2>Screening</h2><p><strong>3 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">Covers a confined M8.8 flare with post-flare hot-plasma cooling and DEM analysis from GOES/AIA/EVE, which is adjacent to flare energetics. It is about coronal dimming, not flare timing, particle acceleration, QPPs, or STIX/EUI, so it has limited bearing on the research question.</p>
   <p class="meta">arXiv:2609.02555</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

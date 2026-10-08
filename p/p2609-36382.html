@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.36382" data-prev="" data-next="" data-title="Properties of Circumfacular Regions derived from H$α$ and Ca II K synoptic observations of the Sun">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.36382" data-prev="" data-next="" data-title="Properties of Circumfacular Regions derived from H$α$ and Ca II K synoptic observations of the Sun">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.36382">Properties of Circumfacular Regions derived from H$α$ and Ca II K synoptic observations of the Sun</a></h1>
   <div class="meta">Serena Criscuoli, Andrea Diercke<div>Submitted 28 Sep 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">Circumfacular regions are dark chromospheric structures surrounding magnetic regions whose properties and contribution to solar activity diagnostics remain poorly understood. We investigate their photometric and geometric properties using full-disk H$α$ and Ca II K observations acquired by the Chromospheric Telescope (ChroTel) from 2012 to 2020, spanning the maximum and declining phases of solar cycle 24 and the beginning of cycle 25. We develop an automated segmentation algorithm to identify circumfacular regions and define a photometric index analogous to existing excess and deficit indices. We compare their temporal evolution with those of plages, dark features, and filaments on solar-cycle and Carrington-rotation timescales. Circumfacular regions develop after the H$α$ plage brightening become visible and persist into the decay phase of active regions. At activity maximum, they are the most extended chromospheric structures, covering more than half of the visible solar disk. Their mean intensity varies only weakly throughout the solar cycle; consequently, their index variability, as well as that of the other photometric indices, is driven primarily by changes in area coverage. H$α$ and Ca II~K indices are strongly correlated, although their correlations weaken toward solar minimum. This activity-dependent relationship is primarily driven by the decline of the area of H$α$ excess regions during periods of low activity, and the increasing relative contributions of deficit and circumfacular regions. Our results therefore suggest that circumfacular regions should be considered when interpreting disk-integrated chromospheric observations of the Sun and solar-type stars.</p>
   <h2>Screening</h2><p><strong>1 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">Concerns chromospheric circumfacular regions and photometric indices from ChroTel Hα/Ca II K over the solar cycle. It has no connection to flare timing, particle acceleration, QPPs, or STIX/EUI.</p>
   <p class="meta">arXiv:2609.36382</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.27126" data-prev="" data-next="" data-title="Sequential Star-Formation and the Near-Infrared Stellar Populations within N159">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.27126" data-prev="" data-next="" data-title="Sequential Star-Formation and the Near-Infrared Stellar Populations within N159">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.27126">Sequential Star-Formation and the Near-Infrared Stellar Populations within N159</a></h1>
   <div class="meta">Nolan Habel, E. Sabbi, Peter Zeidler, Tuila Ziliotto, Laurie Chu Margaret Meixner, Guido De Marchi, O. C. Jones, Alec S. Hirschauer, Beena Meena, Jeroen Jaspers, Laura Lenkic, Remy Indebetouw et al.<div>Submitted 22 Sep 2026, astro-ph.GA</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">We present the first results from a JWST/NIRCam study of the star-forming region N159, one of the richest H II complexes in the Large Magellanic Cloud. This region stretches over $\sim$130 pc, and exemplifies large-scale sequential star formation. We present photometric results of $&gt;$300,000 point sources combining data from ten near-infrared JWST filters spanning 1-4.7 microns. We detect sources as faint as $\sim$27 magnitudes at F115W, corresponding to stellar masses reaching below $\sim$0.1 $M_{\odot}$. By constructing several color-magnitude and color-color diagrams, we separate young stars from main-sequence and older stars within N159, finding evidence for stellar populations younger than 0.5 Myr. Of the young population, we identify accreting, pre-main sequence stars from their Paschen-$α$ (Pa$α$) excess and a population of sources bearing strong infrared (IR) excess, representing candidate young stellar objects (YSOs). Within this population, we identify a subpopulation of sources with H$_2$O ice absorption. The IR-excess-bearing YSO candidates correlate spatially with dust filaments and molecular gas demonstrating their embedded state. The distribution of stellar and candidate YSO populations across N159 reveal more evolved star-forming populations in the N159E region and newer star formation in the N159W region, supporting the sequential star formation scenario for this region.</p>
   <h2>Screening</h2><p><strong>0 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">JWST/NIRCam study of star formation and young stellar populations in the LMC region N159; it has no connection to solar flares, QPPs, particle acceleration, or STIX/EUI.</p>
   <p class="meta">arXiv:2609.27126</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

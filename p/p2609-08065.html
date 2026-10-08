@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 2 of 10"><span class="v">2</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.08065" data-prev="" data-next="" data-title="Investigating the Light Curves of 5 Long Period Variable Stars: A Study Cross-Harmonics using VStar, MESA, and GYRE">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 2 of 10"><span class="v">2</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.08065" data-prev="" data-next="" data-title="Investigating the Light Curves of 5 Long Period Variable Stars: A Study Cross-Harmonics using VStar, MESA, and GYRE">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.08065">Investigating the Light Curves of 5 Long Period Variable Stars: A Study Cross-Harmonics using VStar, MESA, and GYRE</a></h1>
   <div class="meta">G. M. Sherren, A. Cross, N. Steenken, R. Ignace, H. R. Neilson<div>Submitted 8 Sep 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">Long Period Variables (LPVs) are Asymptotic Giant Branch stars with periods &gt;100 days. Around one third to half of LPVs display a Long Secondary Period (LSP) that is 5-10 times the length of the main periods. The exact cause of LSPs are unknown, with one potential explanation lying in cross-harmonics caused by the interaction of two simultaneously occurring periods. In this paper, we use the Fourier analysis software VStar to examine the visual range photometric light curves obtained through the American Association of Variable Star Observers of a sample of 5 stars. We find that one star, V CVn, displays a secondary period over 20 times the length of its main period, inconsistent with traditional LSPs. To test if cross-harmonics can result in an LSP or VCVn&#x27;s extra-long secondary period, we then construct evolutionary tracks and pulsation models of LPVs using Modules for Evolution in Stellar Astrophysics (MESA) and GYRE. After examining the interactions of the fundamental pulsation mode and the first 4 overtones with each other, we do not find evidence that LSPs or V CVn&#x27;s extra-long secondary period could be caused by cross-harmonics.</p>
   <h2>Screening</h2><p><strong>2 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">The paper is a Fourier period analysis of AGB long period variable light curves, with MESA/GYRE pulsation models. It has no link to flares, particle acceleration, QPPs or STIX/EUI. The only overlap is generic periodogram analysis of time series.</p>
   <p class="meta">arXiv:2609.08065</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

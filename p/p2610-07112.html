@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2610.07112" data-prev="" data-next="" data-title="Armillary: A Label-Free Coordinate System for Stellar Spectra">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2610.07112" data-prev="" data-next="" data-title="Armillary: A Label-Free Coordinate System for Stellar Spectra">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2610.07112">Armillary: A Label-Free Coordinate System for Stellar Spectra</a></h1>
   <div class="meta">Yuan-Sen Ting, Serat Saad<div>Submitted 5 Oct 2026, astro-ph.IM</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">A stellar spectrum is determined by a few parameters, so a set of spectra lies on a low-dimensional manifold with those parameters as its coordinates. We introduce Armillary, which generalises the Sequencer of Baron and Ménard from an ordering to multidimensional coordinates, constructed from the spectra alone. Two stars are compared by the Wasserstein distance between their signed absorption profiles. Shortest paths through a nearest-neighbour graph measure distance along the manifold and give the coordinates, and the same graph transfers the labels of a few stars to all the others. The coordinates are more nearly linear in $T_{\rm eff}$ and $\log g$ than principal components, t-SNE, UMAP or an autoencoder. The label transfer, without deep learning, is more precise than the first three and comparable to the autoencoder. On 202,932 APOGEE DR17 stars, an illustrative draw of 32 training stars recovers the ASPCAP $T_{\rm eff}$, $\log g$ and [M/H] of held-out dwarfs and giants, with $1σ$ errors of 100 K, 0.18 and 0.083 dex. Resolving the two $α$ sequences of the disc in [$α$/M] for giants takes 128 training stars, and with 2048 the four errors improve to 33 K, 0.06, 0.026 and 0.022 dex. On 104,799 DESI stars, 32 training labels from APOGEE recover the stellar parameters to 129 K, 0.25 and 0.203 dex, even for spectra degraded to a signal-to-noise of about 20. At a signal-to-noise of about 100, 2048 training labels resolve the two $α$ sequences of the disc in DESI giants, with errors against APOGEE of 51 K, 0.07, 0.047 and 0.026 dex. The code is public at https://github.com/tingyuansen/armillary.</p>
   <h2>Screening</h2><p><strong>1 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">This paper is about label-free manifold coordinates and label transfer for stellar spectra (APOGEE, DESI). It has nothing to do with flares, particle acceleration, QPPs or STIX/EUI, and the Wasserstein-distance and graph methods are unlikely to transfer to flare lightcurves.</p>
   <p class="meta">arXiv:2610.07112</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

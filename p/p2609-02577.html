@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.02577" data-prev="" data-next="" data-title="3.5-meter Segmented-Mirror Robotic Space Telescope Mission White Paper III. Key Scientific Mission: Exoplanet Science with a Coronagraph">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.02577" data-prev="" data-next="" data-title="3.5-meter Segmented-Mirror Robotic Space Telescope Mission White Paper III. Key Scientific Mission: Exoplanet Science with a Coronagraph">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.02577">3.5-meter Segmented-Mirror Robotic Space Telescope Mission White Paper III. Key Scientific Mission: Exoplanet Science with a Coronagraph</a></h1>
   <div class="meta">Juhan Kim, Sang Hyun Lee, Yong-Woo Kang, Jeong-Yeol Han, Sungwook E. Hong, Bongkon Moon, Donguk Song, Juhyung Kang, Myeong-Gu Park, Sang Chul Kim, Chung-Uk Lee, Sangmo Tony Sohn et al.<div>Submitted 2 Sep 2026, astro-ph.IM</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">This volume defines the exoplanet science program enabled by the dedicated high-contrast coronagraph in the baseline science payload of the 3.5-meter Segmented-Mirror Robotic Space Telescope. The observatory architecture incorporates the optical interfaces, wavefront sensing and control, pointing stability, and operations software required for coronagraphic observations from the outset. The observing strategy gives priority to the nearest stellar systems because they provide the most accessible laboratories for planetary exploration and the most likely destinations of future interstellar missions. The diffraction limit sets a reflected-light horizon of roughly 10--15 pc for planets at 1 AU and roughly 50--80 pc for Jupiter analogs. Within those horizons, the telescope can image nearby giant planets, obtain reflected-light spectra of their atmospheres, survey young systems and circumstellar disks, and support the habitability and biosignature programs that larger future missions will pursue. The wide-field imager complements the coronagraph through transit photometry, occurrence-rate statistics, and long-term monitoring of stellar magnetic activity. A systematic census of the nearest stellar neighbors provides a lasting reference for exoplanet science and future space exploration.</p>
   <h2>Screening</h2><p><strong>1 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">A white paper on a space telescope coronagraph for exoplanet direct imaging; it has no connection to flare timing, particle acceleration, QPPs, or STIX/EUI. The stellar-activity monitoring mention is only peripheral.</p>
   <p class="meta">arXiv:2609.02577</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

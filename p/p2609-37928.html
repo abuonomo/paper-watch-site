@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.37928" data-prev="" data-next="" data-title="Joint Mass-Radius and Magnetic-Geometry Inference of PSR J0740+6620">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.37928" data-prev="" data-next="" data-title="Joint Mass-Radius and Magnetic-Geometry Inference of PSR J0740+6620">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.37928">Joint Mass-Radius and Magnetic-Geometry Inference of PSR J0740+6620</a></h1>
   <div class="meta">Chun Huang, Tuomo Salmi, Alexander Y. Chen<div>Submitted 29 Sep 2026, astro-ph.HE</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">X-ray pulse-profile modeling can measure neutron-star radii, but its physical interpretation remains limited by the largely phenomenological description of the surface hotspots. Here we connect the X-ray hotspots directly to the pulsar magnetospheric structure and jointly infer the mass, radius, and magnetic geometry of the massive millisecond pulsar PSR J0740+6620 from \emph{NICER} and \emph{XMM-Newton} observations. Using a GPU-accelerated implementation, we compare two low-dimensional magnetic configurations that can produce non-antipodal emission: a centered axisymmetric dipole--quadrupole and a shifted dipole. The shifted-dipole model is decisively favored under the adopted priors, with $Δ\ln Z=5.65$ (Bayes factor $\sim285$), and yields $M=2.059^{+0.068}_{-0.069}\,M_{\odot}$ and $R=13.28^{+1.47}_{-1.07}\,\mathrm{km}$, broadly consistent with previous phenomenological analyses, while requiring nearly symmetric heating of the two polar caps. Both the marginalized shifted-dipole posterior and the timing-compatible representative require an effective X-ray-emitting footprint much smaller than the nominal force-free polar cap calibrated for a centered dipole. This compact footprint is not reproduced by our exploratory photon-conversion estimates and instead points to missing physics in the mapping from magnetospheric currents to observable X-ray emission. Our results show that physically motivated hotspots can preserve the mass--radius inference while turning hotspot morphology into a probe of pulsar magnetospheric structure and emission physics.</p>
   <h2>Screening</h2><p><strong>1 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">This paper covers neutron-star pulse-profile modeling of PSR J0740+6620 with NICER and XMM-Newton. It has no link to solar flare timing, particle acceleration, QPPs, or STIX/EUI, and the Bayesian inference methods are too field-specific to transfer.</p>
   <p class="meta">arXiv:2609.37928</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

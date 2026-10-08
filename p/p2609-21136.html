@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.21136" data-prev="" data-next="" data-title="Effects of Physical Cooling on the Structure of Circumbinary Disks">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.21136" data-prev="" data-next="" data-title="Effects of Physical Cooling on the Structure of Circumbinary Disks">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.21136">Effects of Physical Cooling on the Structure of Circumbinary Disks</a></h1>
   <div class="meta">Minjae V. Kim, Julian H. Krolik, Scott C. Noble<div>Submitted 17 Sep 2026, astro-ph.HE</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">Radiation pressure and radiative cooling often play an important role in deciding the structure and dynamics of astrophysical objects. In this paper, we present a radiative MHD simulation of a circumbinary disk (CBD) around an equal-mass SMBBH. It employs an approximate thermodynamic model based on local thermodynamic equilibrium and diffusion cooling which captures how the internal energy evolves in an optically thick region. The disk reaches a quasi-steady state within $r=5a$ whose mass distribution differs substantially from the one obtained from simulations without physical thermodynamics: the local maximum in the azimuthally-averaged surface density and the lump are completely erased; the time-averaged inner edge becomes more eccentric; and the vertical density distribution depends strongly on the radius. These changes are attributable to the enhancement of the magnetic fields caused by the cooling-driven vertical compression of the disk. Our result emphasizes that the basic properties of the inner CBD are sensitive to both radiation and magnetic physics.</p>
   <h2>Screening</h2><p><strong>0 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">The paper is a radiative MHD simulation of circumbinary disks around supermassive black hole binaries, with no connection to solar flares, QPPs, particle acceleration, or Solar Orbiter data.</p>
   <p class="meta">arXiv:2609.21136</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

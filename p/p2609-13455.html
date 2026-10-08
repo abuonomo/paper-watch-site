@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.13455" data-prev="" data-next="" data-title="SDSS-IV MaStar: Determination of Stellar Parameters Using Bayesian Averaging">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.13455" data-prev="" data-next="" data-title="SDSS-IV MaStar: Determination of Stellar Parameters Using Bayesian Averaging">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.13455">SDSS-IV MaStar: Determination of Stellar Parameters Using Bayesian Averaging</a></h1>
   <div class="meta">Yan-Ping Chen, Renbin Yan, Szabolcs Mészáros, Claudia Maraston, Daniel Thomas, Daniel Lazarz, Guy S. Stringfellow, Lewis Hill, Julie Imig, Joseph D. Gelfand, Jon A. Holtzman, Matthew Bershady et al.<div>Submitted 11 Sep 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">We present the stellar parameters for 59,266 high-quality spectra of 24,130 unique stars from the MaNGA Stellar Library (MaStar) in the Sloan Digital Sky Survey (SDSS) Data Release 17 (DR17). The median signal-to noise ratio per pixel of the spectra is 96. We derive four stellar parameters, effective temperature (Teff), surface gravity (log g), metallicity ([M/H]), and {$α$}-enhancement ratio ($\rm [α/M]$), by comparing the data with BOSZ (ATLAS-9 based) and MARCS theoretical atmospheric models. We adopt a Bayesian method and use color and absolute magnitude derived from Gaia to select a subset of theoretical models for each star. We then perform full-spectrum fitting to estimate the likelihood of each model in the subset and then compute their likelihood-weighted mean parameters as the final parameters. We set stellar-parameter quality flags to facilitate the use of the derived stellar parameters. The MaStar stellar parameters derived herein span an effective temperature range of $\rm 2,600 \leq T_{eff} \leq 29,861 K$, a surface gravity range of $0 \leq \log g \leq 5.5$, a metallicity range of $-4.9 \leq \rm[M/H] \leq 1.0$, and an {$α$}-abundance range of $\rm -0.98 \leq [α/M] \leq 1.0$. We compare these parameters with those from APOGEE and Gaia for stars in common, finding general consistency within the uncertainties. However, some artifacts and systematic differences are present, and we discuss their potential causes. These new stellar parameters are available through the MaStar SDSS-IV DR17 value-added catalog (https://www.sdss4.org/dr17/mastar/mastar-stellar-parameters/).</p>
   <h2>Screening</h2><p><strong>0 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">Stellar atmospheric parameter determination from a stellar spectral library (MaStar) via Bayesian full-spectrum fitting has no connection to flare timing, QPPs, particle acceleration, or STIX/EUI analysis.</p>
   <p class="meta">arXiv:2609.13455</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

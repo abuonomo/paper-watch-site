@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.17024" data-prev="" data-next="" data-title="The evolution of discs and the epoch of formation of giant planets around solar type stars">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.17024" data-prev="" data-next="" data-title="The evolution of discs and the epoch of formation of giant planets around solar type stars">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.17024">The evolution of discs and the epoch of formation of giant planets around solar type stars</a></h1>
   <div class="meta">Raffaele Gratton, Elisabetta Rigliaco<div>Submitted 15 Sep 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">Disc evolution dictates the time for planet formation providing the raw material to build the planets&#x27; cores. Dynamical stellar masses derived from the kinematics of the gas in discs provide constraints on the ages of very young stars, offering a powerful approach to studying disc evolution and the epoch of giant-planet formation. We investigated a sample of 33 solar-type stars with bright protoplanetary discs and ages between 1 and 9\,Myr. We modeled the spectral energy distributions and ALMA dust continuum images simultaneously to constrain the stellar radius and effective temperature, accretion rate, disc dust mass, the radii of the inner and outer disc regions (roughly separated at the ice line), and the maximum grain size in the inner disc. Combining the stellar masses and radii with stellar evolutionary models, we derived individual stellar ages. We found that the accretion rate and the dust mass of the inner disc evolve with time. The dust mass of the inner disc correlates with the observed accretion rates for stars younger than 2\, Myr. A depletion of centimetre-sized grains in the inner disc is observed in more than half of the analysed stars with ages between 2 and 5\, Myr indicating the action of a mechanism that inhibits the inward drift of large grains, potentially associated with the progressive growth of giant-planet cores more massive than 30 \MEarth, although the exact mass threshold remains uncertain. In addition, three discs exhibiting strong asymmetries in their ALMA continuum emission are associated with stars with ages of $\sim$2\, Myr. The results provide observational indications of significant changes in the dust distribution during the epoch when giant planets may be forming.</p>
   <h2>Screening</h2><p><strong>0 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">The paper is about protoplanetary disc evolution and giant-planet formation around young solar-type stars. It has no connection to flare timing, particle acceleration, QPPs, or STIX/EUI, and no transferable method.</p>
   <p class="meta">arXiv:2609.17024</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

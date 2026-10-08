@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.00136" data-prev="" data-next="" data-title="Conspicuous Gas, Cryptic Dust: Spectroscopy and Chromaticity of Complex Periodic Variables">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.00136" data-prev="" data-next="" data-title="Conspicuous Gas, Cryptic Dust: Spectroscopy and Chromaticity of Complex Periodic Variables">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.00136">Conspicuous Gas, Cryptic Dust: Spectroscopy and Chromaticity of Complex Periodic Variables</a></h1>
   <div class="meta">Luke G. Bouma, Facundo Perez Paolino, Lynne A. Hillenbrand, Juliana Garcia-Mejia, Allyson Bieryla, Patrick Tamburo, David Charbonneau, John H. Livingston, Keisuke Isogai, Norio Narita, Akihiko Fukui, Enric Palle et al.<div>Submitted 31 Aug 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">Complex periodic variables (CPVs) are young low-mass stars whose light curves show periodic dips indicative of transiting corotating material. The origin and composition of this material are unclear. Here we present new optical and near-infrared spectroscopy and photometry of four CPVs from Magellan, Keck, Hale, MuSCAT1, MuSCAT2, Tierras, KeplerCam, and TESS. The spectra imply that CPVs host magnetically bound circumstellar plasma clumps, on the basis of sinusoidal-in-time Balmer emission out of transit, and Balmer dimming during transit. Yet large night-to-night changes in circumstellar hydrogen emissivity occur without clear changes in light curve morphology, suggesting that the sharp flux dips are caused not by circumstellar plasma but by dust. Optical chromaticities (depth proportional to $λ^{-β}$, with $β$ = 0.79 $\pm$ 0.16) support this, but the power law breaks in the near-infrared, where a single power law under-predicts the depths observed at 2.1 microns. We therefore favor dips caused by dusty plasma clumps with opaque cores and optically thin halos, though we cannot rule out models in which the dust properties vary per-star or per-epoch. Observations at wavelengths greater than 2 microns and less than 0.4 microns would test this interpretation and clarify the dust&#x27;s origin.</p>
   <h2>Screening</h2><p><strong>1 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">Paper is about young low-mass star complex periodic variables (circumstellar dust/plasma clumps), with no connection to flare timing, particle acceleration, QPPs, or STIX/EUI; only loose overlap via periodic photometric variability.</p>
   <p class="meta">arXiv:2609.00136</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

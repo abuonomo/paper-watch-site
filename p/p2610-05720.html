@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2610.05720" data-prev="" data-next="" data-title="A Physically Motivated Compact Parameterization of Neutron Star Atmosphere Emission for Thermal X-ray Pulse-Profile Modeling">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2610.05720" data-prev="" data-next="" data-title="A Physically Motivated Compact Parameterization of Neutron Star Atmosphere Emission for Thermal X-ray Pulse-Profile Modeling">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2610.05720">A Physically Motivated Compact Parameterization of Neutron Star Atmosphere Emission for Thermal X-ray Pulse-Profile Modeling</a></h1>
   <div class="meta">Tong Zhao, Renxin Xu<div>Submitted 5 Oct 2026, astro-ph.HE</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">Thermal X-ray pulse-profile modeling depends on the angular and spectral properties of neutron star atmosphere emission. We construct a compact empirical approximation to the specific intensity using eight coefficients for the angular dependence and five for a normalized spectral kernel. The angular prescription is motivated by the formal solution of the radiative-transfer equation, while the spectral normalization preserves a specified bolometric flux. We calibrate this family to numerical atmosphere tables, focusing on return-current-heated and fully ionized hydrogen atmospheres. When incorporated into a semi-analytic pulse-profile model, the approximation reproduces profiles normalized by their phase-averaged flux to within approximately $4\%$ for antipodal hot spots and $5\%$ for non-antipodal hot spots in the tested heated-atmosphere configurations. We also analyze synthetic eXTP observations using different beaming prescriptions to test the conclusion in our previous work based on a linear description of the angular dependence of the emission. The comparisons suggest that the angular dependence of the intensity cannot be simply characterized by a linear function of the cosine value of the emission angle, because its detailed shape and energy dependence will affect the parameter inference. This parameterization can significantly increase the efficiency for analytic and numerical models, and provide a compact framework for examining how atmosphere assumptions affect neutron star pulse profiles and the inferred stellar properties.</p>
   <h2>Screening</h2><p><strong>1 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">Neutron star atmosphere emission and pulse-profile modeling is unrelated to solar flare timing, particle acceleration, QPPs or STIX/EUI; only the broad X-ray theme overlaps.</p>
   <p class="meta">arXiv:2610.05720</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

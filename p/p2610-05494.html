@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2610.05494" data-prev="" data-next="" data-title="ZTF J191814.28+010850.2: An eclipsing cataclysmic-variable candidate in the SW Sextantis period range">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2610.05494" data-prev="" data-next="" data-title="ZTF J191814.28+010850.2: An eclipsing cataclysmic-variable candidate in the SW Sextantis period range">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2610.05494">ZTF J191814.28+010850.2: An eclipsing cataclysmic-variable candidate in the SW Sextantis period range</a></h1>
   <div class="meta">Klaus Bernhard, Wolfgang Moschner, Christopher Lloyd, Peter Frank<div>Submitted 4 Oct 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">We present a photometric study of ZTF J191814.28+010850.2, a short-period variable previously classified as an EA-type eclipsing binary. The analysis is based on ZTF observations in the g and r bands and additional time-series CCD photometry obtained on two nights. We derive an eclipse period of 0.1408529(3) d. The phased ZTF light curves show a deep primary eclipse, with an eclipse depth of about 2.8 mag in g and 2.0 mag in r, as well as indications of cycle-to-cycle variations outside eclipse. After excluding the primary eclipse and accounting for the remaining orbital modulation, robust locally weighted fits reveal a broad non-linear long-term brightness variation in both bands, with peak-to-peak ranges of about 0.56 mag in g and 0.46 mag in r. The deep eclipse, short orbital period and irregular variability suggest that the object is a cataclysmic-variable candidate and possibly a member of the SW Sextantis group. Time-resolved spectroscopy is required to confirm or refute the proposed classification and to test possible membership in the SW Sex class.</p>
   <h2>Screening</h2><p><strong>1 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">Photometric study of an eclipsing cataclysmic-variable candidate with no flare, particle acceleration, QPP, or X-ray/EUV timing content; only generic light-curve period analysis, which barely transfers.</p>
   <p class="meta">arXiv:2610.05494</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

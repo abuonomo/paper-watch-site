@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.38341" data-prev="" data-next="" data-title="HESS J1507-622: A Plausible Young Galactic Kilonova Remnant">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.38341" data-prev="" data-next="" data-title="HESS J1507-622: A Plausible Young Galactic Kilonova Remnant">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.38341">HESS J1507-622: A Plausible Young Galactic Kilonova Remnant</a></h1>
   <div class="meta">Prantik Sarmah, Xilu Wang, Myles Carley, Shu-Xu Yi, Ming-Yu Ge, Rebecca Surman<div>Submitted 29 Sep 2026, astro-ph.HE</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">HESS J1507$-$622 is an unusual TeV gamma-ray source in the H.E.S.S. Galactic Plane Survey, distinguished by its off-plane location ($b \simeq -3.5^{\circ}$) and compact angular extent ($\sim 0.3^{\circ}$). Its location and morphology challenge conventional pulsar wind nebula and supernova remnant interpretations, and the absence of a detected shell or associated pulsar leaves its origin unresolved. Here, we propose that HESS J1507$-$622 is a young Galactic kilonova remnant with gamma-ray emission of leptonic origin. In this scenario, the source&#x27;s off-plane location is naturally explained by the natal kick imparted to the progenitor binary neutron star system. We demonstrate that a leptonic kilonova remnant model can successfully reproduce the observed GeV-TeV flux via inverse-Compton scattering from shock-accelerated electrons, while the corresponding synchrotron emission remains below current X-ray and radio upper limits. Based on the source&#x27;s energetics and angular size, we infer a distance of 3.8-14.3 kpc and an age of 0.2-3.0 kyr. Importantly, our analysis favors a kilonova remnant younger than 1 kyr. The lack of a historical naked-eye record can be explained by the transient&#x27;s rapid fading, far-southern declination, and potential line-of-sight extinction. We further assess the detectability of unique multi-wavelength signatures that could confirm this hypothesis. We find promising prospects for detecting the unique MeV gamma rays from the decay of $r$-process radioisotopes using future observatories, alongside complementary low-energy signatures from thermal dust emission and a possible optical light echo. These distinct signals offer definitive tests of the kilonova remnant interpretation and motivate targeted observations with current and future facilities.</p>
   <h2>Screening</h2><p><strong>1 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">The paper models a TeV gamma-ray source as a kilonova remnant, which has no connection to solar flare timing, QPPs, or STIX/EUI. The only overlap is generic shock-accelerated electrons, which is too distant to transfer.</p>
   <p class="meta">arXiv:2609.38341</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.20664" data-prev="" data-next="" data-title="Water Cloud and Chemical Modulations in the Coldest Brown Dwarf">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.20664" data-prev="" data-next="" data-title="Water Cloud and Chemical Modulations in the Coldest Brown Dwarf">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.20664">Water Cloud and Chemical Modulations in the Coldest Brown Dwarf</a></h1>
   <div class="meta">Brittany E. Miles, James Mang, Caroline V. Morley, Andrew J. I. Skemer, Melanie Rowland, Brianna Lacy, Genaro Suarez, Channon Visscher, Dániel Apai, Gordon Bjoraker, Aarynn L. Carter, Jacqueline K. Faherty et al.<div>Submitted 17 Sep 2026, astro-ph.EP</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">We present high signal-to-noise, medium resolution (R ~ 1000), time-series JWST/NIRSpec spectra of WISE 0855 (265K), the coldest known brown dwarf. Medium resolution, time-series spectroscopy gives us the power to disentangle the effects of chemistry, temperature, and condensates on this cool world. Our observations span 11 hours with a 15 minute cadence covering 2.87 - 5.27 $μ$m. The strongest time variable spectroscopic feature is carbon monoxide gas absorption producing modulations with a peak-to-peak amplitude up to 10\% at some wavelengths. Using principal component analysis, we show that the variations in carbon monoxide and phosphine correlate with one another. By comparing our data to atmospheric and structure models we present evidence of patchy water clouds within the atmosphere of WISE 0855. We find that variations in CO and PH$_{3}$ abundances must originate from quenched atmospheric pressures while variations in water cloud thickness occurs at lower pressures.</p>
   <h2>Screening</h2><p><strong>1 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">This paper covers JWST time-series spectroscopy of the coldest brown dwarf, looking at atmospheric chemistry and water clouds. It has no connection to flares, particle acceleration, QPPs, or STIX/EUI. The only overlap is generic time-series variability analysis, such as PCA.</p>
   <p class="meta">arXiv:2609.20664</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.19847" data-prev="" data-next="" data-title="On the Constancy of Binary Star Fractions in Local Star Clusters">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.19847" data-prev="" data-next="" data-title="On the Constancy of Binary Star Fractions in Local Star Clusters">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.19847">On the Constancy of Binary Star Fractions in Local Star Clusters</a></h1>
   <div class="meta">Priya Hasan, Mohammed Saifuddin<div>Submitted 17 Sep 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">We investigate the unresolved binary-star fraction in a complete sample of 376 open clusters located within 1 kpc of the Sun using Gaia DR3 and ASteCA based synthetic colour magnitude diagram modelling. The binary fraction is a global photometric quantity, sensitive primarily to unresolved binaries that produce measurable broadening above the single-star main sequence. We find that the median binary fraction of the sample is nearly constant, $0.29\pm 0.03$, with no clear dependence on cluster age, core radius, limiting radius or median mass. This apparent constancy suggests that the global binary content of nearby open clusters is regulated by competing dynamical processes, including disruption of soft binaries, survival and hardening of close binaries, mass segregation, evaporation of single stars, and long-term cluster dissolution. The result is consistent with theoretical expectations and previous observational studies indicating that cluster binary populations can evolve internally while maintaining a relatively stable global binary fraction. Our findings provide an observational constraint for models of open-cluster formation and dynamical evolution and highlight the need for future work combining photometric, astrometric, spectroscopic, and N-body approaches to distinguish between primordial and dynamically formed binary populations.</p>
   <h2>Screening</h2><p><strong>0 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">This paper measures unresolved binary fractions in open clusters using Gaia photometry. It has no connection to solar flares, particle acceleration, QPPs, or Solar Orbiter, and its methods do not transfer.</p>
   <p class="meta">arXiv:2609.19847</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

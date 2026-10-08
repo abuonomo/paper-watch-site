@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.01033" data-prev="" data-next="" data-title="Fundamental effective temperature measurements for eclipsing binary stars - IX. Characterisation of 5 solar-type sclipsing binaries with M-dwarf companions">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.01033" data-prev="" data-next="" data-title="Fundamental effective temperature measurements for eclipsing binary stars - IX. Characterisation of 5 solar-type sclipsing binaries with M-dwarf companions">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.01033">Fundamental effective temperature measurements for eclipsing binary stars - IX. Characterisation of 5 solar-type sclipsing binaries with M-dwarf companions</a></h1>
   <div class="meta">Axel Hahlin, Pierre F. L. Maxted, Ivanna Hernandez-Araya, Natasha Adshead, Claudia Aguilera-Gomez<div>Submitted 1 Sep 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">Large-scale spectroscopic surveys will need suitable benchmark stars that can be used to verify the performance of automatic pipelines. A promising type of object for this purpose is the detached eclipsing binary (DEB) containing an FG-star and a low temperature companion. For flux ratios $\lesssim1$~per~cent, the spectra obtained for the binary will be almost identical to a single star. As the methods for obtaining accurate parameters for binaries are well established, they would be excellent benchmark candidates. We analyse a group of DEBs with M-dwarf companions using TESS light curves and high resolution spectroscopy from NIRPS and HARPS on the ESO 3.6-m telescope. We obtain accurate fundamental parameters for the stellar components. The secondary component is visible with cross-correlation, allowing them to be characterised as well. With the stellar parameters obtained from the analysis, we can measure precise effective temperatures from Gaia parallaxes and archival magnitude data. Chemical compositions of the primary stars are also extracted from the stellar spectra. In this analysis, the secondary components have minimal impact on determined spectroscopic parameters. Our radii and masses are characterised to within sub per~cent precision as well as our primary effective temperatures. Beyond a new set of stellar benchmarks, the secondary components analysed in this work represent a well characterised sample of M-dwarf stars which will be useful to improve our understanding of low mass structure and evolution.</p>
   <h2>Screening</h2><p><strong>1 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">Paper is about eclipsing binary stellar parameters and benchmark effective temperatures; no connection to flare timing, particle acceleration, QPPs, or STIX/EUI.</p>
   <p class="meta">arXiv:2609.01033</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

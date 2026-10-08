@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.24940" data-prev="" data-next="" data-title="Ruling out nucleonic direct Urca cooling in low-mass neutron stars using nuclear data">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.24940" data-prev="" data-next="" data-title="Ruling out nucleonic direct Urca cooling in low-mass neutron stars using nuclear data">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.24940">Ruling out nucleonic direct Urca cooling in low-mass neutron stars using nuclear data</a></h1>
   <div class="meta">Gabriele Montefusco, Pietro Klausner, Marco Antonelli, Caterina Ciampi, Diego Gruyer, Francesca Gulminelli<div>Submitted 21 Sep 2026, nucl-th</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">Connecting nuclear experiments to neutron star composition requires controlling the extrapolation of experimental information beyond the densities probed in the laboratory. We combine a broad set of nuclear structure observables and INDRA-FAZIA isospin-transport data within a Bayesian inference of the dense matter equation of state (EoS). To limit uncontrolled extrapolation to high density, we employ a flexible asymptotically causal metamodel whose neutron star posteriors are comparable to those obtained with agnostic EoS models. The nuclear structure information is propagated through its full multidimensional distribution of correlated nuclear matter parameters, while the density-dependent INDRA-FAZIA likelihood is evaluated directly along each sampled metamodel symmetry energy curve. These two sources of laboratory information give compatible constraints on the symmetry energy, and their combination preserves agreement with finite nuclear observables. When combined with ab initio chiral effective field theory calculations and astrophysical observations, all these constraints substantially improve the determination of central proton fractions in low-mass neutron stars, while leaving larger uncertainties for massive stars. Within the adopted nucleonic metamodel, the reduced probability of large proton fractions strongly disfavors electronic direct-Urca onset at or below $1.4\,M_\odot$: its posterior probability falls from $\sim20\%$ with chiral and astrophysical constraints alone to below $1\%$ when the laboratory information is included.</p>
   <h2>Screening</h2><p><strong>0 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">Paper is about neutron star equation of state and direct Urca cooling constrained by nuclear data, with no connection to solar flares, particle acceleration, QPPs, or STIX/EUI.</p>
   <p class="meta">arXiv:2609.24940</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

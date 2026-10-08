@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2610.09630" data-prev="" data-next="" data-title="A Novel Approach to Identify Unseen Companions: An In-Depth study of GDR3 220_28">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2610.09630" data-prev="" data-next="" data-title="A Novel Approach to Identify Unseen Companions: An In-Depth study of GDR3 220_28">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2610.09630">A Novel Approach to Identify Unseen Companions: An In-Depth study of GDR3 220_28</a></h1>
   <div class="meta">T. B. Cysil, Blesson Mathew, B. Shridharan, S. Muneer, Pramod Kumar S, S. Nidhi, Sreeja S Kartha, Suman Bhattacharyya, T. Robin<div>Submitted 7 Oct 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">Emission lines in the spectrum and the excess seen in the spectral energy distribution (SED) at infrared (IR) wavelengths serve as crucial indicators of accretion activity and the presence of gas and dust in the circumstellar environment of a young star. As accretion ceases over several million years, the H$α$ emission diminishes. However, IR excess combined with negligible H$α$ emission could also extend to indicate certain close binary systems, where a circumbinary disk contributes to the observed excess. Additionally, in unresolved binaries, companion stars can contribute to the photometry, leading to inaccuracies in parameter measurements and skewed positions in the color-magnitude diagram (CMD). We identify a photometrically peculiar object from a survey of the Cepheus star-forming regions (SFRs), Gaia DR3 2205212960562531328, exhibiting a shift from its expected position in the CMD, as indicated by the Gaia optical photometry. This peculiarity drives our research, prompting an investigation through an approach that combines astrometric accuracy, photometric modeling and spectroscopic studies. The Gaia XP spectrum of the source shows a systematic blue excess, indicating an additional hotter unresolved component. Two-component SED modelling yields a companion with $T_{\rm eff}\sim27000$ K and $\log g\ge4.5$, consistent with sdB stars. Further CMD and spectroscopic analyses support a binary system consisting of an A0-type PMS star with an sdB companion. In addition, ZTF photometry shows tentative evidence for a periodicity of 0.498 days. This study paves the way for a systematic search of similar binary systems that would otherwise remain unidentified.</p>
   <h2>Screening</h2><p><strong>0 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">Paper on identifying an unresolved sdB companion to a pre-main-sequence star via Gaia photometry and SED modelling; it has no connection to solar flares, particle acceleration, QPPs, or STIX/EUI.</p>
   <p class="meta">arXiv:2610.09630</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

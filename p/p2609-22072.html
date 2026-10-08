@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.22072" data-prev="" data-next="" data-title="Multi-Epoch Stability in the Rotational Modulation of the Planetary-Mass Companion Ross 458C">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.22072" data-prev="" data-next="" data-title="Multi-Epoch Stability in the Rotational Modulation of the Planetary-Mass Companion Ross 458C">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.22072">Multi-Epoch Stability in the Rotational Modulation of the Planetary-Mass Companion Ross 458C</a></h1>
   <div class="meta">Elena Manjavacas, Jared Bull, Paulo Miles-Paez, Natalia Oliveros-Gomez, Theodora Karalidi, Ben W. P. Lew, Zhoujian Zhang, Yifan Zhou, Daniel Apai, Xianyu Tan<div>Submitted 18 Sep 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">Spectroscopic variability is detected in brown dwarfs across all spectral types, suggesting atmospheric patchiness in brown dwarf atmospheres. We present JWST/NIRSpec time series observations of the T8.0 planetary-mass companion Ross 458C. We compared our derived spectral variability and light curve to those obtained using HST/WFC3 observations more than 7.5 yr before and published by Manjavacas et al. (2019). We found that the light curve of Ross 458C is remarkably similar in the two epochs in terms of shape and variability amplitude potentially created by stable weather patterns. We measured a rotational period of 11.57+\-0.09 hr, demonstrating that the previously reported HST/WFC3 period of 6.75+\-1.58 hr is most likely a second-order harmonic produced by an unresolved double-peaked rotational modulation, likely due to the higher uncertainties of the HST/WFC3 light curve and the short time baseline of those observations. We measured the variability amplitude in the white light curve created using only the wavelength range covered by HST/WFC3 (1.10-1.63 micron), obtaining a value of 1.47+\-0.18%, which is consistent with that measured in the HST/WFC3 light curve.</p>
   <h2>Screening</h2><p><strong>1 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">This is a JWST study of rotational modulation in a T-dwarf planetary-mass companion&#x27;s atmosphere. It has no connection to flare timing, particle acceleration, QPPs, or STIX/EUI; the only overlap is generic time-series period analysis.</p>
   <p class="meta">arXiv:2609.22072</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

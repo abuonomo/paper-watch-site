@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 4 of 10"><span class="v">4</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.17683" data-prev="" data-next="" data-title="Frequent X-class Far UV Flares from a Young Solar Analog DS Tucanae A">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 4 of 10"><span class="v">4</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.17683" data-prev="" data-next="" data-title="Frequent X-class Far UV Flares from a Young Solar Analog DS Tucanae A">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.17683">Frequent X-class Far UV Flares from a Young Solar Analog DS Tucanae A</a></h1>
   <div class="meta">Tristen Sextro, Kevin France, Vladimir Airapetian, Grace Sweetak, Randall McEntaffer, Kosuke Namekata, Yuta Notsu<div>Submitted 15 Sep 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">The young solar analog DS Tuc A (~45 million years old, spectral type G6V) serves as an excellent proxy to the Sun during early stages of the Earth&#x27;s evolution. The young Sun&#x27;s enhanced magnetic activity in the form of X-ray and extreme UV emission, stellar wind, and flares likely affected the magnetospheric and atmospheric environments of early Venus, Earth and Mars. Studies of DS Tuc A help constrain evolution of magnetospheric and atmospheric environments of early Venus, Earth, and Mars and create opportunities to study the impact of flares on the transiting exoplanet, DS Tuc Ab. We analyze ~11 hours of Far-ultraviolet (FUV; 1130 - 1450 $\mathring{A}$) observations taken by the Hubble Space Telescope Cosmic Origins Spectrograph during late 2023 and early 2024. We find DS Tuc A exhibited 26 flares over ~11.1 hours of observations in the transition region lines Si IV (1394 $\mathring{A}$ + 1402 $\mathring{A}$), with durations ranging 90 - 960 seconds and FUV absolute energies ranging ~ 10$^{29}$ - 10$^{31}$ erg over the observed bandpass. Si IV flares are accompanied by increases of other chromospheric and transition region lines, however the strongest Si IV flares show no enhanced coronal emission traced by Fe XXI 1354 $\mathring{A}$. We present an analysis of each detected flare, including X-ray and bolometric luminosities scaled from FUV flare energies, electron density measurements for the strongest flares, and the Far-UV continuum response to flaring. These results provide constraints on the frequency and energetics of flares comparable to X100-class solar flares and FUV-emitting regions in young solar analogs.</p>
   <h2>Screening</h2><p><strong>4 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">Stellar flare study of a young solar analog using HST/COS FUV lightcurves; it covers flare energetics, durations and frequency, and line responses, but has no focus on particle acceleration, QPPs or timing diagnostics, and the instruments differ. Only loose transfer to STIX/EUI flare work.</p>
   <p class="meta">arXiv:2609.17683</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

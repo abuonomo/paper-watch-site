@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.21928" data-prev="" data-next="" data-title="Stellar ages from [C/N] in giant stars: applicability and limitations">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.21928" data-prev="" data-next="" data-title="Stellar ages from [C/N] in giant stars: applicability and limitations">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.21928">Stellar ages from [C/N] in giant stars: applicability and limitations</a></h1>
   <div class="meta">Giada Casali, Luca Casagrande, Fiorenzo Vincenzo, Andrea Miglio, Melissa Ness, Grazina Tautvaišiene, Laura Magrini, Sven Buder<div>Submitted 18 Sep 2026, astro-ph.GA</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">The [C/N] abundance ratio is a powerful age indicator for giant stars, enabling age estimates for spectroscopic samples where traditional methods are limited. We calibrate a multivariate [C/N]-age-[Fe/H] relationship using 9,122 giant stars observed by Kepler, with asteroseismic ages and APOGEE DR17 abundances. The calibration is performed separately for lower red giant branch (LRGB), upper RGB (URGB), and red clump (RC) stars. We validate the relationships using independent samples from K2, TESS, and open clusters, finding good agreement with reference ages, particularly for LRGB stars, with typical precision of ~30% for ages between ~2 - 10 Gyr. The performance degrades for URGB and RC stars and low metallicities, likely due to extra mixing processes, for young (&lt;2 Gyr) and old (&gt;10 Gyr) stars, where the [C/N]-age correlation weakens. We show that the [C/N]-based ages reproduce known Milky Way features, including the age distribution across the [alpha/Fe]-[Fe/H] plane and the flaring of the Galactic disc. Compared to other chemical clocks, [C/N] provides more robust and precise age estimates within its domain of validity. Our results demonstrate that [C/N], combined with metallicity, is an effective empirical tool for deriving stellar ages of giant stars from spectroscopic surveys, particularly for LRGB stars with [Fe/H] &gt; -1, enabling Galactic archaeology studies beyond the reach of current asteroseismic samples.</p>
   <h2>Screening</h2><p><strong>0 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">This paper is about stellar age calibration from [C/N] abundances in giant stars for Galactic archaeology. It has no connection to solar flares, particle acceleration, QPPs, or STIX/EUI, and its methods do not transfer.</p>
   <p class="meta">arXiv:2609.21928</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 2 of 10"><span class="v">2</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.17938" data-prev="" data-next="" data-title="Landau Damping Beyond Smooth Velocity Distributions: A Dispersion-Free Lagrangian Time-Domain Framework">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 2 of 10"><span class="v">2</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.17938" data-prev="" data-next="" data-title="Landau Damping Beyond Smooth Velocity Distributions: A Dispersion-Free Lagrangian Time-Domain Framework">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.17938">Landau Damping Beyond Smooth Velocity Distributions: A Dispersion-Free Lagrangian Time-Domain Framework</a></h1>
   <div class="meta">Huasheng Xie, Jinsong Zhao<div>Submitted 15 Sep 2026, physics.plasm-ph</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">The classic theory of Landau damping requires the velocity distribution function (VDF) to be analytically continued into the complex plane, implicitly requiring analyticity, which imposes constraints far more severe than infinite smoothness. Yet physical plasmas---encountered in discrete simulations, noisy spacecraft measurements, or truncated fusion distributions---are inherently non-analytic. This discrepancy poses a foundational ``smoothness paradox&#x27;&#x27;: why does Landau damping robustly persist in systems where the mathematical prerequisite of analyticity is profoundly violated? Here we resolve this paradox by demonstrating that wave-particle interaction is governed by a time-dependent resonance width $Δv_\mathrm{res}\sim 1/kt$. Using a dispersion-free Lagrangian time-domain solver, we show that this finite width kinematically coarse-grains microscopic VDF defects at early times, acting as a natural low-pass filter that validates smooth analytical proxies---explaining the observed robustness. However, as $t\to\infty$ the resonance width narrows, inevitably forcing the wave to resolve exact topological non-smoothness. This late-time resolution triggers three distinct breakdowns: VDF truncation arrests the resonant phase transition to yield undamped discrete Van Kampen modes; observational noise induces transient algebraic spikes via linear phase-space aliasing; and step-like gradients drive anomalously violent reactive instability growth. We establish the breakdown timescale $t_b\sim 1/kδv$, where $δv$ is the characteristic scale of the non-smooth defect, providing a quantitative criterion that redefines the validity boundaries of analytic continuation in kinetic theory.</p>
   <h2>Screening</h2><p><strong>2 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">This is a plasma kinetic theory paper on Landau damping and non-smooth velocity distributions, with no flare, X-ray/EUV timing, QPP, or Solar Orbiter connection. Wave-particle resonance is only loosely related to particle acceleration, so the overlap is minimal.</p>
   <p class="meta">arXiv:2609.17938</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

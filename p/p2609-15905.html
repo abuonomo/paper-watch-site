@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.15905" data-prev="" data-next="" data-title="The JWST Proto-PAH Project: Detection of the methyl radical CH$_{3}$ in the highly evolved C-rich object SMP LMC 011">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.15905" data-prev="" data-next="" data-title="The JWST Proto-PAH Project: Detection of the methyl radical CH$_{3}$ in the highly evolved C-rich object SMP LMC 011">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.15905">The JWST Proto-PAH Project: Detection of the methyl radical CH$_{3}$ in the highly evolved C-rich object SMP LMC 011</a></h1>
   <div class="meta">Jialu Li, D. A. García-Hernández, A. Manchado, Debayan Das, J. Cami, Els Peeters, G. C. Sloan, B. Aringer, J. Bernard-Salas, C. Bhatt, Nicholas Clark, Harriet L. Dinerstein et al.<div>Submitted 14 Sep 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">We report the first detection of the neutral methyl radical CH$_3$ in a highly evolved C-rich object, SMP LMC 011, using JWST MIRI/MRS. CH$_3$ is well fitted by an excitation temperature of $T_{\rm ex} \simeq$~190\,K and a column density of $N_{\rm tot}(\mathrm{CH_3}) \simeq 5.6\times10^{17}$ cm$^{-2}$. We also report the non-detection of ethane (C$_2$H$_6$), consistent with CH$_3$ reacting preferentially with unsaturated radicals rather than self-recombination, which may be inefficient in SMP LMC 011. Combined with the exceptionally large benzene column density of SMP LMC 011, this supports a methyl-addition route from benzene towards alkyl-substituted aromatics. We propose that the high CH$_3$ abundance is driven by the erosion of hydrogenated amorphous carbon (HAC) dust grains in the dense warm torus by UV photons from the central star and/or by shocks, which release CH$_3$ directly into the gas phase. These results establish CH$_3$ as a key reactive intermediate in the formation of complex hydrocarbons in C-rich circumstellar environments. Chemical models that incorporate methyl-addition reactions are needed for a better understanding of PAH formation pathways in evolved stars. The potential detection of alkyl-substituted aromatics such as toluene (C$_7$H$_8$) and ethylbenzene (C$_8$H$_{10}$) in C-rich evolved stars would provide direct confirmation of CH$_3$-driven aromatic growth in circumstellar environments.</p>
   <h2>Screening</h2><p><strong>0 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">This paper is about JWST detection of the CH3 radical and PAH chemistry in an evolved C-rich planetary nebula. It has no connection to solar flares, particle acceleration, QPPs, or STIX/EUI.</p>
   <p class="meta">arXiv:2609.15905</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

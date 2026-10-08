@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.13433" data-prev="" data-next="" data-title="Sinking Silicates I: Characterizing the benchmark system containing the T0 brown dwarf CWISE J210640.16+250729.0 using JWST">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.13433" data-prev="" data-next="" data-title="Sinking Silicates I: Characterizing the benchmark system containing the T0 brown dwarf CWISE J210640.16+250729.0 using JWST">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.13433">Sinking Silicates I: Characterizing the benchmark system containing the T0 brown dwarf CWISE J210640.16+250729.0 using JWST</a></h1>
   <div class="meta">Austin Rothermich, Jacqueline K. Faherty, Ben Burningham, Catherine Manea, Emily Calamari, Genaro Suárez, Daniella C. Bardalez Gagliuffi, John M. Brewer, Kelle L. Cruz, Josefine Gaarn, Jonathan Gagné, Eileen C. Gonzales et al.<div>Submitted 11 Sep 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">In this study, we present the full (97.3\% complete) 0.8--12.5 $μ$m spectral energy distribution (SED) of an L/T transition object, CWISE J210640.16+250729.0 (CW2106), using the James Webb Space Telescope (JWST). We provide a full characterization of the host star&#x27;s elemental abundances and age. We empirically derive the bolometric luminosity ($L_{\rm bol}\approx-4.825$ $\textup{L}_\odot$) of CW2106, and obtain estimates of its mass (M$\approx50-62$ M$_{\rm Jup}$), radius (R$\approx0.83-0.87$ R$_{\rm Jup}$), effective temperature ($T_{\rm eff}$$\approx1213$ K), and surface gravity ($\log~g$$\approx5.28$ dex). We find the near-infrared (near-IR) spectrum ($0.8-2.5 ~μ$m) is best reproduced with cloudy atmospheric models while the mid-infrared (mid-IR) spectrum ($5-12.5 ~μ$m) is best reproduced with cloudless models. This suggests a cloud layer restricted to only the deepest observable parts of the atmosphere and is qualified by the lack of a 9 $μ$m silicate feature. Making use of the Mg/Si ratio of the primary, alongside thermochemical models, we predict the clouds in CW2106 to be composed primarily of enstatite (MgSiO$_3$), removing $\sim23\%$ of the bulk oxygen out of the atmosphere. Future retrieval studies will be able to help investigate the existence and full impact of these cloud species.</p>
   <h2>Screening</h2><p><strong>0 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">This is a JWST study of an L/T transition brown dwarf&#x27;s SED, clouds and silicate chemistry. It has no connection to solar flares, particle acceleration, QPPs, or STIX/EUI.</p>
   <p class="meta">arXiv:2609.13433</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

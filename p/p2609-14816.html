@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.14816" data-prev="" data-next="" data-title="Second Generation Planet Formation in Post-AGB Discs - II: Dust Coagulation and Core Accretion">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.14816" data-prev="" data-next="" data-title="Second Generation Planet Formation in Post-AGB Discs - II: Dust Coagulation and Core Accretion">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.14816">Second Generation Planet Formation in Post-AGB Discs - II: Dust Coagulation and Core Accretion</a></h1>
   <div class="meta">Ali Pourmand, Orsola De Marco, Devika Kamath, Daniel J. Price<div>Submitted 13 Sep 2026, astro-ph.EP</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">Observations have established that the circumbinary discs formed around post-asymptotic giant branch (post-AGB) binaries have striking similarities to protoplanetary discs around young stars. In this study, we examine the feasibility of the different stages of growth in the core accretion framework of planet formation in post-AGB discs, in order to assess whether planet formation is possible in these systems. We find that dust coagulation up to mm sizes is possible within the lifetimes of post-AGB discs, consistent with observations. We then investigate the subsequent growth of planetesimals through pebble and planetesimal accretion. If the streaming instability operates in these discs, the resulting planetesimals formed in higher-mass post-AGB discs ($M_{\rm disc}\sim0.1M_\odot$) can enter rapid pebble accretion and reach their isolation mass within the estimated disc lifetime. By contrast, in lower-mass post-AGB discs ($M_{\rm disc}\sim0.01M_\odot$), planetesimal accretion is too inefficient to produce substantial further growth. We also show that the larger aspect ratios of post-AGB discs compared to protoplanetary discs around young stars imply high pebble isolation masses and therefore potential formation of rocky planets with masses extending up to Jupiter masses. After assessing gas accretion and concurrent migration in these discs, we conclude that second generation planet formation in post-AGB discs is theoretically possible within their estimated lifetimes ($10^4$--$10^5$yr) provided that local dust-to-gas ratio enhancements and sufficiently high disc masses are achieved.</p>
   <h2>Screening</h2><p><strong>0 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">The paper is about planet formation in post-AGB circumbinary discs (dust coagulation, pebble accretion). It has no connection to solar flares, particle acceleration, QPPs, or STIX/EUI, and no transferable methods.</p>
   <p class="meta">arXiv:2609.14816</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.30654" data-prev="" data-next="" data-title="A Cyanopolyyne-rich but COM-poor Massive Protostar: The First Hot Carbon Chain Chemistry Source G28.28-0.36">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.30654" data-prev="" data-next="" data-title="A Cyanopolyyne-rich but COM-poor Massive Protostar: The First Hot Carbon Chain Chemistry Source G28.28-0.36">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.30654">A Cyanopolyyne-rich but COM-poor Massive Protostar: The First Hot Carbon Chain Chemistry Source G28.28-0.36</a></h1>
   <div class="meta">Kotomi Taniguchi, Masao Saito, Prasanta Gorai, Olli Sipilä, Kazuhito Dobashi, Paola Caselli, Tirupati Kumara Sridharan, Tomomi Shimoikura, Jonathan C. Tan<div>Submitted 25 Sep 2026, astro-ph.GA</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">We present molecular emission line data from the massive young stellar object (MYSO) G28.28-0.36 (G28.28) obtained with the Atacama Large Millimeter/submillimeter Array Band 3. Cyanopolyynes (HC$_3$N and HC$_5$N) and three complex organic molecules (COMs; CH$_3$OH, CH$_3$CN, and CH$_3$CHO) are detected from the MYSO G28.28. In addition, strong emission regions of cyanopolyynes are identified between G28.28 and a nearby ultracompact H II region. The HC$_5$N emission is coincident with the dust continuum peak, where an excitation temperature of 100 K is derived from CH$_3$CN. These results suggest that the Hot Carbon Chain Chemistry (HCCC) mechanism produces cyanopolyynes in the hot region around G28.28. We find that G28.28 exhibits a unique chemical feature: cyanopolyynes are abundant, but COMs are deficient, unlike the other MYSOs studied previously. These results imply that G28.28 is a counterpart of the Warm Carbon Chain Chemistry (WCCC) low-mass source L1527. G28.28 is the first HCCC source identified so far.</p>
   <h2>Screening</h2><p><strong>0 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">Astrochemistry of a massive protostar observed with ALMA (cyanopolyynes and COMs); no connection to solar flares, particle acceleration, QPPs, or STIX/EUI.</p>
   <p class="meta">arXiv:2609.30654</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

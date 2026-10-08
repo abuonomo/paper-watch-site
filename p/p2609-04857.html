@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.04857" data-prev="" data-next="" data-title="Membership Determination of 45 Open Clusters Beyond 3 kpc">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.04857" data-prev="" data-next="" data-title="Membership Determination of 45 Open Clusters Beyond 3 kpc">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.04857">Membership Determination of 45 Open Clusters Beyond 3 kpc</a></h1>
   <div class="meta">Qian Cui, Zhihong He, Yangping Luo, Yan Jiang<div>Submitted 4 Sep 2026, astro-ph.GA</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">Context. Open clusters (OCs) are fundamental tracers for studying the structure and chemical evolution of the Galactic disc. Reliable identification of cluster members, particularly at the faint end of the main sequence, remains challenging owing to severe field-star contamination and the declining photometric completeness for distant, obscured systems. Aims. We aim to identify and characterise distant OC candidates at heliocentric distances $d \gtrsim 3$ kpc using Gaia DR3 astrometry, with emphasis on improving the recovery of faint candidate members in highly contaminated stellar fields. Methods. We apply a probabilistic membership method based on Gaia DR3 proper motions and parallaxes. Candidate members are selected through combined astrometric criteria and refined via spatial filtering using radial density profiles, with photometric data serving as a consistency check. For clusters affected by significant extinction, near-infrared photometry from 2MASS is incorporated to compensate for the limitations of optical data. Results. We analyse a sample of 45 targets, comprising 30 previously reported OCs and 15 newly identified candidates, all located at $d \gtrsim 3$ kpc. The method yields more compact astrometric distributions and improves the recovery of faint candidate members in several systems. However, residual field contamination remains non-negligible for the most obscured clusters projected against the Galactic plane. Conclusions. Gaia DR3 astrometry provides an effective basis for the exploratory identification and first-order characterisation of distant OC candidates. Dedicated near-infrared follow-up observations will be essential for robust membership assessment in high extincted regions.</p>
   <h2>Screening</h2><p><strong>0 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">The paper is about Gaia DR3 membership determination for distant open clusters. It has no connection to solar flares, particle acceleration, QPPs, or Solar Orbiter STIX/EUI, and its methods do not transfer to flare lightcurve analysis.</p>
   <p class="meta">arXiv:2609.04857</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

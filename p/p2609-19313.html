@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.19313" data-prev="" data-next="" data-title="Mapping Molecular Ion Distributions in a Diverse Sample of Protoplanetary Disks">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.19313" data-prev="" data-next="" data-title="Mapping Molecular Ion Distributions in a Diverse Sample of Protoplanetary Disks">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.19313">Mapping Molecular Ion Distributions in a Diverse Sample of Protoplanetary Disks</a></h1>
   <div class="meta">Deryl E. Long, L. Ilsedore Cleeves, Charles J. Law, Fred C. Adams, Dana E. Anderson, Sean M. Andrews, Edwin A. Bergin, Jane Huang, A. Meredith Hughes, Chunhua Qi, Kamber R. Schwarz, Jacob B. Simon et al.<div>Submitted 16 Sep 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">Observations of ionization-tracing molecules in protoplanetary disks suggest that their ionization environments are diverse due to varying degrees of cosmic ray modulation, stellar activity, and environmental differences that alter the impact of ionizing radiation. To better understand ionization chemistry in disks, we present the largest survey of resolved observations of molecular ions to date. Using new and archival ALMA observations we detect HCO+, H13CO+, N2H+, and DCO+ toward seven protoplanetary disks (AS 209, DM Tau, GM Aur, HD 163296, LkCa 15, MWC 480, and V4046 Sgr). We compare distributions of ions to continuum features and find no robust relationships between the two. The observations do, however, reveal distinctions between Herbigs and T-Tauris and hint at a dichotomy between two types of T-Tauri ionization environments. The Herbig sources exhibit unique centrally-peaked N2H+ J = 4-3 emission, which we speculate could be tracing either a highly ionized surface layer or a zone of CO destruction, possibly due to their strong UV fields. Three T-Tauri sources in our sample exhibit bright, radially coincident rings in all optically thin molecular ion lines. We speculate that these radially coincident ion rings are evidence of a global change in ionization, possibly at the edge of a T-Tauriosphere. While it is not yet clear what factors most strongly influence the distribution of ion emission, this survey more than doubles the number of resolved ion observations in disks and points to potential distinctions in ion emission morphology related to the central star and environment.</p>
   <h2>Screening</h2><p><strong>1 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">This is an ALMA survey of molecular ion chemistry in protoplanetary disks. It has no connection to flare timing, particle acceleration, QPPs, or STIX/EUI, and shares only the broad stellar-physics label.</p>
   <p class="meta">arXiv:2609.19313</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.14321" data-prev="" data-next="" data-title="Supersonic flows observed by THEMIS related to a coronal bright point and filament">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.14321" data-prev="" data-next="" data-title="Supersonic flows observed by THEMIS related to a coronal bright point and filament">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.14321">Supersonic flows observed by THEMIS related to a coronal bright point and filament</a></h1>
   <div class="meta">Garima Karki, Brigitte Schmieder, Ramesh Chandra, Pooja Devi, Pascal Demoulin, Stefaan Poedts<div>Submitted 13 Sep 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">In this paper, we report on the dynamics of the fine structure of a solar quiescent filament observed on September 28, 2023, with the Télescope Héliographique pour l&#x27;Etude du Magnétisme et des Instabilités Solaires (THEMIS). The main aim is to understand the relationship between the supersonic downflows measured in H$α$ at the filament end and an associated coronal bright point. We use a cloud-model method to derive the supersonic velocity of the falling, elongated cool blob. Besides, we use H$α$ Global Oscillation Network Group (GONG) data to track the plasma along the filament. Repetitive plasma motions are observed along the northern end of the filament. During one event of plasma motion, the THEMIS field of view was centred on the filament end, where supersonic downflows of 89.8 km s$^{-1}$ were measured with a standard deviation of $\pm$0.25 km s$^{-1}$. We suggest that the plasma moving along the filament could be falling towards the chromosphere. A ballistic trajectory could confirm this first scenario. However, we could not rule out the second scenario, in which coronal rain forms due to the thermal instability of coronal plasma. In the hot AIA channels, we identify a bright point at the same location, with a temperature reaching about 6 MK. In addition, we confirm a counter-streaming flow pattern along the fine filament strands, with widths of less than an arc second, as measured by the high-spatial- and spectral-resolution spectra of THEMIS.</p>
   <h2>Screening</h2><p><strong>1 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">The paper studies supersonic downflows in a quiescent filament and a coronal bright point using THEMIS Hα data. It has no flare timing, particle acceleration, QPP, or STIX/EUI content, and the cloud-model technique is not transferable to flare lightcurves.</p>
   <p class="meta">arXiv:2609.14321</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

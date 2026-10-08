@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2610.07161" data-prev="" data-next="" data-title="Discovery of a second-generation planet candidate accreting onto a white dwarf">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2610.07161" data-prev="" data-next="" data-title="Discovery of a second-generation planet candidate accreting onto a white dwarf">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2610.07161">Discovery of a second-generation planet candidate accreting onto a white dwarf</a></h1>
   <div class="meta">Jamie T. Williams, Boris T. Gänsicke, Nicholas C. Stone, Detlev Koester, Benjamin D. R. Davies, Christopher Tong, David J. Wilson, Snehalata Sahu, Andrew Swan, Thomas G. Beatty, Sergio H. Ramírez, Tim Cunningham et al.<div>Submitted 5 Oct 2026, astro-ph.EP</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">Many white dwarfs accrete the debris of disrupted planetary bodies, detected in the form of metal-enrichment in their atmospheres, dusty or gaseous circumstellar discs, and photometric transits from debris. The composition of accreted debris has been shown to be diverse yet overall closely resembles Solar System bodies. We report the discovery of a white dwarf accreting material that is unlike any Solar System object. The atmosphere of HS 0209+0832 is strongly enriched in trans-iron elements including zinc, copper, and niobium but depleted in the canonical rock-forming elements silicon and iron. The composition of the accreted object is consistent with a candidate second-generation planet, formed from the stellar material ejected during the giant phase. The key abundance signature which differentiates it from a first-generation planet is the high enrichment of s-process elements. Photospheric helium and the absence of terrestrial rock-forming elements implies the white dwarf is accreting from the escaped atmosphere of a photo-evaporating giant planet candidate. This is further supported by the detection of a sinusoidal photometric period of 4.399+/-0.026 days at an amplitude of 0.120+/-0.018 %, which we attribute to thermal emission phase variability from a planetary day-night cycle or a transiting cometary tail of an evaporating gas giant.</p>
   <h2>Screening</h2><p><strong>0 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">Paper is about a white dwarf accreting planetary debris and a second-generation planet candidate; it has no connection to solar flares, QPPs, particle acceleration, or Solar Orbiter.</p>
   <p class="meta">arXiv:2610.07161</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

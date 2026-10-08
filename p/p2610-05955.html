@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 3 of 10"><span class="v">3</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2610.05955" data-prev="" data-next="" data-title="Coherent radio bursts, polarity reversal, and quiescent emission from the M4V dwarf WW PsA">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 3 of 10"><span class="v">3</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2610.05955" data-prev="" data-next="" data-title="Coherent radio bursts, polarity reversal, and quiescent emission from the M4V dwarf WW PsA">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2610.05955">Coherent radio bursts, polarity reversal, and quiescent emission from the M4V dwarf WW PsA</a></h1>
   <div class="meta">Jackson Mitchell-Bolton, Laura Driessen, Tara Murphy, Joshua Pritchard, Barnali Das, Richard Dodson, Martin Meyer, Jonghwan Rhee, Yuanming Wang<div>Submitted 5 Oct 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">Coherent radio emission from magnetically active M dwarfs is largely observed in two varieties: stochastic solar-like bursts and beamed, rotationally modulated emission including auroral pulses. Detailed monitoring of these stars is critical for probing the plasmas and magnetic fields driving the emission. We conducted a search for polarised radio emission from stars within 85 pc, covering $2.2\times10^4$ h of stellar dynamic spectra from the ASKAP Deep Investigation of Neutral Gas Origins (DINGO) survey. We report the discovery of coherent radio bursts from the M4V dwarf WW PsA. In addition to quiescent emission, we detect three long-duration ($\gtrsim$30 min) bursts, each ~100% circularly polarised, in 283.3 h of data. We also report a fourth burst in an epoch not covered by our search, detected using the VASTER pipeline. One of the bursts features a polarity reversal midway through, based on which we favour the electron cyclotron maser (ECM) mechanism over plasma emission. We tentatively propose the bursts are due to rotationally modulated ECM pulses of variable intensity. We infer the required physical properties of WW PsA, including a high obliquity $β= 74^{+6}_{-22}$ deg under an oblique rotator model.</p>
   <h2>Screening</h2><p><strong>3 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">Coherent radio bursts from an M dwarf (ECM vs plasma emission) are tangentially related to flare electron radio emission, but the paper concerns stellar auroral-type rotationally modulated pulses, not flare timing, QPPs, or acceleration with STIX/EUI.</p>
   <p class="meta">arXiv:2610.05955</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

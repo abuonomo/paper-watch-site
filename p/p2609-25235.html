@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.25235" data-prev="" data-next="" data-title="The oldest low-$α$ thin disc stars">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.25235" data-prev="" data-next="" data-title="The oldest low-$α$ thin disc stars">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.25235">The oldest low-$α$ thin disc stars</a></h1>
   <div class="meta">Riano E. Giribaldi, Laura Magrini, Marco Palla, Carlos Viscasillas Vázquez<div>Submitted 21 Sep 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">The formation pathway of the $α$-poor Milky Way thin disc remains under debate. The latest observational data indicates the presence of comparable numbers of old stars in both the low- and high-$α$ disc components, suggesting either coeval or overlapping formation epochs. Using GALAH DR4, we provide evidence that the $α$-poor stars coexist with $α$-rich stars up to $\sim$12.5 Gyr. Stellar ages of 0.5 Gyr precision were re-derived for nearly $30\,000$ subgiant stars using accurate effective temperatures ($T_{\rm{eff}}$) from the infrared flux method (IRFM) together with distances based on Gaia parallaxes. About 22\% of the sample constitutes a population peaking at 9.2 Gyr, with evidence for an extended old-age tail reaching 12.5 Gyr. Among stars older than 10 and 11 Gyr, between 20 and 30\% have relative low [$α$/Fe] and solar-like metallicities ($-0.5 \leq \mathrm{[Fe/H]} \leq +0.5$ dex). These stars exhibit kinematics consistent with those of near solar-age $α$-poor stars in the thin disc. These stars can be evolved Sun-like stars, i.e. old solar analogues, whose $T_{\rm{eff}}$ and gravity modified with the time. Comparison with a well-tested Galactic disc chemical evolution model supports the presence of a significant fraction of old, $α$-poor disc stars, confirming the plausibility of our selection criteria. We provide a catalogue with the selected sample to facilitate spectroscopic follow-ups at high resolution.</p>
   <h2>Screening</h2><p><strong>0 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">Galactic archaeology paper on stellar ages and chemical evolution of the Milky Way thin disc using GALAH DR4; it has no connection to flare timing, particle acceleration, QPPs, or STIX/EUI.</p>
   <p class="meta">arXiv:2609.25235</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

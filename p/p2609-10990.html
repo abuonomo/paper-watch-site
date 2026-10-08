@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.10990" data-prev="" data-next="" data-title="Classical Nova V1405 Cas Had $M_{\rm ejecta}$$&gt;$$M_{\rm accreted}$ and so is Unlikely to be a Type Ia Supernova Progenitor">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.10990" data-prev="" data-next="" data-title="Classical Nova V1405 Cas Had $M_{\rm ejecta}$$&gt;$$M_{\rm accreted}$ and so is Unlikely to be a Type Ia Supernova Progenitor">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.10990">Classical Nova V1405 Cas Had $M_{\rm ejecta}$$&gt;$$M_{\rm accreted}$ and so is Unlikely to be a Type Ia Supernova Progenitor</a></h1>
   <div class="meta">Bradley E. Schaefer<div>Submitted 10 Sep 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">Nova 2021 Cassiopeia (V1405 Cas) was an ordinary J(175) neon nova with the white dwarf mass estimated to be $M_{\rm WD}$=0.60$\pm$0.10 $M_{\odot}$. I found an orbital period of $P$=0.1884 days, and have tracked 20 times of photometric minima from 2013--2025. I measure that $P$ increased from before to after the eruption with $P_{\rm pre}$=0.1883919$\pm$0.0000018 days and $P_{\rm post}$=0.1884043$\pm$0.0000018 days, for $ΔP$/$P$=66$_{-18}^{+21}$ parts-per-million. With correction for the angular momentum loss by the binary during the eruption, I derive that the nova ejected $M_{\rm ejecta}$=7.5$\times$10$^{-4}$ $M_{\odot}$, with an extreme range of (2.9--40)$\times$10$^{-4}$ $M_{\odot}$. The mass accreted during the previous eruption cycle comes from the trigger mass, and is $M_{\rm accreted}$=(1.6$\pm$0.4)$\times$10$^{-4}$ $M_{\odot}$. V1405 Cas provides counterexamples against five claims about CV evolution that have dominated since the 1980s. First, V1405 Cas has positive $\dot{P}$, and this is contrary to the Magnetic Braking Model. Second, the $ΔP$ is 20$\times$ too small to allow the system to fade into a hibernation state. Third, $M_{\rm WD}$ is decreasing over time, as shown by $M_{\rm ejecta}$$&gt;$$M_{\rm accreted}$ and by being a neon nova. Fourth, V1405 Cas is not a Type Ia supernova progenitor, for the same reasons. Fifth, the orbital period of V1405 Cas increased by $+$75 ppm from 2013--2025, as a counterexample to the pervasive idea that cataclysmic variables are universally declining in period from evolution. V1405 Cas is the latest of recent measures of $ΔP$ and $\dot{P}$ for 52 cataclysmic variables and 25 X-ray binaries that have together refuted all five claims.</p>
   <h2>Screening</h2><p><strong>0 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">The paper concerns nova ejecta mass and orbital period changes in cataclysmic variables as Type Ia progenitors, with no link to flare timing, particle acceleration, QPPs, or STIX/EUI.</p>
   <p class="meta">arXiv:2609.10990</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

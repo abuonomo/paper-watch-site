@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 3 of 10"><span class="v">3</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2610.01675" data-prev="" data-next="" data-title="Delayed, Line-dependent Reorganization of Pore Oscillations Following a Compact C8.2 Flare Observed by Sunrise III/SUSI">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 3 of 10"><span class="v">3</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2610.01675" data-prev="" data-next="" data-title="Delayed, Line-dependent Reorganization of Pore Oscillations Following a Compact C8.2 Flare Observed by Sunrise III/SUSI">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2610.01675">Delayed, Line-dependent Reorganization of Pore Oscillations Following a Compact C8.2 Flare Observed by Sunrise III/SUSI</a></h1>
   <div class="meta">Shahin Jafarzadeh, David B. Jess, Marco Stangalini, Lyndsay Fletcher, Ryan O. Milligan, Paulo J. A. Simões, Peter H. Keys, Sami K. Solanki, H. N. Smitha, Andreas Lagg, Achim Gandorfer, Alex Feller et al.<div>Submitted 1 Oct 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">Magnetic oscillations permeating the solar atmosphere can be altered by flares. This could be due to changes in the atmospheric magnetic waveguide, the thermodynamic stratification, or both. To investigate this, we examine oscillations in a magnetic pore crossed in part by the ribbon of a C8.2 flare, using observations from the Sunrise Ultraviolet Spectropolarimeter and Imager (SUSI) aboard Sunrise III. We track the core intensities of eight spectral lines between 327-329 nm and show that oscillatory power in the 4.2-7.0 mHz range, measured around 30 minutes after the flare peak, exceeds the pre-event value in all eight lines by factors of 1.60-8.71. Conversely, in the 7.0-11.5 mHz band, the post-event intensity power is lower - approximately 0.13-0.41 of the original power in seven of the observed lines. Line-center velocity measurements support the lower-frequency enhancement. This delayed, line-dependent shift toward the lower-frequency band is consistent with flare-induced changes in wave transmission, reflection, or resonant response, although thermodynamic and magnetic effects cannot yet be separated.</p>
   <h2>Screening</h2><p><strong>3 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">Concerns post-flare changes in pore oscillations (p-mode-like waves in the lower atmosphere) with Sunrise III/SUSI, not flare timing, QPPs in flare emission, or electron acceleration. Overlap is limited to a flare ribbon context and oscillation/power-spectrum analysis methods that might loosely transfer.</p>
   <p class="meta">arXiv:2610.01675</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

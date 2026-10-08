@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.07640" data-prev="" data-next="" data-title="Amplification of active region equatorial dipole">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.07640" data-prev="" data-next="" data-title="Amplification of active region equatorial dipole">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.07640">Amplification of active region equatorial dipole</a></h1>
   <div class="meta">Ismo Tähtinen<div>Submitted 7 Sep 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">The effect of active region parameters on the evolution of solar axial dipole is well understood. However, their effect on the solar equatorial dipole has not been studied in detail. Understanding the development of the equatorial dipole is important as it drives the interplanetary magnetic field on intracyclic timescales (~ 1yr). We study how the latitude, tilt angle, and the polarity separation affect the evolution of solar equatorial dipole. We use dipole flux transport (DFT), a matrix implementation of surface flux transport (SFT) model, to simulate the dipole evolution of synthetic bipolar magnetic regions (BMRs) with a wide range of tilt angles and latitudes. We also study the evolution of active regions in HMI SHARP database and their associated BMRs. We quantify the dipole evolution by means of the maximum and mean amplification and the growth and decay times of the equatorial dipole. Tilt angle controls the amplification of the equatorial dipole, with larger tilt angles leading to stronger equatorial dipole. Latitude controls the timescale at which the equatorial dipole grows and decays. Low-latitude regions produce the longest living equatorial dipole. We find that only 31% of anti-Joy regions experience amplification of equatorial dipole, compared with 96 of regularly tilted active regions. Latitudes and tilt angles of active regions can have considerable effect on the solar equatorial dipole. Systematic changes in their properties could increase/decrease the strength of the equatorial dipole relative to the solar activity, which could lead to similar relative change in geomagnetic activity. We suggest that large low-latitude coronal holes and relatively high geomagnetic activity in the declining phase of solar cycle 20, could be related to emergence of unusually low-latitude active regions that produced strong and persistent equatorial dipole.</p>
   <h2>Screening</h2><p><strong>0 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">The paper models surface flux transport and the solar equatorial dipole from active region tilt and latitude. It has no connection to flare timing, particle acceleration, QPPs, or STIX/EUI.</p>
   <p class="meta">arXiv:2609.07640</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

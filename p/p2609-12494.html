@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.12494" data-prev="" data-next="" data-title="Terminal instability of the Solar System triggered by stochastic solar mass loss">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.12494" data-prev="" data-next="" data-title="Terminal instability of the Solar System triggered by stochastic solar mass loss">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.12494">Terminal instability of the Solar System triggered by stochastic solar mass loss</a></h1>
   <div class="meta">Konstantin Batygin, Jim Fuller, Fred C. Adams<div>Submitted 11 Sep 2026, astro-ph.EP</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">From its birth, celestial mechanics has been deeply intertwined with the question of the Solar System&#x27;s dynamical stability. For the inner planets, this question is now statistically settled: Mercury&#x27;s orbit carries a $\sim$1% chance of destabilization before the Sun leaves the main sequence. The outer Solar System has seemed more secure, with its intrinsic dynamical lifetime estimated at $\sim10^{18}$ years. Even accounting for the Sun&#x27;s mass loss and stellar flybys, the orbital architecture of the giant planets had been expected to persist for $\sim$100 Gyr. Here we show that these estimates rest on the assumption that solar mass loss is smooth. The recently measured white dwarf recoil demands asymmetric mass loss that is most readily attributed to discrete, independently directed ejections that impulsively perturb stellar motion. As the Sun sheds its envelope in such parcels, the planets&#x27; orbits random-walk with amplitude set by the mass-loss granularity. At a coarseness corresponding to observationally permitted kicks, this stochastic forcing restructures the outer Solar System concurrently with the Sun&#x27;s death. In particular, our numerical experiments reveal that orbit crossings can commence on the red giant branch, with $\sim$40% of realizations undergoing disruption or violent scattering before the white dwarf forms and $\sim$90% self-destructing within 3 Gyr. The outer Solar System&#x27;s dynamical lifetime thus collapses from $10^{18}$ years to approximately a gigayear after white dwarf formation.</p>
   <h2>Screening</h2><p><strong>0 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">Paper is about long-term dynamical stability of Solar System planets under stochastic stellar mass loss; no connection to flares, particle acceleration, QPPs, or Solar Orbiter instruments.</p>
   <p class="meta">arXiv:2609.12494</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

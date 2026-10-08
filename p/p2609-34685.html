@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.34685" data-prev="" data-next="" data-title="P2D - A Two-Dimensional Multi-Spacecraft Solar Wind Persistence Model">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.34685" data-prev="" data-next="" data-title="P2D - A Two-Dimensional Multi-Spacecraft Solar Wind Persistence Model">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.34685">P2D - A Two-Dimensional Multi-Spacecraft Solar Wind Persistence Model</a></h1>
   <div class="meta">Daniel Milošić, Manuela Temmer, Stephan G. Heinemann, Mathew Owens, Stefan J. Hofmeister<div>Submitted 28 Sep 2026, physics.space-ph</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">The background solar wind is a key component in space weather forecasting, as it contains geoeffective high-speed streams and provides the medium through which coronal mass ejections propagate and evolve in interplanetary space. Due to the solar rotation and the slow evolution of large-scale solar wind structures, solar wind properties exhibit an autocorrelation with a period of roughly 27 days, particularly at solar minimum. We made use of this property to develop a solar wind persistence model with input from multiple spacecraft (Solar Orbiter, Parker Solar Probe, STEREO-A, STEREO-B and the OMNI database). The model ballistically propagates in-situ data from the position of their measurement radially away from the Sun, as well as longitudinally with the solar rotation rate, producing 2D maps of solar wind parameters. These can be extracted at any point in the heliosphere for a solar wind reconstruction. From Earth&#x27;s perspective, the reconstruction performs with an MAE of 65.41 km/s and 3.51/cm^3 for speed and density, respectively. During high-speed streams, the peak hit rate is 50% and 48% for speed and density. It performs best during times when there are spacecraft located between Earth and Lagrange point L5. During these times, the mean absolute error of the predicted solar wind speed decreases by roughly 35% in comparison to the benchmark 27-day persistence model. Therefore, future L5 missions like Vigil are expected to provide a robust basis for reliable persistence forecasts.</p>
   <h2>Screening</h2><p><strong>1 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">The paper is about solar wind persistence modeling for space weather forecasting with multi-spacecraft in-situ data. It has no flare timing, particle acceleration, QPP, or STIX/EUI connection, and the only overlap is the Solar Orbiter mission name.</p>
   <p class="meta">arXiv:2609.34685</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

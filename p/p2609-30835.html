@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.30835" data-prev="" data-next="" data-title="Near-infrared spectra of chemically peculiar stars and applications to kilonova spectra">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.30835" data-prev="" data-next="" data-title="Near-infrared spectra of chemically peculiar stars and applications to kilonova spectra">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.30835">Near-infrared spectra of chemically peculiar stars and applications to kilonova spectra</a></h1>
   <div class="meta">Nanae Domoto, Masaomi Tanaka, Wako Aoki, Salma Rahmouni, Tomoyuki Kudo, Hiroki Harakawa, Teruyuki Hirano, Takayuki Kotani, Takashi Kurokawa, Masayuki Kuzuhara, Jun Nishikawa, Takuma Serizawa et al.<div>Submitted 25 Sep 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">Kilonova spectra provide information on rapid neutron-capture nucleosynthesis in neutron star mergers. However, it remains challenging to identify individual elements in kilonova spectra, primarily due to incomplete atomic data for heavy elements at near-infrared wavelengths. Recent work demonstrated that spectra of chemically peculiar stars offer excellent laboratory for studying kilonova spectra. In this paper, to expand our understanding of strong transitions of heavy elements at near-infrared wavelengths, we present high-resolution near-infrared spectra of 14 chemically peculiar stars covering a range of effective temperatures, surface gravities, and abundance patterns, obtained with Subaru/IRD. The Sr II, Ce III, and Gd III lines, previously suggested to be among the strongest transitions, are detected in the spectra of most of our targets, confirming their intrinsic importance. In addition, Eu II and Nd III lines are detected in several stars. By comparing observed equivalent widths and abundance ratios, we show that under a highly heavy-element-enriched abundance pattern, Eu II and Nd III lines may contribute to kilonova spectral features comparably to Sr II. Importantly, we find no unidentified lines systematically stronger than these transitions despite the larger stellar sample. These results further support the primary importance of the Sr II and Ce III transitions and provide new insights into the potential contribution of Eu II and Nd III.</p>
   <h2>Screening</h2><p><strong>0 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">The paper covers near-infrared spectra of chemically peculiar stars and kilonova line identification. It has no connection to flare timing, QPPs, particle acceleration, or STIX/EUI, and no transferable method.</p>
   <p class="meta">arXiv:2609.30835</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

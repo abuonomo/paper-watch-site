@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2610.03875" data-prev="" data-next="" data-title="Spectroscopic monitoring of long secondary period variables. The case of J-type carbon stars">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2610.03875" data-prev="" data-next="" data-title="Spectroscopic monitoring of long secondary period variables. The case of J-type carbon stars">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2610.03875">Spectroscopic monitoring of long secondary period variables. The case of J-type carbon stars</a></h1>
   <div class="meta">L. Planquart, A. Jorissen, H. Van Winckel<div>Submitted 2 Oct 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">Long-secondary-period (LSP) variables are a subclass of long-period variables whose origin is a matter of debate. J-type carbon stars are a subclass of carbon stars enriched in 13C, and the origin of this chemical peculiarity is unclear. In this paper, we report on the discovery of a LSP in two J-type carbon stars: VZ Per and UV Cam. Methods. A decade-long spectroscopic monitoring was used to obtain a long-term radial-velocity curve for the two stars. From a frequency analysis, we isolated a LSP signal. The retrieved periodicity was then compared with changes in spectral profiles and available light-curve variability to further constrain the origin of the modulation. Results. For VZ Per, the LSP derived from the radial-velocity curve (~960 days) is correlated with the light-curve dimming event and a variation in the Balmer absorption line profile. These results translate into changes in the gas and dust column densities with the phase of the LSP, with the maximum gas column density occurring ahead of the dust. For UV Cam, the radial velocity monitoring yields a period of ~1178 d with an amplitude of about 1 km/s. Interpreting the RV modulation as a Keplerian signal for both stars, a low-mass (&lt;0.1Msun) close companion is found. In this scenario, variations in gas and dust column densities with (orbital) phase trace the material in the expanding comet-like tail trailing the substellar companion. Conclusions. These observations provide time-dependent variations of the gas and dust in LSP variables that are consistent with the current binary scenario. Furthermore, the detection of LSP among J-type carbon stars anchors their current evolutionary status in the dust-producing region of the thermally-pulsing AGB phase.</p>
   <h2>Screening</h2><p><strong>1 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">Paper is about long secondary period variability in J-type carbon stars via radial-velocity monitoring; it has no connection to solar flares, particle acceleration, QPPs, or STIX/EUI. The only overlap is generic periodogram analysis.</p>
   <p class="meta">arXiv:2610.03875</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

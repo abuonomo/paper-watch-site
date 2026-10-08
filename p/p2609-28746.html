@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.28746" data-prev="" data-next="" data-title="Metal-poor Brown Dwarf Kinematics from JWST NIRSpec Spectroscopy">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.28746" data-prev="" data-next="" data-title="Metal-poor Brown Dwarf Kinematics from JWST NIRSpec Spectroscopy">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.28746">Metal-poor Brown Dwarf Kinematics from JWST NIRSpec Spectroscopy</a></h1>
   <div class="meta">Chih-Chun Hsu, Christopher A. Theissen, Adam J. Burgasser, Adam C. Schneider, Christian Aganze, Aaron M. Meisner, Jonathan Gagné, Nicolas Lodieu, Zenghua Zhang, Genaro Suárez, Eileen C. Gonzales, Jacqueline K. Faherty et al.<div>Submitted 23 Sep 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">Galactic archaeology relies on stellar kinematics and chemical abundances to identify various stellar populations and associations. With JWST, Galactic archaeology of ancient metal-poor brown dwarfs is now possible through high-sensitivity, medium-resolution spectroscopy. We present the first metal-poor brown dwarf radial velocity (RV) survey using JWST/NIRSpec G395H spectra ($λ/Δλ\sim$ 3,000) for a sample of 23 LTY dwarfs across a wide range of temperatures and metallicities. We introduce a forward-modeling framework to measure robust RVs for brown dwarfs by focusing on the CO fundamental band at $\sim$4.5 $μ$m. By comparing to sources with existing high-resolution RV measurements, we demonstrate that G395H RVs can achieve a systematic uncertainty of 5 km s$^{-1}$, sufficient to examine their Galactic space motions. We identify kinematic members of the Milky Way&#x27;s thin disk, thick disk, and halo populations in this sample. We also confirm WISE J155349.98$+$693355.2 as likely associated with the Gaia-Enceladus merger remnant, and 2MASS J05325346$+$8246465 is likely associated with the Thamnos stream. Our study systematically demonstrates that JWST G395H spectroscopy can provide robust RVs in addition to detailed chemical abundances, necessary for Galactic archaeology studies. Future discoveries and characterization of brown dwarfs associated with Galactic halo substructures and streams will enable a stringent test of stellar/substellar formation and evolutionary models for diverse metallicities.</p>
   <h2>Screening</h2><p><strong>0 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">This is a brown dwarf radial velocity and Galactic kinematics study using JWST spectroscopy. It has no connection to solar flares, particle acceleration, QPPs, or STIX/EUI, and its forward-modeling RV method does not transfer to flare lightcurves.</p>
   <p class="meta">arXiv:2609.28746</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.12022" data-prev="" data-next="" data-title="Continuous Learning of Gravity Field Irregularities Around Small Bodies via Neural Hamiltonian ODEs">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.12022" data-prev="" data-next="" data-title="Continuous Learning of Gravity Field Irregularities Around Small Bodies via Neural Hamiltonian ODEs">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.12022">Continuous Learning of Gravity Field Irregularities Around Small Bodies via Neural Hamiltonian ODEs</a></h1>
   <div class="meta">Giacomo Acciarini, Dario Izzo<div>Submitted 10 Sep 2026, astro-ph.IM</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">We propose to learn the unknown dynamics in the proximity of a small body directly from tracking data, representing them as a feed-forward neural network embedded in the system Hamiltonian. The equations of motion form a Neural Hamiltonian Ordinary Differential Equation, whose variational equations provide exact training gradients: estimation uses position and velocity arcs at realistic noise levels, without acceleration or potential labels, and a continual learning approach warm-starts the network as new data are acquired. The known part of the Hamiltonian carries whatever is available, from the central term and spin state to the constant-density model of the imaged shape. We assess the method against a normalized spherical harmonics expansion estimated from identical arcs through the same machinery, on scenarios built on the shapes of Itokawa, 67P, Bennu and Eros. The network remains usable inside the Brillouin sphere: it plans ballistic descents at Itokawa to \SI{4.6}{m} median touchdown error from tracking alone, against 5.1--\SI{48.9}{m} for harmonics of degree 4--12, and to \SI{0.9}{m} with the imaged shape as prior, a configuration that also recovers localised density anomalies invisible to any harmonics degree. The two representations are complementary, and we discuss their combined use across the phases of a small-body mission.</p>
   <h2>Screening</h2><p><strong>1 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">The paper uses neural Hamiltonian ODEs to learn small-body gravity fields from tracking data, which has no connection to solar flares, particle acceleration, QPPs, or STIX/EUI. Only a loose methodological link (learning dynamics from time series) exists, and it is not transferable in practice.</p>
   <p class="meta">arXiv:2609.12022</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

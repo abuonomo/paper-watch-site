@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.12989" data-prev="" data-next="" data-title="Magnetized interstellar molecular clouds - III. Filament Collisions and Core Formation: Insights into Substructures and Evolution">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.12989" data-prev="" data-next="" data-title="Magnetized interstellar molecular clouds - III. Filament Collisions and Core Formation: Insights into Substructures and Evolution">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.12989">Magnetized interstellar molecular clouds - III. Filament Collisions and Core Formation: Insights into Substructures and Evolution</a></h1>
   <div class="meta">Pak Shing Li, Christopher F. McKee, Richard I. Klein<div>Submitted 11 Sep 2026, astro-ph.GA</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">We present the results of a driven, ideal magnetohydrodynamics simulation of a molecular cloud to study the formation of filamentary structures in molecular clouds and their fragmentation into dense cloud cores. Shock compression results in the formation of sub-parsec long filamentary structures. Large-scale supersonic flows push these small filaments together and form massive filamentary clouds. The main filament that forms stretches across the full 4.4 pc length of the simulation and has a median FWHM of 0.075 pc, similar to that observed in many molecular clouds. Subfilaments inside the main filament have a median FWHM of 0.03-0.04 pc, similar to the ``fibers&quot; observed in molecular lines. The collision and merger of subcritical subfilaments is an important mechanism for the formation of prestellar cores. Colliding subfilaments and the resulting core at their intersection is a hub-filament system similar to that associated with massive star formation, but on a smaller scale. Core mergers can be significant in the growth of pre-stellar cores and may play a role in the formation of binary stars.</p>
   <h2>Screening</h2><p><strong>0 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">This paper is about MHD simulations of filament collisions and core formation in interstellar molecular clouds. It has no connection to solar flares, particle acceleration, QPPs, or STIX/EUI, and no transferable methods.</p>
   <p class="meta">arXiv:2609.12989</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

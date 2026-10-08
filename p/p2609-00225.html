@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.00225" data-prev="" data-next="" data-title="A Probabilistic Framework for Incorporating Helioseismic Far-Side Active Regions into SFT Models">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.00225" data-prev="" data-next="" data-title="A Probabilistic Framework for Incorporating Helioseismic Far-Side Active Regions into SFT Models">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.00225">A Probabilistic Framework for Incorporating Helioseismic Far-Side Active Regions into SFT Models</a></h1>
   <div class="meta">Bibhuti Kumar Jha, Lisa A. Upton, K. D. Leka, Ruizhu Chen, Junwei Zhao, Shea Hess Webber, Ignacio Ugarte-Urra, Kiran Jain<div>Submitted 31 Aug 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">Surface Flux Transport (SFT) models are routinely used to model the Sun&#x27;s photospheric magnetic field and provide inner boundary conditions for coronal and heliospheric models, yet they remain fundamentally limited by the lack of direct information about flux emergence on the far side of the Sun. To address this, we develop a framework for incorporating helioseismic images of far-side active regions (HIFAR), into the Advective Flux Transport (AFT) model. Using near-simultaneous magnetic flux maps (HIFARM) inferred from HIFAR, and STEREO/EUVI 304 A observations from 2010 May 13 to 2014 August 18, we develop a logistic regression model to estimate the probability that a helioseismic detection corresponds to an AR based on descriptors of magnetic flux, field strength, and location. The model achieves a precision of 0.93 for active region (AR) detections at a probability threshold of 0.73, selected to reject 90% of &quot;ghost&quot; ARs. We also derive an empirical scaling relationship between HIFARM and AFT flux to place HIFARM on the AFT flux scale and demonstrate that the framework reproduces the flux evolution of ARs consistent with near-side observations over multiple solar rotations. At the global scale, we find that conventional near-side-driven AFT simulations underestimate the total unsigned magnetic flux by ~10-20% of the Sun&#x27;s total magnetic flux budget. The probabilistic AR detection model and the complete framework developed in this work provide a practical pathway for incorporating helioseismic far-side ARs into SFT models, a step toward realistic modeling of full-Sun magnetic field.</p>
   <h2>Screening</h2><p><strong>1 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">The paper covers helioseismic far-side active regions and surface flux transport modelling, with no link to flare timing, particle acceleration, QPPs, or STIX/EUI analysis. It shares only the broad solar physics field.</p>
   <p class="meta">arXiv:2609.00225</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

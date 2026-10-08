@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 2 of 10"><span class="v">2</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.30376" data-prev="" data-next="" data-title="Saturation Mechanism of Cosmic Ray Streaming Instabilities with a Shell Distribution">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 2 of 10"><span class="v">2</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.30376" data-prev="" data-next="" data-title="Saturation Mechanism of Cosmic Ray Streaming Instabilities with a Shell Distribution">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.30376">Saturation Mechanism of Cosmic Ray Streaming Instabilities with a Shell Distribution</a></h1>
   <div class="meta">Mohamad Shalaby, Rouven Lemmerz, Christoph Pfrommer<div>Submitted 24 Sep 2026, astro-ph.GA</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">Cosmic rays (CRs) drive galactic winds and regulate galaxy growth while contributing to heating the central cooling plasma in dense galaxy clusters, making the nonlinear saturation of the instabilities that govern their transport a problem of central importance in astrophysics. Using fully kinetic particle-in-cell (PIC) simulations, we find that the streaming instability driven by CRs with a shell momentum distribution saturates through gyro-phase bunching around driven Alfvén waves. Fluid-PIC (FPIC) simulations with both ideal and Landau closures reproduce the PIC saturation amplitude, and the same gyro-phase bunching mechanism, indicating that nonlinear Landau damping (NLLD) does not determine the saturation level at our simulation parameters ($v_{\rm A} = 0.01c$, $n_{\rm CR}/n_i = 0.01$). Notably, the CR ions fully isotropize in the Alfvén-wave frame in all simulations, including the FPIC run with an ideal closure in which NLLD is entirely absent, showing that this isotropization does not require NLLD. We additionally confirm, using the FPIC ideal closure, that this saturation amplitude is unchanged across a tenfold increase in domain size, indicating that the mechanism is local rather than dependent on domain-scale processes. Together, these results indicate that, at least in this regime, NLLD is not the dominant saturation mechanism for the CR streaming instability, in tension with common assumptions built into CR transport models used in galaxy formation and interstellar medium simulations. Whether this conclusion extends to the lower CR densities and Alfvén speeds characteristic of the interstellar medium remains an open question that we address in an upcoming work.</p>
   <h2>Screening</h2><p><strong>2 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">This paper covers cosmic ray streaming instability saturation in galactic and ICM plasmas using PIC simulations. It has no connection to flare timing, QPPs, or STIX/EUI, and the only overlap is the general topic of particle acceleration and plasma kinetics.</p>
   <p class="meta">arXiv:2609.30376</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

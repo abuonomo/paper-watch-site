@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.06156" data-prev="" data-next="" data-title="Project Setu: 3D Multi-Physics Design and Scaled Structural Analysis for a Relativistic Lightsail Architecture">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.06156" data-prev="" data-next="" data-title="Project Setu: 3D Multi-Physics Design and Scaled Structural Analysis for a Relativistic Lightsail Architecture">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.06156">Project Setu: 3D Multi-Physics Design and Scaled Structural Analysis for a Relativistic Lightsail Architecture</a></h1>
   <div class="meta">Prashant Suresh Kamble<div>Submitted 5 Sep 2026, physics.pop-ph</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">Deep-space exploration beyond the solar system requires eliminating chemical propellant mass penalties to achieve relativistic flight velocities (0.166c at 180 s, reaching the mission target of 0.20c at 227 s). This study presents a 3D multi-physics numerical framework for a 4.0-meter circular lightsail propelled by a 100 GW ground laser array, coupling 3D Maxwell FDTD wave optics, non-linear membrane mechanics, and Stefan-Boltzmann thermal radiation in ANSYS Mechanical APDL and Ansys Lumerical. A four-level grid convergence study establishes numerical independence with an ASME GCI_21 of 0.13%, resolving peak membrane stresses of 530.88 MPa with a 3.77x safety factor against stoichiometric Si3N4 tensile failure. With optical absorption constrained to 10 ppm (A = 1.0 x 10^-5), the steady-state core temperature stabilizes at 923.02 K (0.44% deviation from radiation theory), maintaining a +1,247 K margin below sublimation, while fundamental drumhead modal resonance (7.92 Hz) provides a 7.92x safety buffer against laser jitter. The electrodynamic radiation pressure formulation is cross-verified against published flight telemetry from JAXA IKAROS and NASA LightSail 2 within 0.12% and 2.13%, confirming classical momentum transfer modeling across solar and beamed propulsion regimes.</p>
   <h2>Screening</h2><p><strong>0 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">This is a relativistic laser-driven lightsail structural, thermal and optical design study with no connection to solar flares, particle acceleration, QPPs, or STIX/EUI data or methods.</p>
   <p class="meta">arXiv:2609.06156</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

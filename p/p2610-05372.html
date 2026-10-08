@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2610.05372" data-prev="" data-next="" data-title="What Caused the Orbital Decay of the Twin Van Allen Probes to Diverge?">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2610.05372" data-prev="" data-next="" data-title="What Caused the Orbital Decay of the Twin Van Allen Probes to Diverge?">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2610.05372">What Caused the Orbital Decay of the Twin Van Allen Probes to Diverge?</a></h1>
   <div class="meta">Ayisha M Ashruf, Ankush Bhaskar, C Vineeth, Tarun Kumar Pant<div>Submitted 4 Oct 2026, physics.space-ph</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">The Van Allen Probes were launched into nearly identical orbits and experienced the same solar and geomagnetic environment, yet their post-mission lifetimes diverged dramatically. Probe A underwent rapidly accelerating orbital decay and reentered the atmosphere in March 2026, while Probe B remains in orbit. We investigate the cause of this divergence using reconstructed orbital trajectories, modeled thermospheric densities, and measures of low-altitude residence and atmospheric drag. We find that small differences in orbital evolution progressively increased Probe A residence time in the lower thermosphere, where the steep density gradient made additional low-altitude exposure increasingly important. Enhanced thermospheric density during periods of geomagnetic activity further amplified this difference, leading to greater drag and accelerating orbital decay of Probe A. Our results show how small differences in orbital evolution can be amplified through the coupled effects of thermospheric drag and space weather, producing substantially different orbital lifetimes even for twin spacecraft sharing nearly identical initial orbits.</p>
   <h2>Screening</h2><p><strong>0 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">The paper is about orbital decay of the Van Allen Probes from thermospheric drag and geomagnetic activity. It has no connection to flare timing, particle acceleration, QPPs, or STIX/EUI.</p>
   <p class="meta">arXiv:2610.05372</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

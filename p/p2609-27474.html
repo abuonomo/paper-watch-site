@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.27474" data-prev="" data-next="" data-title="Kelvin-Helmholtz vortices in the Martian +E hemisphere downstream of crustal magnetic anomalies">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.27474" data-prev="" data-next="" data-title="Kelvin-Helmholtz vortices in the Martian +E hemisphere downstream of crustal magnetic anomalies">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.27474">Kelvin-Helmholtz vortices in the Martian +E hemisphere downstream of crustal magnetic anomalies</a></h1>
   <div class="meta">Junxi Niu, Tong Dang, Jiuhou Lei, Binzheng Zhang, Wenya Li, Binbin Tang, Junjie Chen, Sudong Xiao, Tielong Zhang<div>Submitted 23 Sep 2026, astro-ph.EP</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">At unmagnetized planetary bodies, the Kelvin-Helmholtz (KH) instability at the solar-wind boundary is a key driver of atmospheric escape, fundamentally shaping long-term climate evolution. This shear-driven plasma mixing is theoretically predicted to be asymmetric, strongly favoring the hemisphere where the solar-wind electric field points toward the planet (-E hemisphere). Here we report the observation of a coherent train of fully developed KH vortices in the traditionally unfavorable +E hemisphere of Mars, using in-situ MAVEN measurements. Contemporaneous upstream constraints from Tianwen-1 confirm a steady interplanetary magnetic field, indicating sustained shear-driven growth rather than a transient boundary response. We find that these vortices developed within an expanded, weak-field boundary layer downstream of strong southern crustal magnetic anomalies. Our analysis suggests that regional boundary structuring can override the large-scale hemispheric preference to facilitate localized KH growth. These findings demonstrate that shear-driven escape pathways can operate in traditionally unfavorable regions, altering our understanding of atmospheric volatile loss at weakly magnetized planets.</p>
   <h2>Screening</h2><p><strong>1 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">The paper covers Kelvin-Helmholtz vortices at the Martian solar-wind boundary seen by MAVEN, which has no connection to flare timing, QPPs, particle acceleration, or STIX/EUI. The only overlap is the broad space-physics field.</p>
   <p class="meta">arXiv:2609.27474</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

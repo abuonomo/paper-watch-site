@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2610.06424" data-prev="" data-next="" data-title="Detection of knots in the supernova type Iax remnant Pa 30">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2610.06424" data-prev="" data-next="" data-title="Detection of knots in the supernova type Iax remnant Pa 30">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2610.06424">Detection of knots in the supernova type Iax remnant Pa 30</a></h1>
   <div class="meta">Tim Cunningham, Ilaria Caiazzo, John C. Raymond, Scott J. Kenyon<div>Submitted 5 Oct 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">We present deep, narrowband Gemini North/GMOS images of the Pa 30 nebula that reveal rich small-scale structure in the ejecta filaments. In [S II], the number of detected filaments increases by about an order of magnitude compared to previous studies. The imaging further reveals that the filaments are not smooth radial streaks, but instead are composed of cascades of knots or clumps. The images in [O III] yield the first confirmation that previously detected diffuse [O III] emission in fact originates from the same [S II] filaments. We measure a nebula center consistent with the position of the central star, indicating that the remnant has not received a large transverse kick. The 3$σ$ upper limit on the velocity of the stellar kick is $\lesssim$100 km/s. Cross-sectional profiles of the filaments in [S II] and [O III] show a central peak on top of a nebular background, the latter being likely due to diffuse emission or unresolved filaments. The median [S II] width of 0.7&#x27;&#x27; is slightly broader than the 0.50&#x27;&#x27; seeing, providing some evidence of partially resolved filaments and implying a characteristic knot diameter of ${\sim}10^{16}$ cm. The $\approx$1&#x27;&#x27; widths measured in [O III] are consistent with the poorer seeing of the oxygen images. The discovery of this clumpy substructure provides a new observational constraint on models for the origin and evolution of the remarkable filamentary ejecta of Pa 30.</p>
   <h2>Screening</h2><p><strong>0 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">This is a Gemini imaging study of the filamentary ejecta in a Type Iax supernova remnant, with no connection to solar flares, particle acceleration, QPPs, or STIX/EUI, and its methods do not transfer.</p>
   <p class="meta">arXiv:2610.06424</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.08590" data-prev="" data-next="" data-title="Radial velocity follow-up of \textit{Gaia} astrometric substellar companions: six confirmed brown dwarfs and 13 impostor binaries">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.08590" data-prev="" data-next="" data-title="Radial velocity follow-up of \textit{Gaia} astrometric substellar companions: six confirmed brown dwarfs and 13 impostor binaries">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.08590">Radial velocity follow-up of \textit{Gaia} astrometric substellar companions: six confirmed brown dwarfs and 13 impostor binaries</a></h1>
   <div class="meta">Marcus L. Marcussen, Simon H. Albrecht, Kamil K. Kalinowski, Joshua N. Winn, Guðmundur Stefánsson, Jens Reersted Larsen, Julie Gadeberg, Evan Fitzmaurice, Kevin Schlaufman, Suvrath Mahadevan<div>Submitted 8 Sep 2026, astro-ph.EP</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">With microarcsecond precision, \textit{Gaia} has made the astrometric discovery of substellar companions feasible. However, follow-up observations are needed to check on orbital solutions and rule out astrophysical false positives. We validate and characterise a sample of 20 \textit{Gaia} Data Release 3 (DR3) astrometric candidates for substellar companions, with the dual goal of identifying false positives and deriving robust physical parameters for genuine companions. We performed high-resolution spectroscopy using FIES, NIRPS, and NEID at the Nordic Optical Telescope, the ESO 3.6m telescope, and the WIYN Telescope, respectively. Double-lined spectroscopic binaries were identified as false positives, and surviving systems were characterised through joint \textit{Gaia} astrometry and radial velocity modelling. Thirteen of the candidates proved to be near-twin binary stars for which the astrometric motion of the center of light is small enough to mimic that of a single star in response to a substellar companion. We confirm that six companions are brown dwarfs with masses in the range ${\sim}26$--$68\,M_\mathrm{Jup}$, two of them for the first time. In contrast to earlier studies of lower-mass \textit{Gaia} candidates, we find that the astrometric orbital solutions are generally reliable to within the stated uncertainties.</p>
   <h2>Screening</h2><p><strong>0 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">Radial velocity and astrometric follow-up of Gaia brown dwarf candidates; no connection to solar flares, particle acceleration, QPPs, or STIX/EUI.</p>
   <p class="meta">arXiv:2609.08590</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

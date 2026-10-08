@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.11053" data-prev="" data-next="" data-title="Uncovering the Origin of Slow Rotators among Intermediate-Mass Stars in the Star-Forming Cluster Trumpler 14">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.11053" data-prev="" data-next="" data-title="Uncovering the Origin of Slow Rotators among Intermediate-Mass Stars in the Star-Forming Cluster Trumpler 14">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.11053">Uncovering the Origin of Slow Rotators among Intermediate-Mass Stars in the Star-Forming Cluster Trumpler 14</a></h1>
   <div class="meta">Khushboo K. Rao, Wen-Ping Chen, Hsiang-Yu Chen, Kristen Dage, Stella S. R. Offner<div>Submitted 10 Sep 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">Intermediate-mass (about 1.5-8 M$_{\odot}$) stars exhibit a wide range of rotation rates and have gained attention for their roles in the extended main-sequence turnoffs (eMSTO) seen in some young and intermediate-age clusters (ages $&lt; 2$ Gyr). Although rapid rotation is expected due to their radiative envelopes, the presence of slow rotators remains puzzling. In this study, we examine disk and X-ray signatures among the intermediate-mass members of the star-forming cluster Trumpler 14. Of the 118 intermediate-mass members, 24 are considered disk-bearing on the basis of their infrared spectral indices derived from spectral energy distributions. The majority of these reside outside the heavily irradiated cluster core and are all slow rotators ($\lessapprox 100$ km s$^{-1}$) except for three fast-rotating Class III objects. Additionally, in the same sample of 118, 37 are X-ray sources, and 22 having available $v \sin i$ data show a systematically slower rotation than X-ray quiet sources. Our findings suggest that, while young stellar disks in intermediate-mass stars contribute to early spin-down, high-energy processes traced by X-ray emission during this phase could be an additional channel for angular-momentum loss in these stars.</p>
   <h2>Screening</h2><p><strong>1 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">The paper concerns rotation, disks, and X-ray emission of intermediate-mass stars in a young cluster, which has no connection to flare timing, QPPs, particle acceleration, or STIX/EUI analysis. The only overlap is the generic mention of X-ray emission.</p>
   <p class="meta">arXiv:2609.11053</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

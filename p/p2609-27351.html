@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.27351" data-prev="" data-next="" data-title="Orbital and spin periods of the intermediate polar 2PBC J0800.5-4306">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.27351" data-prev="" data-next="" data-title="Orbital and spin periods of the intermediate polar 2PBC J0800.5-4306">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.27351">Orbital and spin periods of the intermediate polar 2PBC J0800.5-4306</a></h1>
   <div class="meta">Yabing Zhao, Chunhua Zhu, Sufen Guo, Guoliang Lü, Xizhen Lu, Xinyu Liu<div>Submitted 23 Sep 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">2PBC J0800.5$-$4306 (Swift J0800.7$-$4309; optical counterpart Gaia DR3 5533020382479508736) is a hard-X-ray-selected cataclysmic variable whose magnetic subtype had remained uncertain. We analyse \textit{TESS} photometry from Sectors 88 and 89 and archival \textit{XMM-Newton} timing data. The \textit{TESS} data show signals at the orbital frequency $Ω$, its first harmonic $2Ω$, the white-dwarf spin frequency $ω$, and the spin--orbit beat frequency $ω-Ω$. We measure $P_{\rm orb}=5.38540^{+0.00027}_{-0.00028}$ h and $P_{\rm spin}=0.7015570^{+0.0000059}_{-0.0000062}$ h. The \textit{XMM-Newton} EPIC-pn, MOS1, and MOS2 periodograms show broad peaks near the 2525.6-s (0.701557-h) optical spin period. Together with the previously published cataclysmic variable classification and Swift/BAT hard-X-ray detection, these timing results identify 2PBC J0800.5$-$4306 as an intermediate polar. We report the first published measurements of its orbital and white-dwarf spin periods, while SPOC difference-image diagnostics and pixel-level timing tests support that the measured \textit{TESS} modulations are associated with the Gaia counterpart despite the crowded field.</p>
   <h2>Screening</h2><p><strong>1 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">This paper covers periodogram timing of an intermediate polar (a cataclysmic variable) using TESS and XMM-Newton. It has no connection to solar flares, QPPs, or particle acceleration, and the period-search methods are generic.</p>
   <p class="meta">arXiv:2609.27351</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

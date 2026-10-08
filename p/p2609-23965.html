@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.23965" data-prev="" data-next="" data-title="Satellite Survival through Gas Redistribution in a Low-viscosity Disk">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.23965" data-prev="" data-next="" data-title="Satellite Survival through Gas Redistribution in a Low-viscosity Disk">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.23965">Satellite Survival through Gas Redistribution in a Low-viscosity Disk</a></h1>
   <div class="meta">Ignacio Mosqueira<div>Submitted 21 Sep 2026, astro-ph.EP</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">We investigate satellite survival through gas redistribution in a dense circumplanetary disk with a low dimensionless viscosity parameter $α\sim 10^{-6}$. The model combines modal Lindblad excitation, launch-dependent shock deposition, 3D effects, and an instantaneous Rayleigh adjustment that conserves angular momentum and suppresses sharp density gradients. An isolated Ganymede-mass satellite depletes the disk outside its orbit and stalls under a calibrated three-dimensional Lindblad torque. This behavior is consistent with the non-feedback branch of Rafikov&#x27;s stalling criterion. The inward migration stalls near 15 Jupiter radii ($R_J$) when the gas depletion exterior to the satellite&#x27;s orbit reduces the outer torque by the amount required to balance the torque of the undepleted inner disk, even when we adopt a transport prescription that begins smoothing density gradients halfway to Rayleigh marginality. Likewise, two Callisto masses form an extended depleted region and stall in nearly steady orbits before a late close encounter; however, a self-consistent disk response to satellite eccentricity remains to be modeled. A simulation of a Ganymede-mass satellite adds a specified source of unsaturated local angular momentum deposition by buoyancy torques, reducing the late radial oscillations indirectly caused by non-local shock deposition. Lastly, we redistribute gas while conserving angular momentum to proactively inhibit Rossby-wave unstable pressure bumps at the gap edges. We find that this approach preserves gap clearing and strong migration suppression for Ganymede and the two Callisto masses. In the pressure-adjusted run, the two Callisto masses are captured in a 7:5 resonance and retain eccentricities below 0.06.</p>
   <h2>Screening</h2><p><strong>0 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">The paper is about satellite migration and gas redistribution in circumplanetary disks, a planetary-science topic with no link to flare timing, particle acceleration, QPPs, or STIX/EUI.</p>
   <p class="meta">arXiv:2609.23965</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

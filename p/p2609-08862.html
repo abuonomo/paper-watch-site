@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.08862" data-prev="" data-next="" data-title="The role of specific entropy in the onset of the luminosity bump">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.08862" data-prev="" data-next="" data-title="The role of specific entropy in the onset of the luminosity bump">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.08862">The role of specific entropy in the onset of the luminosity bump</a></h1>
   <div class="meta">S. Hekker<div>Submitted 8 Sep 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">During their evolution, stars follow a distinct path in luminosity--temperature space. Low-mass stars that have exhausted hydrogen in their core follow the so-called red-giant branch which is predominantly in the direction of increasing luminosity and decreasing surface temperature. The luminosity bump is a temporary decrease in luminosity against this otherwise increasing trend. The bump is present in both observations and stellar evolution models. However, with canonical physics included in the models, the bump in computed evolutionary tracks appears at higher luminosities than the observed bump. To understand why the bump appears later in the models than in observations, the physics of the bump needs to be unravelled. The end point of the bump is well-understood; however, the onset of the bump is still an enigma. Here, we report on the physical origin of the onset of the luminosity bump. We show that the difference in specific entropy at the mean molecular weight discontinuity decreases due to the discontinuity moving in. This decrease is attributed to the decrease in the ratio of the temperature to the pressure at smaller radii. Upon reaching a critical value the specific entropy difference at the mean molecular weight discontinuity is reduced sufficiently to reduce the specific entropy in the convective envelope. The latter is a key signature of the bump. Hence the evolution of the specific entropy at the mean molecular weight discontinuity provides a viable description for the onset of the bump.</p>
   <h2>Screening</h2><p><strong>0 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">The paper is about red-giant stellar evolution and the luminosity bump, driven by specific entropy at the mean molecular weight discontinuity. It has no connection to solar flares, particle acceleration, QPPs, or STIX/EUI.</p>
   <p class="meta">arXiv:2609.08862</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

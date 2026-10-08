@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2610.05226" data-prev="" data-next="" data-title="Large offsets of double-neutron-star mergers: degeneracies and implications for host associations">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2610.05226" data-prev="" data-next="" data-title="Large offsets of double-neutron-star mergers: degeneracies and implications for host associations">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2610.05226">Large offsets of double-neutron-star mergers: degeneracies and implications for host associations</a></h1>
   <div class="meta">Xiao-Tian Xu, Bin-Bin Zhang, Wenjie Wu, Suoning Wang<div>Submitted 4 Oct 2026, astro-ph.HE</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">The projected offset of a Gamma-Ray Burst (GRB) from its host galaxy is an important diagnostic of its physical origin, where the host associations are usually evaluated through chance-coincidence probabilities. However, as shown by observations, the host associations given by this approach may be ambiguous in some cases. In this work, we revisit the modelling of the offsets of double-neutron-star (DNS) mergers with controlled numerical experiments using Monte Carlo simulations. To isolate the dynamical effects of the second supernova (SN) from uncertainties in the upstream binary evolution, we parametrise the direct progenitor of DNSs and integrate the post-SN trajectories in galactic potentials using \texttt{galpy}. Complementary to previous population synthesis calculations, our Monte-Carlo tool, \texttt{GRB-offset}, provides a lightweight framework to identify sensitivities and expose degeneracies in offset modelling. With \texttt{GRB-offset}, we have investigated the following physical ingredients, supernova physics (ejected mass and kick velocity), galactic potential (potential shape, galaxy virial mass), DNS birth location, star formation history, and redshift. The offset distributions given by our reference Monte-Carlo simulation peak at around 30 kpc and 1000 kpc for the DNSs bound to and unbound from the host galaxy, which sensitively depends on the considered physical ingredients. A given offset can arise from various combinations of these ingredients, introducing substantial degeneracies when interpreting observed offsets. Therefore, an observed offset alone can hardly constrain the properties of the DNS progenitor and of the host galaxies.</p>
   <h2>Screening</h2><p><strong>0 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">The paper models GRB offsets from host galaxies for double-neutron-star mergers using Monte Carlo and galactic potentials. It has no connection to solar flare timing, QPPs, particle acceleration, or STIX/EUI.</p>
   <p class="meta">arXiv:2610.05226</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

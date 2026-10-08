@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 2 of 10"><span class="v">2</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2610.04591" data-prev="" data-next="" data-title="SWAN-SF-V2: A Multivariate Time Series Dataset for Space Weather Data Analytics; Now with AIA and Weighted SHARP Parameters">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 2 of 10"><span class="v">2</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2610.04591" data-prev="" data-next="" data-title="SWAN-SF-V2: A Multivariate Time Series Dataset for Space Weather Data Analytics; Now with AIA and Weighted SHARP Parameters">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2610.04591">SWAN-SF-V2: A Multivariate Time Series Dataset for Space Weather Data Analytics; Now with AIA and Weighted SHARP Parameters</a></h1>
   <div class="meta">Dustin Kempton, Griffin Goodwin, Reet Gupta, Viacheslav M Sadykov, Rafal A. Angryk, Berkay Aydin, Manolis K. Georgoulis<div>Submitted 3 Oct 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">Since its original publication in 2020, the SWAN-SF dataset has been cited in over 300 research publications. Here we describe a comprehensive update to the original multivariate time series (MVTS) dataset extracted from solar photospheric vector magnetograms in the Spaceweather HMI Active Region Patch (SHARP) series. As was performed in the original release, our dataset includes a cross-checked NOAA solar flare catalog that facilitates the comparative evaluation of methods designed for solar flare prediction. We discuss the methods used for data collection, cleaning, and pre-processing of the solar active region and flare data, which includes improvements to the data integration and sampling methodology. Additional parameters have been derived from the Solar Dynamics Observatory&#x27;s Atmospheric Imaging Assembly to augment the original features derived from magnetogram data. Our dataset expands the period of observations to cover 7,730 MVTS data collections from active regions occurring between May 2010 and December 2025, each of which is composed of 182 flare-predictive parameters. We continue to integrate flare reports, with over 39,000 multi-source verified flare reports providing flaring history information about the source active regions. The primary tasks enabled by the disseminated dataset continue to include optimization of solar flare prediction and detailed investigation for elusive flare predictors or precursors, with both operational (research-to-operations), and basic research (operations-to-research) benefits.</p>
   <h2>Screening</h2><p><strong>2 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">This is a flare-prediction dataset built from photospheric magnetogram (SHARP) and AIA parameters, so it concerns forecasting rather than flare timing, QPPs, or particle acceleration. It has little bearing on STIX/EUI analysis, apart from a possible flare catalog cross-reference.</p>
   <p class="meta">arXiv:2610.04591</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

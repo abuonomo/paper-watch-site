@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2610.08930" data-prev="" data-next="" data-title="Re-calibrated analytic stellar evolution formulae for the main sequence: Extension to massive stars and variations in $[α/\mathrm{Fe}]$">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2610.08930" data-prev="" data-next="" data-title="Re-calibrated analytic stellar evolution formulae for the main sequence: Extension to massive stars and variations in $[α/\mathrm{Fe}]$">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2610.08930">Re-calibrated analytic stellar evolution formulae for the main sequence: Extension to massive stars and variations in $[α/\mathrm{Fe}]$</a></h1>
   <div class="meta">Conor M Byrne, Elizabeth R Stanway, Jan J Eldridge<div>Submitted 6 Oct 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">Analytic formulae are an efficient way to approximate the evolution of a star of a given mass and chemical composition, and are widely used in the literature to compute large grids of evolutionary models for stellar population synthesis. Such formulae rely on calibration to detailed stellar evolution models, and existing versions are based on a sparse, limited grid in comparison to modern simulations. By calibrating against the latest generation of single-star evolution models calculated within the Binary Population and Spectral Synthesis (\bpass) framework, we revise and extend pre-existing equations to include the evolution of massive ($M\gtrsim50\,$\msun) stars and changes in chemical abundances in the form of variations in \afe. We introduce additional terms which allow for a better approximation of the main-sequence lifetimes, and the luminosities and radii at the beginning and end of the main sequence. These revised equations describe the main-sequence age, zero-age and terminal-age radius and luminosity with mean errors of less than 10 per cent or 0.05 dex, for all except the terminal age radius, which shows RMS errors of 20 per cent and 0.1 dex. For \afe\ enriched stellar populations, we advise using a matched-iron value for metallicity in the equations, consistent with the expectation that iron is the dominant opacity source affecting the evolution of main-sequence stars.</p>
   <h2>Screening</h2><p><strong>0 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">This paper revises analytic main-sequence stellar evolution formulae for population synthesis. It has no connection to flare timing, particle acceleration, QPPs, or STIX/EUI.</p>
   <p class="meta">arXiv:2610.08930</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

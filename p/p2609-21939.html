@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.21939" data-prev="" data-next="" data-title="Stellar Yields of Rapidly Rotating Population III Stars for the High Redshift Universe">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.21939" data-prev="" data-next="" data-title="Stellar Yields of Rapidly Rotating Population III Stars for the High Redshift Universe">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.21939">Stellar Yields of Rapidly Rotating Population III Stars for the High Redshift Universe</a></h1>
   <div class="meta">Devesh Nandal, Konstantinos Topalakis, Vasilisa Sergienko, Doga Eker, Efe K. Celep, Danielle A. Berg, Daniel J. Whalen, Sophie Tsiatsiou, Raphael Hirschi<div>Submitted 18 Sep 2026, astro-ph.GA</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">JWST has revealed rapid nitrogen enrichment in high redshift galaxies, renewing the need for stellar yields that follow metal free stars beyond the main sequence and across their final fates. We present Geneva stellar evolution models of rapidly rotating Pop~III stars with $5 \leq M_{\rm ini}/M_\odot \leq 200$ and $\upsilon_{\rm ini}/\upsilon_{\rm crit}=0.7$, evolved to the end of core O-burning. We calculate gross adopted ejecta masses using fate dependent remnant prescriptions spanning core collapse, pulsational pair instability, and complete pair instability. Our quantitative results focus on hydrostatically produced CNO material, while heavier species are treated as final-model reservoirs. Rotation produces primary CNO material by mixing newly synthesized C and O into H-burning layers, where CNO cycling generates nitrogen. The resulting abundance signature depends strongly on which stellar layers escape. Models leaving compact remnants can reach $\log({\rm N/O})=-0.49$ while remaining poor in Si/S/Ar/Ca-rich material. PISN models eject the largest nitrogen masses, $M_{\rm N}=1.8$--$2.5,M_\odot$, but also release $57$--$65,M_\odot$ of oxygen, lowering $\log({\rm N/O})$ to $-1.44$ to $-1.29$. Thus, high nitrogen yields do not imply high N/O ratios. This trend persists after IMF weighting, as increasingly top-heavy populations add oxygen and deep alpha material faster than they build a nitrogen dominated mixture. Our grid provides a new CNO-focused prompt-enrichment dataset for interpreting nitrogen-rich systems including GN-z11, CEERS-1019, and GS~3073.</p>
   <h2>Screening</h2><p><strong>0 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">The paper concerns nucleosynthetic yields of rapidly rotating Population III stars and nitrogen enrichment in high-redshift galaxies. It has no connection to solar flares, QPPs, particle acceleration, or STIX/EUI, and no transferable method.</p>
   <p class="meta">arXiv:2609.21939</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.33317" data-prev="" data-next="" data-title="Modeling of the variability of D-region ionospheric electron density during solar cycle-24">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.33317" data-prev="" data-next="" data-title="Modeling of the variability of D-region ionospheric electron density during solar cycle-24">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.33317">Modeling of the variability of D-region ionospheric electron density during solar cycle-24</a></h1>
   <div class="meta">Sayak Chakraborty, Sourav Palit, Semontee Deb, Tamal Basak<div>Submitted 27 Sep 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">Solar cycle variation of earth&#x27;s atmosphere, particularly the ionosphere is of particular interest in the field of space science and space weather studies. In this article, we present the outcome of our detailed quantitative study on solar cycle variation of lower ionospheric properties using numerical investigation. First, we seek to model and compare the collective D-region ionization rates (q&#x27;s) due to the individual contributions from the ionizing sources, namely, (a) solar extreme ultraviolet (EUV) radiation including the Lyman-alpha irradiation and (b) solar X-ray irradiation throughout the 24th solar cycle (C24). Then, we compute the electron density (Ne) profiles using the ionization rates. We report significant solar cycle variation in ionization rate and electron density profiles for the entire span of C24. We use the sunspot number (SPN) profile to substantiate the finer details of Ne profile during C24. For the segments of the D-region above two different geographic coordinates, we report that Ne profiles show a consistent &quot;dual peak&quot; nature. It is very similar to the SPN profile during C24. As a next-order validation, we compare our modeled Ne profiles with their IRI-2020 counterpart (Ne,iris). Their overall trends are found to be in agreement. Finally, we discuss the response of the D-region in terms of Ne due to C24. The work lays the foundation for our upcoming studies on D-region response to solar cycle variation with Very Low Frequency (VLF) observation.</p>
   <h2>Screening</h2><p><strong>1 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">The paper models Earth&#x27;s D-region ionospheric electron density over solar cycle 24 from EUV and X-ray ionization. It has no connection to flare timing, QPPs, particle acceleration, or STIX/EUI analysis.</p>
   <p class="meta">arXiv:2609.33317</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

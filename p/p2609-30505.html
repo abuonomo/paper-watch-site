@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.30505" data-prev="" data-next="" data-title="Collisional excitation of E- and Z-ethanimine to model cold molecular clouds">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.30505" data-prev="" data-next="" data-title="Collisional excitation of E- and Z-ethanimine to model cold molecular clouds">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.30505">Collisional excitation of E- and Z-ethanimine to model cold molecular clouds</a></h1>
   <div class="meta">Francesca Tonolo, Vivek Vijay, Ernesto Quintas-Sánchez, Adrian Batista Planas, Carolin Joy, Richard Dawes, François Lique, Dmitri Babikov<div>Submitted 24 Sep 2026, astro-ph.GA</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">Context. Ethanimine is a prebiotically relevant complex organic molecule that has been proposed as a key precursor of amino acids in the interstellar medium. To date, both its E and Z isomers have only been detected toward the Sgr B2(N) molecular cloud. The pronounced non-local thermodynamic equilibrium (non-LTE) effects predicted for this molecule require accurate collisional rate coefficients for reliable astrophysical modeling and future astronomical searches. Aims. We aim to provide the first collisional datasets for both ethanimine isomers with the main cold molecular clouds collision partners, He and para-H2, in order to support non-LTE radiative-transfer modeling. Methods. State-to-state rate coefficients for collisions with He were computed by integration over mixed close-coupling (CC) and coupled-states (CS) scattering cross sections at different energy ranges. In addition, comparisons with mixed quantum-classical theory (MQCT) calculations performed for both He and para-H2 collisions enabled the derivation of transition-specific scaling factors, which were applied to predict collisional rate coefficients for para-H2. Results. We present the first state-to-state collisional datasets for both E- and Z-ethanimine in collision with He and para-H2, including all rotational transitions involving levels below 50 cm-1 and over the 5-100 K temperature range. Conclusions. The datasets reported here provide the first collisional information suitable for non-LTE modeling of ethanimine in cold interstellar environments. They represent a key step toward more reliable abundance determinations and may facilitate future astronomical detections of both ethanimine isomers beyond Sgr B2(N).</p>
   <h2>Screening</h2><p><strong>0 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">The paper computes collisional rate coefficients for ethanimine in cold interstellar molecular clouds, which has no link to solar flares, particle acceleration, QPPs, or STIX/EUI, and its methods do not transfer.</p>
   <p class="meta">arXiv:2609.30505</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

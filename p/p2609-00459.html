@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.00459" data-prev="" data-next="" data-title="Age Discrepancy in Three Galactic Cepheid Binaries">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.00459" data-prev="" data-next="" data-title="Age Discrepancy in Three Galactic Cepheid Binaries">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.00459">Age Discrepancy in Three Galactic Cepheid Binaries</a></h1>
   <div class="meta">Sashwat Prasadh, Hilding R. Neilson, Nancy Remage Evans<div>Submitted 31 Aug 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">SV Per, RW Cam, and KN Cen are Galactic classical Cepheids found in binary systems along with B-type companions. Each system exhibits an ``apparent age discrepancy&quot;, where the Cepheid appears significantly younger than its companion. We compute stellar evolution tracks using the MESA code and compare them with these stars on the Hertzsprung-Russell diagram to estimate the masses and the corresponding ages. We find that, for two of the systems, the companions appear to be between 1.5 times to double the age of the Cepheids, suggesting that the Cepheids may be rejuvenated merger products of two main-sequence stars that have since evolved. We find that the third system KN Cen is consistent with single star evolution when we reevaluate ultraviolet observations and find that the companion is hotter than previously measured. We test this idea using the MESA code for each system by evolving a single star model and rapidly accreting mass on the main sequence to emulate a merger, and then continuing the evolution until the model is consistent with the parameters of the Cepheids. The results are consistent with the hypothesis that the Cepheids were originally merger products. We conclude with a discussion of potential observational tests of the merger hypothesis.</p>
   <h2>Screening</h2><p><strong>0 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">The paper is about stellar evolution and age discrepancies in Cepheid binaries using MESA, with no connection to flares, particle acceleration, QPPs, or STIX/EUI.</p>
   <p class="meta">arXiv:2609.00459</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

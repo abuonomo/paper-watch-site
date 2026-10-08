@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.18645" data-prev="" data-next="" data-title="The emergence of a [WC] star in Sakurai&#x27;s object">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.18645" data-prev="" data-next="" data-title="The emergence of a [WC] star in Sakurai&#x27;s object">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.18645">The emergence of a [WC] star in Sakurai&#x27;s object</a></h1>
   <div class="meta">W. Marcolino, P. A. M. van Hoof, V. C. Maria, H. Todt, G. C. Van de Steene, J. A. Toalá, S. Kimeswenger, M. Hajduk, J. -C. Bouret, D. Tafoya, D. Barría, A. A. Zijlstra<div>Submitted 16 Sep 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">Sakurai&#x27;s object provides a rare opportunity to observe stellar evolution on human timescales. Since its born-again event and detection in 1996, its evolution has been extensively monitored, and recent optical spectroscopy has suggested the emergence of [WR]-type emission features. In this Letter, we present a secure spectroscopic identification of its central star based on new VLT/FORS2 observations and NLTE expanding atmosphere models. Several observed emission lines arise in a [WR]-type stellar wind, establishing the central star as a [WR] object. The strongest stellar features are due to C II-III and He I. We derive the stellar and wind parameters of Sakurai&#x27;s object and discuss its evolutionary status. The [WR] star is much cooler (Teff ~ 30.5 kK) than the born-again star V605 Aql (Teff} ~ 95 kK), which erupted about 80 years earlier. The inferred temperature is lower than predicted by models suppressing convective mixing efficiency during the VLTP, but is consistent with higher time-resolution calculations involving slightly lower-mass (&lt;~ 0.6Msun) remnants. Continued spectroscopic monitoring and atmospheric modelling will be crucial for tracing its reheating curve and constraining the physics of this rapid evolutionary phase.</p>
   <h2>Screening</h2><p><strong>0 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">Paper is about a born-again [WC] star (Sakurai&#x27;s object) with NLTE wind modelling; no connection to solar flares, QPPs, particle acceleration, or STIX/EUI methods.</p>
   <p class="meta">arXiv:2609.18645</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

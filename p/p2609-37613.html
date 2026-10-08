@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.37613" data-prev="" data-next="" data-title="Abundance analysis of three new extremely metal-poor stars, including one CEMP-s star">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.37613" data-prev="" data-next="" data-title="Abundance analysis of three new extremely metal-poor stars, including one CEMP-s star">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.37613">Abundance analysis of three new extremely metal-poor stars, including one CEMP-s star</a></h1>
   <div class="meta">P. François, T. Suda, S. Wanajo, E. Caffau, P. Bonifacio, W. Aoki, S. Yamada, M. Y. Fujimoto<div>Submitted 29 Sep 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">We report a detailed abundance analysis of three extremely metal-poor (EMP) stars thanks to spectra obtained with the high-dispersion spectrograph (HDS) at the Subaru telescope. The aim is to observe a sample of EMP candidate stars selected from the Sloan Digital Sky Survey (SDSS) and determine their detailed chemical composition. High-resolution spectra of three faint turn-off stars using HDS on the Subaru telescope were acquired.We used standard 1D models to compute the abundances of several elements (Li, C, Mg, Ca, Sr, and Ba). The stars we analysed have a metallicity [Fe/H] of between -3.02 and -3.57 dex. We also measured accurate radial velocities that, coupled with the Gaia astrometric data, allowed us to compute actions and Galactic orbits for the stars. Our analysis confirms that the stars are genuine EMP stars. One of them (SDSS J074238.68 +470537.0) can be classified as a CEMP-s star with the highest [Mg/Fe] ratio ever measured in a turn-off CEMP-s star with [Mg/Fe] = 1.85 dex. For the star SDSS J012630.30+073029.3 ([Fe/H]= -3.02 dex), we have a clear detection of lithium with A(Li) = 2.05. Kinematically, SDSS J214340.08-002835.5 is a thick-disc star, while the other two belong to the halo and are candidate members of the Gaia- Sausage-Enceladus.</p>
   <h2>Screening</h2><p><strong>0 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">Chemical abundance analysis of extremely metal-poor stars and their Galactic kinematics; it has no connection to solar flare timing, particle acceleration, QPPs, or STIX/EUI, and no transferable method.</p>
   <p class="meta">arXiv:2609.37613</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 2 of 10"><span class="v">2</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.34758" data-prev="" data-next="" data-title="The precipitation of protons and electrons in Jupiter&#x27;s auroral regions: a statistical comparison based on Juno/JEDI data">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 2 of 10"><span class="v">2</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.34758" data-prev="" data-next="" data-title="The precipitation of protons and electrons in Jupiter&#x27;s auroral regions: a statistical comparison based on Juno/JEDI data">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.34758">The precipitation of protons and electrons in Jupiter&#x27;s auroral regions: a statistical comparison based on Juno/JEDI data</a></h1>
   <div class="meta">B. Benmahi, N. André, V. Hue, Z. -Y. Liu, G. Gronoff, B. Mauk, B. Bonfond, T. Stallard, M. Blanc, M. Devinat, M. Barthélémy<div>Submitted 28 Sep 2026, astro-ph.EP</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">Energetic electrons dominate the energy precipitated into Jupiter&#x27;s auroral regions, but protons precipitate along the same field lines, with a contribution that remains poorly constrained. We statistically compare the precipitating energy flux of protons and electrons in two of Jupiter&#x27;s auroral sub-regions, the polar (PE) and main (ME) emission regions. We use Juno/JEDI data from PJ3 to PJ66. The magnetic footprint of the spacecraft, computed with the JRM33 and CON2020 field models, is assigned to one of the two sub-regions, and the precipitating energy flux of each species is obtained by integrating over the loss cone the mean differential intensity measured within it. In both sub-regions, the median proton energy flux is 52 to 223 times lower than that of the electrons, and the total precipitated proton power is less than 2% of the electron power. Proton fluxes are broadly distributed across the sub-regions, with higher values in the ME than in the PE. Protons play a secondary role in Jupiter&#x27;s auroral energy budget, radiating an estimated 5 to 9 GW in the UV per sub-region, pending a dedicated proton transport modelling. Their Doppler signature in the red wing of the Lyman-$α$ line, undetected by HST and difficult to access with Juno/UVS, is a key observable for the upcoming Juice and Europa Clipper missions.</p>
   <h2>Screening</h2><p><strong>2 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">Concerns Jovian auroral proton and electron precipitation measured by Juno/JEDI, which is a planetary magnetosphere topic with no flare timing, QPP, or STIX/EUI link. The only overlap is generic energetic-particle precipitation physics.</p>
   <p class="meta">arXiv:2609.34758</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

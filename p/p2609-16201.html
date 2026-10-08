@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.16201" data-prev="" data-next="" data-title="Rescuing Kepler&#x27;s False Positives: A Possible Habitable Zone Exoplanet in the Triple Star System KOI-1623">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.16201" data-prev="" data-next="" data-title="Rescuing Kepler&#x27;s False Positives: A Possible Habitable Zone Exoplanet in the Triple Star System KOI-1623">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.16201">Rescuing Kepler&#x27;s False Positives: A Possible Habitable Zone Exoplanet in the Triple Star System KOI-1623</a></h1>
   <div class="meta">Rita Lanxuan Wang, Daniel Huber, Daniel Hey, Nathanael Burns-Watson, Alexander Larsen, Adam Kraus, Trent J. Dupuy, Steven Giacalone, Justin R. Crepp<div>Submitted 14 Sep 2026, astro-ph.EP</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">The Kepler mission has significantly advanced our understanding of exoplanet demographics. However, Kepler planet candidates showing centroid shifts are often classified as false-positives and thus excluded from demographic analyses. Some of these systems may be erroneous false positives, resulting from unresolved binary stars with planets orbiting one of the stars, thereby introducing biases into past exoplanet demographic studies. Here, we present updated Kepler centroid offset values derived from Gaia Data Release 3 (DR3) and analyze KOI-1623.01, a Kepler centroid offset false positive (COFP) with a clear transit signal and an orbital period of 111 days. High-contrast imaging with Keck/NIRC2 reveals that KOI-1623A has a close companion with a separation of $0.704 \pm 0.002$ arcsec, consisting of a slightly evolved G-type primary and a K-dwarf secondary, while Gaia detects a tertiary companion with common proper motion at a separation of $\sim 8.4$ arcsec. By combining transit photometry, Kepler pixel level data, direct imaging, and Gaia DR3, we find that the transit signal is consistent with a $10.02 ^{+0.44}_{-0.31} R_{\oplus}$ giant planet located in the habitable zone of the secondary. We furthermore use resolved companions from Gaia to estimate that another $\approx 70$ out of $515$ of Kepler&#x27;s centroid false positives were misclassified and instead are real planets that belong to binary systems.</p>
   <h2>Screening</h2><p><strong>0 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">Paper is about Kepler exoplanet false positives and a habitable-zone planet in a triple star system; it has no connection to flare timing, particle acceleration, QPPs, or STIX/EUI, and its transit/centroid methods do not transfer to flare lightcurves.</p>
   <p class="meta">arXiv:2609.16201</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

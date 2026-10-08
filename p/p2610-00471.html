@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2610.00471" data-prev="" data-next="" data-title="Eppur binaria non è esclusa: Pulsations in CZ Tuc appear to be tidally excited by its veiled companion">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2610.00471" data-prev="" data-next="" data-title="Eppur binaria non è esclusa: Pulsations in CZ Tuc appear to be tidally excited by its veiled companion">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2610.00471">Eppur binaria non è esclusa: Pulsations in CZ Tuc appear to be tidally excited by its veiled companion</a></h1>
   <div class="meta">Piotr A. Kołaczek-Szymański, Patryk Iwanek, Jim Fuller, Dorota M. Skowron, Grzegorz Pojmański, Igor Soszyński<div>Submitted 30 Sep 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">Long secondary periods (LSPs), observed in about one-third of pulsating red giants, remain unexplained despite decades of study, with binarity and non-radial oscillations as the leading competing hypotheses. If LSP variables are indeed interacting, eccentric binary systems consisting of a red giant and a substellar object, tidally excited oscillations (TEOs) would be expected to appear in a fraction of them. Therefore, detection of TEOs offers an independent test of the binary scenario that has not previously been applied to LSP stars. Using a combined, approximately 80-year light curve assembled from Digital Access to a Sky Century @ Harvard (DASCH), Hipparcos, and All Sky Automatic Survey (ASAS) photometry, we find that CZ Tucanae (CZ Tuc) exhibits a pulsation period of $55.4734\pm0.0074$ days along with its LSP of $443.62\pm0.12$ days, with a ratio of $7.9970\pm0.0024$ - consistent with a TEO. Theoretical models show the observed amplitude of the candidate TEO could be produced after adopting the estimated fundamental parameters of CZ Tuc. Our findings identify CZ Tuc as the first candidate LSP star with a TEO, providing independent evidence for binarity among at least a subset of these enigmatic variables.</p>
   <h2>Screening</h2><p><strong>1 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">Paper on tidally excited oscillations in a pulsating red giant (long secondary periods); no connection to flares, particle acceleration, QPPs, or Solar Orbiter. Only a generic periodicity analysis of long light curves overlaps, which is not transferable to flare timing.</p>
   <p class="meta">arXiv:2610.00471</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

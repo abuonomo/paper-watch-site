@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.27403" data-prev="" data-next="" data-title="Multi-Model Analysis of the Astrophysical $S(E)$ Factor for the $^{9}\mathrm{Be}(p,α)^{6}\mathrm{Li}$ Reaction and Its Impact on Astrophysical Reaction Rates">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.27403" data-prev="" data-next="" data-title="Multi-Model Analysis of the Astrophysical $S(E)$ Factor for the $^{9}\mathrm{Be}(p,α)^{6}\mathrm{Li}$ Reaction and Its Impact on Astrophysical Reaction Rates">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.27403">Multi-Model Analysis of the Astrophysical $S(E)$ Factor for the $^{9}\mathrm{Be}(p,α)^{6}\mathrm{Li}$ Reaction and Its Impact on Astrophysical Reaction Rates</a></h1>
   <div class="meta">Xue-Jian Wang, Wei-Ke Nan, Qing Wang, Tian-Yu Tao, Qun-Gang Wen, Jian-You Guo, Cheng-Bo Li, Hui-Ming Jia<div>Submitted 23 Sep 2026, nucl-th</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">The $^{9}\mathrm{Be}(p,α)^{6}\mathrm{Li}$ reaction is a destruction process for $^{9}\text{Be}$ in stars and the Big Bang. The Trojan Horse Method (THM) is a well-established indirect technique that enables the determination of reaction cross sections within the Gamow energy region while avoiding the uncertainties associated with low-energy extrapolations of the $S(E)$ factor and electron-screening effects. In this work, the bare-nucleus THM data reported by Wen \textit{et al.} are systematically analyzed using polynomial fitting, a double Breit--Wigner model, and the $R$-matrix formalism. The applicability and physical implications of these theoretical approaches in describing the low-energy $S(E)$ factor of the $^{9}\mathrm{Be}(p,α)^{6}\mathrm{Li}$ reaction are investigated and compared. Since the THM data have been incorporated into the NACRE II reaction-rate compilation, leading to improved accuracy in reaction-rate evaluations, the refined theoretical analysis presented here provides further insight into the underlying reaction dynamics and establishes a more reliable foundation for stellar reaction-rate calculations. The results obtained in this work offer valuable reference for future high-precision experimental investigations and the development of theoretical models in nuclear astrophysics.</p>
   <h2>Screening</h2><p><strong>0 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">This is a nuclear astrophysics paper on the 9Be(p,α)6Li reaction S-factor and stellar reaction rates. It has no connection to flare timing, particle acceleration, QPPs, or STIX/EUI.</p>
   <p class="meta">arXiv:2609.27403</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

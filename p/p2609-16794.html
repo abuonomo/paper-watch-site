@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.16794" data-prev="" data-next="" data-title="The study of AF And. I. Hydrogen abundance constraints and dynamically-consistent wind model of the hot state">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.16794" data-prev="" data-next="" data-title="The study of AF And. I. Hydrogen abundance constraints and dynamically-consistent wind model of the hot state">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.16794">The study of AF And. I. Hydrogen abundance constraints and dynamically-consistent wind model of the hot state</a></h1>
   <div class="meta">E. O. Dedov, A. E. Kostenkov, A. S. Vinokurov, A. N. Sarkisyan<div>Submitted 15 Sep 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">This paper starts a series of works devoted to an in-depth study of luminous blue variable AF And in the M31 galaxy. Here we present the results of non-LTE modelling of the star in a hot state with CMFGEN code. In addition to the $β$-velocity law, widely used in the analysis of stellar atmospheres, we used a velocity distribution obtained from the balance of radial forces in the wind, including centrifugal forces for several models. Such a dynamically consistent approach reduces the parameter space during modelling and, in addition, allows us to estimate the current stellar mass whose inner hydrostatic layers are obscured by a dense wind that contaminates the absorption profiles. Based on our modelling we estimate the parameters of AF And as follows: luminosity $L \approx 6.5\times10^5~\text{L}_\odot$, mass loss rate $\dot{M}$ $\approx 3\times10^{-5}~\text{M}_\odot~\text{yr}^{-1}$, terminal velocity $v_\infty \approx 300~\text{km s}^{-1}$ and effective temperature $T_{\rm eff} \approx 17~\text{kK}$. modelling of the hot state of AF And is of particular interest due to the possibility to place constraints on the ratio of hydrogen and helium abundances for further use in constructing models of the cold state of this star. We conclude that the current hydrogen mass fraction in the wind lies in the range from $20$ to $30$ per cent. Self-consistent modelling gives the current mass $M_*$ estimation in the range $15.6 - 17.7~\text{M}_\odot$. By employing evolutionary tracks, we were able to estimate the initial stellar mass as $M_{*,~init} \approx 50~\text{M}_\odot$.</p>
   <h2>Screening</h2><p><strong>0 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">This paper models the stellar wind and abundances of a luminous blue variable in M31. It has no connection to flare timing, particle acceleration, QPPs, or STIX/EUI.</p>
   <p class="meta">arXiv:2609.16794</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

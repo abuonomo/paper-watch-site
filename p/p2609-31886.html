@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.31886" data-prev="" data-next="" data-title="Negative and Positive Cascade Rates of Slow Alfvénic Turbulence in Switchback and Non-switchback Intervals: \emph{Wind} Observations">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.31886" data-prev="" data-next="" data-title="Negative and Positive Cascade Rates of Slow Alfvénic Turbulence in Switchback and Non-switchback Intervals: \emph{Wind} Observations">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.31886">Negative and Positive Cascade Rates of Slow Alfvénic Turbulence in Switchback and Non-switchback Intervals: \emph{Wind} Observations</a></h1>
   <div class="meta">Sofiane Bourouaine<div>Submitted 25 Sep 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">We estimate the turbulent cascade rate in imbalanced Alfvénic turbulence in the slow solar wind using a Politano--Pouquet-based approach that does not require an isotropic assumption. We analyze selected 8-hour intervals provided by \emph{Wind} spacecraft. These intervals are characterized by near-homogeneity, weak velocity shear, and imbalanced Alfvénic fluctuations, and are classified as switchback or non-switchback depending on the angular spread of the magnetic field relative to the mean field. Switchback intervals are identified by large magnetic-field rotations, whereas non-switchback intervals exhibit only small angular deviations. Our results show that non-switchback intervals exhibit a positive total cascade rate and power spectra consistent with a $-3/2$ scaling, indicative of a forward energy cascade. In contrast, switchback intervals are characterized by a negative total cascade rate (inverse cascade), and by steeper power spectra with a spectral index of approximately $-1.6$. This indicates that large magnetic-field rotations can substantially modify the scale-to-scale energy transfer in Alfvénic slow solar wind. The results suggest that switchbacks may be associated with additional physical processes, such as local instabilities, or reconnection-related structures, that alter the direction and magnitude of the turbulent cascade. These findings may help explain previous reports of negative cascade rates in imbalanced Alfvénic solar-wind turbulence.</p>
   <h2>Screening</h2><p><strong>1 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">This paper is about Alfvénic turbulence cascade rates and switchbacks in the slow solar wind seen by Wind, with no flare, particle acceleration, QPP, or STIX/EUI connection. The solar wind turbulence methods are not transferable to flare lightcurves.</p>
   <p class="meta">arXiv:2609.31886</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

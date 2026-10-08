@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2610.08952" data-prev="" data-next="" data-title="Turbulent viscosity in line-driven stellar winds">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2610.08952" data-prev="" data-next="" data-title="Turbulent viscosity in line-driven stellar winds">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2610.08952">Turbulent viscosity in line-driven stellar winds</a></h1>
   <div class="meta">Matías Montesinos, Michel Cure, Ignacio Araya, Roberto O. J. Venero<div>Submitted 6 Oct 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">Radiation-driven winds from massive stars generate powerful outflows known to be intrinsically turbulent. Despite this, standard hydrodynamic models have historically restricted the application of macroscopic turbulent viscosity to rotationally supported disks, neglecting its dynamic role in the supersonic expansion regime of the wind. We evaluated the dynamical relevance of macroscopic turbulent momentum transport in accelerating line-driven stellar outflows of rotating B supergiants. We introduced a generalized strain-limited viscous prescription within a stable, time-dependent 1D m-CAK hydrodynamic framework using the FARGO3D code. We compared inviscid, constant-viscosity, and strain-limited models to analyze their effects on the radial velocity, density stratification, mass-loss rate, and angular momentum transport. The strain-limited prescription produces a radially structured viscosity that primarily acts as a broad radial braking term. With the viscosity bounded through a prescribed maximum mixing length, the viscous acceleration remains subdominant to the total radiative acceleration but is dynamically relevant to the advective acceleration. In the strongest-viscosity model, the terminal velocity decreased by $\sim 39\%$ and the mass-loss rate by $\sim 58\%$ relative to the inviscid model in the stationary state. The flow remains radiatively driven, and angular momentum transport remains dominated by advection, maintaining a quasi-conserving $v_φ\propto r^{-1}$ scaling. Turbulent viscosity exerts a measurable dynamic effect on supersonic line-driven winds. When bounded by the local macroscopic strain, it modifies the radial momentum balance and the resulting mass-loss rate without forcing the wind into a disk-like regime of strong viscous angular momentum redistribution.</p>
   <h2>Screening</h2><p><strong>0 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">The paper models turbulent viscosity in line-driven winds of B supergiants with 1D hydrodynamics. It has no connection to solar flares, particle acceleration, QPPs, or STIX/EUI, and the methods do not transfer.</p>
   <p class="meta">arXiv:2610.08952</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

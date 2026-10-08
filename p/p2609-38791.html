@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.38791" data-prev="" data-next="" data-title="Revisiting magnetotelluric theory: layered induction and geoelectric fields">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.38791" data-prev="" data-next="" data-title="Revisiting magnetotelluric theory: layered induction and geoelectric fields">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.38791">Revisiting magnetotelluric theory: layered induction and geoelectric fields</a></h1>
   <div class="meta">Dennies Bor<div>Submitted 30 Sep 2026, physics.space-ph</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">We review the magnetotelluric (MT) theory of a horizontally layered Earth under plane wave forcing and its use in calculating geoelectric fields. Starting from Maxwell&#x27;s equations, we derive the diffusion approximation and the impedance recursion by matching electric and magnetic fields at layer boundaries. The equivalent transmission line connects the surface impedance to attenuation with depth, apparent resistivity, phase, and the electric response to a magnetic time series. Three evaluations accompany the derivation, each against its own reference. First, under the storm of 10 and 11 May 2024, electric fields calculated from layered models fitted to measured impedance tensors differ from those calculated from the tensors by a median vector error of 46% across 1614 EarthScope MT sites with sufficient period coverage. Reducing each tensor to its antisymmetric projection alone gives a median of 46%, while the layered fit and numerical processing give medians of 1.9% and 1.3%. Second, the magnetic field reconstructed at each of 20 withheld observatories from the remaining network has a median vector error of 48%. In a common electric field comparison, the magnetic reconstruction gives the larger electric vector error in 96% of 32,280 observatory-tensor pairs, with medians of 93% against 46% for the layered representation. Third, when conductivity inferred at MT sites is interpolated by kriging into withheld regions, the median relative error of the predicted impedance is 57.3%, and 11 of 149 withheld sites have an apparent resistivity discrepancy of a factor of 100 or more at one or more periods. The vector comparison retains differences in the amplitude and direction of the electric field that are relevant to calculating induced voltages along transmission line routes.</p>
   <h2>Screening</h2><p><strong>0 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">The paper covers magnetotelluric theory and geoelectric fields in the Earth&#x27;s subsurface during a geomagnetic storm. It has no link to solar flare timing, particle acceleration, QPPs, or STIX/EUI, and its methods do not transfer to flare lightcurve analysis.</p>
   <p class="meta">arXiv:2609.38791</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

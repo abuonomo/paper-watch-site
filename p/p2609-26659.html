@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.26659" data-prev="" data-next="" data-title="Globular cluster candidates uncovered by VVVX and MUSE">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.26659" data-prev="" data-next="" data-title="Globular cluster candidates uncovered by VVVX and MUSE">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.26659">Globular cluster candidates uncovered by VVVX and MUSE</a></h1>
   <div class="meta">P. Rodríguez Cuevas, B. Dias, D. Minniti, E. Garro<div>Submitted 22 Sep 2026, astro-ph.GA</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">The Milky Way has about 220 cataloged globular clusters. This number is far smaller than what is found in a similar galaxy such as Andromeda, which has about 600 globular clusters. Two possible reasons for this large difference might be observational bias and cluster dissolution. The infrared photometric survey VISTA Variables in the Via Lactea Extended has discovered many globular cluster candidates toward the Galactic bulge that need confirmation. We confirm the globular cluster nature of four candidates from the Galactic bulge based on radial velocities from MUSE data. Following our previous experience and method, we searched for a peak in the radial velocity distribution by deconvolving the radial velocity distribution into its bulge, disk, and potential cluster components. For Minni 23, we confirm the previously found parameters: this is an old and metal-rich bulge globular cluster. Additionally, we found a radial velocity peak associated with the candidate globular cluster Minni 07, with $μ_{RV,cl}=80^{+26}_{-22}$ ${\rm km\ s}^{-1}$, $σ_{RV,cl}=48^{+15}_{-15}$ ${\rm km\ s}^{-1}$. We also derived $A_V=1.5$ and [Fe/H]$\approx-0.27$ for Minni 07. On the other hand, we were unable to reliably confirm the globular cluster nature for the candidates Minni 10 and Minni 19 with the currently available data. The devised strategy has proven to be efficient for the proposed goals, and it is worth repeating it for the larger sample of candidate globular clusters.</p>
   <h2>Screening</h2><p><strong>0 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">The paper confirms Galactic bulge globular cluster candidates using MUSE radial velocities. It has no connection to solar flares, particle acceleration, QPPs, or Solar Orbiter data.</p>
   <p class="meta">arXiv:2609.26659</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

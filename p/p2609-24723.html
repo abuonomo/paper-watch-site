@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 5 of 10"><span class="v">5</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.24723" data-prev="" data-next="" data-title="The Role of Non-local Thermal Transport in Flare-Driven Chromospheric Evaporation">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 5 of 10"><span class="v">5</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.24723" data-prev="" data-next="" data-title="The Role of Non-local Thermal Transport in Flare-Driven Chromospheric Evaporation">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.24723">The Role of Non-local Thermal Transport in Flare-Driven Chromospheric Evaporation</a></h1>
   <div class="meta">Thomas Parmenter, Tony Arber, Sergey Belov, Tom Goffrey<div>Submitted 21 Sep 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">Thermal conduction plays an important role in energy transport during solar flares. Flares heat the solar atmosphere to tens of MK which, combined with mean free paths in excess of 1Mm, can cause the heat flux to become non-local. We use the magnetohydrodynamic Lare2d code to simulate a reconnective heating event with three different thermal conduction models: classical Spitzer-Harm (SH) along the magnetic field, local transport with a heat flux limiter (FL), and the non-local Schurtz, Nicolai, Busquet (SNB) model which is routinely used in laser-plasma codes and has been bench- marked against full Vlasov-Fokker-Planck treatment. The evolution of the atmosphere post heating is compared between simulations using each of these models. Due to a supressed heat flux, SNB gives rise to significantly higher peak temperatures than SH. Further, with SNB transport chromospheric evaporation occurs later and has stronger extreme ultraviolet emission intensity. FL simulations have similar temperature evolution and chromospheric evaporation to SNB, however different values of the flux limiter work best for peak temperature, downflow velocity and EUV emission intensity, and so there is no one optimal value for all cases. We conclude that the SNB model provides a practicable solution to incorporate non-local thermal transport at MHD scales, which will be crucial to improve the realism and accuracy of the next generation of solar flare simulations.</p>
   <h2>Screening</h2><p><strong>5 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">Simulation of flare chromospheric evaporation and thermal transport affects the timing of EUV emission and temperature evolution, which is physical context for flare loop energetics. However, it does not address STIX/EUI observations, QPPs, or electron acceleration directly.</p>
   <p class="meta">arXiv:2609.24723</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

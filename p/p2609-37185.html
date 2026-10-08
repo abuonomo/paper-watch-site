@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 2 of 10"><span class="v">2</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.37185" data-prev="" data-next="" data-title="On the frequency-dependent time lags of the intermediate polar V709 Cas">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 2 of 10"><span class="v">2</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.37185" data-prev="" data-next="" data-title="On the frequency-dependent time lags of the intermediate polar V709 Cas">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.37185">On the frequency-dependent time lags of the intermediate polar V709 Cas</a></h1>
   <div class="meta">Zackery A. Irving, Noel Castro Segura, Diego Altamirano, Martina Veresvarska, Mariano Mendez, Federico Garcia, Domitilla de Martino, Simone Scaringi, Federico Vincentelli, Angel Castro, Federico Soto, Raul Michel<div>Submitted 29 Sep 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">Cataclysmic variables (CVs) are binary systems in which a white dwarf (WD) primary accretes material from a late-type secondary, typically via a disc. To date, only six CVs, all of which are non-magnetic, have been found to exhibit lags (delayed variability in one band with respect to another). In all six cases, these lags are ``red&#x27;&#x27; (i.e., red lags blue) with a time lag of order seconds. While there is no generally accepted mechanism for producing red lags in CVs, current theories suggest reprocessing in the disc, either on the thermal or recombination time-scales, or inside-out shocks propagating through the disc. Using $g$-, $r$-, and $i$-band data from the OPtical TIming CAMera (OPTICAM), we report the discovery of frequency-dependent red lags from V709 Cas: a magnetic CV of the intermediate polar (IP) subclass. These red lags reach a maximum of $\sim$4--6 s on time-scales of 7.4--13.0 min, similar to previously-reported lags in non-magnetic CVs. The detection of lags in an IP is significant as the WD&#x27;s magnetic field truncates the accretion disc, limiting disc-based lag mechanisms to large radii; as a result, characteristic accretion disc time-scales cannot explain the observed lags. However, recombination can occur on second time-scales, even in systems with truncated discs. For example, we show that recombination in the disc&#x27;s bright spot, where overflowing material from the secondary meets the outer-edge of the disc, plausibly explains V709 Cas&#x27;s optical spectrum, the prominence of optical spin-orbit beat pulsations, and the red lags found in this work.</p>
   <h2>Screening</h2><p><strong>2 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">This is about frequency-dependent optical time lags in a magnetic cataclysmic variable, so it has no link to flares or particle acceleration. The lag-analysis technique could loosely transfer to energy-dependent flare timing, but the paper offers little beyond that.</p>
   <p class="meta">arXiv:2609.37185</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.16348" data-prev="" data-next="" data-title="Using Gravity as an Age Indicator for Young Stars">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.16348" data-prev="" data-next="" data-title="Using Gravity as an Age Indicator for Young Stars">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.16348">Using Gravity as an Age Indicator for Young Stars</a></h1>
   <div class="meta">Michael Connelley, Christian Flores, Bo Reipurth<div>Submitted 14 Sep 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">The age of a young star is difficult to measure and yet is a fundamental property that is essential for understanding stellar evolution. Accurate age indicators across the early phases of low-mass stars are scarce and often rely on properties of the circumstellar environment. We investigate stellar surface gravity as a practical age estimator from the class I to the class III phases of low-mass stars. Gravity increases monotonically as young stars descend their Hayashi tracks. Gravity is a physical property of the central star and is independent of the circumstellar environment or evolutionary models. Also, gravity can be measured for individual objects. We performed two tests for the reliability of gravity as an age indicator: (1) the relative ages of the components of young binary stars and (2) the relative ages of a young moving group. We show that young binary stars have consistent gravities, as expected, if they are coeval. Similarly, we find similar gravities among the TW Hya group and derive a median age of 12.8 +/- 1.2 Myr. In both cases, differences in gravities may reflect real differences in the ages. We show that there is no correlation between veiling emission and gravity, showing that circumstellar disk emission does not affect our ability to infer ages from measurements of photospheric stellar gravity.</p>
   <h2>Screening</h2><p><strong>0 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">Paper is about surface gravity as an age indicator for young pre-main-sequence stars; it has no connection to flare timing, particle acceleration, QPPs, or STIX/EUI analysis.</p>
   <p class="meta">arXiv:2609.16348</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

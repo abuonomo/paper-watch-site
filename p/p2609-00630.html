@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.00630" data-prev="" data-next="" data-title="Discovery of the First-Ever Recorded Fading Event of the Wolf-Rayet Star WR 59">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 0 of 10"><span class="v">0</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.00630" data-prev="" data-next="" data-title="Discovery of the First-Ever Recorded Fading Event of the Wolf-Rayet Star WR 59">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.00630">Discovery of the First-Ever Recorded Fading Event of the Wolf-Rayet Star WR 59</a></h1>
   <div class="meta">Rod Stubbings<div>Submitted 1 Sep 2026, astro-ph.SR</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">This paper presents the visual discovery of the first-ever recorded fading event of the Wolf-Rayet star WR 59. Historically documented as a stable star with an approximate magnitude of 13.9, the star underwent a sudden major decline during high-cadence visual monitoring in May 2021. On 11 May 2021 (JD 2459346), I observed the star plunge 1.3 magnitudes to a deep minimum of magnitude 15.2. It remained in this faded state for roughly 1 day before undergoing a structured 14-day recovery back to its baseline. This episode was independently verified by NASA&#x27;s Transiting Exoplanet Survey Satellite (TESS) during Sector 38. The satellite&#x27;s calibrated data stream confirms that the timing, structure, and recovery of the fade matched the ground-based observations. While a close 11.7 V companion star masked the true depth of the drop for automated large-pixel survey pipelines, this event firmly establishes WR 59 as an active dust-producing system. It demonstrates how high-magnification visual monitoring can successfully resolve crowded stellar fields.</p>
   <h2>Screening</h2><p><strong>0 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">Visual and TESS photometry of a Wolf-Rayet star fading event from dust production; it has no connection to solar flare timing, particle acceleration, QPPs, or STIX/EUI, and no transferable method.</p>
   <p class="meta">arXiv:2609.00630</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;

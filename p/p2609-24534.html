@@ -49,7 +49,9 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
 .row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
 .swipe-hint{margin-top:28px;text-align:center}
+.swipe-clip{overflow-x:clip;margin-inline:-16px;padding-inline:16px}
 .swipe-root{transition:transform .25s ease-out,opacity .25s;will-change:transform;transform-origin:50% 120%}
+body.paper{touch-action:pan-y pinch-zoom}
 .progress{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:-8px 0 20px}
 .progress .step{display:flex;align-items:center;justify-content:center;width:40px;height:40px;font-size:1.7rem;line-height:1;color:var(--acc);text-decoration:none;border:1px solid var(--line);border-radius:50%;background:var(--panel)}
 .progress .step.off{color:var(--line);border-color:var(--line2);background:none}
@@ -136,7 +138,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
 .acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-root" data-id="2609.24534" data-prev="" data-next="" data-title="Premature re-entry of the FACSAT-2 nanosatellite: orbital decay and attribution to the maximum of solar cycle 25">
+</style></head><body class="paper"><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div><div class="progress-slot"></div><div class="swipe-clip"><div class="swipe-root" data-id="2609.24534" data-prev="" data-next="" data-title="Premature re-entry of the FACSAT-2 nanosatellite: orbital decay and attribution to the maximum of solar cycle 25">
 <article class="card standalone">
   <h1><a href="https://arxiv.org/abs/2609.24534">Premature re-entry of the FACSAT-2 nanosatellite: orbital decay and attribution to the maximum of solar cycle 25</a></h1>
   <div class="meta">Santiago Vargas Dominguez, Mara Valentina Angel, Brayan Nicolas Buitrago<div>Submitted 21 Sep 2026, astro-ph.IM</div>
@@ -144,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Abstract</h2><p class="abstract">FACSAT-2 Chiribiquete, the second satellite of the Colombian Aerospace Force and the first South American nanosatellite mission dedicated to greenhouse gases, re-entered on 27 October 2025, 926 days after its deployment into a Sun-synchronous orbit, against a declared service life of at least five years and an estimated orbital lifetime of fifteen. The orbital evolution was built from the epochs of the TLEs (two-line elements) of NORAD ID 56205. We reconstruct its decay using its 3696 orbital elements, the solar and geomagnetic indices from the OMNI2 database, and NRLMSISE-00 densities sampled along the orbit. Inverting the drag yields a ballistic coefficient of 72.3 kg/m2 (6% statistical, 20% systematic), equivalent to an effective area of 0.047 m2, consistent with the declared geometry. With it, the model reproduces the trajectory with a root-mean-square error of 7.4 km and, calibrated on 2023-2024 alone, the re-entry with a 28-day out-of-sample error. F10.7 averaged 170.8 sfu over the mission, against the 139 sfu of the environmental scenario derived from the official 2019 forecast, which lengthens the orbital lifetime by x1.52; two co-launched CubeSats give x1.50 and x1.57, a consistency check across objects rather than independent evidence. Imposing quiet geomagnetic conditions returns 102 days, 22% of the shortening, with strong sensitivity to the adopted threshold; a superposed-epoch analysis over 149 storms gives a median drag enhancement of x1.92 for the intense events. We discuss the consequences for the design of FACSAT-3 and for the public communication of a mission&#x27;s expected lifetime.</p>
   <h2>Screening</h2><p><strong>1 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">The paper covers satellite orbital decay driven by solar-cycle atmospheric drag, with no flare timing, particle acceleration, QPPs, or STIX/EUI content. The only overlap is the broad field of solar activity.</p>
   <p class="meta">arXiv:2609.24534</p>
-</article></div>
+</article></div></div>
 <script>
 (function(){
   var root=document.querySelector('.swipe-root');if(!root)return;
