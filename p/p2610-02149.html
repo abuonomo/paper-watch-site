@@ -52,11 +52,11 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .pop{position:absolute;left:0;top:100%;z-index:5;margin-top:6px;width:min(78vw,340px);background:var(--panel);border:1px solid var(--line);padding:10px 12px;font-size:.88rem;line-height:1.45;box-shadow:0 8px 24px rgba(0,0,0,.14);text-align:left}
 .pop[hidden]{display:none}.pop b{display:block;margin-bottom:4px}.pop .ok{color:var(--acc);font-weight:600}.pop table{border-collapse:collapse;margin-top:6px;width:100%}.pop td{padding:2px 6px 2px 0;border:0;font-size:.85rem}.pop td.n{font-weight:600;text-align:right;padding-right:10px}
 .row h3{font-size:1.02rem;font-weight:600;line-height:1.35}.row h3 a{text-decoration:none}
-.row .verdict{margin:4px 0 0;font-size:.93rem}.row .verdict.read{font-weight:500}
+.row .verdict{margin:5px 0 0;font-size:.93rem;line-height:1.5}.row .verdict.read{font-weight:400}
 .row .act{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:6px;font-size:.88rem}.row .act a{color:var(--muted)}.row .act .read-link{color:var(--acc);font-weight:600;font-size:.95rem}
 .row .abs{margin:8px 0 0;font-size:.93rem;line-height:1.55;max-width:68ch}.row .abs[hidden]{display:none}
 .row .act a[aria-expanded=true]{color:var(--fg)}
-@media(max-width:520px){.row{grid-template-columns:1fr auto}.pills{flex-direction:row;grid-column:1/-1}.row .chev{grid-row:2;align-self:start}.row>div:nth-child(2){grid-column:1}}
+@media(max-width:520px){.row{grid-template-columns:1fr auto}.pills{flex-direction:row;grid-column:1;grid-row:1}.row .chev{grid-column:2;grid-row:1;align-self:center}.row>div:nth-child(2){grid-column:1/-1;grid-row:2}}
 .row>div{min-width:0}
 /* assessment card (standalone page) */
 .card{min-width:0}.card.standalone h1{font-size:1.45rem;margin:0 0 6px}.card.standalone h1 a{text-decoration:none}
