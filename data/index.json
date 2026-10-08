@@ -1,7 +1,7 @@
 {
  "name": "Paper Watch",
  "description": "Daily screen of new arXiv papers against one solar-physics research programme. Every paper gets an abstract score (0-10); those at or above the threshold are read in full and given a weighted relevance R (0-5) with evidence-separated findings.",
- "updated": "2026-10-08T11:48:57+00:00",
+ "updated": "2026-10-08T11:50:41+00:00",
  "categories": [
   "astro-ph.SR",
   "physics.space-ph"

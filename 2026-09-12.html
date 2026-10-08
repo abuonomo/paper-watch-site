@@ -80,6 +80,9 @@ details summary{list-style:none}details summary::-webkit-details-marker{display:
 .radar .axis{stroke:var(--line2);stroke-width:1}.radar .area{fill:var(--acc-fill);fill-opacity:.28;stroke:var(--acc);stroke-width:2;stroke-linejoin:round}
 .radar .dot{fill:var(--acc);stroke:var(--bg);stroke-width:1.5}.radar text{fill:var(--muted);font-family:var(--font);font-size:11px}.radar .sv{fill:var(--fg);font-weight:600}
 .pills .radar{align-self:center;margin-top:2px}
+.radar-btn{border:0;background:none;padding:0;cursor:pointer;align-self:center;line-height:0}.radar-btn:hover .area{fill-opacity:.5}
+.rad-card{max-width:420px}.rad-big{display:flex;justify-content:center;padding:8px 0 4px}.rad-big .radar text{font-size:13px}
+.rad-title{font-weight:600;line-height:1.35;margin:8px 0 4px}
 .comp>summary{display:grid;grid-template-columns:1fr auto auto;align-items:center;column-gap:12px;padding:5px 0;cursor:pointer}
 .comp .lbl{font-weight:500}.comp .bar{display:inline-flex;gap:3px}.comp .bar i{display:block;width:14px;height:9px;background:var(--line)}.comp .bar i.on{background:var(--acc-fill)}
 .comp .n{font-weight:600;min-width:4.4em;text-align:right}.comp .w{font-weight:400;color:var(--muted);font-size:.78rem;margin-left:3px}
@@ -203,5 +206,23 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   });
   document.addEventListener('keydown',function(e){if(e.key==='Escape'){closeAll();var lb=document.getElementById('lb');if(lb)lb.hidden=true;}
     if(e.key==='Enter'&&e.target.classList.contains('clickable'))location.href=e.target.dataset.href;});
+})();
+</script>
+<div class="modal" id="rmodal" hidden>
+  <div class="modal-card rad-card" role="dialog" aria-modal="true" aria-label="Relevance chart">
+    <div class="modal-head"><h2>Relevance</h2><button type="button" class="close" aria-label="Close" onclick="document.getElementById('rmodal').hidden=true">×</button></div>
+    <div class="modal-body" id="rmodal-body"></div>
+  </div>
+</div>
+<script>
+(function(){
+  var m=document.getElementById('rmodal'),body=document.getElementById('rmodal-body');
+  document.addEventListener('click',function(e){
+    var b=e.target.closest('.radar-btn');
+    if(b){e.preventDefault();e.stopPropagation();var t=document.getElementById(b.dataset.radar);
+      body.innerHTML='';body.appendChild(t.content.cloneNode(true));m.hidden=false;return;}
+    if(e.target===m)m.hidden=true;
+  });
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')m.hidden=true;});
 })();
 </script></div></body></html>
