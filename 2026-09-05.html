@@ -1,127 +1,132 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Saturday 5 September 2026</title><link rel="icon" href="favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="icon-32.png"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png"><link rel="apple-touch-icon" href="icon-180.png"><meta name="theme-color" content="#141412"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600&display=swap"><style>
-:root{--bg:#fbfaf7;--fg:#1c1b18;--muted:#6b675e;--card:#f3f1eb;--line:#dedbd2;--hi:#b8440f;--hi-fg:#fff;--mid:#e4dfd0;--focus:#2b5fb3;
-      --serif:"Source Serif 4",Georgia,"Times New Roman",serif;--sans:-apple-system,system-ui,"Segoe UI",sans-serif;color-scheme:light}
-@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141412;--fg:#e9e6df;--muted:#9c978b;--card:#1e1d1a;--line:#2f2d28;--hi:#ff8a50;--hi-fg:#1a1a1a;--mid:#33302a;--focus:#7fa8e8;color-scheme:dark}}
-:root[data-theme="dark"]{--bg:#141412;--fg:#e9e6df;--muted:#9c978b;--card:#1e1d1a;--line:#2f2d28;--hi:#ff8a50;--hi-fg:#1a1a1a;--mid:#33302a;--focus:#7fa8e8;color-scheme:dark}
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Saturday 5 September 2026</title><link rel="icon" href="favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="icon-32.png"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png"><link rel="apple-touch-icon" href="icon-180.png"><meta name="theme-color" content="#141412"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,500;7..72,600&display=swap"><style>
+/* Palette from the instruments: AIA 171 / EUI 174 gold on a cool slate-white page. One family, Literata.
+   Layout: one reading column; the lightcurve is the hero, everything else stays quiet. */
+:root{--bg:#f4f5f7;--fg:#1b1d22;--muted:#5d636e;--panel:#ffffff;--line:#d9dce2;--line2:#eceef2;
+      --acc:#c98a12;--acc-fill:#f2b83c;--acc-fg:#1b1d22;--acc-soft:#fbead0;--focus:#2457a8;
+      --font:"Literata",Georgia,"Times New Roman",serif;color-scheme:light}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1216;--fg:#e6e8ec;--muted:#9aa1ab;--panel:#161a20;--line:#2a2f38;--line2:#1f242c;
+      --acc:#e0a63a;--acc-fill:#f2b83c;--acc-fg:#0f1216;--acc-soft:#3a2d12;--focus:#7fa8e8;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0f1216;--fg:#e6e8ec;--muted:#9aa1ab;--panel:#161a20;--line:#2a2f38;--line2:#1f242c;
+      --acc:#e0a63a;--acc-fill:#f2b83c;--acc-fg:#0f1216;--acc-soft:#3a2d12;--focus:#7fa8e8;color-scheme:dark}
 *{box-sizing:border-box}
-body{margin:0;padding-block:28px 64px;padding-inline:16px;background:var(--bg);color:var(--fg);font:16px/1.5 var(--sans)}
-.wrap{max-width:900px;margin-inline:auto;min-width:0}
-h1,h2,h3{font-family:var(--serif);text-wrap:balance;line-height:1.2}
-h1{font-size:2rem;margin:0}.masthead{display:flex;align-items:center;gap:14px;margin-bottom:6px}.masthead .logo{width:56px;height:56px;border-radius:50%;flex:none;display:block}
-.logo-btn{border:0;padding:0;background:none;cursor:pointer;border-radius:50%;flex:none;transition:transform .15s}.logo-btn:hover{transform:scale(1.06)}
-.lightbox{position:fixed;inset:0;z-index:50;display:flex;align-items:center;justify-content:center;background:rgba(10,10,12,.82);padding:24px;cursor:zoom-out}
-.lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%;box-shadow:0 20px 60px rgba(0,0,0,.5)}h2{font-size:1.35rem;margin:36px 0 12px;padding-bottom:6px;border-bottom:1px solid var(--line)}
-.sub{color:var(--muted);margin-bottom:8px}.nav{display:flex;flex-wrap:wrap;gap:8px 18px;color:var(--muted);font-size:.92rem;margin-bottom:24px}
-a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:hover{text-decoration-color:var(--hi)}
+body{margin:0;padding-block:24px 72px;padding-inline:16px;background:var(--bg);color:var(--fg);font:16px/1.6 var(--font);font-variant-numeric:tabular-nums}
+.wrap{max-width:820px;margin-inline:auto;min-width:0}
+h1,h2,h3{font-weight:600;line-height:1.2;text-wrap:balance;margin:0}
+h1{font-size:1.9rem;font-variation-settings:"opsz" 72}h2{font-size:1.25rem;margin:40px 0 10px}
+.masthead{display:flex;align-items:center;gap:14px;margin-bottom:4px}.masthead .logo{width:52px;height:52px;border-radius:50%;flex:none;display:block}
+.logo-btn{border:0;padding:0;background:none;cursor:pointer;border-radius:50%;flex:none}
+.sub{color:var(--muted);font-size:.95rem;margin:0 0 6px}.sub strong{color:var(--fg);font-weight:600}
+.nav{display:flex;flex-wrap:wrap;gap:6px 20px;font-size:.95rem;margin-bottom:28px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+.nav a{text-decoration:none;color:var(--acc);font-weight:600}
+a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:hover{text-decoration-color:var(--acc)}
 :focus-visible{outline:2px solid var(--focus);outline-offset:2px}
-.score{display:inline-block;min-width:2.2em;text-align:center;border-radius:6px;padding:1px 6px;font-weight:650;font-variant-numeric:tabular-nums;font-size:.9rem;line-height:1.4}
-.s-hi{background:var(--hi);color:var(--hi-fg)}.s-mid{background:var(--mid)}.s-lo{color:var(--muted);border:1px solid var(--line)}
-.tag{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:0 9px;font-size:.76rem;letter-spacing:.02em;text-transform:uppercase;color:var(--muted)}
-.meta{color:var(--muted);font-size:.9rem}.links{display:inline-flex;flex-wrap:wrap;gap:4px 12px}
+.back{display:inline-block;font-weight:600;color:var(--acc);text-decoration:none;margin-bottom:12px}
+.meta{color:var(--muted);font-size:.9rem}.meta div{margin-top:1px}
+.links{display:inline-flex;flex-wrap:wrap;gap:4px 14px}
+.score{display:inline-block;min-width:2.3em;text-align:center;padding:1px 6px;font-weight:600;font-size:.88rem;line-height:1.45;border:1px solid transparent}
+.s-hi{background:var(--acc-fill);color:var(--acc-fg)}.s-mid{background:var(--acc-soft);color:var(--fg)}.s-lo{color:var(--muted);border-color:var(--line)}
+.rel{color:var(--muted);font-style:italic}
+.empty{color:var(--muted);font-style:italic}
+/* lightcurve hero */
+.lc{margin:4px 0 8px}.lc svg{display:block;width:100%;height:auto;overflow:visible}
+.lc .bar{fill:var(--line)}.lc .spike{fill:var(--acc-fill);stroke:var(--acc);stroke-width:.6}
+.lc .hit{fill:transparent;cursor:pointer}.lc .hit:hover + .bar,.lc .hit:hover ~ .spike{opacity:.7}
+.lc text{fill:var(--muted);font-family:var(--font);font-size:7.5px}.lc .axis{stroke:var(--line);stroke-width:.6}.lc .tick{stroke:var(--line)}
+.lc-cap{display:flex;flex-wrap:wrap;gap:4px 18px;color:var(--muted);font-size:.88rem;margin-top:6px}
+.lc-cap i{display:inline-block;width:10px;height:10px;margin-right:6px;vertical-align:-1px}.lc-cap .i1{background:var(--acc-fill);border:1px solid var(--acc)}.lc-cap .i2{background:var(--line)}
 /* filter bar */
-.filters{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;padding:12px 14px;background:var(--card);border:1px solid var(--line);border-radius:10px;margin-bottom:6px;font-size:.92rem}
-.filters label{display:inline-flex;align-items:center;gap:6px}.filters input[type=search]{flex:1 1 180px;min-width:0;padding:6px 10px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--fg);font:inherit}
-.filters select{padding:5px 8px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--fg);font:inherit}
-.count{color:var(--muted);font-size:.88rem;margin:4px 0 10px;font-variant-numeric:tabular-nums}
-.legend{color:var(--muted);font-size:.85rem;margin-bottom:10px}
+.filters{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;padding:10px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-size:.92rem}
+.filters label{display:inline-flex;align-items:center;gap:6px}.filters input[type=search]{flex:1 1 200px;min-width:0;padding:6px 10px;border:1px solid var(--line);background:var(--panel);color:var(--fg);font:inherit}
+.filters select{padding:5px 8px;border:1px solid var(--line);background:var(--panel);color:var(--fg);font:inherit}
+.count{color:var(--muted);font-size:.88rem;margin:6px 0 2px}
+.legend{color:var(--muted);font-size:.88rem;margin-bottom:6px}
 /* paper rows */
-.row{display:grid;grid-template-columns:auto 1fr auto;gap:4px 14px;padding:12px 8px;margin-inline:-8px;border-bottom:1px solid var(--line);min-width:0;border-radius:8px}
-.row.clickable{cursor:pointer}.row.clickable:hover,.row.clickable:focus-within{background:var(--card)}
-.row .chev{align-self:center;color:var(--hi);font-size:1.6rem;line-height:1;padding-left:4px;opacity:.85}
-.row .act .read-link{color:var(--hi);font-weight:600;font-size:.95rem}
-.pills{position:relative}
-.pills button.score{border:0;cursor:pointer;font:inherit;font-weight:650;font-size:.9rem;line-height:1.4;font-variant-numeric:tabular-nums}
-.pills button.s-lo{border:1px solid var(--line);background:transparent}
-.pop{position:absolute;left:0;top:100%;z-index:5;margin-top:6px;width:min(78vw,340px);background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:.88rem;line-height:1.45;box-shadow:0 6px 24px rgba(0,0,0,.12);text-align:left}
-.pop[hidden]{display:none}.pop b{display:block;margin-bottom:4px}.pop .ok{color:var(--hi);font-weight:600}.pop table{border-collapse:collapse;margin-top:6px;width:100%}.pop td{padding:2px 6px 2px 0;border:0;font-size:.85rem}.pop td.n{font-weight:650;text-align:right;padding-right:10px}
-@media(max-width:520px){.row{grid-template-columns:1fr auto}.pills{flex-direction:row;grid-column:1/-1}.row .chev{grid-row:2;align-self:start}.row>div:nth-child(2){grid-column:1}}
-.row[hidden]{display:none}
-.pills{display:flex;flex-direction:column;gap:4px;padding-top:2px}
-.row h3{font-family:var(--sans);font-size:1rem;font-weight:600;margin:0;line-height:1.35}.row h3 a{text-decoration:none}
-.row .verdict{margin:3px 0 0;font-size:.93rem}.row .verdict.read{font-weight:500}
-.row .act{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:6px;font-size:.88rem}
-.row .act a{color:var(--muted)}
-.row .abs{margin:8px 0 0;font-size:.93rem;line-height:1.5;max-width:68ch}.row .abs[hidden]{display:none}
+.row{display:grid;grid-template-columns:auto 1fr auto;gap:4px 14px;padding:14px 0;border-bottom:1px solid var(--line2);min-width:0}
+.row[hidden]{display:none}.row.clickable{cursor:pointer}.row.clickable:hover,.row.clickable:focus-within{background:var(--panel);box-shadow:0 0 0 8px var(--panel)}
+.row .chev{align-self:center;color:var(--acc);font-size:1.5rem;line-height:1}
+.pills{display:flex;flex-direction:column;gap:4px;padding-top:2px;position:relative}
+.pills button.score{border:1px solid transparent;cursor:pointer;font:inherit;font-weight:600;font-size:.88rem;line-height:1.45}
+.pills button.s-lo{border-color:var(--line);background:transparent}
+.pop{position:absolute;left:0;top:100%;z-index:5;margin-top:6px;width:min(78vw,340px);background:var(--panel);border:1px solid var(--line);padding:10px 12px;font-size:.88rem;line-height:1.45;box-shadow:0 8px 24px rgba(0,0,0,.14);text-align:left}
+.pop[hidden]{display:none}.pop b{display:block;margin-bottom:4px}.pop .ok{color:var(--acc);font-weight:600}.pop table{border-collapse:collapse;margin-top:6px;width:100%}.pop td{padding:2px 6px 2px 0;border:0;font-size:.85rem}.pop td.n{font-weight:600;text-align:right;padding-right:10px}
+.row h3{font-size:1.02rem;font-weight:600;line-height:1.35}.row h3 a{text-decoration:none}
+.row .verdict{margin:4px 0 0;font-size:.93rem}.row .verdict.read{font-weight:500}
+.row .act{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:6px;font-size:.88rem}.row .act a{color:var(--muted)}.row .act .read-link{color:var(--acc);font-weight:600;font-size:.95rem}
+.row .abs{margin:8px 0 0;font-size:.93rem;line-height:1.55;max-width:68ch}.row .abs[hidden]{display:none}
 .row .act a[aria-expanded=true]{color:var(--fg)}
-@media(max-width:520px){.row{grid-template-columns:1fr}.pills{flex-direction:row}}
-/* assessment cards */
-.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin:14px 0;min-width:0;scroll-margin-top:16px}
+@media(max-width:520px){.row{grid-template-columns:1fr auto}.pills{flex-direction:row;grid-column:1/-1}.row .chev{grid-row:2;align-self:start}.row>div:nth-child(2){grid-column:1}}
+/* assessment card (standalone page) */
+.card{min-width:0}.card.standalone h1{font-size:1.45rem;margin:0 0 6px}.card.standalone h1 a{text-decoration:none}
 .hpills{display:inline-flex;gap:4px;vertical-align:middle;margin-right:2px}.hpills .score{font-size:.85rem}
-.card.standalone{background:transparent;border:0;padding:0;margin:0}.card.standalone h1{font-size:1.5rem;margin:0 0 6px}.card.standalone h1 a{text-decoration:none}
-.acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--hi)}
-.back{display:inline-block;font-weight:600;color:var(--hi);text-decoration:none;margin-bottom:10px;font-size:1rem}
-.card h3{margin:0 0 4px;font-size:1.15rem}.card h3 a{text-decoration:none}
-.card .lead{font-weight:600;margin:10px 0 12px}
-.card ul{margin:4px 0;padding-left:20px}.card li{margin:3px 0}
+.card .lead{font-weight:500;margin:12px 0 16px;font-size:1.05rem;line-height:1.5}
 details summary{list-style:none}details summary::-webkit-details-marker{display:none}
-.acc{border-top:1px solid var(--line);margin:0}.acc:last-of-type{border-bottom:1px solid var(--line)}
-.acc>summary{display:grid;grid-template-columns:auto 1fr;align-items:baseline;gap:2px 12px;padding:10px 0 10px 18px;cursor:pointer;position:relative}
-.acc>summary::before{content:"›";position:absolute;left:2px;top:9px;color:var(--hi);font-size:1.2rem;line-height:1;transition:transform .15s}
+.acc{border-top:1px solid var(--line)}.acc:last-of-type{border-bottom:1px solid var(--line)}
+.acc>summary{display:grid;grid-template-columns:auto 1fr;align-items:baseline;gap:2px 12px;padding:11px 0 11px 18px;cursor:pointer;position:relative}
+.acc>summary::before{content:"›";position:absolute;left:2px;top:10px;color:var(--acc);font-size:1.2rem;line-height:1;transition:transform .15s}
 .acc[open]>summary::before{transform:rotate(90deg)}
-.acc>summary .t{font-weight:600;white-space:nowrap}.acc>summary .cnt{display:inline-block;margin-left:6px;font-size:.78rem;font-weight:600;color:var(--muted);background:var(--mid);border-radius:999px;padding:0 7px;vertical-align:1px}
+.acc>summary .t{font-weight:600;white-space:nowrap}.acc>summary .cnt{margin-left:6px;font-size:.85rem;font-weight:400;color:var(--muted)}
 .acc>summary .g{color:var(--muted);font-size:.9rem;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .acc[open]>summary .g{display:none}
-.acc-body{padding:0 0 12px 18px;font-size:.95rem}.acc-body>p{margin:0}.acc-body ul{margin:0;padding-left:18px}
+.acc-body{padding:0 0 14px 18px;font-size:.95rem}.acc-body>p{margin:0}.acc-body ul{margin:0;padding-left:18px}
 @media(max-width:520px){.acc>summary{grid-template-columns:1fr}.acc>summary .g{font-size:.85rem}}
-/* relevance bars */
 .bd .formula{margin:0 0 6px}
 .comp>summary{display:grid;grid-template-columns:1fr auto auto;align-items:center;column-gap:12px;padding:5px 0;cursor:pointer}
-.comp .lbl{font-weight:500}.comp .bar{display:inline-flex;gap:3px}.comp .bar i{display:block;width:14px;height:9px;border-radius:2px;background:var(--mid)}.comp .bar i.on{background:var(--hi)}
-.comp .n{font-variant-numeric:tabular-nums;font-weight:650;min-width:4.2em;text-align:right}.comp .w{font-weight:400;color:var(--muted);font-size:.78rem;margin-left:3px}
-.comp>p{margin:2px 0 8px;color:var(--fg);font-size:.92rem;padding-left:4px;border-left:3px solid var(--line)}
-.comp[open] .lbl{color:var(--hi)}
+.comp .lbl{font-weight:500}.comp .bar{display:inline-flex;gap:3px}.comp .bar i{display:block;width:14px;height:9px;background:var(--line)}.comp .bar i.on{background:var(--acc-fill)}
+.comp .n{font-weight:600;min-width:4.4em;text-align:right}.comp .w{font-weight:400;color:var(--muted);font-size:.78rem;margin-left:3px}
+.comp>p{margin:2px 0 8px;font-size:.92rem;padding-left:10px;border-left:2px solid var(--acc-fill)}
+.comp[open] .lbl{color:var(--acc)}
 @media(max-width:400px){.comp>summary{grid-template-columns:1fr auto}.comp .bar{grid-column:1;grid-row:2}.comp .n{grid-row:1/3}}
-/* nested items */
-.finding,.sub{border-top:1px dotted var(--line);padding:6px 0}.finding:first-child,.sub:first-child{border-top:0}
-.finding>summary,.sub>summary{cursor:pointer;line-height:1.45}.sub>summary b{font-weight:600}
+.finding,.sub{border-top:1px solid var(--line2);padding:7px 0}.finding:first-child,.sub:first-child{border-top:0}
+.finding>summary,.sub>summary{cursor:pointer;line-height:1.5}.sub>summary b{font-weight:600}
 .sub>p{margin:4px 0 2px;color:var(--muted);font-size:.92rem}
-.eir{margin-top:8px;border-left:3px solid var(--line);padding-left:12px}.eir div{margin:6px 0}.eir b{display:block;color:var(--muted);font-weight:600;font-size:.76rem;text-transform:uppercase;letter-spacing:.05em}.eir p{margin:1px 0 0}
-.conf{display:inline-block;font-size:.74rem;text-transform:uppercase;letter-spacing:.04em;border-radius:4px;padding:0 6px;margin-right:4px;border:1px solid var(--line);color:var(--muted);vertical-align:1px}.conf-high{background:var(--hi);color:var(--hi-fg);border-color:var(--hi)}.conf-medium{background:var(--mid)}
-.prio{display:inline-block;font-size:.74rem;text-transform:uppercase;letter-spacing:.04em;border-radius:4px;padding:0 6px;margin-right:4px;border:1px solid var(--line);color:var(--muted);vertical-align:1px}.prio-read-first{background:var(--hi);color:var(--hi-fg);border-color:var(--hi)}.prio-read{background:var(--mid)}
+.eir{margin-top:8px;display:grid;grid-template-columns:auto 1fr;gap:6px 12px;font-size:.94rem}.eir b{color:var(--muted);font-weight:600;white-space:nowrap}.eir p{margin:0}
+@media(max-width:400px){.eir{grid-template-columns:1fr}.eir p{margin-bottom:4px}}
+.conf,.prio{display:inline-block;font-size:.82rem;padding:0 6px;margin-right:4px;border:1px solid var(--line);color:var(--muted);vertical-align:1px}
+.conf-high,.prio-read-first{background:var(--acc-fill);color:var(--acc-fg);border-color:var(--acc)}.conf-medium,.prio-read{background:var(--acc-soft);color:var(--fg);border-color:transparent}
+.card ol{margin:4px 0;padding-left:22px}
 /* calendar */
-.cal-wrap{display:flex;flex-wrap:wrap;gap:20px 28px}
-.cal{flex:1 1 280px;max-width:420px;min-width:0}.cal-title{font-family:var(--serif);font-weight:600;font-size:1.1rem;margin:0 0 8px}
-.cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}
-.dow{text-align:center;font-size:.72rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);padding-bottom:2px}
-.cell{position:relative;aspect-ratio:1;border-radius:7px;border:1px solid var(--line);background:var(--card);font:inherit;color:var(--fg);padding:0;min-width:0}
-.cell.pad{border:0;background:none}.cell.none{background:none;border-style:dashed;opacity:.55}
-.cell .d{position:absolute;top:3px;left:5px;font-size:.72rem;color:var(--muted)}
-.cell .k{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1.15rem;padding-top:4px}
-.cell .n{position:absolute;right:5px;bottom:2px;font-size:.68rem;color:var(--muted);font-variant-numeric:tabular-nums}
-button.cell{cursor:pointer;transition:transform .1s}button.cell:hover{transform:scale(1.05);z-index:1}
-.lvl1{background:color-mix(in srgb,var(--hi) 28%,var(--card));border-color:color-mix(in srgb,var(--hi) 40%,var(--line))}
-.lvl2{background:color-mix(in srgb,var(--hi) 58%,var(--card));border-color:var(--hi)}.lvl2 .k,.lvl2 .d,.lvl2 .n{color:var(--hi-fg)}
-.lvl3{background:var(--hi);border-color:var(--hi)}.lvl3 .k,.lvl3 .d,.lvl3 .n{color:var(--hi-fg)}
-.cal-legend{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-top:12px;font-size:.85rem;color:var(--muted)}
-.cal-legend i{display:inline-block;width:14px;height:14px;border-radius:3px;border:1px solid var(--line);background:var(--card);margin-left:6px}
+.cal-wrap{display:flex;flex-wrap:wrap;gap:20px 32px}
+.cal{flex:1 1 260px;max-width:400px;min-width:0}.cal-title{font-weight:600;font-size:1.05rem;margin:0 0 8px}
+.cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:3px}
+.dow{text-align:center;font-size:.78rem;color:var(--muted);padding-bottom:2px}
+.cell{position:relative;aspect-ratio:1;border:1px solid var(--line);background:var(--panel);font:inherit;color:var(--fg);padding:0;min-width:0}
+.cell.pad{border:0;background:none}.cell.none{background:none;border-style:dashed;opacity:.5}
+.cell .d{position:absolute;top:2px;left:5px;font-size:.72rem;color:var(--muted)}
+.cell .k{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:1.15rem;padding-top:4px}
+.cell .n{position:absolute;right:5px;bottom:1px;font-size:.68rem;color:var(--muted)}
+button.cell{cursor:pointer}button.cell:hover{border-color:var(--acc);z-index:1}
+.lvl1{background:var(--acc-soft)}.lvl2{background:color-mix(in srgb,var(--acc-fill) 55%,var(--panel))}.lvl3{background:var(--acc-fill)}.lvl3 .k,.lvl3 .d,.lvl3 .n{color:var(--acc-fg)}
+.cal-legend{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-top:12px;font-size:.88rem;color:var(--muted)}
+.cal-legend i{display:inline-block;width:14px;height:14px;border:1px solid var(--line);background:var(--panel);margin-left:6px}
 /* modal */
-.modal{position:fixed;inset:0;z-index:60;background:rgba(10,10,12,.6);display:flex;align-items:flex-end;justify-content:center;padding:0}
+.modal{position:fixed;inset:0;z-index:60;background:rgba(15,18,22,.55);display:flex;align-items:flex-end;justify-content:center}
 .modal[hidden]{display:none}
-.modal-card{background:var(--bg);color:var(--fg);width:100%;max-width:640px;max-height:88vh;overflow:auto;border-radius:16px 16px 0 0;padding:16px 18px calc(20px + env(safe-area-inset-bottom,0px));box-shadow:0 -10px 40px rgba(0,0,0,.3)}
-@media(min-width:640px){.modal{align-items:center;padding:24px}.modal-card{border-radius:14px;max-height:80vh}}
-.modal-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}.modal-head h2{margin:0;font-size:1.2rem;border:0;padding:0}
-.close{border:0;background:var(--card);color:var(--fg);width:34px;height:34px;border-radius:50%;font-size:1.3rem;line-height:1;cursor:pointer;flex:none}
-.modal-body h3{font-family:var(--sans);font-size:.8rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin:16px 0 6px}
-.mitem{display:grid;grid-template-columns:auto 1fr;gap:10px;padding:10px 0;border-top:1px solid var(--line);text-decoration:none;color:inherit}
-a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--hi)}
+.modal-card{background:var(--bg);color:var(--fg);width:100%;max-width:640px;max-height:88vh;overflow:auto;border-radius:14px 14px 0 0;padding:16px 18px calc(20px + env(safe-area-inset-bottom,0px));box-shadow:0 -10px 40px rgba(0,0,0,.3)}
+@media(min-width:640px){.modal{align-items:center;padding:24px}.modal-card{border-radius:10px;max-height:80vh}}
+.modal-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}.modal-head h2{margin:0;font-size:1.2rem}
+.close{border:1px solid var(--line);background:var(--panel);color:var(--fg);width:34px;height:34px;border-radius:50%;font-size:1.3rem;line-height:1;cursor:pointer;flex:none}
+.modal-body h3{font-size:.95rem;font-weight:600;color:var(--muted);margin:16px 0 4px}
+.mitem{display:grid;grid-template-columns:auto 1fr;gap:10px;padding:10px 0;border-top:1px solid var(--line2);text-decoration:none;color:inherit}
+a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
 .mitem .mt{display:block;font-weight:600;line-height:1.35}.mitem .ml{display:block;margin-top:3px;font-size:.92rem}.mitem .mpills{display:flex;flex-direction:column;gap:4px;align-self:start;margin-top:2px}
-.mfoot{margin:14px 0 0;font-weight:600}
-.days{columns:2 220px;column-gap:32px;list-style:none;padding:0;margin:0}.days li{break-inside:avoid;padding:4px 0;border-bottom:1px dotted var(--line)}
-.days .n{color:var(--muted);font-variant-numeric:tabular-nums;float:right}
-.empty{color:var(--muted);font-style:italic}
-</style></head><body><div class="wrap"><div class="masthead"><button type="button" class="logo-btn" aria-label="Show the site icon larger" onclick="document.getElementById('lb').hidden=false"><img class="logo" src="icon-192.png" alt="" width="56" height="56"></button><div class="lightbox" id="lb" hidden onclick="this.hidden=true" role="dialog" aria-label="Site icon"><img src="icon-512.png" alt="Paper Watch icon: a researcher riding the Solar Dynamics Observatory past the Sun"></div><h1>Saturday 5 September 2026</h1></div><div class="sub">7 papers submitted · 0 assessed in full</div><div class="nav"><a href="index.html">Overview</a> · <a href="assessed.html">Assessments</a> · <a href="2026-09-04.html">← 2026-09-04</a> · <a href="2026-09-06.html">2026-09-06 →</a></div>
+.mfoot{margin:14px 0 0;font-weight:600}.mfoot a{color:var(--acc);text-decoration:none}
+.lightbox{position:fixed;inset:0;z-index:50;display:flex;align-items:center;justify-content:center;background:rgba(10,10,12,.82);padding:24px;cursor:zoom-out}
+.lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
+.acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style></head><body><div class="wrap"><div class="masthead"><button type="button" class="logo-btn" aria-label="Show the site icon larger" onclick="document.getElementById('lb').hidden=false"><img class="logo" src="icon-192.png" alt="" width="56" height="56"></button><div class="lightbox" id="lb" hidden onclick="this.hidden=true" role="dialog" aria-label="Site icon"><img src="icon-512.png" alt="Paper Watch icon: a researcher riding the Solar Dynamics Observatory past the Sun"></div><h1>Saturday 5 September 2026</h1></div><div class="sub">7 papers submitted, 0 read in full.</div><div class="nav"><a href="index.html">Overview</a><a href="assessed.html">Assessments</a><a href="2026-09-04.html">Previous day, 2026-09-04</a><a href="2026-09-06.html">Next day, 2026-09-06</a></div>
 <div class="filters">
   <input type="search" id="q" placeholder="Search title, authors, abstract…" aria-label="Search papers">
-  <label>Abstract score ≥ <select id="min"><option value="0">0</option><option value="2">2</option><option value="3">3</option><option value="5">5</option><option value="6">6</option><option value="8">8</option></select></label>
+  <label>Abstract score at least <select id="min"><option value="0">0</option><option value="2">2</option><option value="3">3</option><option value="5">5</option><option value="6">6</option><option value="8">8</option></select></label>
   <label>Show <select id="only"><option value="all">all</option><option value="read">assessed</option><option value="unread">not assessed</option></select></label>
 </div>
 <div class="count" id="count"></div>
-<div class="legend">Pills: abstract screen 0–10, then full-text relevance <em>R</em> 0–5 (– = not read in full).</div>
+<div class="legend">First score: abstract screen out of 10. Second: full-text relevance R out of 5, blank when the paper was not read in full.</div>
 <div class="row" id="p2609-06201" data-s1="1" data-read="0" data-text="the first multi-messenger nova: external shocks, tev photons, and neutrinos in the next eruption of t crb e. aydi p. craig k. v. sokolovsky l. chomiuk c. c. cheung l. izzo j. d. linford b. d. metzger s. mohamed i. molina k. mukai k. j. shen j. l. sokoloski t coronae borealis is the most compelling anticipated galactic recurrent nova and one of the best opportunities to test whether nova eruptions can become genuine multi-messenger transients. recent observational work on classical novae has shown that the gev $γ$-ray luminosity correlates strongly with the differential velocity between interacting outflows, suggesting that shock power depends strongly on velocity contrast. we apply this empirical framework to t crb and compare it with the 2021 eruption of rs ophiuchi, the only nova securely detected at tev energies. we argue that t crb may lie at the extreme high-$δv$ end of the nova population and that its strongest shock should arise at the external interaction between the nova ejecta and the slow circumbinary medium. this makes the external shock the most likely site of any tev emission, while the gev signal may contain contributions from both internal, if present, and external shocks. because t crb is substantially closer than rs oph, it is an especially favorable target for tev detection. the neutrino case is promising but more uncertain because it depends sensitively on the density and structure of the circumbinary material. we also revisit the recurrence time of t crb. using the observed scatter of better-sampled recurrent novae, we infer a representative population-scale recurrence of $t_{\rm rec}\simeq80\pm12$ yr. taken together, its proximity and potentially extreme shock velocities make t crb perhaps the best opportunity for a nova to become the first securely established multi-messenger nova. paper is about shock-driven gamma-ray/tev/neutrino emission in the recurrent nova t crb, with no connection to solar flare timing, qpps, stix/eui, or flare electron acceleration; only the loose theme of particle acceleration in shocks overlaps. ">
   <div class="pills"><button type="button" class="score s-lo" aria-expanded="false" aria-controls="pop1-p2609-06201" aria-label="abstract screen 1 of 10">1</button><div class="pop" id="pop1-p2609-06201" hidden><b>Abstract screen: 1 / 10</b>Did not pass (threshold 6); not read in full.<br>Paper is about shock-driven gamma-ray/TeV/neutrino emission in the recurrent nova T CrB, with no connection to solar flare timing, QPPs, STIX/EUI, or flare electron acceleration; only the loose theme of particle acceleration in shocks overlaps.<div class="meta" style="margin-top:6px">claude-sonnet-5-5</div></div><button type="button" class="score s-lo" aria-expanded="false" aria-controls="pop2-p2609-06201" aria-label="full-text relevance: not read">–</button><div class="pop" id="pop2-p2609-06201" hidden><b>Full-text relevance</b>Not read in full. Only papers passing the abstract screen go to the full-text stage.</div></div>
   <div style="min-width:0">
     <h3><a href="https://arxiv.org/abs/2609.06201">The First Multi-Messenger Nova: External Shocks, TeV Photons, and Neutrinos in the Next Eruption of T CrB</a></h3>
-    <div class="meta">E. Aydi, P. Craig, K. V. Sokolovsky, L. Chomiuk et al. · 2026-09-05 · 10 pages, 1 figure, 1 table (submitted to MNRAS)</div>
+    <div class="meta">E. Aydi, P. Craig, K. V. Sokolovsky, L. Chomiuk et al.<div>Submitted 5 Sep 2026, astro-ph.HE — 10 pages, 1 figure, 1 table (submitted to MNRAS)</div></div>
     <p class="verdict meta">Paper is about shock-driven gamma-ray/TeV/neutrino emission in the recurrent nova T CrB, with no connection to solar flare timing, QPPs, STIX/EUI, or flare electron acceleration; only the loose theme of particle acceleration in shocks overlaps.</p>
     <div class="act"><span class="links"><a href="https://arxiv.org/abs/2609.06201">arXiv:2609.06201</a><a href="https://arxiv.org/pdf/2609.06201">PDF</a><a href="https://ui.adsabs.harvard.edu/abs/arXiv:2609.06201">ADS</a></span><a href="#p2609-06201" aria-expanded="false" aria-controls="abs-p2609-06201" onclick="var p=document.getElementById('abs-p2609-06201');p.hidden=!p.hidden;this.setAttribute('aria-expanded',String(!p.hidden));return false;">Abstract</a></div>
     <p class="abs" id="abs-p2609-06201" hidden>T Coronae Borealis is the most compelling anticipated Galactic recurrent nova and one of the best opportunities to test whether nova eruptions can become genuine multi-messenger transients. Recent observational work on classical novae has shown that the GeV $γ$-ray luminosity correlates strongly with the differential velocity between interacting outflows, suggesting that shock power depends strongly on velocity contrast. We apply this empirical framework to T CrB and compare it with the 2021 eruption of RS Ophiuchi, the only nova securely detected at TeV energies. We argue that T CrB may lie at the extreme high-$Δv$ end of the nova population and that its strongest shock should arise at the external interaction between the nova ejecta and the slow circumbinary medium. This makes the external shock the most likely site of any TeV emission, while the GeV signal may contain contributions from both internal, if present, and external shocks. Because T CrB is substantially closer than RS Oph, it is an especially favorable target for TeV detection. The neutrino case is promising but more uncertain because it depends sensitively on the density and structure of the circumbinary material. We also revisit the recurrence time of T CrB. Using the observed scatter of better-sampled recurrent novae, we infer a representative population-scale recurrence of $T_{\rm rec}\simeq80\pm12$ yr. Taken together, its proximity and potentially extreme shock velocities make T CrB perhaps the best opportunity for a nova to become the first securely established multi-messenger nova.</p>
@@ -131,7 +136,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--hi)}
   <div class="pills"><button type="button" class="score s-lo" aria-expanded="false" aria-controls="pop1-p2609-13252" aria-label="abstract screen 1 of 10">1</button><div class="pop" id="pop1-p2609-13252" hidden><b>Abstract screen: 1 / 10</b>Did not pass (threshold 6); not read in full.<br>The paper uses deep learning to predict iron and nickel plasma opacities under stellar interior conditions, which has no link to flare timing, particle acceleration, QPPs, or STIX/EUI analysis. The only overlap is the broad astrophysical plasma context.<div class="meta" style="margin-top:6px">claude-sonnet-5-5</div></div><button type="button" class="score s-lo" aria-expanded="false" aria-controls="pop2-p2609-13252" aria-label="full-text relevance: not read">–</button><div class="pop" id="pop2-p2609-13252" hidden><b>Full-text relevance</b>Not read in full. Only papers passing the abstract screen go to the full-text stage.</div></div>
   <div style="min-width:0">
     <h3><a href="https://arxiv.org/abs/2609.13252">Opacity predictions in plasmas under stellar conditions using deep learning</a></h3>
-    <div class="meta">Djamel Benredjem, Jean-Christophe Pain · 2026-09-05 · Phys. Rev. E 114, 015204 (2026)</div>
+    <div class="meta">Djamel Benredjem, Jean-Christophe Pain<div>Submitted 5 Sep 2026, physics.atom-ph — Phys. Rev. E 114, 015204 (2026)</div></div>
     <p class="verdict meta">The paper uses deep learning to predict iron and nickel plasma opacities under stellar interior conditions, which has no link to flare timing, particle acceleration, QPPs, or STIX/EUI analysis. The only overlap is the broad astrophysical plasma context.</p>
     <div class="act"><span class="links"><a href="https://arxiv.org/abs/2609.13252">arXiv:2609.13252</a><a href="https://arxiv.org/pdf/2609.13252">PDF</a><a href="https://ui.adsabs.harvard.edu/abs/arXiv:2609.13252">ADS</a><a href="https://doi.org/10.1103/f237-bqz2">DOI</a></span><a href="#p2609-13252" aria-expanded="false" aria-controls="abs-p2609-13252" onclick="var p=document.getElementById('abs-p2609-13252');p.hidden=!p.hidden;this.setAttribute('aria-expanded',String(!p.hidden));return false;">Abstract</a></div>
     <p class="abs" id="abs-p2609-13252" hidden>The aim of this work is to predict the opacity of plasmas under stellar conditions. We focus on iron and nickel, as these elements have been extensively investigated both theoretically and experimentally. In certain regimes, notably under non-local thermodynamic equilibrium, calculating the spectral opacity can be computationally demanding. To mitigate this difficulty, we employ deep learning models to predict accurate opacities while achieving a substantial reduction in computational cost. Specifically, we develop and train a hybrid model that combines a convolutional neural network with a multilayer perceptron. The proposed approach provides both the spectral opacity over the 0--10,000 eV energy range, and the corresponding mean opacities for large sets of temperatures and mass densities, in close agreement with standard computational methods. The agreement is very satisfactory, except in the L- and M-shell energy ranges for nickel at high temperatures, where a very large number of emerging transitions leads to substantial discrepancies.</p>
@@ -141,7 +146,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--hi)}
   <div class="pills"><button type="button" class="score s-lo" aria-expanded="false" aria-controls="pop1-p2609-05825" aria-label="abstract screen 1 of 10">1</button><div class="pop" id="pop1-p2609-05825" hidden><b>Abstract screen: 1 / 10</b>Did not pass (threshold 6); not read in full.<br>This is an HST/ACS census of Cepheid variable stars in M101 for distance-scale work. It has no connection to flare timing, particle acceleration, QPPs, or STIX/EUI, and Lomb-Scargle period searches are the only shared technique, which is generic.<div class="meta" style="margin-top:6px">claude-sonnet-5-5</div></div><button type="button" class="score s-lo" aria-expanded="false" aria-controls="pop2-p2609-05825" aria-label="full-text relevance: not read">–</button><div class="pop" id="pop2-p2609-05825" hidden><b>Full-text relevance</b>Not read in full. Only papers passing the abstract screen go to the full-text stage.</div></div>
   <div style="min-width:0">
     <h3><a href="https://arxiv.org/abs/2609.05825">A Uniform Census of Variable Stars in M101 Based on HST/ACS Photometry</a></h3>
-    <div class="meta">Jiyu Wang, Xiaodian Chen, Pinjian Chen, Jianxing Zhang et al. · 2026-09-05 · 16 pages, 6 figures, 4 tables; accepted for publication in ApJ</div>
+    <div class="meta">Jiyu Wang, Xiaodian Chen, Pinjian Chen, Jianxing Zhang et al.<div>Submitted 5 Sep 2026, astro-ph.SR — 16 pages, 6 figures, 4 tables; accepted for publication in ApJ</div></div>
     <p class="verdict meta">This is an HST/ACS census of Cepheid variable stars in M101 for distance-scale work. It has no connection to flare timing, particle acceleration, QPPs, or STIX/EUI, and Lomb-Scargle period searches are the only shared technique, which is generic.</p>
     <div class="act"><span class="links"><a href="https://arxiv.org/abs/2609.05825">arXiv:2609.05825</a><a href="https://arxiv.org/pdf/2609.05825">PDF</a><a href="https://ui.adsabs.harvard.edu/abs/arXiv:2609.05825">ADS</a></span><a href="#p2609-05825" aria-expanded="false" aria-controls="abs-p2609-05825" onclick="var p=document.getElementById('abs-p2609-05825');p.hidden=!p.hidden;this.setAttribute('aria-expanded',String(!p.hidden));return false;">Abstract</a></div>
     <p class="abs" id="abs-p2609-05825" hidden>We present a homogeneous HST/ACS F555W/F814W time-series census of variable stars in two M101 disk fields, using a uniform multi-band reduction and reproducible variable-selection workflow for nearby SN-host galaxies. Supplementary archival F555W epochs are used only to refine selected long-period solutions. Candidates are selected with Lomb-Scargle period searches, Fourier light-curve modeling, two-band consistency statistics, artificial-star-test photometric corrections, and mode-aware Cepheid refinement. The final catalog contains 1417 variable-star candidates, including 1102 secure fundamental-mode and 78 secure first-overtone classical Cepheids. Of these secure Cepheids, 420 are newly identified relative to the Shappee &amp; Stanek catalog. The catalog also contains luminous candidates outside the classical Cepheid locus. We release the catalog and source-level two-band light curves for studies of Cepheid physics, stellar variability, and distance-scale applications.</p>
@@ -151,7 +156,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--hi)}
   <div class="pills"><button type="button" class="score s-lo" aria-expanded="false" aria-controls="pop1-p2609-05811" aria-label="abstract screen 1 of 10">1</button><div class="pop" id="pop1-p2609-05811" hidden><b>Abstract screen: 1 / 10</b>Did not pass (threshold 6); not read in full.<br>The paper covers HF skywave radio propagation and ionospheric link modeling for communications. It has no connection to flare timing, QPPs, particle acceleration, or STIX/EUI, and the only shared element is that solar radiation drives the ionosphere.<div class="meta" style="margin-top:6px">claude-sonnet-5-5</div></div><button type="button" class="score s-lo" aria-expanded="false" aria-controls="pop2-p2609-05811" aria-label="full-text relevance: not read">–</button><div class="pop" id="pop2-p2609-05811" hidden><b>Full-text relevance</b>Not read in full. Only papers passing the abstract screen go to the full-text stage.</div></div>
   <div style="min-width:0">
     <h3><a href="https://arxiv.org/abs/2609.05811">Wideband HF Skywave Propagation: A Review with Link Modeling Corroborated by Propagation Data</a></h3>
-    <div class="meta">Eric Weber, Ted Nowak, Joseph Berg, Nader Behdad · 2026-09-05 · 27 pages, 18 figures, 3 tables. Author version of an article published in the IEEE Open Journal of Antennas and Propagation under a CC BY 4.</div>
+    <div class="meta">Eric Weber, Ted Nowak, Joseph Berg, Nader Behdad<div>Submitted 5 Sep 2026, eess.SP — 27 pages, 18 figures, 3 tables. Author version of an article published in the IEEE Open Journal of Antennas and Propagation under a CC BY 4.</div></div>
     <p class="verdict meta">The paper covers HF skywave radio propagation and ionospheric link modeling for communications. It has no connection to flare timing, QPPs, particle acceleration, or STIX/EUI, and the only shared element is that solar radiation drives the ionosphere.</p>
     <div class="act"><span class="links"><a href="https://arxiv.org/abs/2609.05811">arXiv:2609.05811</a><a href="https://arxiv.org/pdf/2609.05811">PDF</a><a href="https://ui.adsabs.harvard.edu/abs/arXiv:2609.05811">ADS</a><a href="https://doi.org/10.1109/OJAP.2026.3730332">DOI</a></span><a href="#p2609-05811" aria-expanded="false" aria-controls="abs-p2609-05811" onclick="var p=document.getElementById('abs-p2609-05811');p.hidden=!p.hidden;this.setAttribute('aria-expanded',String(!p.hidden));return false;">Abstract</a></div>
     <p class="abs" id="abs-p2609-05811" hidden>The high-frequency (HF) band, ranging from 3 to 30 MHz, is widely used in a number of applications such as beyond-line-of-sight (BLOS) communications and over-the-horizon radar systems. The long-range propagation characteristics of the HF band rely on the Earth&#x27;s ionosphere as a refracting medium to establish BLOS wireless links. However, traditional HF communications links often use channels with narrow bandwidths (typically 3 kHz), which limits the amount of data that can be transmitted. In this perspective article, we discuss the challenges of establishing wideband HF communications links with emphasis on the ionosphere, noise characteristics, antenna performance, and available bandwidth. Solar radiation drives ionospheric layering, where fluctuating electron densities determine usable frequencies that change with time of day, seasons, and latitude. Since background noise at HF decreases with increasing frequency, operating at the upper HF limit is advantageous. We present a noise prediction model following ITU Recommendation P.372-17 and highlight the role of high-directivity antennas such as Log-Periodic Dipole Arrays, in optimizing the signal-to-noise ratio of the link. Using ray tracing techniques, we model several representative wideband HF links that employ near-vertical-incidence skywave (NVIS) or long-range skywave modes over distances ranging from approximately 390 to 5,200 km. We examine the performance of these links for bandwidths up to 1 MHz and present their day and night ionograms, with transmitter and receiver locations spanning near-equatorial to high northern latitudes. The modeled maximum usable frequencies are corroborated against crowdsourced FT8 reception data and direct ionosonde measurements over the same period for links for which propagation data was available.</p>
@@ -161,7 +166,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--hi)}
   <div class="pills"><button type="button" class="score s-lo" aria-expanded="false" aria-controls="pop1-p2609-06295" aria-label="abstract screen 0 of 10">0</button><div class="pop" id="pop1-p2609-06295" hidden><b>Abstract screen: 0 / 10</b>Did not pass (threshold 6); not read in full.<br>This paper is about interstellar complex organic molecules and outflows in protostars observed with NOEMA. It has no connection to solar flares, particle acceleration, QPPs, or STIX/EUI, and no transferable method.<div class="meta" style="margin-top:6px">claude-sonnet-5-5</div></div><button type="button" class="score s-lo" aria-expanded="false" aria-controls="pop2-p2609-06295" aria-label="full-text relevance: not read">–</button><div class="pop" id="pop2-p2609-06295" hidden><b>Full-text relevance</b>Not read in full. Only papers passing the abstract screen go to the full-text stage.</div></div>
   <div style="min-width:0">
     <h3><a href="https://arxiv.org/abs/2609.06295">Interstellar Complex Organic Molecules and Molecular Outflows in NGC 1333 IRAS 4B and 4B&#x27; Observed Using NOEMA</a></h3>
-    <div class="meta">C. C. Sarver, M. M. Giese, D. C. Lis, S. L. Widicus Weaver · 2026-09-05 · 43 pages, submitted to ApJ</div>
+    <div class="meta">C. C. Sarver, M. M. Giese, D. C. Lis, S. L. Widicus Weaver<div>Submitted 5 Sep 2026, astro-ph.GA — 43 pages, submitted to ApJ</div></div>
     <p class="verdict meta">This paper is about interstellar complex organic molecules and outflows in protostars observed with NOEMA. It has no connection to solar flares, particle acceleration, QPPs, or STIX/EUI, and no transferable method.</p>
     <div class="act"><span class="links"><a href="https://arxiv.org/abs/2609.06295">arXiv:2609.06295</a><a href="https://arxiv.org/pdf/2609.06295">PDF</a><a href="https://ui.adsabs.harvard.edu/abs/arXiv:2609.06295">ADS</a></span><a href="#p2609-06295" aria-expanded="false" aria-controls="abs-p2609-06295" onclick="var p=document.getElementById('abs-p2609-06295');p.hidden=!p.hidden;this.setAttribute('aria-expanded',String(!p.hidden));return false;">Abstract</a></div>
     <p class="abs" id="abs-p2609-06295" hidden>We present interferometric observations with the Northern Extended Millimeter Array (NOEMA) of NGC 1333 IRAS 4B and 4B&#x27;, two young stellar objects (YSOs) within the Perseus molecular cloud. YSOs, especially Class 0 protostars, are rich in gas-phase interstellar complex organic molecules (iCOMs), but relatively little is known about the spatial distribution of these important prebiotic molecules. Various molecules were imaged within IRAS 4B and the surrounding area in the 145 GHz spectral range, revealing hundreds of molecular transitions within the warm inner envelope of IRAS 4B. This work provides derived physical parameters (rotational temperature, column density, velocity shift with respect to local standard of rest, and full-width at half-maximum spectral line width) for 11 molecules toward IRAS 4B including methanol (CH$_3$OH and isotopologues), methyl formate (HCOOCH$_3$), dimethyl ether (CH$_3$OCH$_3$), acetaldehyde (CH$_3$CHO), ethanol (C$_2$H$_5$OH), glycolaldehyde (CH$_2$OHCHO), acetone (CH$_3$COCH$_3$), and isocyanic acid (HNCO). Out of these molecules, 10 are iCOMs (excluding HNCO) that trace the inner envelope of IRAS 4B and mark it as a rich source of organic material. There is a strong spatial correlation between the continuum emission of IRAS 4B and iCOM molecular emission and among various iCOMs with each other. Physical parameter and integrated intensity maps show that IRAS 4B is a binary protostar system that drives a jet in a north-south orientation and an outflow in a northwest-southeast orientation. IRAS 4B&#x27; also drives a west-east outflow but shows no evidence of molecular emission cospatial with its continuum emission.</p>
@@ -171,7 +176,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--hi)}
   <div class="pills"><button type="button" class="score s-lo" aria-expanded="false" aria-controls="pop1-p2609-06156" aria-label="abstract screen 0 of 10">0</button><div class="pop" id="pop1-p2609-06156" hidden><b>Abstract screen: 0 / 10</b>Did not pass (threshold 6); not read in full.<br>This is a relativistic laser-driven lightsail structural, thermal and optical design study with no connection to solar flares, particle acceleration, QPPs, or STIX/EUI data or methods.<div class="meta" style="margin-top:6px">claude-sonnet-5-5</div></div><button type="button" class="score s-lo" aria-expanded="false" aria-controls="pop2-p2609-06156" aria-label="full-text relevance: not read">–</button><div class="pop" id="pop2-p2609-06156" hidden><b>Full-text relevance</b>Not read in full. Only papers passing the abstract screen go to the full-text stage.</div></div>
   <div style="min-width:0">
     <h3><a href="https://arxiv.org/abs/2609.06156">Project Setu: 3D Multi-Physics Design and Scaled Structural Analysis for a Relativistic Lightsail Architecture</a></h3>
-    <div class="meta">Prashant Suresh Kamble · 2026-09-05 · 13 pages, 12 figures, 4 tables. Open data and code repository: https://doi.org/10.6084/m9.figshare.33476263</div>
+    <div class="meta">Prashant Suresh Kamble<div>Submitted 5 Sep 2026, physics.pop-ph — 13 pages, 12 figures, 4 tables. Open data and code repository: https://doi.org/10.6084/m9.figshare.33476263</div></div>
     <p class="verdict meta">This is a relativistic laser-driven lightsail structural, thermal and optical design study with no connection to solar flares, particle acceleration, QPPs, or STIX/EUI data or methods.</p>
     <div class="act"><span class="links"><a href="https://arxiv.org/abs/2609.06156">arXiv:2609.06156</a><a href="https://arxiv.org/pdf/2609.06156">PDF</a><a href="https://ui.adsabs.harvard.edu/abs/arXiv:2609.06156">ADS</a></span><a href="#p2609-06156" aria-expanded="false" aria-controls="abs-p2609-06156" onclick="var p=document.getElementById('abs-p2609-06156');p.hidden=!p.hidden;this.setAttribute('aria-expanded',String(!p.hidden));return false;">Abstract</a></div>
     <p class="abs" id="abs-p2609-06156" hidden>Deep-space exploration beyond the solar system requires eliminating chemical propellant mass penalties to achieve relativistic flight velocities (0.166c at 180 s, reaching the mission target of 0.20c at 227 s). This study presents a 3D multi-physics numerical framework for a 4.0-meter circular lightsail propelled by a 100 GW ground laser array, coupling 3D Maxwell FDTD wave optics, non-linear membrane mechanics, and Stefan-Boltzmann thermal radiation in ANSYS Mechanical APDL and Ansys Lumerical. A four-level grid convergence study establishes numerical independence with an ASME GCI_21 of 0.13%, resolving peak membrane stresses of 530.88 MPa with a 3.77x safety factor against stoichiometric Si3N4 tensile failure. With optical absorption constrained to 10 ppm (A = 1.0 x 10^-5), the steady-state core temperature stabilizes at 923.02 K (0.44% deviation from radiation theory), maintaining a +1,247 K margin below sublimation, while fundamental drumhead modal resonance (7.92 Hz) provides a 7.92x safety buffer against laser jitter. The electrodynamic radiation pressure formulation is cross-verified against published flight telemetry from JAXA IKAROS and NASA LightSail 2 within 0.12% and 2.13%, confirming classical momentum transfer modeling across solar and beamed propulsion regimes.</p>
@@ -181,7 +186,7 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--hi)}
   <div class="pills"><button type="button" class="score s-lo" aria-expanded="false" aria-controls="pop1-p2609-05868" aria-label="abstract screen 0 of 10">0</button><div class="pop" id="pop1-p2609-05868" hidden><b>Abstract screen: 0 / 10</b>Did not pass (threshold 6); not read in full.<br>This paper models magnetically confined accretion mountains on white dwarfs using Grad-Shafranov equilibria. It has no connection to solar flare timing, particle acceleration, QPPs, or STIX/EUI.<div class="meta" style="margin-top:6px">claude-sonnet-5-5</div></div><button type="button" class="score s-lo" aria-expanded="false" aria-controls="pop2-p2609-05868" aria-label="full-text relevance: not read">–</button><div class="pop" id="pop2-p2609-05868" hidden><b>Full-text relevance</b>Not read in full. Only papers passing the abstract screen go to the full-text stage.</div></div>
   <div style="min-width:0">
     <h3><a href="https://arxiv.org/abs/2609.05868">Magnetically Confined Mountains on Accreting White Dwarfs</a></h3>
-    <div class="meta">Pedro H. B. Rossetto, Manoel F. Sousa, Diego A. Falceta-Gonçalves · 2026-09-05 · 16 pages, 8 figures</div>
+    <div class="meta">Pedro H. B. Rossetto, Manoel F. Sousa, Diego A. Falceta-Gonçalves<div>Submitted 5 Sep 2026, astro-ph.SR — 16 pages, 8 figures</div></div>
     <p class="verdict meta">This paper models magnetically confined accretion mountains on white dwarfs using Grad-Shafranov equilibria. It has no connection to solar flare timing, particle acceleration, QPPs, or STIX/EUI.</p>
     <div class="act"><span class="links"><a href="https://arxiv.org/abs/2609.05868">arXiv:2609.05868</a><a href="https://arxiv.org/pdf/2609.05868">PDF</a><a href="https://ui.adsabs.harvard.edu/abs/arXiv:2609.05868">ADS</a></span><a href="#p2609-05868" aria-expanded="false" aria-controls="abs-p2609-05868" onclick="var p=document.getElementById('abs-p2609-05868');p.hidden=!p.hidden;this.setAttribute('aria-expanded',String(!p.hidden));return false;">Abstract</a></div>
     <p class="abs" id="abs-p2609-05868" hidden>The hydromagnetic structure of magnetically confined mountains on accreting white dwarfs is computed, alongside the effects of accretion on the reduction of the star&#x27;s magnetic field. The equilibrium structure of the mountain is obtained by numerically solving the Grad-Shafranov equation with a self-consistent scheme that enforces magnetic flux freezing. For characteristic system parameters, it is shown that magnetic field lines are significantly deformed and dragged equatorwards by mountains with masses $\sim10^{-3}M_\odot$ that have a characteristic height of $\sim10^5\,\mathrm{cm}$. A mathematical relation is obtained for the maximum mass that a white dwarf can confine magnetically given the star&#x27;s magnetic field and temperature. It is found that the accretion buries the star&#x27;s magnetic field by reducing it by up to $10\%$ of its pre-accretion value. The star&#x27;s magnetic field remains dominantly dipolar, but with added multipolar components.</p>
