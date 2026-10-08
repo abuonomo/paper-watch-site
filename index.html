@@ -6664,4 +6664,24 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   });
   document.addEventListener('keydown',function(e){if(e.key==='Escape')m.hidden=true;});
 })();
-</script><p class="meta" style="margin-top:32px">Machine-readable: <a href="data/index.json">data/index.json</a>, <a href="data/recent.json">recent.json</a>, <a href="data/assessed.json">assessed.json</a>. Agents start at <a href="llms.txt">llms.txt</a>.</p></div></body></html>
+</script><p class="meta" style="margin-top:32px">Machine-readable: <a href="data/index.json">data/index.json</a>, <a href="data/recent.json">recent.json</a>, <a href="data/assessed.json">assessed.json</a>. Agents start at <a href="llms.txt">llms.txt</a>.</p>
+<script data-goatcounter="https://paperwatch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script>
+// Count a few actions as events, on top of page views. Nothing personal is sent.
+(function(){
+  function ev(name){if(window.goatcounter&&goatcounter.count)goatcounter.count({path:'evt/'+name,title:name,event:true});}
+  document.addEventListener('click',function(e){
+    var a=e.target.closest('a');
+    if(a){var h=a.getAttribute('href')||'';
+      if(/arxiv\.org\/pdf/.test(h))ev('pdf');else if(/arxiv\.org\/abs/.test(h))ev('arxiv');else if(/adsabs/.test(h))ev('ads');
+      else if(/doi\.org/.test(h))ev('doi');else if(a.classList.contains('read-link'))ev('open-assessment');return;}
+    if(e.target.closest('.radar-btn'))ev('radar');
+    else if(e.target.closest('.cell[data-day]'))ev('calendar-day');
+    else if(e.target.closest('.row.clickable'))ev('open-assessment');
+    else if(e.target.closest('.pills button'))ev('score-popover');
+    else if(e.target.closest('.logo-btn'))ev('icon');
+  });
+  document.addEventListener('pointerup',function(e){if(e.target.closest('#lc'))ev('lightcurve');});
+  document.addEventListener('toggle',function(e){var t=e.target;if(t.open&&t.classList.contains('acc'))ev('section/'+(t.querySelector('.t')||{}).textContent.trim().split(' ')[0].toLowerCase());},true);
+})();
+</script></div></body></html>
