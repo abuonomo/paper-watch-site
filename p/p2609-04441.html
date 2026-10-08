@@ -45,7 +45,11 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 /* paper rows */
 .row{display:grid;grid-template-columns:auto 1fr auto;gap:4px 14px;padding:14px 0;border-bottom:1px solid var(--line2);min-width:0;text-decoration:none;color:inherit}
 .row[hidden]{display:none}.row:hover,.row:focus-visible{background:var(--panel);box-shadow:0 0 0 8px var(--panel);outline:0}.row:hover h3{text-decoration:underline;text-decoration-color:var(--acc)}
-.row .chev{align-self:center;color:var(--acc);font-size:1.5rem;line-height:1}
+.row .chev{align-self:center;color:var(--acc);font-size:1.5rem;line-height:1;display:flex;align-items:center;gap:6px}
+.row .seen-mark{display:none;font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:20px;height:20px;align-items:center;justify-content:center}
+.row.seen .seen-mark{display:inline-flex}.row.seen h3{color:var(--muted);font-weight:500}.row.seen .verdict{color:var(--muted)}
+.nav .pos{color:var(--muted)}.swipe-hint{margin-top:28px;text-align:center}
+body.leaving{opacity:.5;transition:opacity .12s}@media(prefers-reduced-motion:reduce){body.leaving{transition:none}}
 .pills{display:flex;align-items:center;gap:12px}
 .row h3{font-size:1.02rem;font-weight:600;line-height:1.35}
 .row .verdict{margin:5px 0 0;font-size:.93rem;line-height:1.5}.row .verdict.read{font-weight:400}
@@ -134,6 +138,19 @@ a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
   <h2>Screening</h2><p><strong>0 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">Paper is about collective neutrino flavor oscillations and Kuramoto-type synchronization stability, with no connection to solar flares, particle acceleration, QPPs, or STIX/EUI.</p>
   <p class="meta">arXiv:2609.04441</p>
 </article>
+<script>
+(function(){
+  // Remember this paper as seen (per browser; nothing leaves the device).
+  try{var k='pw-seen',seen=JSON.parse(localStorage.getItem(k)||'{}');seen['2609.04441']=Date.now();localStorage.setItem(k,JSON.stringify(seen));}catch(e){}
+  var prev='',next='';
+  function go(h){if(!h)return;document.body.classList.add('leaving');setTimeout(function(){location.href=h},120);}
+  document.addEventListener('keydown',function(e){if(e.key==='ArrowRight')go(next);if(e.key==='ArrowLeft')go(prev);});
+  var sx=0,sy=0,t0=0;
+  document.addEventListener('touchstart',function(e){var t=e.touches[0];sx=t.clientX;sy=t.clientY;t0=Date.now();},{passive:true});
+  document.addEventListener('touchend',function(e){var t=e.changedTouches[0],dx=t.clientX-sx,dy=t.clientY-sy;
+    if(Date.now()-t0<600&&Math.abs(dx)>70&&Math.abs(dy)<60){if(dx<0)go(next);else go(prev);}},{passive:true});
+})();
+</script>
 <script data-goatcounter="https://paperwatch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <script>
 // Count a few actions as events, on top of page views. Nothing personal is sent.
