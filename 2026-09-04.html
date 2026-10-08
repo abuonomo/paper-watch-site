@@ -28,11 +28,11 @@ a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:ho
 .rel{color:var(--muted);font-style:italic}
 .empty{color:var(--muted);font-style:italic}
 /* lightcurve hero */
-.lc{margin:4px 0 8px;touch-action:pan-y;user-select:none;-webkit-user-select:none}.lc svg{display:block;width:100%;height:auto;overflow:visible;cursor:pointer}
+.lc{margin:4px 0 8px;padding-top:1.7em;position:relative;touch-action:pan-y;user-select:none;-webkit-user-select:none}.lc svg{display:block;width:100%;height:auto;overflow:visible;cursor:pointer}
 .lc .bar{fill:var(--line)}.lc .spike{fill:var(--acc-fill);stroke:var(--acc);stroke-width:.6}
 .lc .cursor{fill:var(--acc);opacity:0;pointer-events:none}.lc .cursor.on{opacity:.18}
 .lc .hit{fill:transparent;pointer-events:none}
-.lc-read{min-height:1.5em;font-size:.95rem;margin:0 0 2px;color:var(--muted)}.lc-read strong{color:var(--fg);font-weight:600}
+.lc-read{position:absolute;top:0;left:0;right:0;height:1.5em;line-height:1.5em;margin:0;font-size:.95rem;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.lc-read strong{color:var(--fg);font-weight:600}
 .lc text{fill:var(--muted);font-family:var(--font);font-size:7.5px}.lc .axis{stroke:var(--line);stroke-width:.6}.lc .tick{stroke:var(--line)}
 .lc-cap{display:flex;flex-wrap:wrap;gap:4px 18px;color:var(--muted);font-size:.88rem;margin-top:6px}
 .lc-cap i{display:inline-block;width:10px;height:10px;margin-right:6px;vertical-align:-1px}.lc-cap .i1{background:var(--acc-fill);border:1px solid var(--acc)}.lc-cap .i2{background:var(--line)}
