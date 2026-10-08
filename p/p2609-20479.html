@@ -1,0 +1,153 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Daytime seeing variations in Paranal through a SHABAR system. Description of the method and first measurements from the PoET solar telescope</title><link rel="icon" href="../favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="../icon-32.png"><link rel="icon" type="image/png" sizes="192x192" href="../icon-192.png"><link rel="apple-touch-icon" href="../icon-180.png"><meta name="theme-color" content="#141412"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,500;7..72,600&display=swap"><style>
+/* Palette from the instruments: AIA 171 / EUI 174 gold on a cool slate-white page. One family, Literata.
+   Layout: one reading column; the lightcurve is the hero, everything else stays quiet. */
+:root{--bg:#f4f5f7;--fg:#1b1d22;--muted:#5d636e;--panel:#ffffff;--line:#d9dce2;--line2:#eceef2;
+      --acc:#c98a12;--acc-fill:#f2b83c;--acc-fg:#1b1d22;--acc-soft:#fbead0;--focus:#2457a8;
+      --font:"Literata",Georgia,"Times New Roman",serif;color-scheme:light}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1216;--fg:#e6e8ec;--muted:#9aa1ab;--panel:#161a20;--line:#2a2f38;--line2:#1f242c;
+      --acc:#e0a63a;--acc-fill:#f2b83c;--acc-fg:#0f1216;--acc-soft:#3a2d12;--focus:#7fa8e8;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0f1216;--fg:#e6e8ec;--muted:#9aa1ab;--panel:#161a20;--line:#2a2f38;--line2:#1f242c;
+      --acc:#e0a63a;--acc-fill:#f2b83c;--acc-fg:#0f1216;--acc-soft:#3a2d12;--focus:#7fa8e8;color-scheme:dark}
+*{box-sizing:border-box}
+html{overflow-x:clip}body{margin:0;padding-block:24px 72px;padding-inline:16px;background:var(--bg);color:var(--fg);font:16px/1.6 var(--font);font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.wrap{max-width:820px;margin-inline:auto;min-width:0}
+h1,h2,h3{font-weight:600;line-height:1.2;text-wrap:balance;margin:0}
+h1{font-size:1.9rem;font-variation-settings:"opsz" 72}h2{font-size:1.25rem;margin:40px 0 10px}
+.masthead{display:flex;align-items:center;gap:14px;margin-bottom:4px}.masthead .logo{width:52px;height:52px;border-radius:50%;flex:none;display:block}
+.logo-btn{border:0;padding:0;background:none;cursor:pointer;border-radius:50%;flex:none}
+.sub{color:var(--muted);font-size:.95rem;margin:0 0 6px}.sub strong{color:var(--fg);font-weight:600}
+.nav{display:flex;flex-wrap:wrap;gap:6px 20px;font-size:.95rem;margin-bottom:28px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+.nav a{text-decoration:none;color:var(--acc);font-weight:600}
+a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}a:hover{text-decoration-color:var(--acc)}
+:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.back{display:inline-block;font-weight:600;color:var(--acc);text-decoration:none;margin-bottom:12px}
+.meta{color:var(--muted);font-size:.9rem}.meta div{margin-top:1px}
+.links{display:inline-flex;flex-wrap:wrap;gap:4px 14px}
+.score{display:inline-flex;flex-direction:column;align-items:center;line-height:1.1;padding:2px 0}
+.score .v{font-weight:600;font-size:1.25rem}.score .l{font-size:.68rem;color:var(--muted);margin-top:2px;white-space:nowrap}
+.rel{color:var(--muted);font-style:italic}
+.empty{color:var(--muted);font-style:italic}
+/* lightcurve hero */
+.lc{margin:4px 0 8px;padding-top:1.7em;position:relative;touch-action:pan-y;user-select:none;-webkit-user-select:none}.lc svg{display:block;width:100%;height:auto;overflow:visible;cursor:pointer}
+.lc .bar{fill:var(--line)}.lc .spike{fill:var(--acc-fill);stroke:var(--acc);stroke-width:.6}
+.lc .cursor{fill:var(--acc);opacity:0;pointer-events:none}.lc .cursor.on{opacity:.18}
+.lc .hit{fill:transparent;pointer-events:none}
+.lc-read{position:absolute;top:0;left:0;right:0;height:1.5em;line-height:1.5em;margin:0;font-size:.95rem;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.lc-read strong{color:var(--fg);font-weight:600}
+.lc text{fill:var(--muted);font-family:var(--font);font-size:7.5px}.lc .axis{stroke:var(--line);stroke-width:.6}.lc .tick{stroke:var(--line)}
+.lc-cap{display:flex;flex-wrap:wrap;gap:4px 18px;color:var(--muted);font-size:.88rem;margin-top:6px}
+.lc-cap i{display:inline-block;width:10px;height:10px;margin-right:6px;vertical-align:-1px}.lc-cap .i1{background:var(--acc-fill);border:1px solid var(--acc)}.lc-cap .i2{background:var(--line)}
+/* filter bar */
+.filters{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;padding:10px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-size:.92rem}
+.filters label{display:inline-flex;align-items:center;gap:6px}.filters input[type=search]{flex:1 1 200px;min-width:0;padding:6px 10px;border:1px solid var(--line);background:var(--panel);color:var(--fg);font:inherit}
+.filters select{padding:5px 8px;border:1px solid var(--line);background:var(--panel);color:var(--fg);font:inherit}
+.count{color:var(--muted);font-size:.88rem;margin:6px 0 2px}
+.legend{color:var(--muted);font-size:.88rem;margin-bottom:6px}
+/* paper rows */
+.row{display:grid;grid-template-columns:auto 1fr auto;gap:4px 14px;padding:14px 0;border-bottom:1px solid var(--line2);min-width:0;text-decoration:none;color:inherit}
+.row[hidden]{display:none}.row:hover,.row:focus-visible{background:var(--panel);box-shadow:0 0 0 8px var(--panel);outline:0}.row:hover h3{text-decoration:underline;text-decoration-color:var(--acc)}
+.row .chev{align-self:center;color:var(--acc);font-size:1.5rem;line-height:1}
+.pills{display:flex;align-items:center;gap:12px}
+.row h3{font-size:1.02rem;font-weight:600;line-height:1.35}
+.row .verdict{margin:5px 0 0;font-size:.93rem;line-height:1.5}.row .verdict.read{font-weight:400}
+@media(max-width:520px){.row{grid-template-columns:1fr auto}.pills{flex-direction:row;grid-column:1;grid-row:1}.row .chev{grid-column:2;grid-row:1;align-self:center}.row>div:nth-child(2){grid-column:1/-1;grid-row:2}}
+.row>div{min-width:0}
+/* assessment card (standalone page) */
+.card{min-width:0}.card.standalone h1{font-size:1.45rem;margin:0 0 6px}.card.standalone h1 a{text-decoration:none}
+.hpills{display:inline-flex;gap:4px;vertical-align:middle;margin-right:6px}
+.sub-score .score{margin-right:8px;vertical-align:middle}
+.card .lead{font-weight:500;margin:12px 0 16px;font-size:1.05rem;line-height:1.5}
+details summary{list-style:none}details summary::-webkit-details-marker{display:none}
+.acc{border-top:1px solid var(--line)}.acc:last-of-type{border-bottom:1px solid var(--line)}
+.acc>summary{display:grid;grid-template-columns:auto 1fr;align-items:baseline;gap:2px 12px;padding:11px 0 11px 18px;cursor:pointer;position:relative}
+.acc>summary::before{content:"";position:absolute;left:2px;top:19px;width:7px;height:7px;border-right:2px solid var(--acc);border-bottom:2px solid var(--acc);transform:rotate(-45deg);transform-origin:50% 50%;transition:transform .15s}
+.acc[open]>summary::before{transform:rotate(45deg);top:16px}
+.acc>summary .t{font-weight:600;white-space:nowrap}.acc>summary .cnt{margin-left:6px;font-size:.85rem;font-weight:400;color:var(--muted)}
+.acc>summary .g{color:var(--muted);font-size:.9rem;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.acc[open]>summary .g{display:none}
+.acc-body{padding:0 0 14px 18px;font-size:.95rem}.acc-body>p{margin:0}.acc-body ul{margin:0;padding-left:18px}
+@media(max-width:520px){.acc>summary{grid-template-columns:1fr}.acc>summary .g{font-size:.85rem}}
+.bd .formula{margin:0 0 6px}
+.bd-grid{display:grid;grid-template-columns:auto 1fr;gap:4px 20px;align-items:center}
+@media(max-width:560px){.bd-grid{grid-template-columns:1fr;justify-items:center}.bd-bars{width:100%}}
+.radar{display:block;overflow:visible}.radar .ring{fill:none;stroke:var(--line2);stroke-width:1}.radar .ring.r5{stroke:var(--line)}
+.radar .axis{stroke:var(--line2);stroke-width:1}.radar .area{fill:var(--acc-fill);fill-opacity:.28;stroke:var(--acc);stroke-width:2;stroke-linejoin:round}
+.radar .dot{fill:var(--acc);stroke:var(--bg);stroke-width:1.5}.radar text{fill:var(--muted);font-family:var(--font);font-size:11px}.radar .sv{fill:var(--fg);font-weight:600}
+.pills .radar{align-self:center;margin-top:2px}
+.abstract{max-width:68ch;line-height:1.6}.card.standalone h2{font-size:1.1rem;margin:28px 0 8px}
+.rad-card{max-width:420px}.rad-big{display:flex;justify-content:center;padding:8px 0 4px}.rad-big .radar text{font-size:13px}
+.rad-title{font-weight:600;line-height:1.35;margin:8px 0 4px}
+.comp>summary{display:grid;grid-template-columns:1fr auto auto;align-items:center;column-gap:12px;padding:5px 0 5px 18px;cursor:pointer;position:relative}.comp>summary::before{top:12px}.comp[open]>summary::before{top:10px}
+.comp .lbl{font-weight:500}.comp .bar{display:inline-flex;gap:3px}.comp .bar i{display:block;width:14px;height:9px;background:var(--line)}.comp .bar i.on{background:var(--acc-fill)}
+.comp .n{font-weight:600;min-width:4.4em;text-align:right}.comp .w{font-weight:400;color:var(--muted);font-size:.78rem;margin-left:3px}
+.comp>p{margin:2px 0 8px 18px;font-size:.92rem;padding-left:10px;border-left:2px solid var(--acc-fill)}
+.comp[open] .lbl{color:var(--acc)}
+@media(max-width:400px){.comp>summary{grid-template-columns:1fr auto}.comp .bar{grid-column:1;grid-row:2}.comp .n{grid-row:1/3}}
+/* nested accordions: same chevron as the top level, one step in */
+.finding,.sub{border-top:1px solid var(--line2);padding:6px 0}.finding:first-child,.sub:first-child{border-top:0}
+.finding>summary,.sub>summary{cursor:pointer;line-height:1.5;position:relative;padding-left:18px;color:var(--fg)}
+.finding>summary::before,.sub>summary::before,.comp>summary::before{content:"";position:absolute;left:2px;top:9px;width:6px;height:6px;border-right:2px solid var(--acc);border-bottom:2px solid var(--acc);transform:rotate(-45deg);transform-origin:50% 50%;transition:transform .15s}
+.finding[open]>summary::before,.sub[open]>summary::before,.comp[open]>summary::before{transform:rotate(45deg);top:7px}
+.finding>summary:hover,.sub>summary:hover,.comp>summary:hover .lbl{color:var(--acc)}
+.sub>summary b{font-weight:600}
+.sub>p{margin:4px 0 2px 18px;color:var(--muted);font-size:.92rem;border-left:2px solid var(--line);padding-left:10px}
+.eir{margin:8px 0 4px 18px;padding-left:12px;border-left:2px solid var(--line);display:grid;grid-template-columns:auto 1fr;gap:6px 12px;font-size:.94rem}.eir b{color:var(--muted);font-weight:600;white-space:nowrap}.eir p{margin:0}
+@media(max-width:400px){.eir{grid-template-columns:1fr}.eir p{margin-bottom:4px}}
+.conf,.prio{display:inline-block;font-size:.82rem;padding:0 6px;margin-right:4px;border:1px solid var(--line);color:var(--muted);vertical-align:1px}
+.conf-high,.prio-read-first{background:var(--acc-fill);color:var(--acc-fg);border-color:var(--acc)}.conf-medium,.prio-read{background:var(--acc-soft);color:var(--fg);border-color:transparent}
+.card ol{margin:4px 0;padding-left:22px}
+/* calendar */
+.cal-wrap{display:flex;flex-wrap:wrap;gap:20px 32px}
+.cal{flex:1 1 260px;max-width:400px;min-width:0}.cal-title{font-weight:600;font-size:1.05rem;margin:0 0 8px}
+.cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:3px}
+.dow{text-align:center;font-size:.78rem;color:var(--muted);padding-bottom:2px}
+.cell{position:relative;aspect-ratio:1;border:1px solid var(--line);background:var(--panel);font:inherit;color:var(--fg);padding:0;min-width:0}
+.cell.pad{border:0;background:none}.cell.none{background:none;border-style:dashed;opacity:.5}
+.cell .d{position:absolute;top:2px;left:5px;font-size:.72rem;color:var(--muted)}
+.cell .k{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:1.15rem;padding-top:4px}
+.cell .n{position:absolute;right:5px;bottom:1px;font-size:.68rem;color:var(--muted)}
+button.cell{cursor:pointer}button.cell:hover{border-color:var(--acc);z-index:1}
+.lvl1{background:var(--acc-soft)}.lvl2{background:color-mix(in srgb,var(--acc-fill) 55%,var(--panel))}.lvl3{background:var(--acc-fill)}.lvl3 .k,.lvl3 .d,.lvl3 .n{color:var(--acc-fg)}
+.cal-legend{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-top:12px;font-size:.88rem;color:var(--muted)}
+.cal-legend i{display:inline-block;width:14px;height:14px;border:1px solid var(--line);background:var(--panel);margin-left:6px}
+/* modal */
+.modal{position:fixed;inset:0;z-index:60;background:rgba(15,18,22,.55);display:flex;align-items:flex-end;justify-content:center}
+.modal[hidden]{display:none}
+.modal-card{background:var(--bg);color:var(--fg);width:100%;max-width:640px;max-height:88vh;overflow:auto;border-radius:14px 14px 0 0;padding:16px 18px calc(20px + env(safe-area-inset-bottom,0px));box-shadow:0 -10px 40px rgba(0,0,0,.3)}
+@media(min-width:640px){.modal{align-items:center;padding:24px}.modal-card{border-radius:10px;max-height:80vh}}
+.modal-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}.modal-head h2{margin:0;font-size:1.2rem}
+.close{border:1px solid var(--line);background:var(--panel);color:var(--fg);width:34px;height:34px;border-radius:50%;font-size:1.3rem;line-height:1;cursor:pointer;flex:none}
+.modal-body h3{font-size:.95rem;font-weight:600;color:var(--muted);margin:16px 0 4px}
+.mitem{display:grid;grid-template-columns:auto 1fr;gap:10px;padding:10px 0;border-top:1px solid var(--line2);text-decoration:none;color:inherit}
+a.mitem:hover .mt{text-decoration:underline;text-decoration-color:var(--acc)}
+.mitem .mt{display:block;font-weight:600;line-height:1.35}.mitem .ml{display:block;margin-top:3px;font-size:.92rem}.mitem .mpills{display:flex;flex-direction:column;gap:4px;align-self:start;margin-top:2px}
+.mfoot{margin:14px 0 0;font-weight:600}.mfoot a{color:var(--acc);text-decoration:none}
+.lightbox{position:fixed;inset:0;z-index:50;display:flex;align-items:center;justify-content:center;background:rgba(10,10,12,.82);padding:24px;cursor:zoom-out}
+.lightbox[hidden]{display:none}.lightbox img{width:min(92vw,92vh,640px);height:auto;border-radius:50%}
+.acc-card>summary{cursor:pointer;padding:10px 0;border-top:1px solid var(--line);font-weight:600}.acc-card[open]>summary{color:var(--acc)}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style></head><body><div class="wrap"><a class="back" href="../index.html">Back to overview</a><div class="sub"><span class="sub-score"><span class="score" title="abstract-screen relevance 1 of 10"><span class="v">1</span><span class="l">relevance /10</span></span></span> from the abstract screen; not read in full.</div><div class="nav"><a href="../index.html">Overview</a><a href="../assessed.html">Assessments</a></div>
+<article class="card standalone">
+  <h1><a href="https://arxiv.org/abs/2609.20479">Daytime seeing variations in Paranal through a SHABAR system. Description of the method and first measurements from the PoET solar telescope</a></h1>
+  <div class="meta">A. M. Silva, B. Wehbe, A. Oliveira, M. Abreu, C. Cardenas-Conde, A. Cabral, P. Moreno, J. H. C. Martins, M. A. Monteiro, N. C. Santos, R. Gafeira<div>Submitted 17 Sep 2026, astro-ph.EP</div>
+    <div>Accepted for A&amp;A</div><span class="links"><a href="https://arxiv.org/abs/2609.20479">arXiv</a><a href="https://arxiv.org/pdf/2609.20479">PDF</a><a href="https://ui.adsabs.harvard.edu/abs/arXiv:2609.20479">ADS</a></span></div>
+  <h2>Abstract</h2><p class="abstract">Aims. In this paper we present the software and first seeing measurements from a SHAdow Band Ranger (SHABAR) system that is coupled with the recently comissioned PoET solar telescope, installed at ESO&#x27;s VLT platform in the Paranal Observatory. The seeing measurements that are collected by this system play a pivotal role in the observational strategy of PoET, as it employs apertures ranging between 1 and 55 arcseconds to observe resolved solar regions. As such, the usage of the smaller apertures hinges upon good observational conditions, which are assessed through real-time measurements from the instrument. Methods. We employ a SHABAR system, consisting of a series of scintillometers that are non-uniformly spaced in a bar, measuring the scintillation of the incoming light. The scintillation is measured in individual detectors, which are then used to characterize the atmospheric turbulence at a given range of heights. We use previously derived formulations, following Kolmogorov turbulence models, to model the collected data and transform it into a seeing measurement. Results. We find that the Paranal daytime seeing can reach values close to 1 arcsecond in the early morning, before the ground temperature increases and creates turbulence in the lower layers of the atmosphere. Over the day, the seeing gradually worsens, with the median seeing reaching values larger than 4 arcseconds in the afternoon. We also find that these variations appears to be stable over the first weeks of observations, yielding compatible results when comparing 37 independent days of operations, with a median seeing of 2.37 arcseconds.</p>
+  <h2>Screening</h2><p><strong>1 of 10</strong> on the abstract screen, below the threshold of 6, so the paper was not read in full.</p><p class="meta">The paper is about daytime atmospheric seeing measured with a SHABAR system for the ground-based PoET solar telescope. It has no connection to flare timing, particle acceleration, QPPs, or STIX/EUI, and its methods do not transfer to flare lightcurve analysis.</p>
+  <p class="meta">arXiv:2609.20479</p>
+</article>
+<script data-goatcounter="https://paperwatch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script>
+// Count a few actions as events, on top of page views. Nothing personal is sent.
+(function(){
+  function ev(name){if(window.goatcounter&&goatcounter.count)goatcounter.count({path:'evt/'+name,title:name,event:true});}
+  document.addEventListener('click',function(e){
+    var a=e.target.closest('a');
+    if(a){var h=a.getAttribute('href')||'';
+      if(/arxiv\.org\/pdf/.test(h))ev('pdf');else if(/arxiv\.org\/abs/.test(h))ev('arxiv');else if(/adsabs/.test(h))ev('ads');
+      else if(/doi\.org/.test(h))ev('doi');else if(a.classList.contains('read-link'))ev('open-assessment');return;}
+    else if(e.target.closest('.cell[data-day]'))ev('calendar-day');
+    else if(e.target.closest('.logo-btn'))ev('icon');
+  });
+  document.addEventListener('pointerup',function(e){if(e.target.closest('#lc'))ev('lightcurve');});
+  document.addEventListener('toggle',function(e){var t=e.target;if(t.open&&t.classList.contains('acc'))ev('section/'+(t.querySelector('.t')||{}).textContent.trim().split(' ')[0].toLowerCase());},true);
+})();
+</script></div></body></html>
